@@ -1,0 +1,18 @@
+<a href="node9.html#l2h-1">PyEval_CallObject()###0000003627
+<a href="node10.html#l2h-2">PyArg_ParseTuple()###0000003629
+<a href="node11.html#l2h-3">PyArg_ParseTupleAndKeywords()###0000003631
+<a href="node11.html#l2h-4">Philbrick, Geoff###0000003632
+<a href="node27.html#l2h-5">object!deallocation###0000003668
+<a href="node27.html#l2h-5">deallocation, object###0000003669
+<a href="node27.html#l2h-5">object!finalization###0000003670
+<a href="node27.html#l2h-5">finalization, of objects###0000003671
+<a href="node27.html#l2h-6">PyErr_Fetch()###0000003672
+<a href="node27.html#l2h-7">PyErr_Restore()###0000003673
+<a href="node28.html#l2h-8"><tt class="function">repr()</tt> (built-in function)###0000003675
+<a href="node28.html#l2h-9"><tt class="function">str()</tt> (built-in function)###0000003676
+<a href="node30.html#l2h-10">READONLY###0000003679
+<a href="node30.html#l2h-11">RO###0000003680
+<a href="node30.html#l2h-12">READ_RESTRICTED###0000003681
+<a href="node30.html#l2h-13">WRITE_RESTRICTED###0000003682
+<a href="node30.html#l2h-14">RESTRICTED###0000003683
+<a href="node48.html#l2h-15"><tt class="module">distutils.sysconfig</tt> (standard module)###REF0000003702

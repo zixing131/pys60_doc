@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node53.html" />
+<link rel="parent" href="module-sensor.html" />
+<link rel="next" href="s60ac.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.9.3 Classes</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.9.2 Constants"
+  href="node53.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.9 sensor  "
+  href="module-sensor.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node53.html">3.9.2 Constants</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-sensor.html">3.9 sensor  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60ac.html">4. Audio and Communication</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005930000000000000000"></a>
+<a name="subsec:sensorclasses"></a>
+<br>
+3.9.3 Classes
+</h2>
+The following classes are provided by the <tt class="module">sensor</tt> module:
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-318' xml:id='l2h-318' class="class">Sensor</tt></b>
+<dd>
+
+<p>
+The <tt class="class">Sensor</tt> class represents a physical sensor which delivers (possibly filtered) events.
+By default, events are not filtered. A filter can be applied by using the <tt class="method">set_event_filter</tt>
+method. An example for an event filter is given by <tt class="class">OrientationEventFilter</tt>, which can
+be applied to a device's acceleration sensor.
+
+<p>
+In case different filters should be used for the same physical sensor, different <tt class="class">Sensor</tt>
+objects have to be created for the same physical sensor.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-319' xml:id='l2h-319' class="method">__init__</tt></b>(</nobr></td>
+  <td><var>sensor_id, category_id</var>)</td></tr></table></dt>
+<dd>
+Initialises the <tt class="class">Sensor</tt> object. <code>sensor_id</code> and <code>category_id</code>
+must represent a valid sensor id and category id, respectively. This means that
+the ids passed on to <code>__init__</code> must also appear in the dictionary returned by
+the <code>sensors</code> function.
+In case <code>sensor_id</code> and <code>category_id</code> do not represent a valid sensor,
+the <code>connect</code> method will raise an exception.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-320' xml:id='l2h-320' class="method">connect</tt></b>(</nobr></td>
+  <td><var>callback</var>)</td></tr></table></dt>
+<dd>
+This method connects the sensor to the given <code>callback</code>. A sensor can only be connected
+to one callback, so this will destroy any pre-existing connection to another callback.
+If an event filter has been set, the events passed on to <code>callback</code> will pass
+this <tt class="class">Sensor</tt> object's event filter first.
+If the connection was properly established, this method returns 1, otherwise 0.
+Note: The connection can be established also if the callback does not exist or cannot be
+called for any other reason.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-321' xml:id='l2h-321' class="method">disconnect</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Disconnects this <tt class="class">Sensor</tt> object's callback connection. After a successful call
+to this method, a callback that has been previously connected via <tt class="method">connect</tt> will
+not receive any events anymore.
+If a connection existed and was successfully removed, this method returns 1, otherwise 0.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-322' xml:id='l2h-322' class="method">connected</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Retrieves this <tt class="class">Sensor</tt> object's connection status.
+Returns <code>True</code> if the sensor is connected, <code>False</code> otherwise.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-323' xml:id='l2h-323' class="method">set_event_filter</tt></b>(</nobr></td>
+  <td><var>event_filter</var>)</td></tr></table></dt>
+<dd>
+Sets an event filter for this <tt class="class">Sensor</tt> object. After the event filter has been
+successfully installed, this <tt class="class">Sensor</tt> object's connected callback will
+receive only events that have passed the filter. <code>event_filter</code> must be derived
+from <tt class="class">EventFilter</tt> in order to function properly.
+If a callback connection has already been established before calling this method,
+the connection will be re-established after the event filter has been installed.
+</dl>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-324' xml:id='l2h-324' class="class">EventFilter</tt></b>
+<dd>
+
+<p>
+The <tt class="class">EventFilter</tt> class provides a generic interface for event filters.
+The default implementation only passes events on, i.e. events are not filtered.
+Classes deriving from <tt class="class">EventFilter</tt> can decide if an event should be
+delivered at all as well as they can alter the data that is passed on to
+the callback.
+
+<p>
+<dl><dt><b><tt id='l2h-325' xml:id='l2h-325' class="member">callback</tt></b></dt>
+<dd>
+This is where the event filter's callback is stored. In case the <tt class="class">EventFilter</tt>
+object is used together with a <tt class="class">Sensor</tt> object, the <tt class="class">Sensor</tt> object will
+handle correct setting of this variable.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-326' xml:id='l2h-326' class="method">__init__</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Initialises the event filter object. The <code>callback</code> member is initialised to
+<code>None</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-327' xml:id='l2h-327' class="method">__del__</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Destructs the event filter object. This method calls <tt class="method">cleanup</tt>,
+which can be overridden by deriving classes to clean up resources.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-328' xml:id='l2h-328' class="method">event</tt></b>(</nobr></td>
+  <td><var>data</var>)</td></tr></table></dt>
+<dd>
+This method is the place where event filtering takes place, and hence
+this method should be overridden by deriving classes. Overridden <tt class="method">event</tt>
+methods can deliver their own data to the callback; the data delivered may be
+<code>data</code> or any other set of data.
+In case the event is decided to be delivered, overriding instances should
+call <code>self.callback</code>, which by default takes one argument.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-329' xml:id='l2h-329' class="method">cleanup</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Cleans up any resources needed by the event filter. The default implementation
+does not need this feature.
+This method is called by the destructor <tt class="method">__del__</tt>.
+</dl>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-330' xml:id='l2h-330' class="class">OrientationEventFilter</tt></b>
+<dd>
+
+<p>
+Derived from <tt class="class">EventFilter</tt>.
+This event filter is meant to be used together with the device's acceleration
+sensors. Note that it does not make sense to use it with any other sensor
+type. It generates events when the devices orientation changes, e.g. if it
+is turned from the upright position to lying on the back side.
+If an <tt class="class">OrientationEventFiler</tt> is used with a <tt class="class">Sensor</tt> object,
+the <tt class="class">Sensor</tt> object's callback will not receive the raw acceleration data
+as an argument, but only one of the <code>orientation</code> constants, representing
+the device's new orientation. In case the algorithm needs calibration on the
+device to be used, please check the <code>OrientationCalibration</code> variables
+in the file <code>sensor.py</code>.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-331' xml:id='l2h-331' class="method">__init__</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Initialises the <tt class="class">OrientationEventFilter</tt> object.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-332' xml:id='l2h-332' class="method">event</tt></b>(</nobr></td>
+  <td><var>sensor_val</var>)</td></tr></table></dt>
+<dd>
+Overridden method. Filters 3-axis acceleration events such that
+it detects orientation changes. Only upon detection of such an orientation
+change, the callback is invoked. The argument passed to the callback is a
+value from this module's <code>orientation</code> constants.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-333' xml:id='l2h-333' class="method">cleanup</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Cleans up this filter's timer resource. This will be called by <tt class="class">EventFilter</tt>'s
+destructor.
+</dl>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-334' xml:id='l2h-334' class="class">RotEventFilter</tt></b>
+<dd>
+
+<p>
+Derived from <tt class="class">EventFilter</tt>.
+
+<p>
+This event filter generates events when the devices orientation changes, e.g. if 
+it is turned from the left side up position to right side up position. This 
+sensor is resident e.g. in Nokia N95.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-335' xml:id='l2h-335' class="method">event</tt></b>(</nobr></td>
+  <td><var>sensor_val</var>)</td></tr></table></dt>
+<dd>
+Overridden method. Upon detection of an orientation change, the callback is 
+invoked. The argument passed to the callback is a value from this module's 
+<code>orientation</code> constants.
+</dl>
+
+<p>
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.9.2 Constants"
+  href="node53.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.9 sensor  "
+  href="module-sensor.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node53.html">3.9.2 Constants</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-sensor.html">3.9 sensor  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60ac.html">4. Audio and Communication</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

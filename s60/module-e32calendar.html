@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-e32db.html" />
+<link rel="prev" href="module-contacts.html" />
+<link rel="parent" href="s60data.html" />
+<link rel="next" href="node76.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.2 e32calendar -- Access to calendar related services</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.1.6 group Object"
+  href="node74.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.2.1 module Level Functions"
+  href="node76.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node74.html">5.1.6 Group Object</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node76.html">5.2.1 Module Level Functions</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION007200000000000000000"></a>
+<a name="sec:calendareka2"></a>
+<br>
+5.2 <tt class="module">e32calendar</tt> --
+  Access to calendar related services
+</h1>
+
+<p>
+<a name="module-e32calendar"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">calendar</tt> module of the previous PyS60 releases has been renamed 
+as <tt class="module">e32calendar</tt>. For information on the usage of this module refer to 
+Ensymble README.
+
+<p>
+The <tt class="module">e32calendar</tt> module offers an API to calendar services. The 
+<tt class="module">e32calendar</tt> module represents a Symbian agenda database as a 
+dictionary-like <tt class="class">CalendarDb</tt> object, which contains <tt class="class">Entry</tt>
+objects and which is indexed using the unique IDs of those objects. There 
+are five types of entry objects: <tt class="class">AppointmentEntry</tt>, 
+<tt class="class">EventEntry</tt>, <tt class="class">AnniversaryEntry</tt>, <tt class="class">ReminderEntry</tt>,
+ and <tt class="class">TodoEntry</tt>. 
+
+<p>
+<tt class="class">CalendarDb</tt> objects represent a live view into the database. If an 
+entry is changed outside your Python application, the changes are visible 
+immediately, and conversely any changes you commit into the database are 
+visible immediately to other applications. 
+
+<p>
+All time parameters use Unix time unless stated otherwise. For more 
+information on Unix time, see Section <a href="#subsec:datetime"><tex2html_cross_ref_visible_mark></a>, 
+Date and Time.
+
+<p>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="node76.html">5.2.1 Module Level Functions</a>
+<li><a href="node77.html">5.2.2 CalendarDb Objects</a>
+<li><a href="node78.html">5.2.3 Entry Objects</a>
+<ul>
+<li><a href="node79.html">5.2.3.1 AppointmentEntry Objects</a>
+<li><a href="node80.html">5.2.3.2 EventEntry</a>
+<li><a href="node81.html">5.2.3.3 AnniversaryEntry</a>
+<li><a href="node82.html">5.2.3.4 ReminderEntry</a>
+<li><a href="node83.html">5.2.3.5 TodoEntry</a>
+</ul>
+<li><a href="node84.html">5.2.4 Repeat Rules</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.1.6 group Object"
+  href="node74.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.2.1 module Level Functions"
+  href="node76.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node74.html">5.1.6 Group Object</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node76.html">5.2.1 Module Level Functions</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

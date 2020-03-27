@@ -1,0 +1,155 @@
+<a href="node23.html#l2h-1"><tt class="function">directory_created()</tt>###0000005305
+<a href="node23.html#l2h-2"><tt class="function">file_created()</tt>###0000005306
+<a href="node23.html#l2h-3"><tt class="function">get_special_folder_path()</tt>###0000005307
+<a href="node23.html#l2h-4"><tt class="function">create_shortcut()</tt>###0000005308
+<a href="node26.html#l2h-5">environment variables!PATH@<tt>PATH</tt>###0000005312
+<a href="node26.html#l2h-5">PATH (environment variable)###0000005313
+<a href="node38.html"><tt class="module">distutils.core</tt> (standard module)###DEF0000005328
+<a href="node38.html#l2h-7"><tt class="function">setup()</tt> (in module distutils.core)###0000005329
+<a href="node38.html#l2h-8"><tt class="function">run_setup()</tt> (in module distutils.core)###0000005332
+<a href="node38.html#l2h-9"><tt class="class">Extension</tt> (class in distutils.core)###0000005333
+<a href="node38.html#l2h-10"><tt class="class">Distribution</tt> (class in distutils.core)###0000005334
+<a href="node38.html#l2h-11"><tt class="class">Command</tt> (class in distutils.core)###0000005335
+<a href="node39.html"><tt class="module">distutils.ccompiler</tt> (standard module)###DEF0000005337
+<a href="node39.html#l2h-13"><tt class="function">gen_lib_options()</tt> (in module distutils.ccompiler)###0000005338
+<a href="node39.html#l2h-14"><tt class="function">gen_preprocess_options()</tt> (in module distutils.ccompiler)###0000005339
+<a href="node39.html#l2h-15"><tt class="function">get_default_compiler()</tt> (in module distutils.ccompiler)###0000005340
+<a href="node39.html#l2h-16"><tt class="function">new_compiler()</tt> (in module distutils.ccompiler)###0000005341
+<a href="node39.html#l2h-17"><tt class="function">show_compilers()</tt> (in module distutils.ccompiler)###0000005342
+<a href="node39.html#l2h-18"><tt class="class">CCompiler</tt> (class in distutils.ccompiler)###0000005343
+<a href="node39.html#l2h-19"><tt class="method">add_include_dir()</tt> (CCompiler method)###0000005344
+<a href="node39.html#l2h-20"><tt class="method">set_include_dirs()</tt> (CCompiler method)###0000005345
+<a href="node39.html#l2h-21"><tt class="method">add_library()</tt> (CCompiler method)###0000005346
+<a href="node39.html#l2h-22"><tt class="method">set_libraries()</tt> (CCompiler method)###0000005347
+<a href="node39.html#l2h-23"><tt class="method">add_library_dir()</tt> (CCompiler method)###0000005348
+<a href="node39.html#l2h-24"><tt class="method">set_library_dirs()</tt> (CCompiler method)###0000005349
+<a href="node39.html#l2h-25"><tt class="method">add_runtime_library_dir()</tt> (CCompiler method)###0000005350
+<a href="node39.html#l2h-26"><tt class="method">set_runtime_library_dirs()</tt> (CCompiler method)###0000005351
+<a href="node39.html#l2h-27"><tt class="method">define_macro()</tt> (CCompiler method)###0000005352
+<a href="node39.html#l2h-28"><tt class="method">undefine_macro()</tt> (CCompiler method)###0000005353
+<a href="node39.html#l2h-29"><tt class="method">add_link_object()</tt> (CCompiler method)###0000005354
+<a href="node39.html#l2h-30"><tt class="method">set_link_objects()</tt> (CCompiler method)###0000005355
+<a href="node39.html#l2h-31"><tt class="method">detect_language()</tt> (CCompiler method)###0000005356
+<a href="node39.html#l2h-32"><tt class="method">find_library_file()</tt> (CCompiler method)###0000005357
+<a href="node39.html#l2h-33"><tt class="method">has_function()</tt> (CCompiler method)###0000005358
+<a href="node39.html#l2h-34"><tt class="method">library_dir_option()</tt> (CCompiler method)###0000005359
+<a href="node39.html#l2h-35"><tt class="method">library_option()</tt> (CCompiler method)###0000005360
+<a href="node39.html#l2h-36"><tt class="method">runtime_library_dir_option()</tt> (CCompiler method)###0000005361
+<a href="node39.html#l2h-37"><tt class="method">set_executables()</tt> (CCompiler method)###0000005362
+<a href="node39.html#l2h-38"><tt class="method">compile()</tt> (CCompiler method)###0000005363
+<a href="node39.html#l2h-39"><tt class="method">create_static_lib()</tt> (CCompiler method)###0000005364
+<a href="node39.html#l2h-40"><tt class="method">link()</tt> (CCompiler method)###0000005365
+<a href="node39.html#l2h-41"><tt class="method">link_executable()</tt> (CCompiler method)###0000005366
+<a href="node39.html#l2h-42"><tt class="method">link_shared_lib()</tt> (CCompiler method)###0000005367
+<a href="node39.html#l2h-43"><tt class="method">link_shared_object()</tt> (CCompiler method)###0000005368
+<a href="node39.html#l2h-44"><tt class="method">preprocess()</tt> (CCompiler method)###0000005369
+<a href="node39.html#l2h-45"><tt class="method">executable_filename()</tt> (CCompiler method)###0000005370
+<a href="node39.html#l2h-46"><tt class="method">library_filename()</tt> (CCompiler method)###0000005371
+<a href="node39.html#l2h-47"><tt class="method">object_filenames()</tt> (CCompiler method)###0000005372
+<a href="node39.html#l2h-48"><tt class="method">shared_object_filename()</tt> (CCompiler method)###0000005373
+<a href="node39.html#l2h-49"><tt class="method">execute()</tt> (CCompiler method)###0000005374
+<a href="node39.html#l2h-50"><tt class="method">spawn()</tt> (CCompiler method)###0000005375
+<a href="node39.html#l2h-51"><tt class="method">mkpath()</tt> (CCompiler method)###0000005376
+<a href="node39.html#l2h-52"><tt class="method">move_file()</tt> (CCompiler method)###0000005377
+<a href="node39.html#l2h-53"><tt class="method">announce()</tt> (CCompiler method)###0000005378
+<a href="node39.html#l2h-54"><tt class="method">warn()</tt> (CCompiler method)###0000005379
+<a href="node39.html#l2h-55"><tt class="method">debug_print()</tt> (CCompiler method)###0000005380
+<a href="node40.html"><tt class="module">distutils.unixccompiler</tt> (standard module)###DEF0000005382
+<a href="node41.html"><tt class="module">distutils.msvccompiler</tt> (standard module)###DEF0000005384
+<a href="node42.html"><tt class="module">distutils.bcppcompiler</tt> (standard module)###DEF0000005386
+<a href="node43.html"><tt class="module">distutils.cygwinccompiler</tt> (standard module)###DEF0000005388
+<a href="node44.html"><tt class="module">distutils.emxccompiler</tt> (standard module)###DEF0000005390
+<a href="node45.html"><tt class="module">distutils.mwerkscompiler</tt> (standard module)###DEF0000005392
+<a href="node46.html"><tt class="module">distutils.archive_util</tt> (standard module)###DEF0000005394
+<a href="node46.html#l2h-63"><tt class="function">make_archive()</tt> (in module distutils.archive_util)###0000005395
+<a href="node46.html#l2h-64"><tt class="function">make_tarball()</tt> (in module distutils.archive_util)###0000005396
+<a href="node46.html#l2h-65"><tt class="function">make_zipfile()</tt> (in module distutils.archive_util)###0000005397
+<a href="node47.html"><tt class="module">distutils.dep_util</tt> (standard module)###DEF0000005399
+<a href="node47.html#l2h-67"><tt class="function">newer()</tt> (in module distutils.dep_util)###0000005400
+<a href="node47.html#l2h-68"><tt class="function">newer_pairwise()</tt> (in module distutils.dep_util)###0000005401
+<a href="node47.html#l2h-69"><tt class="function">newer_group()</tt> (in module distutils.dep_util)###0000005402
+<a href="node48.html"><tt class="module">distutils.dir_util</tt> (standard module)###DEF0000005404
+<a href="node48.html#l2h-71"><tt class="function">mkpath()</tt> (in module distutils.dir_util)###0000005405
+<a href="node48.html#l2h-72"><tt class="function">create_tree()</tt> (in module distutils.dir_util)###0000005406
+<a href="node48.html#l2h-73"><tt class="function">copy_tree()</tt> (in module distutils.dir_util)###0000005407
+<a href="node48.html#l2h-74"><tt class="function">remove_tree()</tt> (in module distutils.dir_util)###0000005408
+<a href="node49.html"><tt class="module">distutils.file_util</tt> (standard module)###DEF0000005410
+<a href="node49.html#l2h-76"><tt class="function">copy_file()</tt> (in module distutils.file_util)###0000005411
+<a href="node49.html#l2h-77"><tt class="function">move_file()</tt> (in module distutils.file_util)###0000005412
+<a href="node49.html#l2h-78"><tt class="function">write_file()</tt> (in module distutils.file_util)###0000005413
+<a href="node50.html"><tt class="module">distutils.util</tt> (standard module)###DEF0000005415
+<a href="node50.html#l2h-80"><tt class="function">get_platform()</tt> (in module distutils.util)###0000005416
+<a href="node50.html#l2h-81"><tt class="function">convert_path()</tt> (in module distutils.util)###0000005417
+<a href="node50.html#l2h-82"><tt class="function">change_root()</tt> (in module distutils.util)###0000005418
+<a href="node50.html#l2h-83"><tt class="function">check_environ()</tt> (in module distutils.util)###0000005419
+<a href="node50.html#l2h-84"><tt class="function">subst_vars()</tt> (in module distutils.util)###0000005420
+<a href="node50.html#l2h-85"><tt class="function">grok_environment_error()</tt> (in module distutils.util)###0000005422
+<a href="node50.html#l2h-86"><tt class="function">split_quoted()</tt> (in module distutils.util)###0000005423
+<a href="node50.html#l2h-87"><tt class="function">execute()</tt> (in module distutils.util)###0000005424
+<a href="node50.html#l2h-88"><tt class="function">strtobool()</tt> (in module distutils.util)###0000005425
+<a href="node50.html#l2h-89"><tt class="function">byte_compile()</tt> (in module distutils.util)###0000005426
+<a href="node50.html#l2h-90"><tt class="function">rfc822_escape()</tt> (in module distutils.util)###0000005427
+<a href="node50.html#l2h-91">environment variables!HOME@<tt>HOME</tt>###0000005428
+<a href="node50.html#l2h-91">HOME (environment variable)###0000005429
+<a href="node50.html#l2h-92">environment variables!PLAT@<tt>PLAT</tt>###0000005430
+<a href="node50.html#l2h-92">PLAT (environment variable)###0000005431
+<a href="node51.html"><tt class="module">distutils.dist</tt> (standard module)###DEF0000005435
+<a href="node52.html"><tt class="module">distutils.extension</tt> (standard module)###DEF0000005437
+<a href="node53.html"><tt class="module">distutils.debug</tt> (standard module)###DEF0000005439
+<a href="node54.html"><tt class="module">distutils.errors</tt> (standard module)###DEF0000005441
+<a href="node55.html"><tt class="module">distutils.fancy_getopt</tt> (standard module)###DEF0000005443
+<a href="node55.html#l2h-98"><tt class="function">fancy_getopt()</tt> (in module distutils.fancy_getopt)###0000005444
+<a href="node55.html#l2h-99"><tt class="function">wrap_text()</tt> (in module distutils.fancy_getopt)###0000005445
+<a href="node55.html#l2h-100"><tt class="class">FancyGetopt</tt> (class in distutils.fancy_getopt)###0000005446
+<a href="node55.html#l2h-101"><tt class="method">getopt()</tt> (FancyGetopt method)###0000005447
+<a href="node55.html#l2h-102"><tt class="method">get_option_order()</tt> (FancyGetopt method)###0000005448
+<a href="node55.html#l2h-103"><tt class="method">generate_help()</tt> (FancyGetopt method)###0000005449
+<a href="node56.html"><tt class="module">distutils.filelist</tt> (standard module)###DEF0000005451
+<a href="node57.html"><tt class="module">distutils.log</tt> (standard module)###DEF0000005453
+<a href="node58.html"><tt class="module">distutils.spawn</tt> (standard module)###DEF0000005457
+<a href="node59.html"><tt class="module">distutils.sysconfig</tt> (standard module)###DEF0000005459
+<a href="node59.html#l2h-108"><tt>PREFIX</tt> (in module distutils.sysconfig)###0000005460
+<a href="node59.html#l2h-109"><tt>EXEC_PREFIX</tt> (in module distutils.sysconfig)###0000005461
+<a href="node59.html#l2h-110"><tt class="function">get_config_var()</tt> (in module distutils.sysconfig)###0000005462
+<a href="node59.html#l2h-111"><tt class="function">get_config_vars()</tt> (in module distutils.sysconfig)###0000005463
+<a href="node59.html#l2h-112"><tt class="function">get_config_h_filename()</tt> (in module distutils.sysconfig)###0000005464
+<a href="node59.html#l2h-113"><tt class="function">get_makefile_filename()</tt> (in module distutils.sysconfig)###0000005465
+<a href="node59.html#l2h-114"><tt class="function">get_python_inc()</tt> (in module distutils.sysconfig)###0000005466
+<a href="node59.html#l2h-115"><tt class="function">get_python_lib()</tt> (in module distutils.sysconfig)###0000005467
+<a href="node59.html#l2h-116"><tt class="function">customize_compiler()</tt> (in module distutils.sysconfig)###0000005468
+<a href="node59.html#l2h-117"><tt class="function">set_python_build()</tt> (in module distutils.sysconfig)###0000005469
+<a href="node60.html"><tt class="module">distutils.text_file</tt> (standard module)###DEF0000005471
+<a href="node60.html#l2h-119"><tt class="class">TextFile</tt> (class in distutils.text_file)###0000005472
+<a href="node60.html#l2h-120"><tt class="method">open()</tt> (TextFile method)###0000005473
+<a href="node60.html#l2h-121"><tt class="method">close()</tt> (TextFile method)###0000005474
+<a href="node60.html#l2h-122"><tt class="method">warn()</tt> (TextFile method)###0000005475
+<a href="node60.html#l2h-123"><tt class="method">readline()</tt> (TextFile method)###0000005476
+<a href="node60.html#l2h-124"><tt class="method">readlines()</tt> (TextFile method)###0000005477
+<a href="node60.html#l2h-125"><tt class="method">unreadline()</tt> (TextFile method)###0000005478
+<a href="node61.html"><tt class="module">distutils.version</tt> (standard module)###DEF0000005480
+<a href="node62.html"><tt class="module">distutils.cmd</tt> (standard module)###DEF0000005482
+<a href="node62.html#l2h-128"><tt class="class">Command</tt> (class in distutils.cmd)###0000005483
+<a href="node63.html"><tt class="module">distutils.command</tt> (standard module)###DEF0000005485
+<a href="node64.html"><tt class="module">distutils.command.bdist</tt> (standard module)###DEF0000005487
+<a href="node65.html"><tt class="module">distutils.command.bdist_packager</tt> (standard module)###DEF0000005489
+<a href="node66.html"><tt class="module">distutils.command.bdist_dumb</tt> (standard module)###DEF0000005491
+<a href="node67.html"><tt class="module">distutils.command.bdist_msi</tt> (standard module)###DEF0000005493
+<a href="node68.html"><tt class="module">distutils.command.bdist_rpm</tt> (standard module)###DEF0000005495
+<a href="node69.html"><tt class="module">distutils.command.bdist_wininst</tt> (standard module)###DEF0000005497
+<a href="node70.html"><tt class="module">distutils.command.sdist</tt> (standard module)###DEF0000005499
+<a href="node71.html"><tt class="module">distutils.command.build</tt> (standard module)###DEF0000005501
+<a href="node72.html"><tt class="module">distutils.command.build_clib</tt> (standard module)###DEF0000005503
+<a href="node73.html"><tt class="module">distutils.command.build_ext</tt> (standard module)###DEF0000005505
+<a href="node74.html"><tt class="module">distutils.command.build_py</tt> (standard module)###DEF0000005507
+<a href="node75.html"><tt class="module">distutils.command.build_scripts</tt> (standard module)###DEF0000005509
+<a href="node76.html"><tt class="module">distutils.command.clean</tt> (standard module)###DEF0000005511
+<a href="node77.html"><tt class="module">distutils.command.config</tt> (standard module)###DEF0000005513
+<a href="node78.html"><tt class="module">distutils.command.install</tt> (standard module)###DEF0000005515
+<a href="node79.html"><tt class="module">distutils.command.install_data</tt> (standard module)###DEF0000005517
+<a href="node80.html"><tt class="module">distutils.command.install_headers</tt> (standard module)###DEF0000005519
+<a href="node81.html"><tt class="module">distutils.command.install_lib</tt> (standard module)###DEF0000005521
+<a href="node82.html"><tt class="module">distutils.command.install_scripts</tt> (standard module)###DEF0000005523
+<a href="node83.html"><tt class="module">distutils.command.register</tt> (standard module)###DEF0000005525
+<a href="node84.html#l2h-150"><tt class="method">initialize_options()()</tt> (Command method)###0000005529
+<a href="node84.html#l2h-151"><tt class="method">finalize_options()</tt> (Command method)###0000005530
+<a href="node84.html#l2h-152"><tt class="method">run()</tt> (Command method)###0000005531

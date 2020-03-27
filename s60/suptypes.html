@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="module-e32dbm.html" />
+<link rel="parent" href="s60data.html" />
+<link rel="next" href="node94.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.5 logs -- Module to access the phone logs.</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.4.2 e32dbm Objects"
+  href="node92.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.5.1 module Level Functions"
+  href="node94.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node92.html">5.4.2 e32dbm Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node94.html">5.5.1 Module Level Functions</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION007500000000000000000"></a>
+<a name="sec:logs"></a>
+<br>
+5.5 <tt class="module">logs</tt> --
+  Module to access the phone logs.
+</h1>
+
+<p>
+<a name="module-logs"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">logs</tt> offers generic access to the phone's log. Via <tt class="module">logs</tt>'s API
+it is possible to access, for example, the list of received calls or the list of sms received.
+At this stage, it is only possible to read logs.
+
+<p>
+All of the accessor functions return a list of dictionaries containing
+the log events. The first item on the list is the latest event.
+
+<p>
+Each dictionary has the following entries:
+
+<ul>
+<li><code>number</code>: The (phone) number associated with the log event
+</li>
+<li><code>name</code>
+</li>
+<li><code>description</code>: A description of the event
+</li>
+<li><code>direction</code>: The direction associated with the event (i.e. whether in- or outgoing)
+</li>
+<li><code>status</code>: Event status
+</li>
+<li><code>subject</code>
+</li>
+<li><code>id</code>: The event's id
+</li>
+<li><code>contact</code>
+</li>
+<li><code>duration</code>
+</li>
+<li><code>duration type</code>
+</li>
+<li><code>flags</code>
+</li>
+<li><code>link</code>
+</li>
+<li><code>time</code>: The time associated with the event as a unix timestamp.
+</li>
+<li><code>data</code>
+</li>
+</ul>
+
+<p>
+The current log types are currently supported:
+<a name="suptypes"></a>
+
+<ul>
+<li><code>'call'</code>
+</li>
+<li><code>'sms'</code>
+</li>
+<li><code>'data'</code>
+</li>
+<li><code>'fax'</code>
+</li>
+<li><code>'email'</code>
+</li>
+<li><code>'scheduler'</code>
+</li>
+</ul>
+
+<p>
+For those functions providing an optional <var>mode</var> parameter, the default mode is currently set to
+<code>'in'</code>. <var>mode</var> can take one of the following values:
+
+<ul>
+<li><code>'in'</code>
+</li>
+<li><code>'out'</code>
+</li>
+<li><code>'fetched'</code>
+</li>
+<li><code>'missed'</code>
+</li>
+<li><code>'in_alt'</code>
+</li>
+<li><code>'out_alt'</code>
+</li>
+</ul>
+
+<p>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="node94.html">5.5.1 Module Level Functions</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.4.2 e32dbm Objects"
+  href="node92.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.5.1 module Level Functions"
+  href="node94.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node92.html">5.4.2 e32dbm Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node94.html">5.5.1 Module Level Functions</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

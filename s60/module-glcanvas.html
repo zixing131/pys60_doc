@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-sensor.html" />
+<link rel="prev" href="module-gles.html" />
+<link rel="parent" href="s60graph.html" />
+<link rel="next" href="module-sensor.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.8 glcanvas -- UI Control for Displaying OpenGL ES Graphics</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.7.3.2 opengl ES 1.1"
+  href="node49.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.9 sensor  "
+  href="module-sensor.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node49.html">3.7.3.2 OpenGL ES 1.1</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-sensor.html">3.9 sensor  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION005800000000000000000"></a>
+<a name="sec:glcanvas"></a>
+<br>
+3.8 <tt class="module">glcanvas</tt> --
+  UI Control for Displaying OpenGL ES Graphics
+</h1>
+
+<p>
+<a name="module-glcanvas"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">glcanvas</tt> module provides a UI control, <tt class="class">GLCanvas</tt>, for
+displaying OpenGL ES graphics. <tt class="class">GLCanvas</tt> component is similar to the
+<tt class="module">appuifw</tt> <tt class="class">Canvas</tt> component that supports Symbian OS -level
+drawing.
+
+<p>
+Internally <tt class="class">GLCanvas</tt> uses EGL for displaying the OpenGL ES graphics. EGL,
+as OpenGL ES, is a standard API defined by the Khronos Group
+(www.khronos.org). Specifically, <tt class="class">GLCanvas</tt> uses an EGL window surface,
+which supports double-buffered rendering. It is possible to affect selection of
+the EGL config that is used to create the window surface; for details, see the
+documentation of the <tt class="class">GLCanvas</tt> constructor.
+
+<p>
+<tt class="class">GLCanvas</tt> instances also hold the OpenGL ES context object, which
+together with the surface, are needed for rendering. When one wants to render
+with a specific OpenGL ES context to a specific surface, they need to be
+<em>made current</em>. This also applies to <tt class="class">GLCanvas</tt>, which has the
+<code>makeCurrent</code> method for this purpose. Generally, calling
+<code>makeCurrent</code> has to be done only if multiple <tt class="class">GLCanvas</tt> objects are
+used in the same program, as each <tt class="class">GLCanvas</tt> object is automatically made
+current when it is created and it remains current until it is destroyed or
+<code>makeCurrent</code> of some other <tt class="class">GLCanvas</tt> object is called.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-306' xml:id='l2h-306' class="class">GLCanvas</tt></b>(</nobr></td>
+  <td><var>redraw_callback, </var><big>[</big><var>event_callback=None, resize_callback=None, attributes=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Constructs a new <tt class="class">GLCanvas</tt> object that can be used as a UI control for
+displaying OpenGL ES graphics. Parameters <var>redraw_callback</var>,
+<var>event_callback</var>, and <var>resize_callback</var> have the same meaning as with
+<tt class="module">appuifw</tt> module <tt class="class">Canvas</tt>. Using <var>redraw_callback</var> to specify
+the OpenGL ES drawing is preferred as it will be automatically called by
+<code>drawNow</code> method.
+
+<p>
+Parameter <var>attributes</var> can be used to specify attributes used in EGL config
+selection. It must be a Python dictionary where keys are EGL attribute names
+(which are defined in the <tt class="module">glcanvas</tt> module) and values are integers
+defining the desired attribute values. Unless specified in <var>attributes</var>,
+<code>EGL_BUFFER_SIZE</code> is set to value based on the display mode of the window
+owned by the underlying <tt class="class">CCoeControl</tt> object and <code>EGL_DEPTH_SIZE</code> is
+set to 16. Attributes specified in <var>attributes</var> are given to
+<code>eglChooseConfig</code>. Refer to the EGL specification for a detailed list of
+config attributes and explanation of how the selection of EGL configs works.
+
+<p>
+The new <tt class="class">GLCanvas</tt> object will be made current when the constructor
+returns so <code>makeCurrent</code> does not have to be called before starting to use
+OpenGL ES calls.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-307' xml:id='l2h-307' class="method">bind</tt></b>(</nobr></td>
+  <td><var>key_code, c</var>)</td></tr></table></dt>
+<dd>
+Sets a callback to be called when a specific key is pressed. Parameter
+<var>key_code</var> should be one of the standard Symbian key codes defined in
+<tt class="module">key_codes</tt>. Parameter <var>c</var> must be a callable object.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-308' xml:id='l2h-308' class="method">drawNow</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Calls the redraw callback (if set) and then calls <code>eglSwapBuffers</code> to
+render and display the OpenGL ES graphics.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-309' xml:id='l2h-309' class="method">makeCurrent</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Makes this <tt class="class">GLCanvas</tt> object current, meaning that it will be used to
+display the results of the subsequent OpenGL ES calls. In EGL terms this means
+that the EGL context and surface held by this object will be passed to
+<code>eglMakeCurrent</code>. Using <code>makeCurrent</code> makes it possible to use several
+<tt class="class">GLCanvas</tt> objects in a single application: the receiver of the OpenGL ES
+calls can be switched with <code>makeCurrent</code> easily.
+</dl>
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.7.3.2 opengl ES 1.1"
+  href="node49.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.9 sensor  "
+  href="module-sensor.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node49.html">3.7.3.2 OpenGL ES 1.1</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-sensor.html">3.9 sensor  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

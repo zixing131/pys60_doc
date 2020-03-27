@@ -1,0 +1,199 @@
+<!--
+% Copyright (c) 2008 - 2009 Nokia Corporation
+%
+% Licensed under the Apache License, Version 2.0 (the "License");
+% you may not use this file except in compliance with the License.
+% You may obtain a copy of the License at
+%
+%     http://www.apache.org/licenses/LICENSE-2.0
+%
+% Unless required by applicable law or agreed to in writing, software
+% distributed under the License is distributed on an "AS IS" BASIS,
+% WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+% See the License for the specific language governing permissions and
+% limitations under the License.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<script>
+  function setActionableText(){
+    
+	if( document.getElementById("modelID").value.match("3.0") || document.getElementById("modelID").value.match("3.1")){
+	   document.getElementById("action").innerHTML = "Install the following sis files<br>1. <a href=\"../../PyS60Dependencies/pips_nokia_1_4_SS.sis\">pips_nokia_1_4_SS.sis</a><br>2. <a href=\"../../PyS60Dependencies/Python_1.9.1_3rdEd.sis\">Python_1.9.1_3rdEd.sis</a>";
+	 }
+	 else if(document.getElementById("modelID").value.match("3.2")|| document.getElementById("modelID").value.match("5.0")){	 
+	 document.getElementById("action").innerHTML = "Install the following sis files<br>1. <a href=\"../../PyS60Dependencies/pips_nokia_1_4_SS.sis\">pips_nokia_1_4_SS.sis</a><br>2. <a href=\"../../PyS60Dependencies/Python_1.9.1_3rdEdFP2.sis\">Python_1.9.1_3rdEdFP2.sis</a>";
+	 }	 
+	 else{
+	   document.getElementById("action").innerHTML="Select the device name above to see sis files.";
+	 }	
+  }
+</script>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="package.html" />
+<link rel="prev" href="getstarted.html" />
+<link rel="parent" href="getstarted.html" />
+<link rel="next" href="package.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>1.1 Installing Python runtime and its dependencies</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="1. getting Started"
+  href="getstarted.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="1. getting Started"
+  href="getstarted.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="1.2 packaging a Sample"
+  href="package.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="getstarted.html">1. Getting Started</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="getstarted.html">1. Getting Started</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="package.html">1.2 Packaging a Sample</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION003100000000000000000"></a>
+<a name="install"></a>
+<br>
+1.1 Installing Python runtime and its dependencies
+</h1>
+
+<p>
+The installation files vary for different devices. Select the device name in the following Devices box to know the required sis files. 
+
+<p>
+<div class="note"><b class="label">Note:</b>
+If you are using Internet Explorer, then you need to select "Allow blocked content..." by clicking on 
+the security warning right below the address bar for enabling the list box selection below.
+</div>
+
+<p>
+<br>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p><p><b>Devices </b>&nbsp;<select name="device_list" id="modelID" class="device_dropdown" onchange="setActionableText()" size="1">
+<option value="">Select Device</option>
+<option value="3.0">Nokia 3250</option>
+<option value="3.2">Nokia 5320 XpressMusic</option>
+<option value="3.0">Nokia 5500</option>
+<option value="3.1">Nokia 5700 XpressMusic</option>
+<option value="5.0">Nokia 5800 XpressMusic</option>
+<option value="3.1">Nokia 6110 Navigator</option>
+<option value="3.1">Nokia 6120 classic</option>
+<option value="3.1">Nokia 6121 classic</option>
+<option value="3.1">Nokia 6124 classic</option>
+<option value="3.2">Nokia 6210 Navigator</option>
+<option value="3.2">Nokia 6220 classic</option>
+<option value="3.1">Nokia 6290</option>
+<option value="3.2">Nokia 6650</option>
+<option value="3.0">Nokia E50</option>
+<option value="3.1">Nokia E51</option>
+<option value="3.0">Nokia E60</option>
+<option value="3.0">Nokia E61</option>
+<option value="3.0">Nokia E61i</option>
+<option value="3.0">Nokia E62</option>
+<option value="3.1">Nokia E63</option>
+<option value="3.0">Nokia E65</option>
+<option value="3.1">Nokia E66</option>
+<option value="3.0">Nokia E70</option>
+<option value="3.1">Nokia E71</option>
+<option value="3.1">Nokia E90 Communicator</option>
+<option value="3.0">Nokia N71</option>
+<option value="3.0">Nokia N73</option>
+<option value="3.0">Nokia N75</option>
+<option value="3.1">Nokia N76</option>
+<option value="3.0">Nokia N77</option>
+<option value="3.2">Nokia N78</option>
+<option value="3.2">Nokia N79</option>
+<option value="3.0">Nokia N80</option>
+<option value="3.1">Nokia N81</option>
+<option value="3.1">Nokia N81 8GB</option>
+<option value="3.1">Nokia N82</option>
+<option value="3.2">Nokia N85</option>
+<option value="3.0">Nokia N91</option>
+<option value="3.0">Nokia N91 8GB</option>
+<option value="3.0">Nokia N92</option>
+<option value="3.0">Nokia N93</option>
+<option value="3.0">Nokia N93i</option>
+<option value="3.1">Nokia N95</option>
+<option value="3.1">Nokia N95 8GB</option>
+<option value="3.1">Nokia N95-3 NAM</option>
+<option value="3.2">Nokia N96</option>
+<option value="3.2">Nokia N96-3</option>
+</select></p>
+<div id="action" style="width: 400px; border: .1em solid lightgrey;">
+Select the device name above to know the sis files.
+</div>
+<br><b>Note:</b> Install <a href="../../PyS60Dependencies/stdioserver_s60_1_4_SS.sis" target="_blank">stdioserver</a> to run python scripts packaged with console profile
+</p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="1. getting Started"
+  href="getstarted.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="1. getting Started"
+  href="getstarted.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="1.2 packaging a Sample"
+  href="package.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="getstarted.html">1. Getting Started</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="getstarted.html">1. Getting Started</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="package.html">1.2 Packaging a Sample</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 23 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

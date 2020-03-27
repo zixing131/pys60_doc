@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="module-positioning.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="s60data.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.7 btsocket -- Provides Bluetooth (BT) support</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.6.1 Example"
+  href="position-example.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5. data Management"
+  href="s60data.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="position-example.html">4.6.1 Example</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60data.html">5. Data Management</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006700000000000000000">
+4.7 <tt class="module">btsocket</tt> --
+  Provides Bluetooth (BT) support</a>
+</h1> 
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+<a name="sec:btsocket"></a>
+<a name="module-btsocket"></a>
+
+<p>
+The <tt class="module">socket</tt> module of the previous PyS60 releases has been renamed as 
+<tt class="module">btsocket</tt>. For information on the usage of this module refer to 
+Ensymble README. The following related constants and functions are defined:
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+In release 1.0 the functions <code>bt_advertise_service</code>, 
+<code>bt_obex_receive</code>, and 
+<code>bt_rfcomm_get_available_server_channel</code> incorrectly 
+expected to be given the internal <code>e32socket.socket</code> object as the 
+socket parameter instead of the proper <code>socket</code> object. Now the 
+functions work correctly. The old calling convention is still supported but 
+it is deprecated and may be removed in a future release.
+</div>
+
+<p>
+<dl><dt><b><tt id='l2h-413' xml:id='l2h-413'>AF_BT</tt></b></dt>
+<dd>
+
+<p>
+Represents the Bluetooth address family.
+
+<p>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-414' xml:id='l2h-414'>BTPROTO_RFCOMM</tt></b></dt>
+<dd>
+
+<p>
+This constant represents the Bluetooth protocol RFCOMM.
+
+<p>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-415' xml:id='l2h-415'>RFCOMM</tt></b></dt>
+<dd>
+</dd></dl>
+<dl><dt><b><tt id='l2h-416' xml:id='l2h-416'>OBEX</tt></b></dt>
+<dd>
+
+<p>
+Bluetooth service classes supported by <code>bt_advertise_service</code>.
+
+<p>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-417' xml:id='l2h-417'>AUTH</tt></b></dt>
+<dd>
+</dd></dl>
+<dl><dt><b><tt id='l2h-418' xml:id='l2h-418'>ENCRYPT</tt></b></dt>
+<dd>
+</dd></dl>
+<dl><dt><b><tt id='l2h-419' xml:id='l2h-419'>AUTHOR</tt></b></dt>
+<dd>
+
+<p>
+Bluetooth security mode flags.
+
+<p>
+</dd></dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-420' xml:id='l2h-420' class="function">bt_advertise_service</tt></b>(</nobr></td>
+  <td><var>name, socket, flag, class</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Sets a service advertising the service <var>name</var> (Unicode) on local channel 
+that is bound to <var>socket</var>. If <var>flag</var> is <code>True</code>, the advertising is 
+turned on, otherwise it is turned off. The service class to be advertised is 
+either <code>RFCOMM</code> or <code>OBEX</code>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-421' xml:id='l2h-421' class="function">bt_discover</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>address</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Performs the Bluetooth device discovery (if the optional BT device address 
+is not given) and the discovery of RFCOMM class services on the chosen 
+device. Returns a pair: BT device address, dictionary of services, where 
+Unicode service name is the key and the corresponding port is the value.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-422' xml:id='l2h-422' class="function">bt_obex_discover</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>address</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Same as <code>discover</code>, but for discovery of OBEX class services on the 
+chosen device.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-423' xml:id='l2h-423' class="function">bt_obex_send_file</tt></b>(</nobr></td>
+  <td><var>address, channel, filename</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Sends file <var>filename</var> (Unicode) wrapped into an OBEX object 
+to remote <var>address</var>, <var>channel</var>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-424' xml:id='l2h-424' class="function">bt_obex_receive</tt></b>(</nobr></td>
+  <td><var>socket, filename</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Receives a file as an OBEX object, unwraps and stores it into <var>filename</var> 
+(Unicode). <var>socket</var> is a bound <code>OBEX</code> socket.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-425' xml:id='l2h-425' class="function">bt_rfcomm_get_available_server_channel</tt></b>(</nobr></td>
+  <td><var>socket</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns an available RFCOMM server channel for <var>socket</var>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-426' xml:id='l2h-426' class="function">set_security</tt></b>(</nobr></td>
+  <td><var>socket, mode</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Sets the security level of the given bound <var>socket</var>. The 
+<var>mode</var> is an integer flag that is formed using a binary 
+<code>or</code> operation of one or more of: <code>AUTH</code> (authentication), 
+<code>ENCRYPT</code>, <code>AUTHOR</code> (authorization). Example: 
+<code>set_security(s, AUTH | AUTHOR)</code>.
+
+<p>
+</dl>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+When listening to a Bluetooth socket on the phone, it is necessary to set 
+the security level.
+</div>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+SSL is not supported in S60 1st Edition. SSL client certificates are 
+not supported at all.
+</div>
+
+<p>
+For examples on the usage of these functions, see Programming with Python for 
+S60 Platform [<A
+ HREF="node96.html#PyS60Prog"></a>].
+
+<p>
+Setting default Access Point (AP) has been added to the standard <code>socket</code> 
+module. The following related constants and functions are defined:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-427' xml:id='l2h-427' class="function">select_access_point</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+This opens popup selection where access points are listed and can be selected.
+Returns selected access point id.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-428' xml:id='l2h-428' class="function">access_point</tt></b>(</nobr></td>
+  <td><var>apid</var>)</td></tr></table></dt>
+<dd>
+This creates access point object by given apid. Returns access point object.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-429' xml:id='l2h-429' class="function">set_default_access_point</tt></b>(</nobr></td>
+  <td><var>apo</var>)</td></tr></table></dt>
+<dd>
+This sets the default access point that is used when socket is opened. Setting 
+<var>apo</var> to <code>"None"</code> will clear default access point.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-430' xml:id='l2h-430' class="function">access_points</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+This lists access points id's and names that are available. 
+</dl>
+
+<p>
+Example 1:
+<div class="verbatim"><pre>
+#access point is selected from the list
+apid = select_access_point()
+apo = access_point(apid)
+set_default_access_point(apo)
+
+s = btsocket(AF_INET, SOCK_STREAM)
+print apo.ip()
+s.connect(('www.sourceforge.net',80))
+s.send('GET /\r\n\r\n')
+s.recv(100)
+s.close()
+apo.stop()
+</pre></div>
+
+<p>
+Example 2:
+<div class="verbatim"><pre>
+#Access point id is already known
+apo = access_point(1)
+set_default_access_point(apo) 
+
+s = btsocket(AF_INET, SOCK_STREAM)
+s.connect(('www.sourceforge.net',80))
+s.send('GET /\r\n\r\n')
+s.recv(100)
+s.close()
+apo.stop()
+</pre></div>
+
+<p>
+Example 3:
+<div class="verbatim"><pre>
+#display interface ip.
+#access point is selected from the list
+apid = select_access_point()
+apo = access_point(apid)
+apo.start()
+#Note that ip-address is given by operator, if static ip-address is not defined,
+#when connection is started
+print apo.ip()
+#When connection is closed dynamic ip-address is released
+apo.stop()
+</pre></div>
+
+<p>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.6.1 Example"
+  href="position-example.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5. data Management"
+  href="s60data.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="position-example.html">4.6.1 Example</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60data.html">5. Data Management</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

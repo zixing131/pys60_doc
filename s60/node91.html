@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node92.html" />
+<link rel="prev" href="module-e32dbm.html" />
+<link rel="parent" href="module-e32dbm.html" />
+<link rel="next" href="node92.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.4.1 Module Level Functions</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.4 e32dbm  "
+  href="module-e32dbm.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.4 e32dbm  "
+  href="module-e32dbm.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.4.2 e32dbm Objects"
+  href="node92.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-e32dbm.html">5.4 e32dbm  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32dbm.html">5.4 e32dbm  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node92.html">5.4.2 e32dbm Objects</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007410000000000000000"></a>
+<a name="subsec:mylabel16"></a>
+<br>
+5.4.1 Module Level Functions
+</h2>
+
+<p>
+The <tt class="module">e32dbm</tt> defines the following functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-532' xml:id='l2h-532' class="function">open</tt></b>(</nobr></td>
+  <td><var>dbname</var><big>[</big><var>,flags, mode</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Opens or creates the given database file and returns an <tt class="class">e32dbm</tt>
+object.  Note that <var>dbname</var> should be a full path name, for
+example, <span  class="textsf">u'c:<!-- MATH
+ $\backslash
+\backslash$
+ -->
+<span class="MATH"><IMG
+ WIDTH="20" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.png"
+ ALT="$\backslash
+\backslash $"></span>foo.db'</span>. Flags can be:
+
+<p>
+
+<ul>
+<li><code>'r'</code>: opens an existing database in read-only mode. This is the default value.
+</li>
+<li><code>'w'</code>: opens an existing database in read-write mode.
+</li>
+<li><code>'c'</code>: opens a database in read-write mode. Creates a new database if the database does not exist.
+</li>
+<li><code>'n'</code>: creates a new empty database and opens it in read-write mode.
+</li>
+</ul>
+
+<p>
+If the character <code>'f'</code> is appended to flags, the database is opened in <i>fast mode</i>. In 
+fast mode, updates are written to the database only when one of these 
+methods is called: <tt class="method">sync</tt>, <tt class="method">close</tt>, <tt class="method">reorganize</tt>, or 
+<tt class="method">clear</tt>.
+</dl>
+
+<p>
+Since the connection object destructor calls <tt class="method">close</tt>, it is not 
+strictly necessary to close the database before exiting to ensure that data 
+is saved, but it is still good practice to call the <tt class="method">close</tt> method 
+when you are done with using the database. Closing the database releases the 
+lock on the file and allows the file to be reopened or deleted without 
+exiting the interpreter.
+
+<p>
+If you plan to do several updates, it is highly recommended that you open 
+the database in fast mode, since inserts and updates are more efficient when 
+they are bundled together in a larger transaction. This is especially 
+important when you plan to insert large amounts of data, since inserting 
+records to <tt class="module"><a href="module-e32db.html">e32db</a></tt> is very slow if done one record at a time.
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.4 e32dbm  "
+  href="module-e32dbm.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.4 e32dbm  "
+  href="module-e32dbm.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.4.2 e32dbm Objects"
+  href="node92.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-e32dbm.html">5.4 e32dbm  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32dbm.html">5.4 e32dbm  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node92.html">5.4.2 e32dbm Objects</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

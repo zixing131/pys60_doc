@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node22.html" />
+<link rel="prev" href="node20.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node22.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.6 Text Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.5 form Type"
+  href="node20.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.7 listbox Type"
+  href="node22.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node20.html">3.1.5 Form Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node22.html">3.1.7 Listbox Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005160000000000000000"></a>
+<a name="subsec:mylabel5"></a>
+<br>
+3.1.6 Text Type
+</h2>
+<tt class="class">Text</tt> is a text editor UI control. For examples on the options 
+available with <tt class="class">Text</tt>, see Figure <a href="#fig:text-styles">3.5</a>.
+
+<p>
+
+<div align="CENTER"><a name="fig:text-styles"></a><a name="942"></a>
+<table>
+<caption align="BOTTOM"><strong>Figure 3.5:</strong>
+Examples of the options available for Text type</caption>
+<tr><td>
+<div align="CENTER">
+
+</div>
+<IMG
+ WIDTH="167" HEIGHT="197" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.png"
+ ALT="\includegraphics[width=\screenwidth]{text-styles-1}">
+<IMG
+ WIDTH="167" HEIGHT="197" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="\includegraphics[width=\screenwidth]{text-styles-2}"></td></tr>
+</table>
+</div>
+
+<p>
+Instances of <tt class="class">Text</tt> type have the following attributes:
+
+<p>
+<dl><dt><b><tt id='l2h-98' xml:id='l2h-98' class="member">color</tt></b></dt>
+<dd>
+The color of the text. <code>color</code> supports the same color representation 
+models as the <tt class="module">graphics</tt> module. For the supported color 
+representation models, see Section <a href="module-graphics.html#sec:graphics">3.3</a>.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-99' xml:id='l2h-99' class="member">focus</tt></b></dt>
+<dd>
+A Boolean attribute that indicates the focus state of the control. Editor 
+control also takes the ownership of the navigation bar, and this feature is 
+needed to enable the usage of this control in applications that use the 
+navigation bar - for example, navigation tabs.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-100' xml:id='l2h-100' class="member">font</tt></b></dt>
+<dd> 
+The font of the text. There are two possible ways to set this attribute:
+
+<p>
+
+<ul>
+<li>Using a supported Unicode font, for example <code>u"Latin12"</code>. Trying to set a font which is not supported by the device has no effect. A list of supported fonts can be retrieved by using <tt class="function">appuifw.available_fonts</tt>.
+
+<p>
+Example, setting font:
+<div class="verbatim"><pre>
+t = appuifw.Text()
+t.font = u"albi17b" # sets font to Albi 17 bold
+t.font = u"LatinPlain12" # sets font to Latin Plain 12
+</pre></div>
+</li>
+<li>Using one of the default device fonts that are associated with the following labels (plain strings):
+<code>'annotation', 'title', 'legend', 'symbol', 'dense', 'normal'</code>
+Example, setting font: 
+<div class="verbatim"><pre>
+t.font = "title" # sets font to the one used in titles
+</pre></div>
+
+<p>
+Example, checking the currently set font: 
+<div class="verbatim"><pre>
+unicodeFont = t.font
+</pre></div>
+</li>
+</ul>
+
+<p>
+The attribute value retrieved is always a Unicode string. If the font has 
+been set with a label, for example, <code>'title'</code>, the attribute will 
+retrieve the font associated with that label. 
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-101' xml:id='l2h-101' class="member">highlight_color</tt></b></dt>
+<dd>
+The highlight color of the text. <code>highlight_color</code> supports the 
+same color representation models as the <tt class="module">graphics</tt> module. For the 
+supported color representation models, see Section <a href="module-graphics.html#sec:graphics">3.3</a>.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-102' xml:id='l2h-102' class="member">style</tt></b></dt>
+<dd>
+The style of the text. The flags for this attribute are defined in the 
+<tt class="module">appuifw</tt> module. These flags can be combined by using the binary 
+operator <code>|</code>. The flags can be divided into two types: text style 
+and text highlight. Text style flags can be freely combined with each other. 
+However, one or more text style flags can be combined with only one text 
+highlight flag. The flags are:
+
+<p>
+Text style:
+
+<p>
+<dl><dt><b><tt id='l2h-103' xml:id='l2h-103'>STYLE_BOLD</tt></b></dt>
+<dd> 
+Enables bold text.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-104' xml:id='l2h-104'>STYLE_UNDERLINE</tt></b></dt>
+<dd>
+Enables underlined text.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-105' xml:id='l2h-105'>STYLE_ITALIC</tt></b></dt>
+<dd> 
+Enables italic text.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-106' xml:id='l2h-106'>STYLE_STRIKETHROUGH </tt></b></dt>
+<dd> 
+Enables strikethrough.
+</dd></dl>
+
+<p>
+Text highlight:
+
+<p>
+<dl><dt><b><tt id='l2h-107' xml:id='l2h-107'>HIGHLIGHT_STANDARD</tt></b></dt>
+<dd>
+Enables standard highlight.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-108' xml:id='l2h-108'>HIGHLIGHT_ROUNDED</tt></b></dt>
+<dd>
+Enables rounded highlight.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-109' xml:id='l2h-109'>HIGHLIGHT_SHADOW</tt></b></dt>
+<dd>
+Enables shadow highlight.
+</dd></dl>
+
+<p>
+Only one highlight is allowed to be used at once. Therefore, it is possible 
+to combine only one highlight with one or more text styles.
+
+<p>
+Examples:
+<div class="verbatim"><pre>
+t = appuifw.Text()
+
+# These and other similar values and combinations are valid:
+t.style = appuifw.STYLE_BOLD
+t.style = appuifw.STYLE_UNDERLINE
+t.style = appuifw.STYLE_ITALIC
+t.style = appuifw.STYLE_STRIKETHROUGH
+t.style = (appuifw.STYLE_BOLD|
+	   appuifw.STYLE_ITALIC|
+	   appuifw.STYLE_UNDERLINE)
+
+# These values are valid:
+t.style = appuifw.HIGHLIGHT_STANDARD
+t.style = appuifw.HIGHLIGHT_ROUNDED
+t.style = appuifw.HIGHLIGHT_SHADOW
+
+# This combination is NOT valid:
+# Invalid code, do not try!
+t.style = (appuifw.HIGHLIGHT_SHADOW|appuifw.HIGHLIGHT_ROUNDED)
+</pre></div>
+</dl>
+
+<p>
+Instances of <tt class="class">Text</tt> type have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-110' xml:id='l2h-110' class="method">add</tt></b>(</nobr></td>
+  <td><var>text</var>)</td></tr></table></dt>
+<dd>
+Inserts the Unicode string <var>text</var> to the current cursor position.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-111' xml:id='l2h-111' class="method">bind</tt></b>(</nobr></td>
+  <td><var>event_code, callback</var>)</td></tr></table></dt>
+<dd>
+Binds the callable Python object <var>callback</var> to event
+<var>event_code</var>. The key codes are defined in 
+the <tt class="module">key_codes</tt> library module. The call 
+<code>bind(event_code, None)</code> clears an 
+existing binding. In the current implementation the event is always
+passed also to the underlying native UI control.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-112' xml:id='l2h-112' class="method">clear</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Clears the editor.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-113' xml:id='l2h-113' class="method">delete</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>pos=0, length=len()</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Deletes <var>length</var> characters of the text held by the editor control, 
+starting from the position <var>pos</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-114' xml:id='l2h-114' class="method">get_pos</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current cursor position.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-115' xml:id='l2h-115' class="method">len</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the length of the text string held by the editor control.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-116' xml:id='l2h-116' class="method">get</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>pos=0, length=len()</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Retrieves <code>length</code> characters of the text held by the editor control, 
+starting from the position <var>pos</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-117' xml:id='l2h-117' class="method">set</tt></b>(</nobr></td>
+  <td><var>text</var>)</td></tr></table></dt>
+<dd>
+Sets the text content of the editor control to Unicode string 
+<var>text</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-118' xml:id='l2h-118' class="method">set_pos</tt></b>(</nobr></td>
+  <td><var>cursor_pos</var>)</td></tr></table></dt>
+<dd>
+Sets the cursor to <var>cursor_pos</var>.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.5 form Type"
+  href="node20.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.7 listbox Type"
+  href="node22.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node20.html">3.1.5 Form Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node22.html">3.1.7 Listbox Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

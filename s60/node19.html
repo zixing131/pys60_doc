@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node20.html" />
+<link rel="prev" href="node18.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node20.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.4 Application Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.3 module Level Functions"
+  href="node18.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.5 form Type"
+  href="node20.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node18.html">3.1.3 Module Level Functions</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node20.html">3.1.5 Form Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005140000000000000000"></a>
+<a name="subsec:application"></a>
+<br>
+3.1.4 Application Type
+</h2>
+A single implicit instance of this type always exists when <tt class="module">appuifw</tt> 
+module is present and can be referred to with the name <code>app</code>. New 
+instances cannot be created by a Python program.
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-47' xml:id='l2h-47' class="class">Application</tt></b>
+<dd>
+Instances of <tt class="class">Application</tt> type have the following attributes:
+
+<p>
+<dl><dt><b><tt id='l2h-48' xml:id='l2h-48' class="member">body</tt></b></dt>
+<dd>
+The UI control that is visible in the application's main window. Currently 
+either <tt class="class">Text</tt>, a <tt class="class">Listbox</tt> object, <tt class="class">Canvas</tt>, or 
+<code>None</code>.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-49' xml:id='l2h-49' class="member">exit_key_handler</tt></b></dt>
+<dd>
+A callable object that is called when the user presses the Exit softkey. 
+Setting <tt class="member">exit_key_handler</tt> to <code>None</code> sets it back to the 
+default value.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-50' xml:id='l2h-50' class="member">menu</tt></b></dt>
+<dd>
+This is a list of the following kinds of items:
+
+<ul>
+<li><code>(title, callback)</code> which creates a regular menu item
+</li>
+<li><code>(title, ((title, callback)<big>[</big>...<big>]</big>))</code> which creates a submenu
+</li>
+</ul>
+
+<p>
+<var>title</var> (Unicode) is the name of the item and <var>callback</var> the associated callable object. 
+The maximum allowed number of items in a menu, or items in a submenu,
+or submenus in a menu is 30.
+
+<p>
+Example:
+<div class="verbatim"><pre>
+appuifw.app.menu = [(u"Item 1", item1),
+                    (u"Submenu 1", 
+                        ((u"Subitem 1", subitem1),
+                         (u"Subitem 2", subitem2)))]
+</pre></div>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-51' xml:id='l2h-51' class="member">screen</tt></b></dt>
+<dd>
+The screen area used by an application. See Figure&nbsp;<a href="node16.html#fig:alternate-uilayouts">3.3</a> for
+example screens. The appearance of the application on the screen can
+be affected by setting one of the following values: <code>'normal'</code>,
+<code>'large'</code>, and <code>'full'</code>.
+
+<p>
+Examples:
+<div class="verbatim"><pre>
+appuifw.app.screen='normal' # (a normal screen with title pane and softkeys)
+appuifw.app.screen='large'  # (only softkeys visible)
+appuifw.app.screen='full'   # (a full screen)
+</pre></div>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-52' xml:id='l2h-52' class="member">title</tt></b></dt>
+<dd>
+The title the application that is visible in the application's title
+pane. Must be Unicode.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-53' xml:id='l2h-53' class="member">focus</tt></b></dt>
+<dd>
+A callable object that is called with integer as parameter (0 = focus lost, 
+1 = focus regained) when the application receives focus or it is switched to 
+background. Focus is received e.g. when the application is switched from 
+background to foreground or when the focus is regained from screensaver. 
+Similarly when the screensaver is displayed, focus is lost.
+
+<p>
+Examples:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import appuifw
+&gt;&gt;&gt; def cb(fg):
+...   if(fg):
+...     print "foreground"
+...   else:
+...     print "background"
+...
+&gt;&gt;&gt; appuifw.app.focus=cb
+&gt;&gt;&gt; # switch to background, following text is printed from callback:
+&gt;&gt;&gt; background
+&gt;&gt;&gt; # switch to foreground, following text is printed from callback:
+&gt;&gt;&gt; foreground
+</pre></div>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+An improper callback can cause adverse effects. If you, for example,
+define a callback which takes no parameters you will receive
+never-ending <tt class="exception">TypeError</tt> exceptions on the Nokia 6600.
+</div>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-54' xml:id='l2h-54' class="member">orientation</tt></b></dt>
+<dd>
+Available only for S60 3rdEd. 
+The orientation of the application. The orientation of the application can be 
+one of the following values: <code>'automatic'</code> (this is the default value), 
+<code>'portrait'</code> or <code>'landscape'</code>.
+</dl>
+
+<p>
+Instances of <tt class="class">Application</tt> type have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-55' xml:id='l2h-55' class="method">activate_tab</tt></b>(</nobr></td>
+  <td><var>index</var>)</td></tr></table></dt>
+<dd>
+Activates the tab <var>index</var> counting from zero.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-56' xml:id='l2h-56' class="method">full_name</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the full name, in Unicode, of the native application in whose 
+context the current Python interpreter session runs.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-57' xml:id='l2h-57' class="method">uid</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the UID, in Unicode, of the native application in whose 
+context the current Python interpreter session runs.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-58' xml:id='l2h-58' class="method">set_exit</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Requests a graceful exit from the application as soon as the current script 
+execution returns.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-59' xml:id='l2h-59' class="method">set_tabs</tt></b>(</nobr></td>
+  <td><var>tab_texts</var><big>[</big><var>,callback=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Sets tabs with given names on them in the navigation bar; 
+<var>tab_texts</var> is a list of Unicode strings. When the users 
+navigate between tabs, <var>callback</var> gets called with the index 
+of the active tab as an argument. Tabs can be disabled by giving an empty or 
+one-item <var>tab_texts</var> list.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-60' xml:id='l2h-60' class="method">layout</tt></b>(</nobr></td>
+  <td><var>layout_id</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+Available from S60 2ndEd FP3 onwards (inclusive).
+</div>
+
+<p>
+Returns as a tuple the size and the position of the requested <code>layout_id</code>. 
+The logical layouts are outlined partly in Figure <a href="node16.html#fig:normal-uilayout">3.2</a>. The 
+position is given from the top left corner. The <code>layout_id</code> can be one of 
+the constants defined in module <tt class="module">appuifw</tt><a name="tex2html6"
+  href="#foot1325"><sup>3.1</sup></a>:
+
+<p>
+<dl><dt><b><tt id='l2h-61' xml:id='l2h-61'>EScreen</tt></b></dt>
+<dd> 
+Screen.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-62' xml:id='l2h-62'>EApplicationWindow</tt></b></dt>
+<dd> 
+ Window that fills the entire screen.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-63' xml:id='l2h-63'>EStatusPane</tt></b></dt>
+<dd> 
+Indicates common components for most of the applications.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-64' xml:id='l2h-64'>EMainPane</tt></b></dt>
+<dd> 
+The application main pane is used in all the applications.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-65' xml:id='l2h-65'>EControlPane</tt></b></dt>
+<dd> 
+Control pane.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-66' xml:id='l2h-66'>ESignalPane</tt></b></dt>
+<dd> 
+The signal pane is used to indicate signal strength.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-67' xml:id='l2h-67'>EContextPane</tt></b></dt>
+<dd> 
+The context pane is used to indicate an active application.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-68' xml:id='l2h-68'>ETitlePane</tt></b></dt>
+<dd> 
+Used to indicate the subject or the name of the main pane content. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-69' xml:id='l2h-69'>EBatteryPane</tt></b></dt>
+<dd> 
+The battery pane is used to indicate battery strength.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-70' xml:id='l2h-70'>EUniversalIndicatorPane</tt></b></dt>
+<dd> 
+The universal indicator pane is used to indicate items that require the user's 
+attention while browsing applications. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-71' xml:id='l2h-71'>ENaviPane</tt></b></dt>
+<dd> 
+The navi pane is used to indicate navigation within an application, to provide 
+context sensitive information to the user while entering or editing data, or to 
+show additional information.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-72' xml:id='l2h-72'>EFindPane</tt></b></dt>
+<dd> 
+A fixed find pane is used with lists instead of the find pop-up window.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-73' xml:id='l2h-73'>EWallpaperPane</tt></b></dt>
+<dd> 
+Wallpaper pane.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-74' xml:id='l2h-74'>EIndicatorPane</tt></b></dt>
+<dd> 
+The universal indicator pane is used to indicate items that require the user's 
+attention while browsing applications.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-75' xml:id='l2h-75'>EAColumn</tt></b></dt>
+<dd> 
+Used generally to display small sized graphics or heading texts.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-76' xml:id='l2h-76'>EBColumn</tt></b></dt>
+<dd> 
+Used generally to display large sized icons or heading texts.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-77' xml:id='l2h-77'>ECColumn</tt></b></dt>
+<dd> 
+Used generally to display data entered by the user. Overlaps with the D column. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-78' xml:id='l2h-78'>EDColumn</tt></b></dt>
+<dd> 
+Used generally to display additional icons. Overlaps with the C column. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-79' xml:id='l2h-79'>EStaconTop</tt></b></dt>
+<dd> 
+Top part of status and control panes in landscape layout.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-80' xml:id='l2h-80'>EStaconBottom</tt></b></dt>
+<dd> 
+Bottom part of status and control panes in landscape layout.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-81' xml:id='l2h-81'>EStatusPaneBottom</tt></b></dt>
+<dd> 
+Bottom part of status pane in landscape layout.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-82' xml:id='l2h-82'>EControlPaneBottom</tt></b></dt>
+<dd> 
+Bottom part of control pane in landscape layout.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-83' xml:id='l2h-83'>EControlPaneTop</tt></b></dt>
+<dd> 
+Top part of control pane in landscape layout.  
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-84' xml:id='l2h-84'>EStatusPaneTop</tt></b></dt>
+<dd> 
+Top part of status pane in landscape layout.
+</dd></dl>
+
+<p>
+Example:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import appuifw
+&gt;&gt;&gt; appuifw.app.layout(appuifw.EMainPane)
+((176, 144), (0, 44))
+&gt;&gt;&gt; # size and position (x, y) of the main pane in Nokia N70
+</pre></div>
+
+<p>
+</dl>
+
+<p>
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot1325">...appuifw</a><A
+ HREF="node19.html#tex2html6"><sup>3.1</sup></a></dt>
+<dd>Descriptions of the 
+values are from the S60 SDK documentation [<A
+ HREF="node96.html#S60Doc">4</a>].
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.3 module Level Functions"
+  href="node18.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.5 form Type"
+  href="node20.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node18.html">3.1.3 Module Level Functions</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node20.html">3.1.5 Form Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

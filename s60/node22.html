@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node23.html" />
+<link rel="prev" href="node21.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node23.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.7 Listbox Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.6 text Type"
+  href="node21.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.8 icon Type"
+  href="node23.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node21.html">3.1.6 Text Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node23.html">3.1.8 Icon Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005170000000000000000"></a>
+<a name="subsec:listbox"></a>
+<br>
+3.1.7 Listbox Type
+</h2>
+
+<p>
+
+<div align="CENTER"><a name="fig:listbox-with-icons"></a><a name="1056"></a>
+<table>
+<caption align="BOTTOM"><strong>Figure 3.6:</strong>
+Listbox with icons</caption>
+<tr><td>
+<div align="CENTER">
+
+</div>
+<IMG
+ WIDTH="167" HEIGHT="197" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.png"
+ ALT="\includegraphics[width=\screenwidth]{listbox-with-icons}"></td></tr>
+</table>
+</div>
+
+<p>
+An instance of this UI control type is visible as a listbox, also known as a 
+list in Symbian, that can be configured to be a single-line item or a 
+double-item listbox. Figure <a href="#fig:listbox-with-icons">3.6</a> shows a single-line 
+item Listbox with icons. For more information on the MBM and MIF formats, 
+see Section <a href="node23.html#subsec:icon">3.1.8</a>.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-119' xml:id='l2h-119' class="class">Listbox</tt></b>(</nobr></td>
+  <td><var>list, callback</var>)</td></tr></table></dt>
+<dd>
+Creates a <tt class="class">Listbox</tt> instance. A callable object 
+<var>callback</var> gets called when a listbox selection has been 
+made. <code>list</code> defines the content of the listbox and can be one of the 
+following:
+
+<p>
+
+<ul>
+<li>A normal (single-line item) listbox: a list of Unicode strings, for example <code>[unicode_string item1, unicode_string item2]</code>
+</li>
+<li>A double-item listbox: a two-element tuple of Unicode strings , for example <code>[(unicode_string item1, unicode_string item1description), (unicode_string item2, unicode_string item2description)]</code>
+</li>
+<li>A normal (single-line item) listbox with graphics: a two-element tuple consisting of a Unicode string and an <tt class="class">Icon</tt> object, for example <code>[(unicode_string item1, icon1), (unicode_string item2, icon2)]</code>.
+</li>
+<li>A double-item listbox with graphics: a three-element tuple consisting of two Unicode strings and one <tt class="class">Icon</tt> object, for example <code>[(unicode_string item1, unicode_string item1description, icon1), (unicode_string item2, unicode_string item2description, icon2)]</code>
+</li>
+</ul>
+
+<p>
+Example: To produce a normal (single-line item) listbox with graphics:
+<div class="verbatim"><pre>
+icon1 = appuifw.Icon(u"z:\\system\\data\\avkon.mbm", 28, 29)
+icon2 = appuifw.Icon(u"z:\\system\\data\\avkon.mbm", 40, 41)
+entries = [(u"Signal", icon1),
+           (u"Battery", icon2)]
+lb = appuifw.Listbox(entries, lbox_observe)
+</pre></div>
+</dl>
+
+<p>
+Instances of <tt class="class">Listbox</tt> type have the following methods and properties:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-120' xml:id='l2h-120' class="method">bind</tt></b>(</nobr></td>
+  <td><var>event_code, callback</var>)</td></tr></table></dt>
+<dd>
+Binds the callable Python object <var>callback</var> to event 
+<var>event_code</var>. The key codes are defined in 
+the <tt class="module">key_codes</tt> library module. The call
+<code>bind(event_code, None)</code> clears an 
+existing binding. In the current implementation the event is always passed 
+also to the underlying native UI control.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-121' xml:id='l2h-121' class="method">current</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the currently selected item's index in the <tt class="class">Listbox</tt>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-122' xml:id='l2h-122' class="method">set_list</tt></b>(</nobr></td>
+  <td><var>list</var><big>[</big><var>, current</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Sets the <tt class="class">Listbox</tt> content to a list of Unicode strings or a
+list of tuples of Unicode strings. The accepted structures of <var>list</var> are the
+same as in the <tt class="class">Listbox</tt> constructor. The optional argument <var>current</var> is the index of the focused list item.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-123' xml:id='l2h-123' class="member">size</tt></b></dt>
+<dd>
+The size of the <tt class="class">Listbox</tt> as a tuple (width, height) - Read only. Only on S60 3rd Ed, and higher.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-124' xml:id='l2h-124' class="member">position</tt></b></dt>
+<dd>
+The coordinates (as a tuple) of the top left corner of the <tt class="class">Listbox</tt> -
+Read only. Only on S60 3rd Ed. and higher.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.6 text Type"
+  href="node21.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.8 icon Type"
+  href="node23.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node21.html">3.1.6 Text Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node23.html">3.1.8 Icon Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

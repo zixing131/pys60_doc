@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node32.html" />
+<link rel="prev" href="node30.html" />
+<link rel="parent" href="module-graphics.html" />
+<link rel="next" href="node32.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.3.3 Image Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.2 image Class Static"
+  href="node30.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3 graphics  "
+  href="module-graphics.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node30.html">3.3.2 Image Class Static</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-graphics.html">3.3 graphics  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node32.html">3.3.4 Common Features of</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005330000000000000000"></a>
+<a name="subsec:image-objects"></a>
+<br>
+3.3.3 Image Objects
+</h2>
+An <tt class="class">Image</tt> object encapsulates an in-memory bitmap. 
+
+<p>
+Note on asynchronous methods: Methods <tt class="method">resize</tt>, <tt class="method">transpose</tt>, 
+<tt class="method">save</tt>, and <tt class="method">load</tt> have an optional callback argument. If the 
+callback is not given, the method call is synchronous; when the method
+returns, the operation is complete or an exception has been raised. If
+the callback is given, the method calls are asynchronous. If all
+parameters are valid and the operation can start, the method call will
+return immediately.  The actual computation then proceeds in the
+background. When it is finished, the callback is called with an error
+code as the argument. If the given code is <code>0</code>, the operation
+completed without errors, otherwise an error occurred.
+
+<p>
+It is legal to use an unfinished image as a source in a blit operation; this 
+will use the image data as it is at the moment the blit is made and may thus 
+show an incomplete result.
+
+<p>
+<tt class="class">Image</tt> objects have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-153' xml:id='l2h-153' class="method">resize</tt></b>(</nobr></td>
+  <td><var>newsize</var><big>[</big><var>, callback=None, keepaspect=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<div class="note"><b class="label">Note:</b>
+Not supported in S60 1st Edition!
+</div>
+
+<p>
+Returns a new image that contains a resized copy of this image. If 
+<var>keepaspect</var> is set to <code>1</code>, the resize will maintain the 
+aspect ratio of the image, otherwise the new image will be exactly the given 
+size. 
+
+<p>
+If <var>callback</var> is given, the operation is asynchronous, and the 
+returned image will be only partially complete until <var>callback</var> is 
+called.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-154' xml:id='l2h-154' class="method">transpose</tt></b>(</nobr></td>
+  <td><var>direction</var><big>[</big><var>, callback=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<div class="note"><b class="label">Note:</b>
+Not supported in S60 1st Edition!
+</div>
+
+<p>
+
+<p>
+Creates a new image that contains a transformed copy of this image. The 
+<var>direction</var> parameter can be one of the following:
+
+<p>
+
+<ul>
+<li><code>FLIP_LEFT_RIGHT</code>: Flips the image horizontally, exchanging left and right edges.
+</li>
+<li><code>FLIP_TOP_BOTTOM</code>: Flips the image vertically, exchanging top and bottom edges.
+</li>
+<li><code>ROTATE_90</code>: Rotates the image 90 degrees counterclockwise.
+</li>
+<li><code>ROTATE_180</code>: Rotates the image 180 degrees.
+</li>
+<li><code>ROTATE_270</code>: Rotates the image 270 degrees counterclockwise.
+</li>
+</ul>
+
+<p>
+If <var>callback</var> is given, the operation is asynchronous and the 
+returned image will be only partially complete until <var>callback</var> is 
+called.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-155' xml:id='l2h-155' class="method">load</tt></b>(</nobr></td>
+  <td><var>filename</var><big>[</big><var>, callback=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<div class="note"><b class="label">Note:</b>
+Not supported in S60 1st Edition!
+</div>
+
+<p>
+Replaces the contents of this <tt class="class">Image</tt> with the contents of the named 
+file, while keeping the current image mode. This <tt class="class">Image</tt> object must 
+be of the same size as the file to be loaded.
+
+<p>
+If <var>callback</var> is given, the operation is asynchronous and the loaded 
+image will be only partially complete until <var>callback</var> is called. 
+<var>filename</var> should be a full path name.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-156' xml:id='l2h-156' class="method">save</tt></b>(</nobr></td>
+  <td><var>filename</var><big>[</big><var>,callback=None, format=None, quality=75, bpp=24, compression='default'</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<div class="note"><b class="label">Note:</b>
+Not supported in S60 1st Edition!
+</div>
+
+<p>
+Saves the image into the given file. The supported formats are JPEG and PNG. 
+If <var>format</var> is not given or is set to <code>None</code>, the format is 
+determined based on the file name extension: <code>'.jpg'</code> or 
+<code>'.jpeg'</code> are interpreted to be in JPEG format and <code>'.png'</code> to 
+be in PNG format. <var>filename</var> should be a full path name.
+
+<p>
+When saving in JPEG format, the <var>quality</var> argument specifies the 
+quality to be used and can range from 1 to 100. 
+
+<p>
+When saving in PNG format, the <var>bpp</var> argument specifies how many bits 
+per pixel the resulting file should have, and <var>compression</var> specifies 
+the compression level to be used. 
+
+<p>
+Valid values for <var>bpp</var> are:
+
+<p>
+
+<ul>
+<li><code>1</code>: Black and white, 1 bit per pixel
+</li>
+<li><code>8</code>: 256 gray shades, 8 bits per pixel
+</li>
+<li><code>24</code>: 16.7 million colors, 24 bits per pixel
+</li>
+</ul>
+
+<p>
+Valid values for <var>compression</var> are:
+
+<p>
+
+<ul>
+<li><code>'best'</code>: The highest possible compression ratio, the slowest speed
+</li>
+<li><code>'fast'</code>: The fastest possible saving, moderate compression
+</li>
+<li><code>'no'</code>: No compression, very large file size
+</li>
+<li><code>'default'</code>: Default compression, a compromise between file size and speed 
+</li>
+</ul>
+
+<p>
+If <var>callback</var> is given, the operation is asynchronous. When the 
+saving is complete, the <var>callback</var> is called with the result code.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-157' xml:id='l2h-157' class="method">stop</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Stops the current asynchronous operation, if any. If an asynchronous call is 
+not in progress, this method has no effect.
+</dl>
+
+<p>
+<tt class="class">Image</tt> objects have the following attributes:
+
+<p>
+<dl><dt><b><tt id='l2h-158' xml:id='l2h-158' class="member">size</tt></b></dt>
+<dd>
+A two-element tuple that contains the size of the <tt class="class">Image</tt>. Read-only.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-159' xml:id='l2h-159' class="member">twipsize</tt></b></dt>
+<dd>
+A two-element tuple that contains the size of the <tt class="class">Image</tt> in twips. Read/Write.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.2 image Class Static"
+  href="node30.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3 graphics  "
+  href="module-graphics.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node30.html">3.3.2 Image Class Static</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-graphics.html">3.3 graphics  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node32.html">3.3.4 Common Features of</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

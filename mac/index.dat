@@ -1,0 +1,219 @@
+<a href="node7.html#l2h-1">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000004274
+<a href="node7.html#l2h-1">PYTHONPATH (environment variable)###0000004275
+<a href="node15.html"><tt class="module">macpath</tt> (standard module)###DEF0000004284
+<a href="node16.html"><tt class="module">macfs</tt> (standard module)###DEF0000004286
+<a href="node16.html#l2h-4"><tt class="function">FSSpec()</tt> (in module macfs)###0000004287
+<a href="node16.html#l2h-5"><tt class="function">RawFSSpec()</tt> (in module macfs)###0000004288
+<a href="node16.html#l2h-6"><tt class="function">RawAlias()</tt> (in module macfs)###0000004289
+<a href="node16.html#l2h-7"><tt class="function">FInfo()</tt> (in module macfs)###0000004290
+<a href="node16.html#l2h-8"><tt class="function">ResolveAliasFile()</tt> (in module macfs)###0000004291
+<a href="node16.html#l2h-9"><tt class="function">StandardGetFile()</tt> (in module macfs)###0000004292
+<a href="node16.html#l2h-10"><tt class="function">PromptGetFile()</tt> (in module macfs)###0000004293
+<a href="node16.html#l2h-11"><tt class="function">StandardPutFile()</tt> (in module macfs)###0000004294
+<a href="node16.html#l2h-12"><tt class="function">GetDirectory()</tt> (in module macfs)###0000004295
+<a href="node16.html#l2h-13"><tt class="function">SetFolder()</tt> (in module macfs)###0000004296
+<a href="node16.html#l2h-14"><tt class="function">FindFolder()</tt> (in module macfs)###0000004297
+<a href="node16.html#l2h-15"><tt class="function">NewAliasMinimalFromFullPath()</tt> (in module macfs)###0000004298
+<a href="node16.html#l2h-16"><tt class="function">FindApplication()</tt> (in module macfs)###0000004299
+<a href="node16.html#l2h-17">Macintosh Alias Manager###0000004300
+<a href="node16.html#l2h-17">Alias Manager, Macintosh###0000004301
+<a href="node16.html#l2h-17">Standard File###0000004302
+<a href="node17.html#l2h-18"><tt class="member">data</tt> (FSSpec attribute)###0000004304
+<a href="node17.html#l2h-19"><tt class="method">as_pathname()</tt> (FSSpec method)###0000004305
+<a href="node17.html#l2h-20"><tt class="method">as_tuple()</tt> (FSSpec method)###0000004306
+<a href="node17.html#l2h-21"><tt class="method">NewAlias()</tt> (FSSpec method)###0000004307
+<a href="node17.html#l2h-22"><tt class="method">NewAliasMinimal()</tt> (FSSpec method)###0000004308
+<a href="node17.html#l2h-23"><tt class="method">GetCreatorType()</tt> (FSSpec method)###0000004309
+<a href="node17.html#l2h-24"><tt class="method">SetCreatorType()</tt> (FSSpec method)###0000004310
+<a href="node17.html#l2h-25"><tt class="method">GetFInfo()</tt> (FSSpec method)###0000004311
+<a href="node17.html#l2h-26"><tt class="method">SetFInfo()</tt> (FSSpec method)###0000004312
+<a href="node17.html#l2h-27"><tt class="method">GetDates()</tt> (FSSpec method)###0000004313
+<a href="node17.html#l2h-28"><tt class="method">SetDates()</tt> (FSSpec method)###0000004314
+<a href="node18.html#l2h-29"><tt class="member">data</tt> (Alias attribute)###0000004316
+<a href="node18.html#l2h-30"><tt class="method">Resolve()</tt> (Alias method)###0000004317
+<a href="node18.html#l2h-31"><tt class="method">GetInfo()</tt> (Alias method)###0000004318
+<a href="node18.html#l2h-32"><tt class="method">Update()</tt> (Alias method)###0000004319
+<a href="node19.html#l2h-33"><tt class="member">Creator</tt> (FInfo attribute)###0000004321
+<a href="node19.html#l2h-34"><tt class="member">Type</tt> (FInfo attribute)###0000004322
+<a href="node19.html#l2h-35"><tt class="member">Flags</tt> (FInfo attribute)###0000004323
+<a href="node19.html#l2h-36"><tt class="member">Location</tt> (FInfo attribute)###0000004324
+<a href="node19.html#l2h-37"><tt class="member">Fldr</tt> (FInfo attribute)###0000004325
+<a href="node20.html"><tt class="module">ic</tt> (built-in module)###DEF0000004327
+<a href="node20.html#l2h-39"><tt class="exception">error</tt>###0000004328
+<a href="node20.html#l2h-40"><tt class="class">IC</tt> (class in ic)###0000004329
+<a href="node20.html#l2h-41"><tt class="function">launchurl()</tt> (in module ic)###0000004330
+<a href="node20.html#l2h-42"><tt class="function">parseurl()</tt> (in module ic)###0000004331
+<a href="node20.html#l2h-43"><tt class="function">mapfile()</tt> (in module ic)###0000004332
+<a href="node20.html#l2h-44"><tt class="function">maptypecreator()</tt> (in module ic)###0000004333
+<a href="node20.html#l2h-45"><tt class="function">settypecreator()</tt> (in module ic)###0000004334
+<a href="node20.html#l2h-46"><tt class="module">icglue</tt> (built-in module)###REF0000004335
+<a href="node21.html#l2h-47"><tt class="method">launchurl()</tt> (IC method)###0000004337
+<a href="node21.html#l2h-48"><tt class="method">parseurl()</tt> (IC method)###0000004338
+<a href="node21.html#l2h-49"><tt class="method">mapfile()</tt> (IC method)###0000004339
+<a href="node21.html#l2h-50"><tt class="method">maptypecreator()</tt> (IC method)###0000004340
+<a href="node21.html#l2h-51"><tt class="method">settypecreator()</tt> (IC method)###0000004341
+<a href="node22.html"><tt class="module">MacOS</tt> (built-in module)###DEF0000004343
+<a href="node22.html#l2h-53"><tt>runtimemodel</tt> (in module MacOS)###0000004344
+<a href="node22.html#l2h-54"><tt>linkmodel</tt> (in module MacOS)###0000004345
+<a href="node22.html#l2h-55"><tt class="exception">Error</tt>###0000004346
+<a href="node22.html#l2h-56"><tt class="function">GetErrorString()</tt> (in module MacOS)###0000004347
+<a href="node22.html#l2h-57"><tt class="function">DebugStr()</tt> (in module MacOS)###0000004348
+<a href="node22.html#l2h-58"><tt class="function">SysBeep()</tt> (in module MacOS)###0000004349
+<a href="node22.html#l2h-59"><tt class="function">GetTicks()</tt> (in module MacOS)###0000004350
+<a href="node22.html#l2h-60"><tt class="function">GetCreatorAndType()</tt> (in module MacOS)###0000004351
+<a href="node22.html#l2h-61"><tt class="function">SetCreatorAndType()</tt> (in module MacOS)###0000004352
+<a href="node22.html#l2h-62"><tt class="function">openrf()</tt> (in module MacOS)###0000004353
+<a href="node22.html#l2h-63"><tt class="function">WMAvailable()</tt> (in module MacOS)###0000004354
+<a href="node22.html#l2h-64"><tt class="module">macerrors</tt> (standard module)###REF0000004355
+<a href="node23.html"><tt class="module">macostools</tt> (standard module)###DEF0000004357
+<a href="node23.html#l2h-66"><tt class="function">copy()</tt> (in module macostools)###0000004358
+<a href="node23.html#l2h-67"><tt class="function">copytree()</tt> (in module macostools)###0000004359
+<a href="node23.html#l2h-68"><tt class="function">mkalias()</tt> (in module macostools)###0000004360
+<a href="node23.html#l2h-69"><tt class="function">touched()</tt> (in module macostools)###0000004361
+<a href="node23.html#l2h-70"><tt>BUFSIZ</tt> (in module macostools)###0000004362
+<a href="node24.html"><tt class="module">findertools</tt> (standard module)###DEF0000004364
+<a href="node24.html#l2h-72"><tt class="function">launch()</tt> (in module findertools)###0000004365
+<a href="node24.html#l2h-73"><tt class="function">Print()</tt> (in module findertools)###0000004366
+<a href="node24.html#l2h-74"><tt class="function">copy()</tt> (in module findertools)###0000004367
+<a href="node24.html#l2h-75"><tt class="function">move()</tt> (in module findertools)###0000004368
+<a href="node24.html#l2h-76"><tt class="function">sleep()</tt> (in module findertools)###0000004369
+<a href="node24.html#l2h-77"><tt class="function">restart()</tt> (in module findertools)###0000004370
+<a href="node24.html#l2h-78"><tt class="function">shutdown()</tt> (in module findertools)###0000004371
+<a href="node24.html#l2h-79">AppleEvents###0000004372
+<a href="node25.html"><tt class="module">EasyDialogs</tt> (standard module)###DEF0000004374
+<a href="node25.html#l2h-81"><tt class="function">Message()</tt> (in module EasyDialogs)###0000004375
+<a href="node25.html#l2h-82"><tt class="function">AskString()</tt> (in module EasyDialogs)###0000004376
+<a href="node25.html#l2h-83"><tt class="function">AskPassword()</tt> (in module EasyDialogs)###0000004377
+<a href="node25.html#l2h-84"><tt class="function">AskYesNoCancel()</tt> (in module EasyDialogs)###0000004378
+<a href="node25.html#l2h-85"><tt class="function">ProgressBar()</tt> (in module EasyDialogs)###0000004379
+<a href="node25.html#l2h-86"><tt class="function">GetArgv()</tt> (in module EasyDialogs)###0000004380
+<a href="node25.html#l2h-87"><tt class="function">AskFileForOpen()</tt> (in module EasyDialogs)###0000004381
+<a href="node25.html#l2h-88"><tt class="function">AskFileForSave()</tt> (in module EasyDialogs)###0000004382
+<a href="node25.html#l2h-89"><tt class="function">AskFolder()</tt> (in module EasyDialogs)###0000004383
+<a href="node25.html#l2h-90">Navigation Services###0000004384
+<a href="node26.html#l2h-91"><tt class="member">curval</tt> (ProgressBar attribute)###0000004386
+<a href="node26.html#l2h-92"><tt class="member">maxval</tt> (ProgressBar attribute)###0000004387
+<a href="node26.html#l2h-93"><tt class="method">title()</tt> (ProgressBar method)###0000004388
+<a href="node26.html#l2h-94"><tt class="method">label()</tt> (ProgressBar method)###0000004389
+<a href="node26.html#l2h-95"><tt class="method">set()</tt> (ProgressBar method)###0000004390
+<a href="node26.html#l2h-96"><tt class="method">inc()</tt> (ProgressBar method)###0000004391
+<a href="node27.html"><tt class="module">FrameWork</tt> (standard module)###DEF0000004393
+<a href="node27.html#l2h-98"><tt class="function">Application()</tt> (in module FrameWork)###0000004394
+<a href="node27.html#l2h-99"><tt class="function">MenuBar()</tt> (in module FrameWork)###0000004395
+<a href="node27.html#l2h-100"><tt class="function">Menu()</tt> (in module FrameWork)###0000004396
+<a href="node27.html#l2h-101"><tt class="function">MenuItem()</tt> (in module FrameWork)###0000004397
+<a href="node27.html#l2h-102"><tt class="function">Separator()</tt> (in module FrameWork)###0000004398
+<a href="node27.html#l2h-103"><tt class="function">SubMenu()</tt> (in module FrameWork)###0000004399
+<a href="node27.html#l2h-104"><tt class="function">Window()</tt> (in module FrameWork)###0000004400
+<a href="node27.html#l2h-105"><tt class="function">DialogWindow()</tt> (in module FrameWork)###0000004401
+<a href="node27.html#l2h-106"><tt class="function">windowbounds()</tt> (in module FrameWork)###0000004402
+<a href="node27.html#l2h-107"><tt class="function">setwatchcursor()</tt> (in module FrameWork)###0000004403
+<a href="node27.html#l2h-108"><tt class="function">setarrowcursor()</tt> (in module FrameWork)###0000004404
+<a href="node28.html#l2h-109"><tt class="method">makeusermenus()</tt> (Application method)###0000004406
+<a href="node28.html#l2h-110"><tt class="method">getabouttext()</tt> (Application method)###0000004407
+<a href="node28.html#l2h-111"><tt class="method">mainloop()</tt> (Application method)###0000004408
+<a href="node28.html#l2h-112"><tt class="method">asyncevents()</tt> (Application method)###0000004409
+<a href="node28.html#l2h-113"><tt class="method">_quit()</tt> (Application method)###0000004410
+<a href="node28.html#l2h-114"><tt class="method">do_char()</tt> (Application method)###0000004411
+<a href="node28.html#l2h-115"><tt class="method">do_dialogevent()</tt> (Application method)###0000004412
+<a href="node28.html#l2h-116"><tt class="method">idle()</tt> (Application method)###0000004413
+<a href="node29.html#l2h-117"><tt class="method">open()</tt> (Window method)###0000004415
+<a href="node29.html#l2h-118"><tt class="method">close()</tt> (Window method)###0000004416
+<a href="node29.html#l2h-119"><tt class="method">do_postresize()</tt> (Window method)###0000004417
+<a href="node29.html#l2h-120"><tt class="method">do_contentclick()</tt> (Window method)###0000004418
+<a href="node29.html#l2h-121"><tt class="method">do_update()</tt> (Window method)###0000004419
+<a href="node29.html#l2h-122"><tt class="method">do_activate()</tt> (IC method)###0000004420
+<a href="node30.html#l2h-123"><tt class="method">do_controlhit()</tt> (ControlsWindow method)###0000004422
+<a href="node31.html#l2h-124"><tt class="method">scrollbars()</tt> (ScrolledWindow method)###0000004424
+<a href="node31.html#l2h-125"><tt class="method">getscrollbarvalues()</tt> (ScrolledWindow method)###0000004425
+<a href="node31.html#l2h-126"><tt class="method">updatescrollbars()</tt> (ScrolledWindow method)###0000004426
+<a href="node31.html#l2h-127"><tt class="method">scrollbar_callback()</tt> (ScrolledWindow method)###0000004427
+<a href="node31.html#l2h-128"><tt class="method">scalebarvalues()</tt> (ScrolledWindow method)###0000004428
+<a href="node31.html#l2h-129"><tt class="method">do_activate()</tt> (ScrolledWindow method)###0000004429
+<a href="node31.html#l2h-130"><tt class="method">do_postresize()</tt> (ScrolledWindow method)###0000004430
+<a href="node31.html#l2h-131"><tt class="method">do_controlhit()</tt> (ScrolledWindow method)###0000004431
+<a href="node32.html#l2h-132"><tt class="method">open()</tt> (DialogWindow method)###0000004433
+<a href="node32.html#l2h-133"><tt class="method">do_itemhit()</tt> (DialogWindow method)###0000004434
+<a href="node33.html"><tt class="module">autoGIL</tt> (extension module)###DEF0000004436
+<a href="node33.html#l2h-135"><tt class="exception">AutoGILError</tt>###0000004437
+<a href="node33.html#l2h-136"><tt class="function">installAutoGIL()</tt> (in module autoGIL)###0000004438
+<a href="node35.html"><tt class="module">gensuitemodule</tt> (standard module)###DEF0000004441
+<a href="node35.html#l2h-138"><tt class="function">is_scriptable()</tt> (in module gensuitemodule)###0000004442
+<a href="node35.html#l2h-139"><tt class="function">processfile()</tt> (in module gensuitemodule)###0000004443
+<a href="node35.html#l2h-140"><tt class="function">processfile_fromresource()</tt> (in module gensuitemodule)###0000004444
+<a href="node36.html"><tt class="module">aetools</tt> (standard module)###DEF0000004446
+<a href="node36.html#l2h-142"><tt class="function">packevent()</tt> (in module aetools)###0000004447
+<a href="node36.html#l2h-143"><tt class="function">unpackevent()</tt> (in module aetools)###0000004448
+<a href="node36.html#l2h-144"><tt class="function">keysubst()</tt> (in module aetools)###0000004449
+<a href="node36.html#l2h-145"><tt class="function">enumsubst()</tt> (in module aetools)###0000004450
+<a href="node36.html#l2h-146"><tt class="class">TalkTo</tt> (class in aetools)###0000004451
+<a href="node36.html#l2h-147"><tt class="method">_start()</tt> (TalkTo method)###0000004452
+<a href="node36.html#l2h-148"><tt class="method">send()</tt> (TalkTo method)###0000004453
+<a href="node37.html"><tt class="module">aepack</tt> (standard module)###DEF0000004455
+<a href="node37.html#l2h-150"><tt class="function">pack()</tt> (in module aepack)###0000004456
+<a href="node37.html#l2h-151"><tt class="function">unpack()</tt> (in module aepack)###0000004457
+<a href="node38.html"><tt class="module">aetypes</tt> (standard module)###DEF0000004459
+<a href="node38.html#l2h-153"><tt class="class">Unknown</tt> (class in aetypes)###0000004460
+<a href="node38.html#l2h-154"><tt class="class">Enum</tt> (class in aetypes)###0000004461
+<a href="node38.html#l2h-155"><tt class="class">InsertionLoc</tt> (class in aetypes)###0000004462
+<a href="node38.html#l2h-156"><tt class="class">Boolean</tt> (class in aetypes)###0000004463
+<a href="node38.html#l2h-157"><tt class="class">StyledText</tt> (class in aetypes)###0000004464
+<a href="node38.html#l2h-158"><tt class="class">AEText</tt> (class in aetypes)###0000004465
+<a href="node38.html#l2h-159"><tt class="class">IntlText</tt> (class in aetypes)###0000004466
+<a href="node38.html#l2h-160"><tt class="class">IntlWritingCode</tt> (class in aetypes)###0000004467
+<a href="node38.html#l2h-161"><tt class="class">QDPoint</tt> (class in aetypes)###0000004468
+<a href="node38.html#l2h-162"><tt class="class">QDRectangle</tt> (class in aetypes)###0000004469
+<a href="node38.html#l2h-163"><tt class="class">RGBColor</tt> (class in aetypes)###0000004470
+<a href="node38.html#l2h-164"><tt class="class">Type</tt> (class in aetypes)###0000004471
+<a href="node38.html#l2h-165"><tt class="class">Keyword</tt> (class in aetypes)###0000004472
+<a href="node38.html#l2h-166"><tt class="class">Range</tt> (class in aetypes)###0000004473
+<a href="node38.html#l2h-167"><tt class="class">Ordinal</tt> (class in aetypes)###0000004474
+<a href="node38.html#l2h-168"><tt class="class">Logical</tt> (class in aetypes)###0000004475
+<a href="node38.html#l2h-169"><tt class="class">Comparison</tt> (class in aetypes)###0000004476
+<a href="node38.html#l2h-170"><tt class="class">ComponentItem</tt> (class in aetypes)###0000004477
+<a href="node38.html#l2h-171"><tt class="class">NProperty</tt> (class in aetypes)###0000004478
+<a href="node38.html#l2h-172"><tt class="class">ObjectSpecifier</tt> (class in aetypes)###0000004479
+<a href="node39.html"><tt class="module">MiniAEFrame</tt> (standard module)###DEF0000004481
+<a href="node39.html#l2h-174"><tt class="class">AEServer</tt> (class in MiniAEFrame)###0000004482
+<a href="node39.html#l2h-175"><tt class="class">MiniApplication</tt> (class in MiniAEFrame)###0000004483
+<a href="node39.html#l2h-176">Open Scripting Architecture###0000004484
+<a href="node39.html#l2h-177">AppleEvents###0000004485
+<a href="node39.html#l2h-178"><tt class="module">FrameWork</tt> (standard module)###REF0000004486
+<a href="node40.html#l2h-179"><tt class="method">installaehandler()</tt> (AEServer method)###0000004488
+<a href="node40.html#l2h-180"><tt class="method">callback()</tt> (AEServer method)###0000004489
+<a href="node42.html"><tt class="module">Carbon.AE</tt> (standard module)###DEF0000004492
+<a href="node43.html"><tt class="module">Carbon.AH</tt> (standard module)###DEF0000004494
+<a href="node44.html"><tt class="module">Carbon.App</tt> (standard module)###DEF0000004496
+<a href="node45.html"><tt class="module">Carbon.CF</tt> (standard module)###DEF0000004498
+<a href="node46.html"><tt class="module">Carbon.CG</tt> (standard module)###DEF0000004500
+<a href="node47.html"><tt class="module">Carbon.CarbonEvt</tt> (standard module)###DEF0000004502
+<a href="node48.html"><tt class="module">Carbon.Cm</tt> (standard module)###DEF0000004504
+<a href="node49.html"><tt class="module">Carbon.Ctl</tt> (standard module)###DEF0000004506
+<a href="node50.html"><tt class="module">Carbon.Dlg</tt> (standard module)###DEF0000004508
+<a href="node51.html"><tt class="module">Carbon.Evt</tt> (standard module)###DEF0000004510
+<a href="node52.html"><tt class="module">Carbon.Fm</tt> (standard module)###DEF0000004512
+<a href="node53.html"><tt class="module">Carbon.Folder</tt> (standard module)###DEF0000004514
+<a href="node54.html"><tt class="module">Carbon.Help</tt> (standard module)###DEF0000004516
+<a href="node55.html"><tt class="module">Carbon.List</tt> (standard module)###DEF0000004518
+<a href="node56.html"><tt class="module">Carbon.Menu</tt> (standard module)###DEF0000004520
+<a href="node57.html"><tt class="module">Carbon.Mlte</tt> (standard module)###DEF0000004522
+<a href="node58.html"><tt class="module">Carbon.Qd</tt> (built-in module)###DEF0000004524
+<a href="node59.html"><tt class="module">Carbon.Qdoffs</tt> (built-in module)###DEF0000004526
+<a href="node60.html"><tt class="module">Carbon.Qt</tt> (standard module)###DEF0000004528
+<a href="node61.html"><tt class="module">Carbon.Res</tt> (standard module)###DEF0000004530
+<a href="node62.html"><tt class="module">Carbon.Scrap</tt> (standard module)###DEF0000004532
+<a href="node63.html"><tt class="module">Carbon.Snd</tt> (standard module)###DEF0000004534
+<a href="node64.html"><tt class="module">Carbon.TE</tt> (standard module)###DEF0000004536
+<a href="node65.html"><tt class="module">Carbon.Win</tt> (standard module)###DEF0000004538
+<a href="node66.html"><tt class="module">ColorPicker</tt> (extension module)###DEF0000004540
+<a href="node66.html#l2h-206"><tt class="function">GetColor()</tt> (in module ColorPicker)###0000004541
+<a href="node68.html"><tt class="module">applesingle</tt> (standard module)###DEF0000004544
+<a href="node69.html"><tt class="module">buildtools</tt> (standard module)###DEF0000004546
+<a href="node70.html"><tt class="module">cfmfile</tt> (standard module)###DEF0000004548
+<a href="node71.html"><tt class="module">icopen</tt> (standard module)###DEF0000004550
+<a href="node72.html"><tt class="module">macerrors</tt> (standard module)###DEF0000004552
+<a href="node73.html"><tt class="module">macresource</tt> (standard module)###DEF0000004554
+<a href="node74.html"><tt class="module">Nav</tt> (standard module)###DEF0000004556
+<a href="node75.html"><tt class="module">PixMapWrapper</tt> (standard module)###DEF0000004558
+<a href="node76.html"><tt class="module">videoreader</tt> (standard module)###DEF0000004560
+<a href="node77.html"><tt class="module">W</tt> (standard module)###DEF0000004562

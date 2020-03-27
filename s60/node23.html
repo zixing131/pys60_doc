@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node24.html" />
+<link rel="prev" href="node22.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node24.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.8 Icon Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.7 listbox Type"
+  href="node22.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.9 content_handler Type"
+  href="node24.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node22.html">3.1.7 Listbox Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node24.html">3.1.9 Content_handler Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005180000000000000000"></a>
+<a name="subsec:icon"></a>
+<br>
+3.1.8 Icon Type
+</h2>
+An instance of <tt class="class">Icon</tt> type encapsulates an icon to be used together 
+with a <tt class="class">Listbox</tt> instance. Note that currently <tt class="class">Icon</tt> can only 
+be used with <tt class="class">Listbox</tt> (see Section <a href="node22.html#subsec:listbox">3.1.7</a>).
+
+<p>
+MBM is the native Symbian OS format used for pictures. It is a
+compressed file format where the files can contain several bitmaps and
+can be referred to by a number. An <code>.mbg</code> file is the header file
+usually associated with an <code>.mbm</code> file, which includes symbolic
+definitions for each bitmap in the file. For example, an
+<span class="file">avkon.mbm</span> file has an associated index file called
+<span class="file">avkon.mbg</span>, which is included in S60 SDKs. For more information
+on the MBM format and the bitmap converter tool, see [<A
+ HREF="node96.html#S60Doc">4</a>] and
+search the topics with the key term "How to provide Icons"; this topic
+also points you to the Bitmap Converter tool that can be used for
+converting bitmaps into the MBM format.
+
+<p>
+S60 2<span class="MATH"><IMG
+ WIDTH="19" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$^{nd}$"></span> Edition FP3 introduces a new format for icons called 
+Multi-Image File (MIF). This format is very similar to the MBM format and 
+also contains several compressed files. The files to be compressed should be 
+in Scalable Vector Graphics Tiny (SVG-T) format. For more information on the 
+SVG format, see Scalable Vector Graphics (SVG) 1.1 Specification 
+[10].
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-125' xml:id='l2h-125' class="class">Icon</tt></b>(</nobr></td>
+  <td><var>filename, bitmap, bitmapMask</var>)</td></tr></table></dt>
+<dd>
+Creates an icon. <var>filename</var> is a Unicode file name and must 
+include the whole path. Note that MBM and MIF (MIF only in S60 2nd 
+Edition FP3) are the only file formats supported. <var>bitmap</var> 
+and <var>bitmapMask</var> are integers that represent the index of 
+the icon and icon mask inside that file respectively.
+</dl>
+
+<p>
+Example: The following builds an icon with the standard signal symbol:
+<div class="verbatim"><pre>
+icon = appuifw.Icon(u"z:\\system\\data\\avkon.mbm", 28, 29)
+</pre></div>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.7 listbox Type"
+  href="node22.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.9 content_handler Type"
+  href="node24.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node22.html">3.1.7 Listbox Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node24.html">3.1.9 Content_handler Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<a href="node4.html#l2h-1">environment variables!PATH@<tt>PATH</tt>###0000006025
+<a href="node4.html#l2h-1">PATH (environment variable)###0000006026
+<a href="node4.html#l2h-2">environment variables!PYTHONSTARTUP@<tt>PYTHONSTARTUP</tt>###0000006033
+<a href="node4.html#l2h-2">PYTHONSTARTUP (environment variable)###0000006034
+<a href="node5.html#l2h-3"><tt class="function">unicode()</tt> (built-in function)###0000006041
+<a href="node6.html#l2h-4">for statement###0000006047
+<a href="node6.html#l2h-4">statement!for###0000006048
+<a href="node6.html#l2h-5">for statement###0000006049
+<a href="node6.html#l2h-5">statement!for###0000006050
+<a href="node6.html#l2h-6">documentation strings###0000006057
+<a href="node6.html#l2h-7">docstrings###0000006058
+<a href="node6.html#l2h-7">strings, documentation###0000006059
+<a href="node6.html#l2h-8">docstrings###0000006067
+<a href="node6.html#l2h-8">documentation strings###0000006068
+<a href="node6.html#l2h-8">strings, documentation###0000006069
+<a href="node7.html#l2h-9"><tt class="method">append()</tt> (list method)###0000006073
+<a href="node7.html#l2h-10"><tt class="method">extend()</tt> (list method)###0000006074
+<a href="node7.html#l2h-11"><tt class="method">insert()</tt> (list method)###0000006075
+<a href="node7.html#l2h-12"><tt class="method">remove()</tt> (list method)###0000006076
+<a href="node7.html#l2h-13"><tt class="method">pop()</tt> (list method)###0000006077
+<a href="node7.html#l2h-14"><tt class="method">index()</tt> (list method)###0000006078
+<a href="node7.html#l2h-15"><tt class="method">count()</tt> (list method)###0000006079
+<a href="node7.html#l2h-16"><tt class="method">sort()</tt> (list method)###0000006080
+<a href="node7.html#l2h-17"><tt class="method">reverse()</tt> (list method)###0000006081
+<a href="node8.html#l2h-18">module!search path###0000006101
+<a href="node8.html#l2h-18">search!path, module###0000006102
+<a href="node8.html#l2h-18">path!module search###0000006103
+<a href="node8.html#l2h-19">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000006104
+<a href="node8.html#l2h-19">PYTHONPATH (environment variable)###0000006105
+<a href="node8.html#l2h-20">environment variables!PATH@<tt>PATH</tt>###0000006106
+<a href="node8.html#l2h-20">PATH (environment variable)###0000006107
+<a href="node8.html#l2h-21">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000006108
+<a href="node8.html#l2h-21">PYTHONPATH (environment variable)###0000006109
+<a href="node8.html#l2h-22">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000006110
+<a href="node8.html#l2h-22">PYTHONPATH (environment variable)###0000006111
+<a href="node8.html#l2h-23"><tt class="module">compileall</tt> (standard module)###REF0000006113
+<a href="node8.html#l2h-24"><tt class="module">sys</tt> (standard module)###REF0000006115
+<a href="node8.html#l2h-25">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000006116
+<a href="node8.html#l2h-25">PYTHONPATH (environment variable)###0000006117
+<a href="node8.html#l2h-26">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000006118
+<a href="node8.html#l2h-26">PYTHONPATH (environment variable)###0000006119
+<a href="node8.html#l2h-27"><tt class="module">__builtin__</tt> (built-in module)###REF0000006121
+<a href="node8.html#l2h-28">__all__###0000006124
+<a href="node9.html#l2h-29"><tt class="module">string</tt> (standard module)###REF0000006130
+<a href="node9.html#l2h-30"><tt class="function">open()</tt> (built-in function)###0000006132
+<a href="node9.html#l2h-31">file object###0000006133
+<a href="node9.html#l2h-31">object!file###0000006134
+<a href="node9.html#l2h-32"><tt class="module">pickle</tt> (standard module)###REF0000006137
+<a href="node11.html#l2h-33">method object###0000006155
+<a href="node11.html#l2h-33">object!method###0000006156
+<a href="node12.html#l2h-34"><tt class="function">help()</tt> (built-in function)###0000006170
+<a href="node15.html#l2h-35">environment variables!PYTHONSTARTUP@<tt>PYTHONSTARTUP</tt>###0000006198
+<a href="node15.html#l2h-35">PYTHONSTARTUP (environment variable)###0000006199
+<a href="node15.html#l2h-36"><tt class="module">rlcompleter</tt> (standard module)###REF0000006200
+<a href="node15.html#l2h-36"><tt class="module">readline</tt> (built-in module)###REF0000006201
+<a href="node18.html#l2h-37">;SPMgt;;SPMgt;;SPMgt;###0000006262
+<a href="node18.html#l2h-38">...###0000006263
+<a href="node18.html#l2h-39">BDFL###0000006264
+<a href="node18.html#l2h-40">byte code###0000006265
+<a href="node18.html#l2h-41">classic class###0000006266
+<a href="node18.html#l2h-42">coercion###0000006267
+<a href="node18.html#l2h-43">complex number###0000006268
+<a href="node18.html#l2h-44">descriptor###0000006269
+<a href="node18.html#l2h-45">dictionary###0000006270
+<a href="node18.html#l2h-46">duck-typing###0000006271
+<a href="node18.html#l2h-47">EAFP###0000006272
+<a href="node18.html#l2h-48">__future__###0000006273
+<a href="node18.html#l2h-49">generator###0000006274
+<a href="node18.html#l2h-50">generator expression###0000006275
+<a href="node18.html#l2h-51">GIL###0000006276
+<a href="node18.html#l2h-52">global interpreter lock###0000006277
+<a href="node18.html#l2h-53">IDLE###0000006278
+<a href="node18.html#l2h-54">immutable###0000006279
+<a href="node18.html#l2h-55">integer division###0000006280
+<a href="node18.html#l2h-56">interactive###0000006281
+<a href="node18.html#l2h-57">interpreted###0000006282
+<a href="node18.html#l2h-58">iterable###0000006283
+<a href="node18.html#l2h-59">iterator###0000006284
+<a href="node18.html#l2h-60">LBYL###0000006285
+<a href="node18.html#l2h-61">list comprehension###0000006286
+<a href="node18.html#l2h-62">mapping###0000006287
+<a href="node18.html#l2h-63">metaclass###0000006288
+<a href="node18.html#l2h-64">mutable###0000006289
+<a href="node18.html#l2h-65">namespace###0000006290
+<a href="node18.html#l2h-66">nested scope###0000006291
+<a href="node18.html#l2h-67">new-style class###0000006292
+<a href="node18.html#l2h-68">Python3000###0000006293
+<a href="node18.html#l2h-69">__slots__###0000006294
+<a href="node18.html#l2h-70">sequence###0000006295
+<a href="node18.html#l2h-71">Zen of Python###0000006296

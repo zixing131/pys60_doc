@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-graphics.html" />
+<link rel="prev" href="module-appuifw.html" />
+<link rel="parent" href="s60graph.html" />
+<link rel="next" href="module-graphics.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.2 globalui -- Interface to the S60 global UI notifiers </title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.11 infopopup Type"
+  href="node26.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3 graphics  "
+  href="module-graphics.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node26.html">3.1.11 InfoPopup Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-graphics.html">3.3 graphics  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION005200000000000000000"></a>
+<a name="sec:globalui"></a>
+<br>
+3.2 <tt class="module">globalui</tt> -- 
+    Interface to the S60 global UI notifiers 
+</h1>
+
+<p>
+<a name="module-globalui"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">globalui</tt> module offers an interface to the S60 global UI notifiers. 
+This allows a global note and query to be launched from an application which does not 
+have a UI environment. 
+The <tt class="module">globalui</tt> module have functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-144' xml:id='l2h-144' class="function">global_note</tt></b>(</nobr></td>
+  <td><var>note_text</var><big>[</big><var>, type</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Displays a note of the chosen type with <var>note_text</var> 
+(Unicode). The default value for <var>type</var> is <code>'info'</code>. <var>type</var> can be 
+one of the following strings: <code>'error'</code>, <code>'text'</code><a name="tex2html11"
+  href="#foot1804"><sup>3.3</sup></a>, <code>'warn'</code>, <code>'charging'</code>, <code>'wait'</code>, 
+<code>'perm'</code>,<code>'not_charging'</code>, <code>'battery_full'</code>, <code>'battery_low'</code>, 
+<code>'recharge_battery'</code>, or <code>'confirm'</code>. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-145' xml:id='l2h-145' class="function">global_query</tt></b>(</nobr></td>
+  <td><var>query_text</var><big>[</big><var>, timeout</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Displays a global confirmation query with <var>query_text</var> (Unicode). Returns 
+<code>1</code> when the user presses 'Yes' and <code>0</code> otherwise. If the user does 
+not respond to the query within <var>timeout</var> seconds, returns <code>None</code>. 
+If the <var>timeout</var> value is 0, then the query waits indefinitely for user input. 
+The default value for <var>timeout</var> is 0. The <var>timeout</var> value should be an integer.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-146' xml:id='l2h-146' class="function">global_msg_query</tt></b>(</nobr></td>
+  <td><var>query_text, header_text</var><big>[</big><var>, timeout</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Displays a global message query with <var>query_text</var>(Unicode). <var>header_text</var> is used 
+to set the heading string of the query. Returns <code>1</code> when the user 
+presses 'OK' and <code>0</code> otherwise. If the user does not respond to the query within 
+<var>timeout</var> seconds, returns <code>None</code>. If the <var>timeout</var> value is <code>0</code>, then the query 
+waits indefinitely for user input. The default value for <var>timeout</var> is <code>0</code>. 
+The <var>timeout</var> value should be an integer.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-147' xml:id='l2h-147' class="function">global_popup_menu</tt></b>(</nobr></td>
+  <td><var>option_items</var><big>[</big><var>, header_text, timeout</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd> 
+Displays a global menu with <var>option_items</var>(Unicode). <var>header_text</var><a name="tex2html12"
+  href="#foot1847"><sup>3.4</sup></a> is used to set the heading string of the 
+menu. <var>header_text</var> is applicable for platforms 2.6 and later. If no value is 
+passed for <var>header_text</var>, then the header will not be displayed. Returns the index value 
+of the selected item from the list. If the user does not respond to the menu within 
+<var>timeout</var> seconds, returns <code>None</code>. If the <var>timeout</var> value is <code>0</code>, 
+then the menu waits indefinitely for the input. The default value for <var>timeout</var> 
+is <code>0</code>. The <var>timeout</var> value should be an integer.
+</dl>
+
+<p>
+Example:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import globalui, time
+...
+&gt;&gt;&gt; text_to_show = u"text for showing note"
+&gt;&gt;&gt; globalui.global_note(text_to_show,'error')
+&gt;&gt;&gt; time.sleep(6)
+&gt;&gt;&gt; globalui.global_note(text_to_show)
+&gt;&gt;&gt; time.sleep(6)
+&gt;&gt;&gt; result = globalui.global_query(u"do you want to continue ?")
+&gt;&gt;&gt; time.sleep(6)
+&gt;&gt;&gt; listresult = globalui.global_popup_menu([u"MenuItem1", u"MenuItem2"],u"Select item",5)
+...
+</pre></div>
+
+<p>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot1804">...'text'</a><A
+ href="module-globalui.html#tex2html11"><sup>3.3</sup></a></dt>
+<dd>Applicable for 
+platforms 2.6 and later.
+
+</dd>
+<dt><a name="foot1847">...header_text</a><A
+ href="module-globalui.html#tex2html12"><sup>3.4</sup></a></dt>
+<dd>This 
+field will be ignored for platform 2.0.
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.11 infopopup Type"
+  href="node26.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3 graphics  "
+  href="module-graphics.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node26.html">3.1.11 InfoPopup Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-graphics.html">3.3 graphics  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

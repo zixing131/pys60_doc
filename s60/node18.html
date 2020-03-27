@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node19.html" />
+<link rel="prev" href="node17.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node19.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.3 Module Level Functions</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.2 Softkeys"
+  href="node17.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.4 application Type"
+  href="node19.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node17.html">3.1.2 Softkeys</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node19.html">3.1.4 Application Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005130000000000000000"></a>
+<a name="subsec:module"></a>
+<br>
+3.1.3 Module Level Functions
+</h2>
+The following free functions - functions that do not belong to any class 
+- are defined in the <tt class="module">appuifw</tt> module:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-40' xml:id='l2h-40' class="function">available_fonts</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns a list (Unicode) of all fonts available in the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-41' xml:id='l2h-41' class="function">query</tt></b>(</nobr></td>
+  <td><var>label, type</var><big>[</big><var>, initial_value</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Performs a query with a single-field dialog. The prompt is set to 
+<var>label</var>, and the type of the dialog is defined by <var>type</var>. The 
+value of <var>type</var> can be any of the following strings:
+
+<p>
+
+<ul>
+<li><code>'text'</code>
+</li>
+<li><code>'code'</code>
+</li>
+<li><code>'number'</code>
+</li>
+<li><code>'date'</code>
+</li>
+<li><code>'time'</code>
+</li>
+<li><code>'query'</code>
+</li>
+<li><code>'float'</code>
+</li>
+</ul>
+
+<p>
+The type of the optional <var>initial_value</var> parameter and the 
+returned input depend on the value of <var>type</var>:
+
+<p>
+
+<ul>
+<li>For text fields, (<code>'text'</code>, <code>'code'</code>) it is Unicode
+</li>
+<li>For number fields, it is numeric
+</li>
+<li>For date fields, it is seconds since epoch rounded down to the nearest local midnight
+</li>
+</ul>
+
+<p>
+A simple confirmation query and time query take no initial value and return 
+<code>True/None</code> and seconds since local midnight, correspondingly. All 
+queries return <code>None</code> if the users cancel the dialog. 
+
+<p>
+For <code>'float'</code> query the <var>initial_value</var> setting has no 
+effect.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-42' xml:id='l2h-42' class="function">multi_query</tt></b>(</nobr></td>
+  <td><var>label_1, label_2</var>)</td></tr></table></dt>
+<dd>
+A two-field text (Unicode) input dialog. Returns the inputted values
+as a 2-tuple. Returns <code>None</code> if the users cancel the dialog.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-43' xml:id='l2h-43' class="function">note</tt></b>(</nobr></td>
+  <td><var>text</var><big>[</big><var>, type</var><big>[</big><var>, global</var><big>]</big><var></var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Displays a note dialog of the chosen type with <var>text</var> 
+(Unicode). The default value for <var>type</var> is <code>'info'</code>, which is 
+automatically used if <var>type</var> is not set. <var>type</var> can be one of 
+the following strings: <code>'error'</code>, <code>'info'</code>, or 
+<code>'conf'</code>. 
+
+<p>
+If <var>global</var> (integer) is any other value than zero a global note is 
+displayed. A global note is displayed even if the Python application calling 
+this function is in background. The same set of <var>type</var>s is supported as in 
+standard note.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-44' xml:id='l2h-44' class="function">popup_menu</tt></b>(</nobr></td>
+  <td><var>list</var><big>[</big><var>, label</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+A pop-up menu style dialog. <var>list</var> representing the menu 
+contents can be a list of Unicode strings or a list of Unicode string pairs 
+(tuples). The resulting dialog list is then a single-style or a double-style 
+list. A single-style list is shown in full; whereas a double-style list 
+shows the items one at a time. Returns <code>None</code> if the user cancels the 
+operation.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-45' xml:id='l2h-45' class="function">selection_list</tt></b>(</nobr></td>
+  <td><var>choices</var><big>[</big><var>, search_field=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Executes a dialog that allows the users to select a list item and
+returns the <var>index</var> of the chosen item, or <code>None</code> if the
+selection is cancelled by the users. <var>choices</var> is a list of
+Unicode strings.
+<var>search_field</var> is <code>0</code> (disabled) by default and is optional. Setting it to <code>1</code> enables a search field (find pane) that facilitates searching for items in long lists. If enabled, the search field appears after you press a letter key.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-46' xml:id='l2h-46' class="function">multi_selection_list</tt></b>(</nobr></td>
+  <td><var>choices</var><big>[</big><var>, style='checkbox', search_field=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+  Executes a dialog that allows the users to select multiple list
+  items.  Returns a tuple of indexes (a pair of Unicode strings) of
+  the chosen items, or empty tuple if the selection is cancelled by
+  the users. <var>choices</var> is a list of Unicode strings.  <var>style</var>
+  is an optional string; the default value being <code>'checkbox'</code>.
+  If <code>'checkbox'</code> is given, the list will be a checkbox list,
+  where empty checkboxes indicate what items can be marked. The other
+  possible value that can be set for <var>style</var> is
+  <code>'checkmark'</code>. If <code>'checkmark'</code> is given, the list will be
+  a markable list, which lists items but does not indicate
+  specifically that items can be selected. To select items on a
+  markable list, use the Navigation key to browse the list and the
+  Edit key to select an item. For example views on checkbox and
+  markable lists, see
+  Figure&nbsp;<a href="#fig:checkbox-and-markable-list">3.4</a>.
+  <var>search_field</var> is <code>0</code> (disabled) by default and is
+  optional. Setting it to <code>1</code> enables a search field (find pane)
+  that facilitates searching for items in long lists. If enabled, the
+  search field is always visible with checkbox lists; with markable
+  lists it appears by pressing a letter key.
+
+<p>
+Example:
+<div class="verbatim"><pre>
+tuple = appuifw.multi_selection_list(L, style='checkmark', search_field=1)
+</pre></div>
+</dl>
+
+<p>
+
+<div align="CENTER"><a name="fig:checkbox-and-markable-list"></a><a name="680"></a>
+<table>
+<caption align="BOTTOM"><strong>Figure 3.4:</strong>
+Examples of a checkbox list (left) and a markable list (right)</caption>
+<tr><td>
+<div align="CENTER">
+
+</div>
+
+<IMG
+ WIDTH="168" HEIGHT="200" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="\includegraphics[width=\screenwidth]{markable-list}"></td></tr>
+</table>
+</div>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.2 Softkeys"
+  href="node17.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.4 application Type"
+  href="node19.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node17.html">3.1.2 Softkeys</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node19.html">3.1.4 Application Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

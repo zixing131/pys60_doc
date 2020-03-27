@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node11.html" />
+<link rel="prev" href="module-e32.html" />
+<link rel="parent" href="module-e32.html" />
+<link rel="next" href="node11.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>2.1.1 Module Level Functions</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="2.1 e32  "
+  href="module-e32.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="2.1 e32  "
+  href="module-e32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="2.1.2 ao_lock Type"
+  href="node11.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-e32.html">2.1 e32  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32.html">2.1 e32  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node11.html">2.1.2 Ao_lock Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION004110000000000000000"></a>
+<a name="subsec:e32"></a>
+<br>
+2.1.1 Module Level Functions
+</h2>
+
+<p>
+The following free functions - functions that do not belong to any class 
+- are defined in the <tt class="module">e32</tt> module:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-2' xml:id='l2h-2' class="function">ao_yield</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Yields to the active scheduler to have ready active objects with priority above 
+normal scheduled for running. This has the effect of flushing the eventual 
+pending UI events. Note that the UI callback code may be run in the context of 
+the thread that performs an <code>ao_yield</code>. For information on active 
+scheduler, see S60 SDK documentation [<A
+ HREF="node96.html#S60Doc">4</a>].
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-3' xml:id='l2h-3' class="function">ao_sleep</tt></b>(</nobr></td>
+  <td><var>interval </var><big>[</big><var>, callback</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Sleeps for the given <var>interval</var> without blocking the active 
+scheduler. When the optional <var>callback</var> is given, the call 
+to <code>ao_sleep</code> returns immediately and the 
+<var>callback</var> gets called after <var>interval</var>. See 
+also Section <a href="node12.html#subsec:Aotimer">2.1.3</a>, Ao_timer Type.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-4' xml:id='l2h-4' class="function">ao_callgate</tt></b>(</nobr></td>
+  <td><var>wrapped_callable</var>)</td></tr></table></dt>
+<dd>
+Wraps <var>wrapped_callable</var> into returned callable object 
+<var>callgate</var> that can be called in any thread. As a result of 
+a call to <var>callgate</var>, <var>wrapped_callable</var> 
+gets called in the context of the thread that originally created the 
+callgate. Arguments can be given to the call. This is actually a simple 
+wrapping of the Symbian active object facility.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-5' xml:id='l2h-5' class="function">drive_list</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns a list of currently visible drives as a list of Unicode strings 
+<code>'&lt;driveletter&gt;:'</code>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-6' xml:id='l2h-6' class="function">file_copy</tt></b>(</nobr></td>
+  <td><var>target_name, source_name</var>)</td></tr></table></dt>
+<dd>
+Copies the file <var>source_name</var> to <var>target_name</var>. The names must be 
+complete paths.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-7' xml:id='l2h-7' class="function">in_emulator</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns <code>1</code> if running in an emulator, or <code>0</code> if running on a 
+device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-8' xml:id='l2h-8' class="function">set_home_time</tt></b>(</nobr></td>
+  <td><var>time</var>)</td></tr></table></dt>
+<dd>
+Set the device's time to <code>time</code> (see Section <a href="#subsec:datetime"><tex2html_cross_ref_visible_mark></a>).
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-9' xml:id='l2h-9'>pys60_version</tt></b></dt>
+<dd>
+A string containing the version number of the Python for S60 and some 
+additional information.
+
+<p>
+Example:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import e32
+&gt;&gt;&gt; e32.pys60_version
+'1.2 final'
+</pre></div>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-10' xml:id='l2h-10'>pys60_version_info</tt></b></dt>
+<dd>
+A tuple containing the five components of the Python for S60 version
+number: major, minor, micro, release tag, and serial. All values
+except release level are integers; the release tag is a string. A
+value other than <code>'final'</code> for the release tag signifies a
+development release. The <code>pys60_version_info</code> value corresponding
+to the Python for S60 version 1.2 is <code>(1, 2, 0, 'final', 0)</code>.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-11' xml:id='l2h-11'>s60_version_info</tt></b></dt>
+<dd>
+
+<p>
+The SDK version with which this Python was compiled (tuple). The following 
+values are possible:
+
+<p>
+
+<ul>
+<li><code>(1, 2)</code> for S60 1st Edition
+</li>
+<li><code>(2, 0)</code> for S60 2nd Edition
+</li>
+<li><code>(2, 6)</code> S60 2nd Edition Feature Pack 2
+</li>
+<li><code>(2, 8)</code> S60 2nd Edition Feature Pack 3
+</li>
+<li><code>(3, 0)</code> S60 3rd Edition
+</li>
+</ul>
+
+<p>
+Examples:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import e32
+&gt;&gt;&gt; e32.pys60_version
+'1.2.0 final'
+&gt;&gt;&gt; e32.pys60_version_info
+(1, 2, 0, 'final', 0)
+&gt;&gt;&gt; e32.s60_version_info
+(2, 0)
+&gt;&gt;&gt;
+</pre></div>
+</dd></dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-12' xml:id='l2h-12' class="function">is_ui_thread</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns <code>True</code> if the code that calls this function runs in the 
+context of the UI thread; otherwise returns <code>False</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-13' xml:id='l2h-13' class="function">start_exe</tt></b>(</nobr></td>
+  <td><var>filename, command </var><big>[</big><var>,wait</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Launches the native Symbian OS executable <var>filename</var> 
+(Unicode) and passes it the <var>command</var> string. When 
+<var>wait</var> is set, the function synchronously waits for the exit 
+of the executable and returns a value that describes the exit type. Possible 
+values are <code>0</code> for normal exit and <code>2</code> for abnormal exit.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-14' xml:id='l2h-14' class="function">start_server</tt></b>(</nobr></td>
+  <td><var>filename</var>)</td></tr></table></dt>
+<dd>
+Starts the Python script in file <var>filename</var> (Unicode) as a 
+server in its own process. Note that <tt class="module">appuifw</tt> module is not 
+available to a server script.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-15' xml:id='l2h-15' class="function">reset_inactivity</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Resets the timers since the user was last active. As a consequence, the device 
+backlight is normally turned on when this function is invoked.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-16' xml:id='l2h-16' class="function">inactivity</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the time in seconds since the user of the device was last active.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="2.1 e32  "
+  href="module-e32.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="2.1 e32  "
+  href="module-e32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="2.1.2 ao_lock Type"
+  href="node11.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-e32.html">2.1 e32  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32.html">2.1 e32  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node11.html">2.1.2 Ao_lock Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

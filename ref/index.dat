@@ -1,0 +1,1169 @@
+<a href="node5.html#l2h-1">BNF###0000009156
+<a href="node5.html#l2h-1">grammar###0000009157
+<a href="node5.html#l2h-1">syntax###0000009158
+<a href="node5.html#l2h-1">notation###0000009159
+<a href="node5.html#l2h-2">lexical definitions###0000009160
+<a href="node5.html#l2h-2">ASCII@ASCII###0000009161
+<a href="node6.html#l2h-3">lexical analysis###0000009163
+<a href="node6.html#l2h-3">parser###0000009164
+<a href="node6.html#l2h-3">token###0000009165
+<a href="node7.html#l2h-4">line structure###0000009167
+<a href="node8.html#l2h-5">logical line###0000009169
+<a href="node8.html#l2h-5">physical line###0000009170
+<a href="node8.html#l2h-5">line joining###0000009171
+<a href="node8.html#l2h-5">NEWLINE token###0000009172
+<a href="node10.html#l2h-6">comment###0000009175
+<a href="node10.html#l2h-6">hash character###0000009176
+<a href="node11.html#l2h-7">source character set###0000009178
+<a href="node11.html#l2h-7">encodings###0000009179
+<a href="node12.html#l2h-8">physical line###0000009181
+<a href="node12.html#l2h-8">line joining###0000009182
+<a href="node12.html#l2h-8">line continuation###0000009183
+<a href="node12.html#l2h-8">backslash character###0000009184
+<a href="node14.html#l2h-9">blank line###0000009187
+<a href="node15.html#l2h-10">indentation###0000009189
+<a href="node15.html#l2h-10">whitespace###0000009190
+<a href="node15.html#l2h-10">leading whitespace###0000009191
+<a href="node15.html#l2h-10">space###0000009192
+<a href="node15.html#l2h-10">tab###0000009193
+<a href="node15.html#l2h-10">grouping###0000009194
+<a href="node15.html#l2h-10">statement grouping###0000009195
+<a href="node15.html#l2h-11">INDENT token###0000009196
+<a href="node15.html#l2h-11">DEDENT token###0000009197
+<a href="node18.html#l2h-12">identifier###0000009201
+<a href="node18.html#l2h-12">name###0000009202
+<a href="node19.html#l2h-13">keyword###0000009204
+<a href="node19.html#l2h-13">reserved word###0000009205
+<a href="node21.html#l2h-14">literal###0000009211
+<a href="node21.html#l2h-14">constant###0000009212
+<a href="node22.html#l2h-15">string literal###0000009224
+<a href="node22.html#l2h-16">ASCII@ASCII###0000009225
+<a href="node22.html#l2h-17">triple-quoted string###0000009226
+<a href="node22.html#l2h-17">Unicode Consortium###0000009227
+<a href="node22.html#l2h-17">string!Unicode###0000009228
+<a href="node22.html#l2h-18">raw string###0000009229
+<a href="node22.html#l2h-19">physical line###0000009230
+<a href="node22.html#l2h-19">escape sequence###0000009231
+<a href="node22.html#l2h-19">Standard C###0000009232
+<a href="node22.html#l2h-19">C###0000009233
+<a href="node22.html#l2h-20">ASCII@ASCII###0000009234
+<a href="node22.html#l2h-21">unrecognized escape sequence###0000009235
+<a href="node24.html#l2h-22">number###0000009238
+<a href="node24.html#l2h-22">numeric literal###0000009239
+<a href="node24.html#l2h-22">integer literal###0000009240
+<a href="node24.html#l2h-22">plain integer literal###0000009241
+<a href="node24.html#l2h-22">long integer literal###0000009242
+<a href="node24.html#l2h-22">floating point literal###0000009243
+<a href="node24.html#l2h-22">hexadecimal literal###0000009244
+<a href="node24.html#l2h-22">octal literal###0000009245
+<a href="node24.html#l2h-22">decimal literal###0000009246
+<a href="node24.html#l2h-22">imaginary literal###0000009247
+<a href="node24.html#l2h-22">complex!literal###0000009248
+<a href="node28.html#l2h-23">operators###0000009256
+<a href="node29.html#l2h-24">delimiters###0000009258
+<a href="node29.html#l2h-25">ASCII@ASCII###0000009259
+<a href="node31.html#l2h-26"><tt class="function">id()</tt> (built-in function)###0000009262
+<a href="node31.html#l2h-27"><tt class="function">type()</tt> (built-in function)###0000009265
+<a href="node31.html#l2h-28">object###0000009266
+<a href="node31.html#l2h-28">data###0000009267
+<a href="node31.html#l2h-29">identity of an object###0000009268
+<a href="node31.html#l2h-29">value of an object###0000009269
+<a href="node31.html#l2h-29">type of an object###0000009270
+<a href="node31.html#l2h-29">mutable object###0000009271
+<a href="node31.html#l2h-29">immutable object###0000009272
+<a href="node31.html#l2h-30">garbage collection###0000009273
+<a href="node31.html#l2h-30">reference counting###0000009274
+<a href="node31.html#l2h-30">unreachable object###0000009275
+<a href="node31.html#l2h-31">container###0000009276
+<a href="node32.html#l2h-32">data!type###0000009279
+<a href="node32.html#l2h-32">type!data###0000009280
+<a href="node32.html#l2h-33">type!hierarchy###0000009281
+<a href="node32.html#l2h-33">hierarchy!type###0000009282
+<a href="node32.html#l2h-34">extension!module###0000009283
+<a href="node32.html#l2h-34">module!extension###0000009284
+<a href="node32.html#l2h-35">C!language###0000009285
+<a href="node32.html#l2h-35">language!C###0000009286
+<a href="node32.html#l2h-36">special!attribute###0000009287
+<a href="node32.html#l2h-36">attribute!special###0000009288
+<a href="node32.html#l2h-37">generic!special attribute###0000009289
+<a href="node32.html#l2h-37">special!attribute, generic###0000009290
+<a href="node32.html#l2h-37">attribute!generic special###0000009291
+<a href="node32.html#l2h-38">None object###0000009334
+<a href="node32.html#l2h-38">object!None###0000009335
+<a href="node32.html#l2h-39">NotImplemented object###0000009336
+<a href="node32.html#l2h-39">object!NotImplemented###0000009337
+<a href="node32.html#l2h-40">Ellipsis object###0000009338
+<a href="node32.html#l2h-40">object!Ellipsis###0000009339
+<a href="node32.html#l2h-41">numeric object###0000009340
+<a href="node32.html#l2h-41">object!numeric###0000009341
+<a href="node32.html#l2h-42">integer object###0000009348
+<a href="node32.html#l2h-42">object!integer###0000009349
+<a href="node32.html#l2h-43">plain integer object###0000009353
+<a href="node32.html#l2h-43">object!plain integer###0000009354
+<a href="node32.html#l2h-45">OverflowError (built-in exception)###0000009355
+<a href="node32.html#l2h-46">long integer object###0000009356
+<a href="node32.html#l2h-46">object!long integer###0000009357
+<a href="node32.html#l2h-47">Boolean object###0000009358
+<a href="node32.html#l2h-47">object!Boolean###0000009359
+<a href="node32.html#l2h-48">integer!representation###0000009360
+<a href="node32.html#l2h-48">representation!integer###0000009361
+<a href="node32.html#l2h-49">floating point object###0000009362
+<a href="node32.html#l2h-49">object!floating point###0000009363
+<a href="node32.html#l2h-50">floating point!number###0000009364
+<a href="node32.html#l2h-50">number!floating point###0000009365
+<a href="node32.html#l2h-51">C!language###0000009366
+<a href="node32.html#l2h-51">language!C###0000009367
+<a href="node32.html#l2h-52">Java!language###0000009368
+<a href="node32.html#l2h-52">language!Java###0000009369
+<a href="node32.html#l2h-53">complex object###0000009370
+<a href="node32.html#l2h-53">object!complex###0000009371
+<a href="node32.html#l2h-54">complex!number###0000009372
+<a href="node32.html#l2h-54">number!complex###0000009373
+<a href="node32.html#l2h-55"><tt class="function">len()</tt> (built-in function)###0000009374
+<a href="node32.html#l2h-56">sequence object###0000009375
+<a href="node32.html#l2h-56">object!sequence###0000009376
+<a href="node32.html#l2h-57">immutable sequence object###0000009383
+<a href="node32.html#l2h-57">object!immutable sequence###0000009384
+<a href="node32.html#l2h-58">immutable object###0000009385
+<a href="node32.html#l2h-58">object!immutable###0000009386
+<a href="node32.html#l2h-59"><tt class="function">chr()</tt> (built-in function)###0000009390
+<a href="node32.html#l2h-60"><tt class="function">ord()</tt> (built-in function)###0000009391
+<a href="node32.html#l2h-61">string object###0000009392
+<a href="node32.html#l2h-61">object!string###0000009393
+<a href="node32.html#l2h-62">string!comparison###0000009394
+<a href="node32.html#l2h-62">comparison!string###0000009395
+<a href="node32.html#l2h-63"><tt class="function">chr()</tt> (built-in function)###0000009396
+<a href="node32.html#l2h-64"><tt class="function">ord()</tt> (built-in function)###0000009397
+<a href="node32.html#l2h-65"><tt class="function">unichr()</tt> (built-in function)###0000009398
+<a href="node32.html#l2h-66"><tt class="function">ord()</tt> (built-in function)###0000009399
+<a href="node32.html#l2h-67"><tt class="function">unicode()</tt> (built-in function)###0000009400
+<a href="node32.html#l2h-68">unicode object###0000009401
+<a href="node32.html#l2h-68">object!unicode###0000009402
+<a href="node32.html#l2h-69">tuple object###0000009403
+<a href="node32.html#l2h-69">object!tuple###0000009404
+<a href="node32.html#l2h-70">singleton!tuple###0000009405
+<a href="node32.html#l2h-70">tuple!singleton###0000009406
+<a href="node32.html#l2h-71">empty!tuple###0000009407
+<a href="node32.html#l2h-71">tuple!empty###0000009408
+<a href="node32.html#l2h-72">mutable sequence object###0000009409
+<a href="node32.html#l2h-72">object!mutable sequence###0000009410
+<a href="node32.html#l2h-73">mutable object###0000009411
+<a href="node32.html#l2h-73">object!mutable###0000009412
+<a href="node32.html#l2h-74">assignment!statement###0000009413
+<a href="node32.html#l2h-74">statement!assignment###0000009414
+<a href="node32.html#l2h-75">del statement###0000009415
+<a href="node32.html#l2h-75">statement!del###0000009416
+<a href="node32.html#l2h-76">list object###0000009418
+<a href="node32.html#l2h-76">object!list###0000009419
+<a href="node32.html#l2h-77"><tt class="function">len()</tt> (built-in function)###0000009420
+<a href="node32.html#l2h-78">set type object###0000009421
+<a href="node32.html#l2h-78">object!set type###0000009422
+<a href="node32.html#l2h-79">set object###0000009425
+<a href="node32.html#l2h-79">object!set###0000009426
+<a href="node32.html#l2h-80">frozenset object###0000009427
+<a href="node32.html#l2h-80">object!frozenset###0000009428
+<a href="node32.html#l2h-81"><tt class="function">len()</tt> (built-in function)###0000009429
+<a href="node32.html#l2h-82">mapping object###0000009430
+<a href="node32.html#l2h-82">object!mapping###0000009431
+<a href="node32.html#l2h-83">dictionary object###0000009433
+<a href="node32.html#l2h-83">object!dictionary###0000009434
+<a href="node32.html#l2h-84">callable object###0000009435
+<a href="node32.html#l2h-84">object!callable###0000009436
+<a href="node32.html#l2h-85">function!call###0000009437
+<a href="node32.html#l2h-85">call!function###0000009438
+<a href="node32.html#l2h-86">function!argument###0000009439
+<a href="node32.html#l2h-86">argument!function###0000009440
+<a href="node32.html#l2h-87">user-defined!function###0000009449
+<a href="node32.html#l2h-87">function!user-defined###0000009450
+<a href="node32.html#l2h-88">function object###0000009451
+<a href="node32.html#l2h-88">object!function###0000009452
+<a href="node32.html#l2h-89">user-defined function object###0000009453
+<a href="node32.html#l2h-89">object!user-defined function###0000009454
+<a href="node32.html#l2h-91">func_doc (function attribute)###0000009455
+<a href="node32.html#l2h-91">__doc__ (function attribute)###0000009456
+<a href="node32.html#l2h-91">__name__ (function attribute)###0000009457
+<a href="node32.html#l2h-91">__module__ (function attribute)###0000009458
+<a href="node32.html#l2h-91">__dict__ (function attribute)###0000009459
+<a href="node32.html#l2h-91">func_defaults (function attribute)###0000009460
+<a href="node32.html#l2h-91">func_closure (function attribute)###0000009461
+<a href="node32.html#l2h-91">func_code (function attribute)###0000009462
+<a href="node32.html#l2h-91">func_globals (function attribute)###0000009463
+<a href="node32.html#l2h-91">func_dict (function attribute)###0000009464
+<a href="node32.html#l2h-92">global!namespace###0000009465
+<a href="node32.html#l2h-92">namespace!global###0000009466
+<a href="node32.html#l2h-93">method object###0000009467
+<a href="node32.html#l2h-93">object!method###0000009468
+<a href="node32.html#l2h-94">user-defined method object###0000009469
+<a href="node32.html#l2h-94">object!user-defined method###0000009470
+<a href="node32.html#l2h-95">user-defined!method###0000009471
+<a href="node32.html#l2h-95">method!user-defined###0000009472
+<a href="node32.html#l2h-97">__doc__ (method attribute)###0000009473
+<a href="node32.html#l2h-97">__name__ (method attribute)###0000009474
+<a href="node32.html#l2h-97">__module__ (method attribute)###0000009475
+<a href="node32.html#l2h-97">im_func (method attribute)###0000009476
+<a href="node32.html#l2h-97">im_self (method attribute)###0000009477
+<a href="node32.html#l2h-99">im_class (method attribute)###0000009478
+<a href="node32.html#l2h-99">im_func (method attribute)###0000009479
+<a href="node32.html#l2h-99">im_self (method attribute)###0000009480
+<a href="node32.html#l2h-101">im_func (method attribute)###0000009481
+<a href="node32.html#l2h-103">im_class (method attribute)###0000009482
+<a href="node32.html#l2h-103">im_func (method attribute)###0000009483
+<a href="node32.html#l2h-103">im_self (method attribute)###0000009484
+<a href="node32.html#l2h-104">generator!function###0000009485
+<a href="node32.html#l2h-104">generator!iterator###0000009486
+<a href="node32.html#l2h-105">built-in function object###0000009487
+<a href="node32.html#l2h-105">object!built-in function###0000009488
+<a href="node32.html#l2h-106">function object###0000009489
+<a href="node32.html#l2h-106">object!function###0000009490
+<a href="node32.html#l2h-107">C!language###0000009491
+<a href="node32.html#l2h-107">language!C###0000009492
+<a href="node32.html#l2h-108">built-in method object###0000009493
+<a href="node32.html#l2h-108">object!built-in method###0000009494
+<a href="node32.html#l2h-109">method object###0000009495
+<a href="node32.html#l2h-109">object!method###0000009496
+<a href="node32.html#l2h-110">built-in!method###0000009497
+<a href="node32.html#l2h-110">method!built-in###0000009498
+<a href="node32.html#l2h-112">__init__() (object method)###0000009499
+<a href="node32.html#l2h-113">class object###0000009500
+<a href="node32.html#l2h-113">object!class###0000009501
+<a href="node32.html#l2h-114">class instance object###0000009502
+<a href="node32.html#l2h-114">object!class instance###0000009503
+<a href="node32.html#l2h-115">instance object###0000009504
+<a href="node32.html#l2h-115">object!instance###0000009505
+<a href="node32.html#l2h-116">class object!call###0000009506
+<a href="node32.html#l2h-116">call!class object###0000009507
+<a href="node32.html#l2h-117">import statement###0000009508
+<a href="node32.html#l2h-117">statement!import###0000009509
+<a href="node32.html#l2h-118">module object###0000009510
+<a href="node32.html#l2h-118">object!module###0000009511
+<a href="node32.html#l2h-120">__dict__ (module attribute)###0000009512
+<a href="node32.html#l2h-122">__name__ (module attribute)###0000009513
+<a href="node32.html#l2h-122">__doc__ (module attribute)###0000009514
+<a href="node32.html#l2h-122">__file__ (module attribute)###0000009515
+<a href="node32.html#l2h-123">module!namespace###0000009516
+<a href="node32.html#l2h-123">namespace!module###0000009517
+<a href="node32.html#l2h-124">class object###0000009518
+<a href="node32.html#l2h-124">object!class###0000009519
+<a href="node32.html#l2h-125">class instance object###0000009520
+<a href="node32.html#l2h-125">object!class instance###0000009521
+<a href="node32.html#l2h-126">instance object###0000009522
+<a href="node32.html#l2h-126">object!instance###0000009523
+<a href="node32.html#l2h-127">class object!call###0000009524
+<a href="node32.html#l2h-127">call!class object###0000009525
+<a href="node32.html#l2h-128">dictionary object###0000009526
+<a href="node32.html#l2h-128">object!dictionary###0000009527
+<a href="node32.html#l2h-129">class!attribute###0000009528
+<a href="node32.html#l2h-129">attribute!class###0000009529
+<a href="node32.html#l2h-130">class!attribute assignment###0000009530
+<a href="node32.html#l2h-130">attribute!assignment, class###0000009531
+<a href="node32.html#l2h-130">assignment!class attribute###0000009532
+<a href="node32.html#l2h-131">class object!call###0000009533
+<a href="node32.html#l2h-131">call!class object###0000009534
+<a href="node32.html#l2h-133">__name__ (class attribute)###0000009535
+<a href="node32.html#l2h-133">__module__ (class attribute)###0000009536
+<a href="node32.html#l2h-133">__dict__ (class attribute)###0000009537
+<a href="node32.html#l2h-133">__bases__ (class attribute)###0000009538
+<a href="node32.html#l2h-133">__doc__ (class attribute)###0000009539
+<a href="node32.html#l2h-134">class instance object###0000009540
+<a href="node32.html#l2h-134">object!class instance###0000009541
+<a href="node32.html#l2h-135">instance object###0000009542
+<a href="node32.html#l2h-135">object!instance###0000009543
+<a href="node32.html#l2h-136">class!instance###0000009544
+<a href="node32.html#l2h-136">instance!class###0000009545
+<a href="node32.html#l2h-137">class instance!attribute###0000009546
+<a href="node32.html#l2h-137">attribute!class instance###0000009547
+<a href="node32.html#l2h-138">class instance!attribute assignment###0000009548
+<a href="node32.html#l2h-138">attribute!assignment, class instance###0000009549
+<a href="node32.html#l2h-138">assignment!class instance attribute###0000009550
+<a href="node32.html#l2h-139">numeric object###0000009551
+<a href="node32.html#l2h-139">object!numeric###0000009552
+<a href="node32.html#l2h-140">sequence object###0000009553
+<a href="node32.html#l2h-140">object!sequence###0000009554
+<a href="node32.html#l2h-141">mapping object###0000009555
+<a href="node32.html#l2h-141">object!mapping###0000009556
+<a href="node32.html#l2h-143">__dict__ (instance attribute)###0000009557
+<a href="node32.html#l2h-143">__class__ (instance attribute)###0000009558
+<a href="node32.html#l2h-144">file object###0000009559
+<a href="node32.html#l2h-144">object!file###0000009560
+<a href="node32.html#l2h-145"><tt class="function">open()</tt> (built-in function)###0000009561
+<a href="node32.html#l2h-147">popen() (in module os)###0000009562
+<a href="node32.html#l2h-149">makefile() (socket method)###0000009563
+<a href="node32.html#l2h-151">stdin (in module sys)###0000009564
+<a href="node32.html#l2h-151">stdout (in module sys)###0000009565
+<a href="node32.html#l2h-151">stderr (in module sys)###0000009566
+<a href="node32.html#l2h-152">code object###0000009573
+<a href="node32.html#l2h-152">object!code###0000009574
+<a href="node32.html#l2h-154">co_argcount (code object attribute)###0000009575
+<a href="node32.html#l2h-154">co_code (code object attribute)###0000009576
+<a href="node32.html#l2h-154">co_consts (code object attribute)###0000009577
+<a href="node32.html#l2h-154">co_filename (code object attribute)###0000009578
+<a href="node32.html#l2h-154">co_firstlineno (code object attribute)###0000009579
+<a href="node32.html#l2h-154">co_flags (code object attribute)###0000009580
+<a href="node32.html#l2h-154">co_lnotab (code object attribute)###0000009581
+<a href="node32.html#l2h-154">co_name (code object attribute)###0000009582
+<a href="node32.html#l2h-154">co_names (code object attribute)###0000009583
+<a href="node32.html#l2h-154">co_nlocals (code object attribute)###0000009584
+<a href="node32.html#l2h-154">co_stacksize (code object attribute)###0000009585
+<a href="node32.html#l2h-154">co_varnames (code object attribute)###0000009586
+<a href="node32.html#l2h-154">co_cellvars (code object attribute)###0000009587
+<a href="node32.html#l2h-154">co_freevars (code object attribute)###0000009588
+<a href="node32.html#l2h-155">generator object###0000009589
+<a href="node32.html#l2h-155">object!generator###0000009590
+<a href="node32.html#l2h-156">frame object###0000009591
+<a href="node32.html#l2h-156">object!frame###0000009592
+<a href="node32.html#l2h-158">f_back (frame attribute)###0000009593
+<a href="node32.html#l2h-158">f_code (frame attribute)###0000009594
+<a href="node32.html#l2h-158">f_globals (frame attribute)###0000009595
+<a href="node32.html#l2h-158">f_locals (frame attribute)###0000009596
+<a href="node32.html#l2h-158">f_lasti (frame attribute)###0000009597
+<a href="node32.html#l2h-158">f_builtins (frame attribute)###0000009598
+<a href="node32.html#l2h-158">f_restricted (frame attribute)###0000009599
+<a href="node32.html#l2h-160">f_trace (frame attribute)###0000009600
+<a href="node32.html#l2h-160">f_exc_type (frame attribute)###0000009601
+<a href="node32.html#l2h-160">f_exc_value (frame attribute)###0000009602
+<a href="node32.html#l2h-160">f_exc_traceback (frame attribute)###0000009603
+<a href="node32.html#l2h-160">f_lineno (frame attribute)###0000009604
+<a href="node32.html#l2h-161">traceback object###0000009605
+<a href="node32.html#l2h-161">object!traceback###0000009606
+<a href="node32.html#l2h-162">stack!trace###0000009607
+<a href="node32.html#l2h-162">trace!stack###0000009608
+<a href="node32.html#l2h-163">exception!handler###0000009609
+<a href="node32.html#l2h-163">handler!exception###0000009610
+<a href="node32.html#l2h-164">execution!stack###0000009611
+<a href="node32.html#l2h-164">stack!execution###0000009612
+<a href="node32.html#l2h-166">exc_info (in module sys)###0000009613
+<a href="node32.html#l2h-166">exc_traceback (in module sys)###0000009614
+<a href="node32.html#l2h-166">last_traceback (in module sys)###0000009615
+<a href="node32.html#l2h-168">tb_next (traceback attribute)###0000009616
+<a href="node32.html#l2h-168">tb_frame (traceback attribute)###0000009617
+<a href="node32.html#l2h-168">tb_lineno (traceback attribute)###0000009618
+<a href="node32.html#l2h-168">tb_lasti (traceback attribute)###0000009619
+<a href="node32.html#l2h-169">try statement###0000009620
+<a href="node32.html#l2h-169">statement!try###0000009621
+<a href="node32.html#l2h-170"><tt class="function">slice()</tt> (built-in function)###0000009622
+<a href="node32.html#l2h-172">start (slice object attribute)###0000009623
+<a href="node32.html#l2h-172">stop (slice object attribute)###0000009624
+<a href="node32.html#l2h-172">step (slice object attribute)###0000009625
+<a href="node32.html#l2h-173"><tt class="method">indices()</tt> (slice method)###0000009626
+<a href="node32.html#l2h-174">type###0000009627
+<a href="node32.html#l2h-175">attribute###0000009628
+<a href="node32.html#l2h-176">False###0000009629
+<a href="node32.html#l2h-176">True###0000009630
+<a href="node32.html#l2h-177">index operation###0000009631
+<a href="node32.html#l2h-177">item selection###0000009632
+<a href="node32.html#l2h-177">subscription###0000009633
+<a href="node32.html#l2h-178">slicing###0000009634
+<a href="node32.html#l2h-179">extended slicing###0000009635
+<a href="node32.html#l2h-180">character###0000009636
+<a href="node32.html#l2h-180">byte###0000009637
+<a href="node32.html#l2h-180">ASCII@ASCII###0000009638
+<a href="node32.html#l2h-181">ASCII@ASCII###0000009639
+<a href="node32.html#l2h-181">EBCDIC###0000009640
+<a href="node32.html#l2h-181">character set###0000009641
+<a href="node32.html#l2h-182">character###0000009642
+<a href="node32.html#l2h-182">integer###0000009643
+<a href="node32.html#l2h-182">Unicode###0000009644
+<a href="node32.html#l2h-183">delete###0000009645
+<a href="node32.html#l2h-184">subscription###0000009646
+<a href="node32.html#l2h-184">slicing###0000009647
+<a href="node32.html#l2h-185"><tt class="module">array</tt> (standard module)###REF0000009648
+<a href="node32.html#l2h-186">subscription###0000009649
+<a href="node32.html#l2h-187"><tt class="module">dbm</tt> (standard module)###REF0000009650
+<a href="node32.html#l2h-188"><tt class="module">gdbm</tt> (standard module)###REF0000009651
+<a href="node32.html#l2h-189"><tt class="module">bsddb</tt> (standard module)###REF0000009652
+<a href="node32.html#l2h-190">invocation###0000009653
+<a href="node32.html#l2h-191">container###0000009654
+<a href="node32.html#l2h-192">sys.stdin###0000009655
+<a href="node32.html#l2h-193">sys.stdout###0000009656
+<a href="node32.html#l2h-194">sys.stderr###0000009657
+<a href="node32.html#l2h-195">stdio###0000009658
+<a href="node32.html#l2h-196">internal type###0000009659
+<a href="node32.html#l2h-196">types, internal###0000009660
+<a href="node32.html#l2h-197">bytecode###0000009661
+<a href="node32.html#l2h-198">documentation string###0000009662
+<a href="node32.html#l2h-199">sys.exc_info###0000009663
+<a href="node32.html#l2h-199">sys.exc_traceback###0000009664
+<a href="node32.html#l2h-199">sys.last_traceback###0000009665
+<a href="node33.html#l2h-200">class###0000009667
+<a href="node33.html#l2h-201">class###0000009668
+<a href="node33.html#l2h-202">class###0000009669
+<a href="node34.html#l2h-203">operator!overloading###0000009671
+<a href="node34.html#l2h-203">overloading!operator###0000009672
+<a href="node34.html#l2h-205">__getitem__() (mapping object method)###0000009675
+<a href="node35.html#l2h-206"><tt class="method">__new__()</tt> (object method)###0000009678
+<a href="node35.html#l2h-207"><tt class="method">__init__()</tt> (object method)###0000009679
+<a href="node35.html#l2h-208">class!constructor###0000009680
+<a href="node35.html#l2h-208">constructor!class###0000009681
+<a href="node35.html#l2h-209"><tt class="method">__del__()</tt> (object method)###0000009682
+<a href="node35.html#l2h-210">del statement###0000009683
+<a href="node35.html#l2h-210">statement!del###0000009684
+<a href="node35.html#l2h-211"><tt class="method">__repr__()</tt> (object method)###0000009685
+<a href="node35.html#l2h-212"><tt class="function">repr()</tt> (built-in function)###0000009686
+<a href="node35.html#l2h-213">string!conversion###0000009687
+<a href="node35.html#l2h-213">conversion!string###0000009688
+<a href="node35.html#l2h-214">reverse!quotes###0000009689
+<a href="node35.html#l2h-214">quotes!reverse###0000009690
+<a href="node35.html#l2h-215">backward!quotes###0000009691
+<a href="node35.html#l2h-215">quotes!backward###0000009692
+<a href="node35.html#l2h-216"><tt class="method">__str__()</tt> (object method)###0000009693
+<a href="node35.html#l2h-217"><tt class="function">str()</tt> (built-in function)###0000009694
+<a href="node35.html#l2h-218">print statement###0000009695
+<a href="node35.html#l2h-218">statement!print###0000009696
+<a href="node35.html#l2h-219"><tt class="method">__lt__()</tt> (object method)###0000009697
+<a href="node35.html#l2h-220"><tt class="method">__le__()</tt> (object method)###0000009698
+<a href="node35.html#l2h-221"><tt class="method">__eq__()</tt> (object method)###0000009699
+<a href="node35.html#l2h-222"><tt class="method">__ne__()</tt> (object method)###0000009700
+<a href="node35.html#l2h-223"><tt class="method">__gt__()</tt> (object method)###0000009701
+<a href="node35.html#l2h-224"><tt class="method">__ge__()</tt> (object method)###0000009702
+<a href="node35.html#l2h-225"><tt class="method">__cmp__()</tt> (object method)###0000009703
+<a href="node35.html#l2h-226"><tt class="function">cmp()</tt> (built-in function)###0000009704
+<a href="node35.html#l2h-227"><tt class="method">__rcmp__()</tt> (object method)###0000009705
+<a href="node35.html#l2h-228"><tt class="method">__hash__()</tt> (object method)###0000009706
+<a href="node35.html#l2h-229">dictionary object###0000009707
+<a href="node35.html#l2h-229">object!dictionary###0000009708
+<a href="node35.html#l2h-230"><tt class="function">hash()</tt> (built-in function)###0000009709
+<a href="node35.html#l2h-232">__cmp__() (object method)###0000009710
+<a href="node35.html#l2h-233"><tt class="method">__nonzero__()</tt> (object method)###0000009711
+<a href="node35.html#l2h-235">__len__() (mapping object method)###0000009712
+<a href="node35.html#l2h-236"><tt class="method">__unicode__()</tt> (object method)###0000009713
+<a href="node35.html#l2h-237"><tt class="function">unicode()</tt> (built-in function)###0000009714
+<a href="node35.html#l2h-238">destructor###0000009715
+<a href="node35.html#l2h-239">back-quotes###0000009716
+<a href="node35.html#l2h-240">comparisons###0000009717
+<a href="node36.html#l2h-241"><tt class="method">__getattr__()</tt> (object method)###0000009719
+<a href="node36.html#l2h-243">__setattr__() (object method)###0000009720
+<a href="node36.html#l2h-244"><tt class="method">__setattr__()</tt> (object method)###0000009721
+<a href="node36.html#l2h-246">__dict__ (instance attribute)###0000009722
+<a href="node36.html#l2h-247"><tt class="method">__delattr__()</tt> (object method)###0000009723
+<a href="node37.html#l2h-248"><tt class="method">__getattribute__()</tt> (object method)###0000009725
+<a href="node38.html#l2h-249"><tt class="method">__get__()</tt> (object method)###0000009727
+<a href="node38.html#l2h-250"><tt class="method">__set__()</tt> (object method)###0000009728
+<a href="node38.html#l2h-251"><tt class="method">__delete__()</tt> (object method)###0000009729
+<a href="node40.html#l2h-252"><tt>__slots__</tt>###0000009740
+<a href="node41.html#l2h-253"><tt>__metaclass__</tt>###0000009742
+<a href="node42.html#l2h-254"><tt class="method">__call__()</tt> (object method)###0000009744
+<a href="node42.html#l2h-255">call!instance###0000009745
+<a href="node42.html#l2h-255">instance!call###0000009746
+<a href="node43.html#l2h-257">keys() (mapping object method)###0000009748
+<a href="node43.html#l2h-257">values() (mapping object method)###0000009749
+<a href="node43.html#l2h-257">items() (mapping object method)###0000009750
+<a href="node43.html#l2h-257">iterkeys() (mapping object method)###0000009751
+<a href="node43.html#l2h-257">itervalues() (mapping object method)###0000009752
+<a href="node43.html#l2h-257">iteritems() (mapping object method)###0000009753
+<a href="node43.html#l2h-257">has_key() (mapping object method)###0000009754
+<a href="node43.html#l2h-257">get() (mapping object method)###0000009755
+<a href="node43.html#l2h-257">setdefault() (mapping object method)###0000009756
+<a href="node43.html#l2h-257">pop() (mapping object method)###0000009757
+<a href="node43.html#l2h-257">popitem() (mapping object method)###0000009758
+<a href="node43.html#l2h-257">clear() (mapping object method)###0000009759
+<a href="node43.html#l2h-257">copy() (mapping object method)###0000009760
+<a href="node43.html#l2h-257">update() (mapping object method)###0000009761
+<a href="node43.html#l2h-257">__contains__() (mapping object method)###0000009762
+<a href="node43.html#l2h-259">append() (sequence object method)###0000009763
+<a href="node43.html#l2h-259">count() (sequence object method)###0000009764
+<a href="node43.html#l2h-259">extend() (sequence object method)###0000009765
+<a href="node43.html#l2h-259">index() (sequence object method)###0000009766
+<a href="node43.html#l2h-259">insert() (sequence object method)###0000009767
+<a href="node43.html#l2h-259">pop() (sequence object method)###0000009768
+<a href="node43.html#l2h-259">remove() (sequence object method)###0000009769
+<a href="node43.html#l2h-259">reverse() (sequence object method)###0000009770
+<a href="node43.html#l2h-259">sort() (sequence object method)###0000009771
+<a href="node43.html#l2h-259">__add__() (sequence object method)###0000009772
+<a href="node43.html#l2h-259">__radd__() (sequence object method)###0000009773
+<a href="node43.html#l2h-259">__iadd__() (sequence object method)###0000009774
+<a href="node43.html#l2h-259">__mul__() (sequence object method)###0000009775
+<a href="node43.html#l2h-259">__rmul__() (sequence object method)###0000009776
+<a href="node43.html#l2h-259">__imul__() (sequence object method)###0000009777
+<a href="node43.html#l2h-259">__contains__() (sequence object method)###0000009778
+<a href="node43.html#l2h-259">__iter__() (sequence object method)###0000009779
+<a href="node43.html#l2h-261">__coerce__() (numeric object method)###0000009780
+<a href="node43.html#l2h-262"><tt class="method">__len__()</tt> (container object method)###0000009781
+<a href="node43.html#l2h-263"><tt class="function">len()</tt> (built-in function)###0000009782
+<a href="node43.html#l2h-265">__nonzero__() (object method)###0000009783
+<a href="node43.html#l2h-266"><tt class="method">__getitem__()</tt> (container object method)###0000009784
+<a href="node43.html#l2h-267">slice object###0000009785
+<a href="node43.html#l2h-267">object!slice###0000009786
+<a href="node43.html#l2h-268"><tt class="method">__setitem__()</tt> (container object method)###0000009787
+<a href="node43.html#l2h-269"><tt class="method">__delitem__()</tt> (container object method)###0000009788
+<a href="node43.html#l2h-270"><tt class="method">__iter__()</tt> (container object method)###0000009789
+<a href="node43.html#l2h-271"><tt class="method">__contains__()</tt> (container object method)###0000009790
+<a href="node44.html#l2h-272"><tt class="method">__getslice__()</tt> (sequence object method)###0000009792
+<a href="node44.html#l2h-273"><tt class="method">__setslice__()</tt> (sequence object method)###0000009793
+<a href="node44.html#l2h-274"><tt class="method">__delslice__()</tt> (sequence object method)###0000009794
+<a href="node45.html#l2h-275"><tt class="method">__add__()</tt> (numeric object method)###0000009796
+<a href="node45.html#l2h-276"><tt class="method">__sub__()</tt> (numeric object method)###0000009797
+<a href="node45.html#l2h-277"><tt class="method">__mul__()</tt> (numeric object method)###0000009798
+<a href="node45.html#l2h-278"><tt class="method">__floordiv__()</tt> (numeric object method)###0000009799
+<a href="node45.html#l2h-279"><tt class="method">__mod__()</tt> (numeric object method)###0000009800
+<a href="node45.html#l2h-280"><tt class="method">__divmod__()</tt> (numeric object method)###0000009801
+<a href="node45.html#l2h-281"><tt class="method">__pow__()</tt> (numeric object method)###0000009802
+<a href="node45.html#l2h-282"><tt class="method">__lshift__()</tt> (numeric object method)###0000009803
+<a href="node45.html#l2h-283"><tt class="method">__rshift__()</tt> (numeric object method)###0000009804
+<a href="node45.html#l2h-284"><tt class="method">__and__()</tt> (numeric object method)###0000009805
+<a href="node45.html#l2h-285"><tt class="method">__xor__()</tt> (numeric object method)###0000009806
+<a href="node45.html#l2h-286"><tt class="method">__or__()</tt> (numeric object method)###0000009807
+<a href="node45.html#l2h-287"><tt class="function">divmod()</tt> (built-in function)###0000009808
+<a href="node45.html#l2h-288"><tt class="function">pow()</tt> (built-in function)###0000009809
+<a href="node45.html#l2h-289"><tt class="function">pow()</tt> (built-in function)###0000009810
+<a href="node45.html#l2h-290"><tt class="method">__div__()</tt> (numeric object method)###0000009811
+<a href="node45.html#l2h-291"><tt class="method">__truediv__()</tt> (numeric object method)###0000009812
+<a href="node45.html#l2h-292"><tt class="method">__radd__()</tt> (numeric object method)###0000009813
+<a href="node45.html#l2h-293"><tt class="method">__rsub__()</tt> (numeric object method)###0000009814
+<a href="node45.html#l2h-294"><tt class="method">__rmul__()</tt> (numeric object method)###0000009815
+<a href="node45.html#l2h-295"><tt class="method">__rdiv__()</tt> (numeric object method)###0000009816
+<a href="node45.html#l2h-296"><tt class="method">__rtruediv__()</tt> (numeric object method)###0000009817
+<a href="node45.html#l2h-297"><tt class="method">__rfloordiv__()</tt> (numeric object method)###0000009818
+<a href="node45.html#l2h-298"><tt class="method">__rmod__()</tt> (numeric object method)###0000009819
+<a href="node45.html#l2h-299"><tt class="method">__rdivmod__()</tt> (numeric object method)###0000009820
+<a href="node45.html#l2h-300"><tt class="method">__rpow__()</tt> (numeric object method)###0000009821
+<a href="node45.html#l2h-301"><tt class="method">__rlshift__()</tt> (numeric object method)###0000009822
+<a href="node45.html#l2h-302"><tt class="method">__rrshift__()</tt> (numeric object method)###0000009823
+<a href="node45.html#l2h-303"><tt class="method">__rand__()</tt> (numeric object method)###0000009824
+<a href="node45.html#l2h-304"><tt class="method">__rxor__()</tt> (numeric object method)###0000009825
+<a href="node45.html#l2h-305"><tt class="method">__ror__()</tt> (numeric object method)###0000009826
+<a href="node45.html#l2h-306"><tt class="function">divmod()</tt> (built-in function)###0000009827
+<a href="node45.html#l2h-307"><tt class="function">pow()</tt> (built-in function)###0000009828
+<a href="node45.html#l2h-308"><tt class="function">pow()</tt> (built-in function)###0000009831
+<a href="node45.html#l2h-309"><tt class="method">__iadd__()</tt> (numeric object method)###0000009832
+<a href="node45.html#l2h-310"><tt class="method">__isub__()</tt> (numeric object method)###0000009833
+<a href="node45.html#l2h-311"><tt class="method">__imul__()</tt> (numeric object method)###0000009834
+<a href="node45.html#l2h-312"><tt class="method">__idiv__()</tt> (numeric object method)###0000009835
+<a href="node45.html#l2h-313"><tt class="method">__itruediv__()</tt> (numeric object method)###0000009836
+<a href="node45.html#l2h-314"><tt class="method">__ifloordiv__()</tt> (numeric object method)###0000009837
+<a href="node45.html#l2h-315"><tt class="method">__imod__()</tt> (numeric object method)###0000009838
+<a href="node45.html#l2h-316"><tt class="method">__ipow__()</tt> (numeric object method)###0000009839
+<a href="node45.html#l2h-317"><tt class="method">__ilshift__()</tt> (numeric object method)###0000009840
+<a href="node45.html#l2h-318"><tt class="method">__irshift__()</tt> (numeric object method)###0000009841
+<a href="node45.html#l2h-319"><tt class="method">__iand__()</tt> (numeric object method)###0000009842
+<a href="node45.html#l2h-320"><tt class="method">__ixor__()</tt> (numeric object method)###0000009843
+<a href="node45.html#l2h-321"><tt class="method">__ior__()</tt> (numeric object method)###0000009844
+<a href="node45.html#l2h-322"><tt class="method">__neg__()</tt> (numeric object method)###0000009845
+<a href="node45.html#l2h-323"><tt class="method">__pos__()</tt> (numeric object method)###0000009846
+<a href="node45.html#l2h-324"><tt class="method">__abs__()</tt> (numeric object method)###0000009847
+<a href="node45.html#l2h-325"><tt class="method">__invert__()</tt> (numeric object method)###0000009848
+<a href="node45.html#l2h-326"><tt class="function">abs()</tt> (built-in function)###0000009849
+<a href="node45.html#l2h-327"><tt class="method">__complex__()</tt> (numeric object method)###0000009850
+<a href="node45.html#l2h-328"><tt class="method">__int__()</tt> (numeric object method)###0000009851
+<a href="node45.html#l2h-329"><tt class="method">__long__()</tt> (numeric object method)###0000009852
+<a href="node45.html#l2h-330"><tt class="method">__float__()</tt> (numeric object method)###0000009853
+<a href="node45.html#l2h-331"><tt class="function">complex()</tt> (built-in function)###0000009854
+<a href="node45.html#l2h-332"><tt class="function">int()</tt> (built-in function)###0000009855
+<a href="node45.html#l2h-333"><tt class="function">long()</tt> (built-in function)###0000009856
+<a href="node45.html#l2h-334"><tt class="function">float()</tt> (built-in function)###0000009857
+<a href="node45.html#l2h-335"><tt class="method">__oct__()</tt> (numeric object method)###0000009858
+<a href="node45.html#l2h-336"><tt class="method">__hex__()</tt> (numeric object method)###0000009859
+<a href="node45.html#l2h-337"><tt class="function">oct()</tt> (built-in function)###0000009860
+<a href="node45.html#l2h-338"><tt class="function">hex()</tt> (built-in function)###0000009861
+<a href="node45.html#l2h-339"><tt class="method">__index__()</tt> (numeric object method)###0000009862
+<a href="node45.html#l2h-340"><tt class="method">__coerce__()</tt> (numeric object method)###0000009863
+<a href="node47.html#l2h-341">with statement###0000009867
+<a href="node47.html#l2h-341">statement!with###0000009868
+<a href="node47.html#l2h-342"><tt class="method">__enter__()</tt> (context manager method)###0000009869
+<a href="node47.html#l2h-343"><tt class="method">__exit__()</tt> (context manager method)###0000009870
+<a href="node47.html#l2h-344">context manager###0000009871
+<a href="node48.html#l2h-345">execution model###0000009873
+<a href="node49.html#l2h-346">code!block###0000009875
+<a href="node49.html#l2h-346">block!code###0000009876
+<a href="node49.html#l2h-347">binding!name###0000009877
+<a href="node49.html#l2h-347">name!binding###0000009878
+<a href="node49.html#l2h-348">execution!frame###0000009879
+<a href="node49.html#l2h-348">frame!execution###0000009880
+<a href="node49.html#l2h-349">free!variable###0000009881
+<a href="node49.html#l2h-349">variable!free###0000009882
+<a href="node49.html#l2h-351">NameError (built-in
+exception)###0000009883
+<a href="node49.html#l2h-352">from statement###0000009884
+<a href="node49.html#l2h-352">statement!from###0000009885
+<a href="node49.html#l2h-353">restricted!execution###0000009886
+<a href="node49.html#l2h-353">execution!restricted###0000009887
+<a href="node49.html#l2h-354">namespace###0000009888
+<a href="node49.html#l2h-354">scope###0000009889
+<a href="node49.html#l2h-355">name###0000009890
+<a href="node49.html#l2h-356">block###0000009891
+<a href="node49.html#l2h-357">scope###0000009892
+<a href="node49.html#l2h-358">environment###0000009893
+<a href="node49.html#l2h-359">UnboundLocalError###0000009894
+<a href="node49.html#l2h-360"><tt class="module">__main__</tt> (built-in module)###REF0000009895
+<a href="node51.html#l2h-361">exception###0000009901
+<a href="node51.html#l2h-363">SystemExit (built-in
+exception)###0000009902
+<a href="node51.html#l2h-364">raise an exception###0000009903
+<a href="node51.html#l2h-365">handle an exception###0000009904
+<a href="node51.html#l2h-366">exception handler###0000009905
+<a href="node51.html#l2h-366">errors###0000009906
+<a href="node51.html#l2h-366">error handling###0000009907
+<a href="node51.html#l2h-367">termination model###0000009908
+<a href="node52.html#l2h-368">expression###0000009910
+<a href="node52.html#l2h-369">BNF###0000009911
+<a href="node52.html#l2h-370">syntax###0000009912
+<a href="node53.html#l2h-371">arithmetic!conversion###0000009914
+<a href="node53.html#l2h-371">conversion!arithmetic###0000009915
+<a href="node54.html#l2h-372">atom###0000009917
+<a href="node55.html#l2h-373">name###0000009919
+<a href="node55.html#l2h-373">identifier###0000009920
+<a href="node55.html#l2h-374">NameError exception###0000009921
+<a href="node55.html#l2h-374">exception!NameError###0000009922
+<a href="node55.html#l2h-375">name!mangling###0000009923
+<a href="node55.html#l2h-375">mangling!name###0000009924
+<a href="node55.html#l2h-376">private!names###0000009925
+<a href="node55.html#l2h-376">names!private###0000009926
+<a href="node56.html#l2h-377">literal###0000009928
+<a href="node56.html#l2h-378">immutable!data type###0000009929
+<a href="node56.html#l2h-378">data!type, immutable###0000009930
+<a href="node56.html#l2h-378">type!immutable data###0000009931
+<a href="node56.html#l2h-379">immutable!object###0000009932
+<a href="node56.html#l2h-379">object!immutable###0000009933
+<a href="node57.html#l2h-380">parenthesized form###0000009935
+<a href="node57.html#l2h-381">empty!tuple###0000009936
+<a href="node57.html#l2h-381">tuple!empty###0000009937
+<a href="node57.html#l2h-382">tuple!display###0000009938
+<a href="node57.html#l2h-382">display!tuple###0000009939
+<a href="node57.html#l2h-383">comma###0000009940
+<a href="node58.html#l2h-384">list!display###0000009942
+<a href="node58.html#l2h-384">display!list###0000009943
+<a href="node58.html#l2h-385">list!comprehensions###0000009944
+<a href="node58.html#l2h-385">comprehensions!list###0000009945
+<a href="node58.html#l2h-386">list!comprehensions###0000009946
+<a href="node58.html#l2h-386">comprehensions!list###0000009947
+<a href="node58.html#l2h-387">list object###0000009950
+<a href="node58.html#l2h-387">object!list###0000009951
+<a href="node58.html#l2h-388">empty!list###0000009952
+<a href="node58.html#l2h-388">list!empty###0000009953
+<a href="node59.html#l2h-389">generator!expression###0000009956
+<a href="node59.html#l2h-389">expression!generator###0000009957
+<a href="node59.html#l2h-390">generator object###0000009958
+<a href="node59.html#l2h-390">object!generator###0000009959
+<a href="node60.html#l2h-391">dictionary!display###0000009961
+<a href="node60.html#l2h-391">display!dictionary###0000009962
+<a href="node60.html#l2h-392">dictionary object###0000009963
+<a href="node60.html#l2h-392">object!dictionary###0000009964
+<a href="node60.html#l2h-393">immutable!object###0000009965
+<a href="node60.html#l2h-393">object!immutable###0000009966
+<a href="node60.html#l2h-394">key###0000009967
+<a href="node60.html#l2h-394">datum###0000009968
+<a href="node60.html#l2h-394">key/datum pair###0000009969
+<a href="node61.html#l2h-395">string!conversion###0000009971
+<a href="node61.html#l2h-395">conversion!string###0000009972
+<a href="node61.html#l2h-396">reverse!quotes###0000009973
+<a href="node61.html#l2h-396">quotes!reverse###0000009974
+<a href="node61.html#l2h-397">backward!quotes###0000009975
+<a href="node61.html#l2h-397">quotes!backward###0000009976
+<a href="node61.html#l2h-398">recursive object###0000009977
+<a href="node61.html#l2h-398">object!recursive###0000009978
+<a href="node61.html#l2h-399"><tt class="function">repr()</tt> (built-in function)###0000009979
+<a href="node61.html#l2h-400"><tt class="function">str()</tt> (built-in function)###0000009980
+<a href="node61.html#l2h-401">back-quotes###0000009981
+<a href="node62.html#l2h-402"><tt>yield</tt>!keyword###0000009983
+<a href="node62.html#l2h-402">keyword!<tt>yield</tt>###0000009984
+<a href="node62.html#l2h-403">yield!expression###0000009985
+<a href="node62.html#l2h-403">expression!yield###0000009986
+<a href="node62.html#l2h-404">generator!function###0000009987
+<a href="node62.html#l2h-404">function!generator###0000009988
+<a href="node62.html#l2h-405">generator object###0000009989
+<a href="node62.html#l2h-405">object!generator###0000009990
+<a href="node62.html#l2h-406">StopIteration exception###0000009991
+<a href="node62.html#l2h-406">exception!StopIteration###0000009992
+<a href="node62.html#l2h-407"><tt class="method">next()</tt> (generator method)###0000009993
+<a href="node62.html#l2h-408"><tt class="method">send()</tt> (generator method)###0000009994
+<a href="node62.html#l2h-409"><tt class="method">throw()</tt> (generator method)###0000009995
+<a href="node62.html#l2h-410">GeneratorExit exception###0000009996
+<a href="node62.html#l2h-410">exception!GeneratorExit###0000009997
+<a href="node62.html#l2h-411"><tt class="method">close()</tt> (generator method)###0000009998
+<a href="node62.html#l2h-412">coroutine###0000009999
+<a href="node63.html#l2h-413">primary###0000010001
+<a href="node64.html#l2h-414">attribute!reference###0000010003
+<a href="node64.html#l2h-414">reference!attribute###0000010004
+<a href="node64.html#l2h-415">AttributeError exception###0000010005
+<a href="node64.html#l2h-415">exception!AttributeError###0000010006
+<a href="node64.html#l2h-416">module object###0000010007
+<a href="node64.html#l2h-416">object!module###0000010008
+<a href="node64.html#l2h-417">list object###0000010009
+<a href="node64.html#l2h-417">object!list###0000010010
+<a href="node65.html#l2h-418">subscription###0000010012
+<a href="node65.html#l2h-419">sequence object###0000010013
+<a href="node65.html#l2h-419">object!sequence###0000010014
+<a href="node65.html#l2h-420">mapping object###0000010015
+<a href="node65.html#l2h-420">object!mapping###0000010016
+<a href="node65.html#l2h-421">string object###0000010017
+<a href="node65.html#l2h-421">object!string###0000010018
+<a href="node65.html#l2h-422">tuple object###0000010019
+<a href="node65.html#l2h-422">object!tuple###0000010020
+<a href="node65.html#l2h-423">list object###0000010021
+<a href="node65.html#l2h-423">object!list###0000010022
+<a href="node65.html#l2h-424">dictionary object###0000010023
+<a href="node65.html#l2h-424">object!dictionary###0000010024
+<a href="node65.html#l2h-425">sequence!item###0000010025
+<a href="node65.html#l2h-425">item!sequence###0000010026
+<a href="node65.html#l2h-426">string!item###0000010027
+<a href="node65.html#l2h-426">item!string###0000010028
+<a href="node65.html#l2h-427">character###0000010029
+<a href="node66.html#l2h-428">slicing###0000010031
+<a href="node66.html#l2h-428">slice###0000010032
+<a href="node66.html#l2h-429">sequence object###0000010033
+<a href="node66.html#l2h-429">object!sequence###0000010034
+<a href="node66.html#l2h-430">string object###0000010035
+<a href="node66.html#l2h-430">object!string###0000010036
+<a href="node66.html#l2h-431">tuple object###0000010037
+<a href="node66.html#l2h-431">object!tuple###0000010038
+<a href="node66.html#l2h-432">list object###0000010039
+<a href="node66.html#l2h-432">object!list###0000010040
+<a href="node66.html#l2h-433">extended!slicing###0000010041
+<a href="node66.html#l2h-433">slicing!extended###0000010042
+<a href="node66.html#l2h-435">start (slice object attribute)###0000010043
+<a href="node66.html#l2h-435">stop (slice object attribute)###0000010044
+<a href="node66.html#l2h-435">step (slice object attribute)###0000010045
+<a href="node67.html#l2h-436">call###0000010047
+<a href="node67.html#l2h-437">callable object###0000010048
+<a href="node67.html#l2h-437">object!callable###0000010049
+<a href="node67.html#l2h-438">function!call###0000010055
+<a href="node67.html#l2h-438">call!function###0000010056
+<a href="node67.html#l2h-439">user-defined!function call###0000010057
+<a href="node67.html#l2h-439">function!call, user-defined###0000010058
+<a href="node67.html#l2h-439">call!user-defined function###0000010059
+<a href="node67.html#l2h-440">user-defined function object###0000010060
+<a href="node67.html#l2h-440">object!user-defined function###0000010061
+<a href="node67.html#l2h-441">function object###0000010062
+<a href="node67.html#l2h-441">object!function###0000010063
+<a href="node67.html#l2h-442">function!call###0000010064
+<a href="node67.html#l2h-442">call!function###0000010065
+<a href="node67.html#l2h-443">built-in function!call###0000010066
+<a href="node67.html#l2h-443">call!built-in function###0000010067
+<a href="node67.html#l2h-444">method!call###0000010068
+<a href="node67.html#l2h-444">call!method###0000010069
+<a href="node67.html#l2h-445">built-in method!call###0000010070
+<a href="node67.html#l2h-445">call!built-in method###0000010071
+<a href="node67.html#l2h-446">built-in method object###0000010072
+<a href="node67.html#l2h-446">object!built-in method###0000010073
+<a href="node67.html#l2h-447">built-in function object###0000010074
+<a href="node67.html#l2h-447">object!built-in function###0000010075
+<a href="node67.html#l2h-448">method object###0000010076
+<a href="node67.html#l2h-448">object!method###0000010077
+<a href="node67.html#l2h-449">function object###0000010078
+<a href="node67.html#l2h-449">object!function###0000010079
+<a href="node67.html#l2h-450">class object###0000010080
+<a href="node67.html#l2h-450">object!class###0000010081
+<a href="node67.html#l2h-451">class object!call###0000010082
+<a href="node67.html#l2h-451">call!class object###0000010083
+<a href="node67.html#l2h-452">class instance object###0000010084
+<a href="node67.html#l2h-452">object!class instance###0000010085
+<a href="node67.html#l2h-453">instance object###0000010086
+<a href="node67.html#l2h-453">object!instance###0000010087
+<a href="node67.html#l2h-454">class instance!call###0000010088
+<a href="node67.html#l2h-454">call!class instance###0000010089
+<a href="node67.html#l2h-455">instance!call###0000010090
+<a href="node67.html#l2h-455">call!instance###0000010091
+<a href="node67.html#l2h-457">__call__() (object method)###0000010092
+<a href="node69.html#l2h-458">unary!arithmetic operation###0000010095
+<a href="node69.html#l2h-458">arithmetic!operation, unary###0000010096
+<a href="node69.html#l2h-458">operation!unary arithmetic###0000010097
+<a href="node69.html#l2h-459">unary!bit-wise operation###0000010098
+<a href="node69.html#l2h-459">bit-wise!operation, unary###0000010099
+<a href="node69.html#l2h-459">operation!unary bit-wise###0000010100
+<a href="node69.html#l2h-460">TypeError exception###0000010101
+<a href="node69.html#l2h-460">exception!TypeError###0000010102
+<a href="node69.html#l2h-461">negation###0000010103
+<a href="node69.html#l2h-461">minus###0000010104
+<a href="node69.html#l2h-462">plus###0000010105
+<a href="node69.html#l2h-463">inversion###0000010106
+<a href="node70.html#l2h-464">binary!arithmetic operation###0000010108
+<a href="node70.html#l2h-464">arithmetic!operation, binary###0000010109
+<a href="node70.html#l2h-464">operation!binary arithmetic###0000010110
+<a href="node70.html#l2h-465">ZeroDivisionError exception###0000010111
+<a href="node70.html#l2h-465">exception!ZeroDivisionError###0000010112
+<a href="node70.html#l2h-466">multiplication###0000010117
+<a href="node70.html#l2h-467">division###0000010118
+<a href="node70.html#l2h-468">modulo###0000010119
+<a href="node70.html#l2h-469">addition###0000010120
+<a href="node70.html#l2h-470">subtraction###0000010121
+<a href="node71.html#l2h-471">shifting!operation###0000010124
+<a href="node71.html#l2h-471">operation!shifting###0000010125
+<a href="node71.html#l2h-472">ValueError exception###0000010126
+<a href="node71.html#l2h-472">exception!ValueError###0000010127
+<a href="node72.html#l2h-473">binary!bit-wise operation###0000010129
+<a href="node72.html#l2h-473">bit-wise!operation, binary###0000010130
+<a href="node72.html#l2h-473">operation!binary bit-wise###0000010131
+<a href="node72.html#l2h-474">bit-wise!and###0000010132
+<a href="node72.html#l2h-474">and!bit-wise###0000010133
+<a href="node72.html#l2h-475">bit-wise!xor###0000010134
+<a href="node72.html#l2h-475">xor!bit-wise###0000010135
+<a href="node72.html#l2h-476">exclusive!or###0000010136
+<a href="node72.html#l2h-476">or!exclusive###0000010137
+<a href="node72.html#l2h-477">bit-wise!or###0000010138
+<a href="node72.html#l2h-477">or!bit-wise###0000010139
+<a href="node72.html#l2h-478">inclusive!or###0000010140
+<a href="node72.html#l2h-478">or!inclusive###0000010141
+<a href="node73.html#l2h-479">comparison###0000010143
+<a href="node73.html#l2h-480">C!language###0000010144
+<a href="node73.html#l2h-480">language!C###0000010145
+<a href="node73.html#l2h-481">chaining!comparisons###0000010146
+<a href="node73.html#l2h-481">comparisons!chaining###0000010147
+<a href="node73.html#l2h-482">in operator###0000010152
+<a href="node73.html#l2h-482">operator!in###0000010153
+<a href="node73.html#l2h-483">not in operator###0000010154
+<a href="node73.html#l2h-483">operator!not in###0000010155
+<a href="node73.html#l2h-484">membership!test###0000010156
+<a href="node73.html#l2h-484">test!membership###0000010157
+<a href="node73.html#l2h-485">sequence object###0000010158
+<a href="node73.html#l2h-485">object!sequence###0000010159
+<a href="node73.html#l2h-486">is operator###0000010160
+<a href="node73.html#l2h-486">operator!is###0000010161
+<a href="node73.html#l2h-487">is not operator###0000010162
+<a href="node73.html#l2h-487">operator!is not###0000010163
+<a href="node73.html#l2h-488">identity!test###0000010164
+<a href="node73.html#l2h-488">test!identity###0000010165
+<a href="node74.html#l2h-489">Conditional!expression###0000010168
+<a href="node74.html#l2h-489">expression!Conditional###0000010169
+<a href="node74.html#l2h-490">Boolean!operation###0000010170
+<a href="node74.html#l2h-490">operation!Boolean###0000010171
+<a href="node74.html#l2h-491">not operator###0000010172
+<a href="node74.html#l2h-491">operator!not###0000010173
+<a href="node74.html#l2h-492">and operator###0000010174
+<a href="node74.html#l2h-492">operator!and###0000010175
+<a href="node74.html#l2h-493">or operator###0000010176
+<a href="node74.html#l2h-493">operator!or###0000010177
+<a href="node75.html#l2h-494">lambda!expression###0000010179
+<a href="node75.html#l2h-494">expression!lambda###0000010180
+<a href="node75.html#l2h-495">lambda!form###0000010181
+<a href="node75.html#l2h-495">form!lambda###0000010182
+<a href="node75.html#l2h-496">anonymous!function###0000010183
+<a href="node75.html#l2h-496">function!anonymous###0000010184
+<a href="node76.html#l2h-497">expression!list###0000010186
+<a href="node76.html#l2h-497">list!expression###0000010187
+<a href="node76.html#l2h-498">tuple object###0000010188
+<a href="node76.html#l2h-498">object!tuple###0000010189
+<a href="node76.html#l2h-499">trailing!comma###0000010190
+<a href="node76.html#l2h-499">comma!trailing###0000010191
+<a href="node77.html#l2h-500">evaluation!order###0000010193
+<a href="node77.html#l2h-500">order!evaluation###0000010194
+<a href="node78.html#l2h-501">operator!precedence###0000010196
+<a href="node78.html#l2h-501">precedence!operator###0000010197
+<a href="node79.html#l2h-502">simple!statement###0000010199
+<a href="node79.html#l2h-502">statement!simple###0000010200
+<a href="node80.html#l2h-503">expression!statement###0000010202
+<a href="node80.html#l2h-503">statement!expression###0000010203
+<a href="node80.html#l2h-504">expression!list###0000010204
+<a href="node80.html#l2h-504">list!expression###0000010205
+<a href="node80.html#l2h-505"><tt class="function">repr()</tt> (built-in function)###0000010206
+<a href="node80.html#l2h-506">None object###0000010207
+<a href="node80.html#l2h-506">object!None###0000010208
+<a href="node80.html#l2h-507">string!conversion###0000010209
+<a href="node80.html#l2h-507">conversion!string###0000010210
+<a href="node80.html#l2h-508">standard!output###0000010211
+<a href="node80.html#l2h-508">output!standard###0000010212
+<a href="node80.html#l2h-509">writing!values###0000010213
+<a href="node80.html#l2h-509">values!writing###0000010214
+<a href="node80.html#l2h-510">procedure!call###0000010215
+<a href="node80.html#l2h-510">call!procedure###0000010216
+<a href="node80.html#l2h-511">output###0000010217
+<a href="node81.html#l2h-512">assert statement###0000010219
+<a href="node81.html#l2h-512">statement!assert###0000010220
+<a href="node81.html#l2h-513">debugging!assertions###0000010221
+<a href="node81.html#l2h-513">assertions!debugging###0000010222
+<a href="node81.html#l2h-514">AssertionError exception###0000010223
+<a href="node81.html#l2h-514">exception!AssertionError###0000010224
+<a href="node81.html#l2h-515">__debug__###0000010225
+<a href="node82.html#l2h-516">assignment!statement###0000010227
+<a href="node82.html#l2h-516">statement!assignment###0000010228
+<a href="node82.html#l2h-517">binding!name###0000010229
+<a href="node82.html#l2h-517">name!binding###0000010230
+<a href="node82.html#l2h-518">rebinding!name###0000010231
+<a href="node82.html#l2h-518">name!rebinding###0000010232
+<a href="node82.html#l2h-519">mutable object###0000010233
+<a href="node82.html#l2h-519">object!mutable###0000010234
+<a href="node82.html#l2h-520">attribute!assignment###0000010235
+<a href="node82.html#l2h-520">assignment!attribute###0000010236
+<a href="node82.html#l2h-521">expression!list###0000010237
+<a href="node82.html#l2h-521">list!expression###0000010238
+<a href="node82.html#l2h-522">target!list###0000010239
+<a href="node82.html#l2h-522">list!target###0000010240
+<a href="node82.html#l2h-523">target!list assignment###0000010241
+<a href="node82.html#l2h-523">list!assignment, target###0000010242
+<a href="node82.html#l2h-523">assignment!target list###0000010243
+<a href="node82.html#l2h-524">global statement###0000010244
+<a href="node82.html#l2h-524">statement!global###0000010245
+<a href="node82.html#l2h-525">attribute!assignment###0000010246
+<a href="node82.html#l2h-525">assignment!attribute###0000010247
+<a href="node82.html#l2h-526">subscription!assignment###0000010248
+<a href="node82.html#l2h-526">assignment!subscription###0000010249
+<a href="node82.html#l2h-527">mutable object###0000010250
+<a href="node82.html#l2h-527">object!mutable###0000010251
+<a href="node82.html#l2h-528">sequence object###0000010252
+<a href="node82.html#l2h-528">object!sequence###0000010253
+<a href="node82.html#l2h-529">list object###0000010254
+<a href="node82.html#l2h-529">object!list###0000010255
+<a href="node82.html#l2h-530">mapping object###0000010256
+<a href="node82.html#l2h-530">object!mapping###0000010257
+<a href="node82.html#l2h-531">dictionary object###0000010258
+<a href="node82.html#l2h-531">object!dictionary###0000010259
+<a href="node82.html#l2h-532">slicing!assignment###0000010260
+<a href="node82.html#l2h-532">assignment!slicing###0000010261
+<a href="node82.html#l2h-533">target###0000010262
+<a href="node82.html#l2h-534">destructor###0000010263
+<a href="node83.html#l2h-535">augmented!assignment###0000010265
+<a href="node83.html#l2h-535">assignment!augmented###0000010266
+<a href="node83.html#l2h-536">statement!assignment, augmented###0000010267
+<a href="node84.html#l2h-537">pass statement###0000010269
+<a href="node84.html#l2h-537">statement!pass###0000010270
+<a href="node84.html#l2h-538">null!operation###0000010271
+<a href="node84.html#l2h-538">operation!null###0000010272
+<a href="node85.html#l2h-539">del statement###0000010274
+<a href="node85.html#l2h-539">statement!del###0000010275
+<a href="node85.html#l2h-540">deletion!target###0000010276
+<a href="node85.html#l2h-540">target!deletion###0000010277
+<a href="node85.html#l2h-541">deletion!target list###0000010278
+<a href="node85.html#l2h-541">target!list, deletion###0000010279
+<a href="node85.html#l2h-541">list!deletion target###0000010280
+<a href="node85.html#l2h-542">global statement###0000010281
+<a href="node85.html#l2h-542">statement!global###0000010282
+<a href="node85.html#l2h-543">unbinding!name###0000010283
+<a href="node85.html#l2h-543">name!unbinding###0000010284
+<a href="node85.html#l2h-544">free!variable###0000010285
+<a href="node85.html#l2h-544">variable!free###0000010286
+<a href="node85.html#l2h-545">attribute!deletion###0000010287
+<a href="node85.html#l2h-545">deletion!attribute###0000010288
+<a href="node86.html#l2h-546">print statement###0000010290
+<a href="node86.html#l2h-546">statement!print###0000010291
+<a href="node86.html#l2h-547">writing!values###0000010292
+<a href="node86.html#l2h-547">values!writing###0000010293
+<a href="node86.html#l2h-548">trailing!comma###0000010294
+<a href="node86.html#l2h-548">comma!trailing###0000010295
+<a href="node86.html#l2h-549">newline!suppression###0000010296
+<a href="node86.html#l2h-549">suppression!newline###0000010297
+<a href="node86.html#l2h-550">standard!output###0000010298
+<a href="node86.html#l2h-550">output!standard###0000010299
+<a href="node86.html#l2h-552">stdout (in module sys)###0000010300
+<a href="node86.html#l2h-553">RuntimeError exception###0000010301
+<a href="node86.html#l2h-553">exception!RuntimeError###0000010302
+<a href="node86.html#l2h-554">output###0000010303
+<a href="node86.html#l2h-555"><tt class="module">sys</tt> (built-in module)###REF0000010304
+<a href="node86.html#l2h-556">extended print statement###0000010305
+<a href="node87.html#l2h-557">return statement###0000010307
+<a href="node87.html#l2h-557">statement!return###0000010308
+<a href="node87.html#l2h-558">function!definition###0000010309
+<a href="node87.html#l2h-558">definition!function###0000010310
+<a href="node87.html#l2h-559">class!definition###0000010311
+<a href="node87.html#l2h-559">definition!class###0000010312
+<a href="node87.html#l2h-560"><tt>finally</tt>!keyword###0000010313
+<a href="node87.html#l2h-560">keyword!<tt>finally</tt>###0000010314
+<a href="node88.html#l2h-561">yield statement###0000010316
+<a href="node88.html#l2h-561">statement!yield###0000010317
+<a href="node88.html#l2h-562">StopIteration exception###0000010318
+<a href="node88.html#l2h-562">exception!StopIteration###0000010319
+<a href="node88.html#l2h-563">generator!function###0000010320
+<a href="node88.html#l2h-563">generator!iterator###0000010321
+<a href="node88.html#l2h-563">function!generator###0000010322
+<a href="node89.html#l2h-564">raise statement###0000010324
+<a href="node89.html#l2h-564">statement!raise###0000010325
+<a href="node89.html#l2h-565">raising!exception###0000010326
+<a href="node89.html#l2h-565">exception!raising###0000010327
+<a href="node89.html#l2h-566">traceback object###0000010328
+<a href="node89.html#l2h-566">object!traceback###0000010329
+<a href="node89.html#l2h-567">exception###0000010330
+<a href="node90.html#l2h-568">break statement###0000010332
+<a href="node90.html#l2h-568">statement!break###0000010333
+<a href="node90.html#l2h-569">for statement###0000010334
+<a href="node90.html#l2h-569">statement!for###0000010335
+<a href="node90.html#l2h-570">while statement###0000010336
+<a href="node90.html#l2h-570">statement!while###0000010337
+<a href="node90.html#l2h-571">loop!statement###0000010338
+<a href="node90.html#l2h-571">statement!loop###0000010339
+<a href="node90.html#l2h-572"><tt>else</tt>!keyword###0000010340
+<a href="node90.html#l2h-572">keyword!<tt>else</tt>###0000010341
+<a href="node90.html#l2h-573">loop control!target###0000010342
+<a href="node90.html#l2h-573">target!loop control###0000010343
+<a href="node90.html#l2h-574"><tt>finally</tt>!keyword###0000010344
+<a href="node90.html#l2h-574">keyword!<tt>finally</tt>###0000010345
+<a href="node91.html#l2h-575">continue statement###0000010347
+<a href="node91.html#l2h-575">statement!continue###0000010348
+<a href="node91.html#l2h-576">for statement###0000010351
+<a href="node91.html#l2h-576">statement!for###0000010352
+<a href="node91.html#l2h-577">while statement###0000010353
+<a href="node91.html#l2h-577">statement!while###0000010354
+<a href="node91.html#l2h-578">loop!statement###0000010355
+<a href="node91.html#l2h-578">statement!loop###0000010356
+<a href="node91.html#l2h-579"><tt>finally</tt>!keyword###0000010357
+<a href="node91.html#l2h-579">keyword!<tt>finally</tt>###0000010358
+<a href="node92.html#l2h-580">import statement###0000010361
+<a href="node92.html#l2h-580">statement!import###0000010362
+<a href="node92.html#l2h-581">name!binding###0000010363
+<a href="node92.html#l2h-581">binding!name###0000010364
+<a href="node92.html#l2h-582"><tt>from</tt>!keyword###0000010365
+<a href="node92.html#l2h-582">keyword!<tt>from</tt>###0000010366
+<a href="node92.html#l2h-584">modules (in module sys)###0000010367
+<a href="node92.html#l2h-585">module!name###0000010368
+<a href="node92.html#l2h-585">name!module###0000010369
+<a href="node92.html#l2h-586">built-in!module###0000010370
+<a href="node92.html#l2h-586">module!built-in###0000010371
+<a href="node92.html#l2h-587">user-defined!module###0000010372
+<a href="node92.html#l2h-587">module!user-defined###0000010373
+<a href="node92.html#l2h-588">filename!extension###0000010374
+<a href="node92.html#l2h-588">extension!filename###0000010375
+<a href="node92.html#l2h-589">module!search path###0000010376
+<a href="node92.html#l2h-589">search!path, module###0000010377
+<a href="node92.html#l2h-589">path!module search###0000010378
+<a href="node92.html#l2h-590">module!initialization###0000010379
+<a href="node92.html#l2h-590">initialization!module###0000010380
+<a href="node92.html#l2h-591">ImportError exception###0000010381
+<a href="node92.html#l2h-591">exception!ImportError###0000010382
+<a href="node92.html#l2h-592">SyntaxError exception###0000010383
+<a href="node92.html#l2h-592">exception!SyntaxError###0000010384
+<a href="node92.html#l2h-593">name!binding###0000010385
+<a href="node92.html#l2h-593">binding!name###0000010386
+<a href="node92.html#l2h-594">ImportError exception###0000010387
+<a href="node92.html#l2h-594">exception!ImportError###0000010388
+<a href="node92.html#l2h-596">__all__ (optional module attribute)###0000010389
+<a href="node92.html#l2h-597"><tt>from</tt>!keyword###0000010390
+<a href="node92.html#l2h-597">keyword!<tt>from</tt>###0000010391
+<a href="node92.html#l2h-598">from statement###0000010392
+<a href="node92.html#l2h-598">statement!from###0000010393
+<a href="node92.html#l2h-599">hierarchical!module names###0000010394
+<a href="node92.html#l2h-599">module!names, hierarchical###0000010395
+<a href="node92.html#l2h-599">names!hierarchical module###0000010396
+<a href="node92.html#l2h-600"><tt class="function">__import__()</tt> (built-in function)###0000010397
+<a href="node92.html#l2h-601">module!importing###0000010398
+<a href="node92.html#l2h-602">sys.modules###0000010399
+<a href="node92.html#l2h-603"><tt class="module">sys</tt> (built-in module)###REF0000010400
+<a href="node92.html#l2h-604">code block###0000010401
+<a href="node92.html#l2h-605">packages###0000010402
+<a href="node92.html#l2h-606">__init__.py###0000010403
+<a href="node93.html#l2h-607">future!statement###0000010405
+<a href="node93.html#l2h-607">statement!future###0000010406
+<a href="node94.html#l2h-608">global statement###0000010408
+<a href="node94.html#l2h-608">statement!global###0000010409
+<a href="node94.html#l2h-609">global!name binding###0000010410
+<a href="node94.html#l2h-609">name!binding, global###0000010411
+<a href="node94.html#l2h-609">binding!global name###0000010412
+<a href="node94.html#l2h-610">exec statement###0000010413
+<a href="node94.html#l2h-610">statement!exec###0000010414
+<a href="node94.html#l2h-611"><tt class="function">eval()</tt> (built-in function)###0000010415
+<a href="node94.html#l2h-612"><tt class="function">execfile()</tt> (built-in function)###0000010416
+<a href="node94.html#l2h-613"><tt class="function">compile()</tt> (built-in function)###0000010417
+<a href="node95.html#l2h-614">exec statement###0000010419
+<a href="node95.html#l2h-614">statement!exec###0000010420
+<a href="node95.html#l2h-615"><tt class="function">eval()</tt> (built-in function)###0000010421
+<a href="node95.html#l2h-616"><tt class="function">globals()</tt> (built-in function)###0000010422
+<a href="node95.html#l2h-617"><tt class="function">locals()</tt> (built-in function)###0000010423
+<a href="node95.html#l2h-618">__builtins__###0000010424
+<a href="node95.html#l2h-618"><tt class="module">__builtin__</tt> (built-in module)###REF0000010425
+<a href="node96.html#l2h-619">compound!statement###0000010427
+<a href="node96.html#l2h-619">statement!compound###0000010428
+<a href="node96.html#l2h-620">dangling!else###0000010429
+<a href="node96.html#l2h-620">else!dangling###0000010430
+<a href="node96.html#l2h-621">clause###0000010431
+<a href="node96.html#l2h-621">suite###0000010432
+<a href="node96.html#l2h-622">NEWLINE token###0000010433
+<a href="node96.html#l2h-623">DEDENT token###0000010434
+<a href="node97.html#l2h-624">if statement###0000010436
+<a href="node97.html#l2h-624">statement!if###0000010437
+<a href="node97.html#l2h-625"><tt>elif</tt>!keyword###0000010438
+<a href="node97.html#l2h-625">keyword!<tt>elif</tt>###0000010439
+<a href="node97.html#l2h-626"><tt>else</tt>!keyword###0000010440
+<a href="node97.html#l2h-626">keyword!<tt>else</tt>###0000010441
+<a href="node98.html#l2h-627">while statement###0000010443
+<a href="node98.html#l2h-627">statement!while###0000010444
+<a href="node98.html#l2h-628">loop!statement###0000010445
+<a href="node98.html#l2h-628">statement!loop###0000010446
+<a href="node98.html#l2h-629"><tt>else</tt>!keyword###0000010447
+<a href="node98.html#l2h-629">keyword!<tt>else</tt>###0000010448
+<a href="node98.html#l2h-630">break statement###0000010449
+<a href="node98.html#l2h-630">statement!break###0000010450
+<a href="node98.html#l2h-631">continue statement###0000010451
+<a href="node98.html#l2h-631">statement!continue###0000010452
+<a href="node99.html#l2h-632">for statement###0000010454
+<a href="node99.html#l2h-632">statement!for###0000010455
+<a href="node99.html#l2h-633">loop!statement###0000010456
+<a href="node99.html#l2h-633">statement!loop###0000010457
+<a href="node99.html#l2h-634">sequence object###0000010458
+<a href="node99.html#l2h-634">object!sequence###0000010459
+<a href="node99.html#l2h-635"><tt>in</tt>!keyword###0000010460
+<a href="node99.html#l2h-635">keyword!<tt>in</tt>###0000010461
+<a href="node99.html#l2h-636"><tt>else</tt>!keyword###0000010462
+<a href="node99.html#l2h-636">keyword!<tt>else</tt>###0000010463
+<a href="node99.html#l2h-637">target!list###0000010464
+<a href="node99.html#l2h-637">list!target###0000010465
+<a href="node99.html#l2h-638">break statement###0000010466
+<a href="node99.html#l2h-638">statement!break###0000010467
+<a href="node99.html#l2h-639">continue statement###0000010468
+<a href="node99.html#l2h-639">statement!continue###0000010469
+<a href="node99.html#l2h-640"><tt class="function">range()</tt> (built-in function)###0000010470
+<a href="node99.html#l2h-641">Pascal!language###0000010471
+<a href="node99.html#l2h-641">language!Pascal###0000010472
+<a href="node99.html#l2h-642">loop!over mutable sequence###0000010473
+<a href="node99.html#l2h-642">mutable sequence!loop over###0000010474
+<a href="node100.html#l2h-643">try statement###0000010476
+<a href="node100.html#l2h-643">statement!try###0000010477
+<a href="node100.html#l2h-644"><tt>except</tt>!keyword###0000010478
+<a href="node100.html#l2h-644">keyword!<tt>except</tt>###0000010479
+<a href="node100.html#l2h-645">traceback object###0000010482
+<a href="node100.html#l2h-645">object!traceback###0000010483
+<a href="node100.html#l2h-647">exc_type (in module sys)###0000010484
+<a href="node100.html#l2h-647">exc_value (in module sys)###0000010485
+<a href="node100.html#l2h-647">exc_traceback (in module sys)###0000010486
+<a href="node100.html#l2h-648"><tt>else</tt>!keyword###0000010489
+<a href="node100.html#l2h-648">keyword!<tt>else</tt>###0000010490
+<a href="node100.html#l2h-649">return statement###0000010491
+<a href="node100.html#l2h-649">statement!return###0000010492
+<a href="node100.html#l2h-650">break statement###0000010493
+<a href="node100.html#l2h-650">statement!break###0000010494
+<a href="node100.html#l2h-651">continue statement###0000010495
+<a href="node100.html#l2h-651">statement!continue###0000010496
+<a href="node100.html#l2h-652"><tt>finally</tt>!keyword###0000010497
+<a href="node100.html#l2h-652">keyword!<tt>finally</tt>###0000010498
+<a href="node100.html#l2h-653">return statement###0000010499
+<a href="node100.html#l2h-653">statement!return###0000010500
+<a href="node100.html#l2h-654">break statement###0000010501
+<a href="node100.html#l2h-654">statement!break###0000010502
+<a href="node100.html#l2h-655">continue statement###0000010503
+<a href="node100.html#l2h-655">statement!continue###0000010504
+<a href="node100.html#l2h-656"><tt class="module">sys</tt> (built-in module)###REF0000010505
+<a href="node101.html#l2h-657">with statement###0000010508
+<a href="node101.html#l2h-657">statement!with###0000010509
+<a href="node102.html#l2h-658">function!definition###0000010511
+<a href="node102.html#l2h-658">definition!function###0000010512
+<a href="node102.html#l2h-659">def statement###0000010513
+<a href="node102.html#l2h-659">statement!def###0000010514
+<a href="node102.html#l2h-660">user-defined function object###0000010515
+<a href="node102.html#l2h-660">object!user-defined function###0000010516
+<a href="node102.html#l2h-661">function object###0000010517
+<a href="node102.html#l2h-661">object!function###0000010518
+<a href="node102.html#l2h-662">function!name###0000010519
+<a href="node102.html#l2h-662">name!function###0000010520
+<a href="node102.html#l2h-663">name!binding###0000010521
+<a href="node102.html#l2h-663">binding!name###0000010522
+<a href="node102.html#l2h-664">default!parameter value###0000010523
+<a href="node102.html#l2h-664">parameter!value, default###0000010524
+<a href="node102.html#l2h-664">value!default parameter###0000010525
+<a href="node102.html#l2h-665">lambda!form###0000010526
+<a href="node102.html#l2h-665">form!lambda###0000010527
+<a href="node103.html#l2h-666">class!definition###0000010529
+<a href="node103.html#l2h-666">definition!class###0000010530
+<a href="node103.html#l2h-667">class statement###0000010531
+<a href="node103.html#l2h-667">statement!class###0000010532
+<a href="node103.html#l2h-668">class object###0000010533
+<a href="node103.html#l2h-668">object!class###0000010534
+<a href="node103.html#l2h-669">class!name###0000010535
+<a href="node103.html#l2h-669">name!class###0000010536
+<a href="node103.html#l2h-670">name!binding###0000010537
+<a href="node103.html#l2h-670">binding!name###0000010538
+<a href="node103.html#l2h-671">execution!frame###0000010539
+<a href="node103.html#l2h-671">frame!execution###0000010540
+<a href="node103.html#l2h-672">inheritance###0000010541
+<a href="node104.html#l2h-673">interpreter###0000010543
+<a href="node105.html#l2h-674">program###0000010545
+<a href="node105.html#l2h-675"><tt class="module">sys</tt> (built-in module)###REF0000010546
+<a href="node105.html#l2h-675"><tt class="module">__main__</tt> (built-in module)###REF0000010547
+<a href="node105.html#l2h-675"><tt class="module">__builtin__</tt> (built-in module)###REF0000010548
+<a href="node105.html#l2h-676">interactive mode###0000010549
+<a href="node105.html#l2h-676"><tt class="module">__main__</tt> (built-in module)###REF0000010550
+<a href="node105.html#l2h-677">UNIX###0000010551
+<a href="node105.html#l2h-677">command line###0000010552
+<a href="node105.html#l2h-677">standard input###0000010553
+<a href="node108.html#l2h-678">input###0000010557
+<a href="node108.html#l2h-679"><tt class="function">eval()</tt> (built-in function)###0000010558
+<a href="node108.html#l2h-680"><tt class="function">input()</tt> (built-in function)###0000010559
+<a href="node108.html#l2h-681">file object###0000010560
+<a href="node108.html#l2h-681">object!file###0000010561
+<a href="node108.html#l2h-682"><tt class="function">raw_input()</tt> (built-in function)###0000010562
+<a href="node108.html#l2h-684">readline() (file method)###0000010563
+<a href="node108.html#l2h-685">input!raw###0000010564
+<a href="node108.html#l2h-685">raw input###0000010565

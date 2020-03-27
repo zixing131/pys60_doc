@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node36.html" />
+<link rel="prev" href="node34.html" />
+<link rel="parent" href="node32.html" />
+<link rel="next" href="node36.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.3.4.3 Color representation</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.2 coordinate representation"
+  href="node34.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4.4 font specifications"
+  href="node36.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node34.html">3.3.4.2 Coordinate representation</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node36.html">3.3.4.4 Font specifications</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h3><a name="SECTION005343000000000000000"></a>
+<a name="subsubsec:color"></a>
+<br>
+3.3.4.3 Color representation
+</h3>
+All methods that take color arguments accept the following two color 
+representations:
+
+<p>
+
+<ul>
+<li>A three-element tuple of integers in the range from 0 to 255 inclusive, representing the red, green, and blue components of the color.
+</li>
+<li>An integer of the form <code>0xrrggbb</code>, where <code>rr</code> is the red, <code>gg</code> the green, and <code>bb</code> the blue component of the color. 
+</li>
+</ul>
+For 12 and 16 bit color modes the color component values are simply 
+truncated to the lower bit depth. For the 8-bit grayscale mode images the 
+color is converted into grayscale using the formula <code>(2*r+5*g+b)/8</code>, rounded 
+down to the nearest integer. For 1-bit black and white mode images the color 
+is converted into black (0) or white (1) using the formula <code>(2*r+5*g+b)/1024</code>.
+
+<p>
+Examples of valid colors:
+
+<p>
+
+<ul>
+<li><code>0xffff00</code>: Bright yellow
+</li>
+<li><code>0x004000</code>: Dark green
+</li>
+<li><code>(255,0,0)</code>: Bright red
+</li>
+<li><code>0</code>: Black
+</li>
+<li><code>255</code>: Bright blue
+</li>
+<li><code>(128,128,128)</code>: Medium gray
+</li>
+</ul>
+
+<p>
+Examples of invalid colors:
+
+<p>
+<b>Invalid code, do not use!</b>
+
+<ul>
+<li><code>(0,0.5,0.9)</code>: Floats are not supported
+</li>
+<li><code>'#ff80c0'</code>: The HTML color format is not supported
+</li>
+<li><code>(-1,0,1000)</code>: Out-of-range values
+</li>
+<li><code>(1,2)</code>: The sequence is too short
+</li>
+<li><code>[128,128,192]</code>: This is not a tuple
+</li>
+</ul>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.2 coordinate representation"
+  href="node34.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4.4 font specifications"
+  href="node36.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node34.html">3.3.4.2 Coordinate representation</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node36.html">3.3.4.4 Font specifications</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

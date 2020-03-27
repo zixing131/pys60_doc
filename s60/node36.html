@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node37.html" />
+<link rel="prev" href="node35.html" />
+<link rel="parent" href="node32.html" />
+<link rel="next" href="node37.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.3.4.4 Font specifications</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.3 color representation"
+  href="node35.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4.5 common Methods of"
+  href="node37.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node35.html">3.3.4.3 Color representation</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node37.html">3.3.4.5 Common Methods of</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h3><a name="SECTION005344000000000000000"></a>
+<a name="subsubsec:font-specs"></a>
+<br>
+3.3.4.4 Font specifications
+</h3>
+A font can be specified in three ways:
+
+<ul>
+<li>None, meaning the default font
+</li>
+<li>a Unicode string that represents a full font name, such as <code>u'LatinBold19'</code>
+</li>
+<li>a plain string symbolic name that refers to a font setting currently specified by 
+the UI framework
+</li>
+<li>as a two or three element tuple, where
+
+<ul>
+<li>the first element is the font name (unicode or string) or None for default font
+</li>
+<li>the second element is the font height in pixels or None for default size
+</li>
+<li>the third (optional) element is the flags applied to the font or None for default options.
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+The flags are the following:
+
+<ul>
+<li><code>FONT_BOLD</code> bold
+</li>
+<li><code>FONT_ITALIC</code> italic
+</li>
+<li><code>FONT_SUBSCRIPT</code> subscript
+</li>
+<li><code>FONT_SUPERSCRIPT</code> superscript
+</li>
+<li><code>FONT_ANTIALIAS</code> forces the font to be antialiased
+</li>
+<li><code>FONT_NO_ANTIALIAS</code> forces the font to not be antialiased
+</li>
+</ul>
+
+<p>
+You can combine the flags with the binary or operator ``|''. For
+example, the flags setting <code>FONT_BOLD|FONT_ITALIC</code> will produce
+text that is both bold and italic.
+
+<p>
+Note: Antialiasing support is only available for scalable fonts.
+
+<p>
+You can obtain a list of all available fonts with the 
+<tt class="module">appuifw</tt> module function <tt class="function">available_fonts</tt>.
+
+<p>
+The symbolic names for UI fonts are:
+
+<ul>
+<li><code>'normal'</code>
+</li>
+<li><code>'dense'</code>
+</li>
+<li><code>'title'</code>
+</li>
+<li><code>'symbol'</code>
+</li>
+<li><code>'legend'</code>
+</li>
+<li><code>'annotation'</code>
+</li>
+</ul>
+Since background processes have no access to the UI framework, these 
+symbolic names are not supported in them. You need to specify the full font 
+name.
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.3 color representation"
+  href="node35.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.3.4.5 common Methods of"
+  href="node37.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node35.html">3.3.4.3 Color representation</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node37.html">3.3.4.5 Common Methods of</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

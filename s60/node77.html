@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node78.html" />
+<link rel="prev" href="node76.html" />
+<link rel="parent" href="module-e32calendar.html" />
+<link rel="next" href="node78.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.2.2 CalendarDb Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.2.1 module Level Functions"
+  href="node76.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.2 e32calendar  "
+  href="module-e32calendar.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.2.3 entry Objects"
+  href="node78.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node76.html">5.2.1 Module Level Functions</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32calendar.html">5.2 e32calendar  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node78.html">5.2.3 Entry Objects</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007220000000000000000"></a>
+<a name="subsec:calendardb"></a>
+<br>
+5.2.2 CalendarDb Objects
+</h2>
+
+<p>
+Calendar entries are stored in a calendar database. There is 
+one default calendar database but more calendar databases can be created by 
+invoking <code>open</code> with parameters <code>'n' </code>or <code>'c'</code>. 
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-469' xml:id='l2h-469' class="class">CalendarDb</tt></b>
+<dd>
+<tt class="class">CalendarDb</tt> objects have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-470' xml:id='l2h-470' class="method">add_appointment</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Creates and returns a new appointment entry <tt class="class">AppointmentEntry</tt>. The 
+entry is not added and saved into the database until <code>Entry.commit</code> is 
+called.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-471' xml:id='l2h-471' class="method">add_event</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Creates and returns a new event entry <tt class="class">EventEntry</tt>. The entry is not added 
+and saved into the database until <code>Entry.commit</code> is called.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-472' xml:id='l2h-472' class="method">add_anniversary</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Creates and returns a new anniversary entry <tt class="class">AnniversaryEntry</tt>. The entry 
+is not added and saved into the database until <code>Entry.commit</code> is called.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-473' xml:id='l2h-473' class="method">add_todo</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Creates and returns new todo entry <tt class="class">TodoEntry</tt>. The entry is not added and 
+saved into the database until <code>Entry.commit</code> is called.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-474' xml:id='l2h-474' class="method">add_reminder</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Creates and returns new reminder entry <tt class="class">ReminderEntry</tt>. The entry is not added and 
+saved into the database until <code>Entry.commit</code> is called.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-475' xml:id='l2h-475' class="method">find_instances</tt></b>(</nobr></td>
+  <td><var>start_date, end_date, search_str=u''</var><big>[</big><var> ,appointments=0,events=0,anniversaries=0,todos=0,reminders=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+The parameters for this function include the start date, end date, search 
+string, and optional parameters. The optional parameters define the entry 
+types to be included into the search. By default all entry types are 
+included. Returns a list that contains <tt class="class">Entry</tt> instances found in the 
+search. An instance is a dictionary that contains the entry ID and the 
+datetime value. An entry may have several instances if it is repeated, for 
+example once every week, etc. 
+
+<p>
+In some Nokia models the <code>search_str</code> needs to be less or equal to 32 
+characters, otherwise an error <code>KErrArgument</code> or a premature application 
+exit (i.e. a panic) might occur.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-476' xml:id='l2h-476' class="method">monthly_instances</tt></b>(</nobr></td>
+  <td><var>month, appointments=0, events=0, anniversaries=0, todos=0, reminders=0</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+The parameters for this function include <var>month</var> (float) and 
+optional parameters. The optional parameters define the entry types to be 
+returned. Returns a list that contains entry instances occurring during the 
+specified calendar month.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-477' xml:id='l2h-477' class="method">daily_instances</tt></b>(</nobr></td>
+  <td><var>day, appointments=0, events=0, anniversaries=0, todos=0</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+The parameters for this function include <var>day</var> (float) and 
+optional parameters. The optional parameters define the entry types to be 
+returned. Returns a list that contains entry instances occurring on the 
+specified day.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-478' xml:id='l2h-478' class="method">export_vcalendars</tt></b>(</nobr></td>
+  <td><var>(int,...)</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns a <code>vcalendar</code> string that contains the specified entries in 
+vCalendar format. The parameter for this function is a tuple that contains 
+the entry IDs of the exported entries.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-479' xml:id='l2h-479' class="method">import_vcalendars</tt></b>(</nobr></td>
+  <td><var>string</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Imports <code>vcalendar</code> entries, given in the string parameter, to the 
+database. Returns a list that contains the unique IDs of the imported 
+entries.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-480' xml:id='l2h-480' class="method">__delitem__</tt></b>(</nobr></td>
+  <td><var>id</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Deletes the given calendar <code>Entry</code> from the database. <code>id</code> is the 
+unique ID of the calendar <code>Entry</code>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-481' xml:id='l2h-481' class="method">__getitem__</tt></b>(</nobr></td>
+  <td><var>id</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns a calendar <code>Entry</code> object indicated by the unique ID. The returned 
+object can be one of the following: <tt class="class">AppointmentEntry</tt>, 
+<tt class="class">EventEntry</tt>, <tt class="class">AnniversaryEntry</tt>, <tt class="class">ReminderEntry</tt>, 
+or <tt class="class">TodoEntry</tt>. <code>id</code> is the unique ID of the calendar <code>Entry</code>. 
+
+<p>
+</dl>
+
+<p>
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.2.1 module Level Functions"
+  href="node76.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.2 e32calendar  "
+  href="module-e32calendar.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.2.3 entry Objects"
+  href="node78.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node76.html">5.2.1 Module Level Functions</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32calendar.html">5.2 e32calendar  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node78.html">5.2.3 Entry Objects</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-messaging.html" />
+<link rel="prev" href="module-audio.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="module-messaging.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.2 telephone -- Telephone services</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.1.1 sound Objects"
+  href="node57.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.3 messaging  "
+  href="module-messaging.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node57.html">4.1.1 Sound Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-messaging.html">4.3 messaging  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006200000000000000000"></a>
+<a name="sec:telephone"></a>
+<br>
+4.2 <tt class="module">telephone</tt> --
+	 Telephone services
+</h1>
+
+<p>
+<a name="module-telephone"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+This module provides an API to a telephone. 
+
+<p>
+Since the users of the device can also hang-up the phone explicitly, they 
+might affect the current status of the call. In addition, using this 
+extension in an emulator has no effect since no calls can be connected.
+
+<p>
+The <tt class="module">telephone</tt> module has the following functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-357' xml:id='l2h-357' class="function">dial</tt></b>(</nobr></td>
+  <td><var>number</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Dials the number set in <var>number</var>. <var>number</var> 
+is a string, for example <code>u'+358501234567'</code> where <code>'+'</code> is the 
+international prefix, <code>'358'</code> is the country code, <code>'50'</code> is 
+the mobile network code (or the area code), and <code>'1234567'</code> is the 
+subscriber number. If there is an ongoing phone call prior to calling 
+<tt class="method">dial</tt> from Python, then the earlier call is put on hold and a new 
+call is established. Calling <tt class="method">dial</tt> multiple times when, for example, 
+the first call has been answered and a line has been established results in 
+subsequent calls not being connected.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-358' xml:id='l2h-358' class="function">hang_up</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Hangs up if a call initiated by <tt class="method">dial</tt> is in process. If this call 
+has already been finished, <tt class="exception">SymbianError: KErrNotReady</tt> is raised.
+</dl>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+The following functions and data items are available from S60 3rd Edition 
+onwards (inclusive).
+</div>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-359' xml:id='l2h-359' class="function">incoming_call</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Wait for incoming call, returns immediately. If a call arrives, <code>answer</code> 
+can be called to answer the call. Without the invocation of function 
+<code>incoming_call</code>, the function <code>answer</code> has no effect.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-360' xml:id='l2h-360' class="function">answer</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Answers an incoming call - see also <code>incoming_call</code>. 
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-361' xml:id='l2h-361' class="function">call_state</tt></b>(</nobr></td>
+  <td><var>callable</var>)</td></tr></table></dt>
+<dd>
+The <code>callable</code> will be called when there are changes in the telephone line 
+(lines) in the device. The argument for the call is a tuple with first item the 
+possible new state and the second item, the possible incoming call number as a 
+Unicode string.
+
+<p>
+The possible states in the tuple are defined as <code>telephone</code> module 
+constants.
+</dl>
+
+<p>
+The following data items for state information are available in 
+<code>telephone</code><a name="tex2html18"
+  href="#foot4561"><sup>4.3</sup></a>:
+
+<p>
+<dl><dt><b><tt id='l2h-362' xml:id='l2h-362'>EStatusUnknown</tt></b></dt>
+<dd>
+Indicates that the status is unknown.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-363' xml:id='l2h-363'>EStatusIdle</tt></b></dt>
+<dd>
+Idle line status (no active calls).
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-364' xml:id='l2h-364'>EStatusDialling</tt></b></dt>
+<dd>
+Call dialling status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-365' xml:id='l2h-365'>EStatusRinging</tt></b></dt>
+<dd>
+Call ringing status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-366' xml:id='l2h-366'>EStatusAnswering</tt></b></dt>
+<dd>
+Call answering status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-367' xml:id='l2h-367'>EStatusConnecting</tt></b></dt>
+<dd>
+Call connecting status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-368' xml:id='l2h-368'>EStatusConnected</tt></b></dt>
+<dd>
+Call connected status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-369' xml:id='l2h-369'>EStatusReconnectPending</tt></b></dt>
+<dd>
+Call is undergoing temporary channel loss and it may or may not be reconnected.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-370' xml:id='l2h-370'>EStatusDisconnecting</tt></b></dt>
+<dd>
+Call disconnecting status.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-371' xml:id='l2h-371'>EStatusHold</tt></b></dt>
+<dd>
+Call on hold.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-372' xml:id='l2h-372'>EStatusTransferring</tt></b></dt>
+<dd>
+Call is transferring.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-373' xml:id='l2h-373'>EStatusTransferAlerting</tt></b></dt>
+<dd>
+Call in transfer is alerting the remote party.
+</dd></dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4561">...telephone</a><A
+ href="module-telephone.html#tex2html18"><sup>4.3</sup></a></dt>
+<dd>The descriptions are taken from the S60 SDK 
+documentation [<A
+ HREF="node96.html#S60Doc">4</a>]
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.1.1 sound Objects"
+  href="node57.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.3 messaging  "
+  href="module-messaging.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node57.html">4.1.1 Sound Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-messaging.html">4.3 messaging  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

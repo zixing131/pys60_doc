@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-location.html" />
+<link rel="prev" href="module-messaging.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="node61.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.4 inbox -- Interface to device inbox</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.3 messaging  "
+  href="module-messaging.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.4.1 inbox Objects"
+  href="node61.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-messaging.html">4.3 messaging  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node61.html">4.4.1 Inbox Objects</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006400000000000000000"></a>
+<a name="sec:inbox"></a>
+<br>
+4.4 <tt class="module">inbox</tt> --
+   Interface to device inbox
+</h1>
+
+<p>
+<a name="module-inbox"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">inbox</tt> module offers APIs to device inbox, outbox, sent and drafts 
+folders. Currently, the <tt class="module">inbox</tt> module supports only SMS handling and 
+notifications of incoming messages to the device inbox.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-387' xml:id='l2h-387' class="class">Inbox</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>folder_type</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Create an <tt class="class">Inbox</tt> object.
+
+<p>
+The optional parameter <code>folder_type</code> defines the type of the folder to 
+which the created <code>Inbox</code> object has access to. The default is the device's 
+inbox folder, <code>inbox.EInbox</code>.
+</dl>
+
+<p>
+The following data items are available in the <tt class="module">inbox</tt> module to define 
+the type of the folder for <code>Inbox</code> objects:
+
+<p>
+<dl><dt><b><tt id='l2h-388' xml:id='l2h-388'>EInbox</tt></b></dt>
+<dd>
+The device's inbox folder.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-389' xml:id='l2h-389'>EOutbox</tt></b></dt>
+<dd>
+The device's outbox folder.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-390' xml:id='l2h-390'>ESent</tt></b></dt>
+<dd>
+The sent messages folder.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-391' xml:id='l2h-391'>EDraft</tt></b></dt>
+<dd>
+The draft messages folder.
+</dd></dl>
+
+<p>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="node61.html">4.4.1 Inbox Objects</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.3 messaging  "
+  href="module-messaging.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.4.1 inbox Objects"
+  href="node61.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-messaging.html">4.3 messaging  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node61.html">4.4.1 Inbox Objects</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

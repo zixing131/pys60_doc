@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-keycapture.html" />
+<link rel="prev" href="module-graphics.html" />
+<link rel="parent" href="s60graph.html" />
+<link rel="next" href="module-keycapture.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.4 camera -- Interface for taking photographs and video recording</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.5 common Methods of"
+  href="node37.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.5 keycapture  "
+  href="module-keycapture.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node37.html">3.3.4.5 Common Methods of</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-keycapture.html">3.5 keycapture  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION005400000000000000000">
+3.4 <tt class="module">camera</tt> --
+    Interface for taking photographs and video recording</a>
+</h1>
+
+<p>
+<a name="module-camera"></a><a name="sec:camera"></a>
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+Not available for S60 1st Edition.
+</div>
+
+<p>
+The <tt class="module">camera</tt> module enables taking photographs and video recording.
+
+<p>
+The following data items for state information are available in <tt class="module">camera</tt>:
+
+<p>
+<dl><dt><b><tt id='l2h-172' xml:id='l2h-172'>EOpenComplete</tt></b></dt>
+<dd>
+The opening of the video clip has succeeded.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-173' xml:id='l2h-173'>ERecordComplete</tt></b></dt>
+<dd>
+The video recording has completed (not called on explicit <code>stop_recording</code> 
+call).
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-174' xml:id='l2h-174'>EPrepareComplete</tt></b></dt>
+<dd>
+The device is ready to begin video recording.
+</dd></dl>
+
+<p>
+The <tt class="module">camera</tt> module has the following functions<a name="tex2html13"
+  href="#foot2604"><sup>3.5</sup></a>:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-175' xml:id='l2h-175' class="function">cameras_available</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the number of cameras available in the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-176' xml:id='l2h-176' class="function">image_modes</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the image modes supported in the device as a list of strings, for 
+example: <code>['RGB12', 'RGB', 'JPEG_Exif', 'RGB16'].</code>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-177' xml:id='l2h-177' class="function">image_sizes</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the image sizes (resolution) supported in the device as a list of 
+<code>(x, y)</code> tuples, for example: <code>[(640, 480), (160, 120)]</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-178' xml:id='l2h-178' class="function">flash_modes</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the flash modes available in the device as a list of strings. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-179' xml:id='l2h-179' class="function">max_zoom</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the maximum digital zoom value supported in the device as an 
+integer. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-180' xml:id='l2h-180' class="function">exposure_modes</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the exposure settings supported in the device as a list of strings. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-181' xml:id='l2h-181' class="function">white_balance_modes</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the white balance modes available in the device as a list of 
+strings. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-182' xml:id='l2h-182' class="function">take_photo</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>mode, size, zoom, flash, exposure, white_balance, position</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Takes a photograph and returns the image in:
+
+<p>
+
+<ol>
+<li><code>Image</code> format (for more information on <code>Image</code> format, see 
+  Chapter <a href="module-graphics.html#sec:graphics">3.3</a> <tt class="module"><a href="module-graphics.html">graphics</a></tt> Module) or
+
+<p>
+</li>
+<li>Raw JPEG data<a name="tex2html14"
+  href="#foot2606"><sup>3.6</sup></a>. 
+</li>
+</ol>
+
+<p>
+The settings listed below describe all settings that are supported by the 
+<code>camera</code> module. You can retrieve the mode settings available for your 
+device by using the appropriate functions listed at the beginning of this 
+chapter.
+
+<p>
+
+<ul>
+<li><var>mode</var> is the display mode of the image. The default value is 
+<code>'RGB16'</code>. The following display modes are supported for the <code>Image</code> 
+format pictures taken:
+	
+<ul>
+<li><code>'RGB12'</code>: 4096 colors (12 bits per pixel)
+</li>
+<li><code>'RGB16'</code>: 65536 colors (16 bits per pixel). Default value, always supported
+</li>
+<li><code>'RGB'</code>: 16.7 million colors (24 bits per pixel)
+	
+</li>
+</ul>
+
+<p>
+For the JPEG data format images the following modes are supported:
+
+<p>
+
+<ul>
+<li><code>'JPEG_Exif'</code>: JPEG Exchangeable image file format
+</li>
+<li><code>'JPEG_JFIF'</code>: JPEG File Interchange Format
+	
+</li>
+</ul>
+
+<p>
+Note that there is variety between the devices and the supported formats.
+
+<p>
+</li>
+<li><var>size</var> is the resolution of the image. The default value is <code>(640, 480)</code>. The following sizes are supported, for example, in Nokia 6630: <code>(1280, 960)</code>, <code>(640, 480)</code> and <code>(160, 120)</code>.
+</li>
+<li><var>flash</var> is the flash mode setting. The default value is <code>'none'</code>. The following flash mode settings are supported:
+	
+<ul>
+<li><code>'none' <br>
+</code>No flash. Default value, always supported
+</li>
+<li><code>'auto' <br>
+</code>Flash will automatically fire when required
+</li>
+<li><code>'forced' <br>
+</code>Flash will always fire
+</li>
+<li><code>'fill_in' <br>
+</code>Reduced flash for general lighting
+</li>
+<li><code>'red_eye_reduce' <br>
+</code>Red-eye reduction mode
+	
+</li>
+</ul>
+</li>
+<li><var>zoom</var> is the digital zoom factor. It is assumed to be on a linear scale from 0 to the maximum zoom value allowed in the device. The default value is <code>0</code>, meaning that zoom is not used. 
+</li>
+<li><var>exposure</var> is the exposure adjustment of the device. Exposure is a combination of lens aperture and shutter speed used in taking a photograph. The default value is <code>'auto'.</code> The following exposure modes are supported:
+	
+<ul>
+<li><code>'auto'</code> <br>
+Sets exposure automatically. Default value, always supported
+</li>
+<li><code>'night'</code> <br>
+Night-time setting for long exposures
+</li>
+<li><code>'backlight' </code> <br>
+Backlight setting for bright backgrounds
+</li>
+<li><code>'center'</code> <br>
+Centered mode for ignoring surroundings
+	
+</li>
+</ul>
+</li>
+<li><var>white_balance</var> can be used to adjust white balance to match the main source of light. The term white balance refers to the color temperature of the current light. A digital camera requires a reference point to represent white. It will then calculate all the other colors based on this white point. The default value for <var>white_balance</var> is <code>'auto'</code> and the following white balance modes are supported:
+	
+<ul>
+<li><code>'auto'</code> <br>
+Sets white balance automatically. Default value, always supported
+</li>
+<li><code>'daylight'</code> <br>
+Sets white balance to normal daylight
+</li>
+<li><code>'cloudy</code>' <br>
+Sets white balance to overcast daylight
+</li>
+<li><code>'tungsten'</code> <br>
+Sets white balance to tungsten filament lighting
+</li>
+<li><code>'fluorescent</code>' <br>
+Sets white balance to fluorescent tube lighting
+</li>
+<li><code>'flash'</code> <br>
+Sets white balance to flash lighting
+	
+</li>
+</ul>
+</li>
+<li><var>position</var> is the camera used if the device, such as Nokia 6680, has several cameras. In Nokia 6680, the camera pointing to the user of the device is located in position <code>1</code>, whereas the one pointing away from the user is located in position <code>0</code>. The default <var>position</var> is <code>0</code>.
+</li>
+</ul>
+
+<p>
+If some other application is using the camera, this operation fails, with error 
+<code>SymbianError: KErrInUse</code>. Invoking this function right after the device 
+boot, might result in <code>SymbianError: KErrNotReady</code> error.
+
+<p>
+In some Nokia devices (e.g. in N95), to be able to get the highest possible size 
+for the captured image, you need to:
+
+<p>
+
+<ol>
+<li>switch to the landscape mode (see <code>appuifw.app.orientation</code>)
+</li>
+<li>import the <code>camera</code> module
+</li>
+<li>take the picture in the <code>'JPEG_Exif'</code> format.
+</li>
+</ol>
+
+<p>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-183' xml:id='l2h-183' class="function">start_finder</tt></b>(</nobr></td>
+  <td><var>callable</var><big>[</big><var>, backlight_on=1, size=main_pane_size</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Starts the camera viewfinder and binds a callback to receive <code>Image</code> format 
+feed. When a new viewfinder frame is ready the callback is invoked with the 
+<code>Image</code> as parameter.
+
+<p>
+The optional parameter <code>backlight_on</code> determines whether the device 
+backlight is kept on when the camera view finder is in operation. By default, 
+the backlight is on (1 = on, 0 = off).
+
+<p>
+The optional parameter <code>size</code> (of type tuple, e.g. <code>(176, 144)</code>) can 
+be used to change the size of the <code>Image</code> received in the callback. The 
+default <code>size</code> is the same as the application's main pane size. 
+
+<p>
+Example view finder code:
+
+<p>
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import appuifw
+&gt;&gt;&gt; import camera
+&gt;&gt;&gt; def cb(im):
+...   appuifw.app.body.blit(im)
+...
+&gt;&gt;&gt; import graphics
+&gt;&gt;&gt; appuifw.app.body=appuifw.Canvas()
+&gt;&gt;&gt; camera.start_finder(cb)
+&gt;&gt;&gt;
+</pre></div>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-184' xml:id='l2h-184' class="function">stop_finder</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Stops the viewfinder.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-185' xml:id='l2h-185' class="function">release</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Releases the camera - After invocation other applications can access the camera 
+hardware.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-186' xml:id='l2h-186' class="function">start_record</tt></b>(</nobr></td>
+  <td><var>filename, callable</var>)</td></tr></table></dt>
+<dd>
+Starts video recording. <var>filename</var> is the file where the video clip is saved 
+and <var>callable</var> will be called with possible error code (int) and status 
+information (see data in module <tt class="module">camera</tt>) as parameter.
+
+<p>
+Prior calling this function, the view finder needs to be started.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-187' xml:id='l2h-187' class="function">stop_record</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Stops the video recording.
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot2604">... functions</a><A
+ href="module-camera.html#tex2html13"><sup>3.5</sup></a></dt>
+<dd>Descriptions 
+for some of the values are based on information found in S60 SDK documentation 
+[<A
+ HREF="node96.html#S60Doc">4</a>]
+
+</dd>
+<dt><a name="foot2606">... data</a><A
+ href="module-camera.html#tex2html14"><sup>3.6</sup></a></dt>
+<dd>For more information, see e.g. 
+  <a class="url" href="http://en.wikipedia.org/wiki/JPEG">http://en.wikipedia.org/wiki/JPEG</a>.
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.5 common Methods of"
+  href="node37.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.5 keycapture  "
+  href="module-keycapture.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node37.html">3.3.4.5 Common Methods of</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60graph.html">3. User Interface and</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-keycapture.html">3.5 keycapture  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

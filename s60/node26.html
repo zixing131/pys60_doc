@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node25.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="module-globalui.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.11 InfoPopup Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.10 canvas Type"
+  href="node25.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.2 globalui  "
+  href="module-globalui.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node25.html">3.1.10 Canvas Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-globalui.html">3.2 globalui  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION0051110000000000000000"></a>
+<a name="subsec:infopopup"></a>
+<br>
+3.1.11 InfoPopup Type
+</h2>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+Available from S60 3rd Ed onwards (inclusive).
+</div>
+
+<p>
+An instance of <tt class="class">InfoPopup</tt> type encapsulates an UI tip widget. This widget 
+can be placed on top of other widgets to provide e.g. usage information to the 
+user. The widget disappears as soon as the device's user presses any key or when 
+the timer behind the <tt class="class">InfoPopup</tt> is triggered.
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-131' xml:id='l2h-131' class="class">InfoPopup</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Creates an <tt class="class">InfoPopup</tt>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-132' xml:id='l2h-132' class="method">show</tt></b>(</nobr></td>
+  <td><var>text, </var><big>[</big><var>(x_coord, y_coord), 
+time_shown, time_before, alignment</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Show <var>text</var> (Unicode) in the <tt class="class">InfoPopup</tt>. The optional parameters are 
+the location (a tuple from the upper left corner), the time the popup is 
+visible, <var>time_shown</var> (in milliseconds), the time before the popup, 
+<var>time_before</var> (in milliseconds) and the alignment of the popup.
+
+<p>
+The default values are: the coordinates <code>(0, 0)</code>, <var>time_shown</var> 5 
+seconds, <var>time_before</var> 0 seconds and for the alignment 
+<code>appuifw.EHLeftVTop</code>.
+
+<p>
+The <var>alignment</var> can be one of the constants defined in module 
+<code>appuifw</code><a name="tex2html10"
+  href="#foot1335"><sup>3.2</sup></a>:
+
+<p>
+<dl><dt><b><tt id='l2h-133' xml:id='l2h-133'>EHLeftVTop</tt></b></dt>
+<dd> 
+Object is left and top aligned. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-134' xml:id='l2h-134'>EHLeftVCenter</tt></b></dt>
+<dd> 
+Object is left aligned and centred vertically. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-135' xml:id='l2h-135'>EHLeftVBottom</tt></b></dt>
+<dd> 
+Object is left aligned and at the bottom. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-136' xml:id='l2h-136'>EHCenterVTop</tt></b></dt>
+<dd> 
+Object is centre aligned horizontally and at the top. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-137' xml:id='l2h-137'>EHCenterVCenter</tt></b></dt>
+<dd> 
+Object is centred horizontally and vertically. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-138' xml:id='l2h-138'>EHCenterVBottom</tt></b></dt>
+<dd> 
+Object is centred horizontally and at the bottom. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-139' xml:id='l2h-139'>EHRightVTop</tt></b></dt>
+<dd> 
+Object is right and top aligned. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-140' xml:id='l2h-140'>EHRightVCenter</tt></b></dt>
+<dd> 
+Object is right aligned and centred vertically. 
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-141' xml:id='l2h-141'>EHRightVBottom</tt></b></dt>
+<dd> 
+Object is right aligned and at the bottom. 
+</dd></dl>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-142' xml:id='l2h-142' class="method">hide</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Hides the popup immediately.
+</dl>
+
+<p>
+Example:
+
+<p>
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import appuifw
+&gt;&gt;&gt; i=appuifw.InfoPopup()
+&gt;&gt;&gt; i.show(u"Here is the tip.", (0, 0), 5000, 0, appuifw.EHRightVCenter)
+&gt;&gt;&gt;
+</pre></div>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot1335">...appuifw</a><A
+ HREF="node26.html#tex2html10"><sup>3.2</sup></a></dt>
+<dd>Descriptions of the values are from the S60 SDK 
+documentation [<A
+ HREF="node96.html#S60Doc">4</a>].
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.10 canvas Type"
+  href="node25.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.2 globalui  "
+  href="module-globalui.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node25.html">3.1.10 Canvas Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-globalui.html">3.2 globalui  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

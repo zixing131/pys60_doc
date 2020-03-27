@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-btsocket.html" />
+<link rel="prev" href="module-location.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="position-example.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.6 positioning -- Simplified interface to the position information</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.5.1 Examples"
+  href="node63.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.6.1 Example"
+  href="position-example.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node63.html">4.5.1 Examples</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="position-example.html">4.6.1 Example</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006600000000000000000"></a>
+<a name="sec:position"></a>
+<br>
+4.6 <tt class="module">positioning</tt> --
+         Simplified interface to the position information
+</h1>
+
+<p>
+<a name="module-positioning"></a>		
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">positioning</tt> module provides basic access to the S60 position 
+information <a name="tex2html23"
+  href="#foot4939"><sup>4.8</sup></a>. 
+The module can be e.g. used to access position information provided by external 
+Bluetooth GPS-devices and by built-in GPS-receivers<a name="tex2html24"
+  href="#foot5008"><sup>4.9</sup></a> from S60 2nd 
+Edition FP 2 onwards.
+
+<p>
+The module offers a large amount of information (cost of service, device power 
+consumption etc.) about accessible positioning devices (like GPS-modules), 
+position, course, accuracy and satellite information (depending on the position 
+device used) and much more. This module can also be used to obtain device/vendor 
+specific extended information.
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+The  module <tt class="module">position</tt> requires Location capability to work fully in S60 
+3rd Edition devices.
+</div>
+
+<p>
+The following data items are available in <tt class="module">positioning</tt>:
+
+<p>
+<dl><dt><b><tt id='l2h-403' xml:id='l2h-403'>POSITION_INTERVAL</tt></b></dt>
+<dd>
+The time interval (in microseconds) between the <code>position</code> function 
+callback invocation. The default value set is 1 000 000 microseconds (= 1 
+second)
+</dd></dl>
+
+<p>
+The <tt class="module">positioning</tt> module has the following functions (for examples of the 
+values returned, see Section <a href="position-example.html#position-example">4.6.1</a>):
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-404' xml:id='l2h-404' class="function">modules</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Get information about available positioning modules.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-405' xml:id='l2h-405' class="function">default_module</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Get default module id.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-406' xml:id='l2h-406' class="function">module_info</tt></b>(</nobr></td>
+  <td><var>module_id</var>)</td></tr></table></dt>
+<dd>
+Get detailed information about the specified module.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-407' xml:id='l2h-407' class="function">select_module</tt></b>(</nobr></td>
+  <td><var>module_id</var>)</td></tr></table></dt>
+<dd>
+Select a module.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-408' xml:id='l2h-408' class="function">set_requestors</tt></b>(</nobr></td>
+  <td><var>requestors</var>)</td></tr></table></dt>
+<dd>
+Set the <var>requestors</var> of the service (at least one must be set).
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-409' xml:id='l2h-409' class="function">position</tt></b>(</nobr></td>
+  <td><var>course=0,satellites=0,callback=None,
+                          interval=positioning.POSITION_INTERVAL, partial=0</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+By default, returns the position information in a dictionary. With <var>course</var> 
+and/or <var>satellites</var> set to 1, information about course and satellites is 
+also returned (if available).
+
+<p>
+With no <var>callback</var> provided, this call blocks until the position information 
+is available.
+
+<p>
+The call returns immediately if a valid <var>callback</var> function is given. This 
+<var>callback</var> function is then invoked with the specified time <var>interval</var> 
+(in microseconds) in between the invocations. The <var>callback</var> function is 
+called with the the current position information as parameter.
+
+<p>
+If <var>partial</var> update is set to 1, the function might return e.g. information 
+about satellites before the final location fix has been calculated.
+
+<p>
+For an example of the dictionary returned and the detailed keys, see Section 
+<a href="position-example.html#position-example">4.6.1</a>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-410' xml:id='l2h-410' class="function">stop_position</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Stops an ongoing <code>position</code> request.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-411' xml:id='l2h-411' class="function">last_position</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Get last position information. 
+This method returns the cached position information if it is available.
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4939">...
+information</a><A
+ href="module-positioning.html#tex2html23"><sup>4.8</sup></a></dt>
+<dd>For details, please see the Location Acquisition API in 
+the S60 API documentation. The Location Acquisition API gathers different 
+positioning technologies together to be used through a consistent interface.
+
+</dd>
+<dt><a name="foot5008">... GPS-receivers</a><A
+ href="module-positioning.html#tex2html24"><sup>4.9</sup></a></dt>
+<dd>For more 
+information on GPS, please see 
+<a class="url" href="http://en.wikipedia.org/wiki/Global_Positioning_System">http://en.wikipedia.org/wiki/Global_Positioning_System</a>.
+
+</dd>
+</dl>
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="position-example.html">4.6.1 Example</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.5.1 Examples"
+  href="node63.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.6.1 Example"
+  href="position-example.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node63.html">4.5.1 Examples</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="position-example.html">4.6.1 Example</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

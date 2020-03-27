@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-telephone.html" />
+<link rel="prev" href="s60ac.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="node57.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.1 audio -- An audio related services package</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.1.1 sound Objects"
+  href="node57.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node57.html">4.1.1 Sound Objects</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006100000000000000000"></a>
+<a name="sec:audio"></a>
+<br>
+4.1 <tt class="module">audio</tt> --
+  An audio related services package
+</h1>
+
+<p>
+<a name="module-audio"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">audio</tt> module enables recording and playing audio files and access 
+to device text-to-speech engine. The <tt class="module">audio</tt> module supports all the 
+formats supported by the device, typically: WAV, AMR, MIDI, MP3, AAC, and Real 
+Audio<a name="tex2html16"
+  href="#foot4249"><sup>4.1</sup></a>. For more 
+information on the audio types supported by different devices, see the 
+<i>Forum Nokia</i> Web site [<A
+ HREF="node96.html#S60AudioVideo">5</a>] and <i>S60 Platform</i> Web 
+site [<A
+ HREF="node96.html#S60Developers">6</a>]. 
+
+<p>
+The following <tt class="class">Sound</tt> class static methods are defined in the 
+<tt class="module">audio</tt> module:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-337' xml:id='l2h-337' class="function">Sound.open</tt></b>(</nobr></td>
+  <td><var>filename</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns a new initialized <tt class="class">Sound</tt> object with the named file opened. 
+Note that <var>filename</var> should be a full Unicode path name and 
+must also include the file extension, for example <code>u'c:\\foo.wav'</code>.
+</dl>
+
+<p>
+The following data items for state information are available in <tt class="module">audio</tt>:
+
+<p>
+<dl><dt><b><tt id='l2h-338' xml:id='l2h-338'>ENotReady</tt></b></dt>
+<dd>
+The <tt class="class">Sound</tt> object has been constructed but no audio file is open.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-339' xml:id='l2h-339'>EOpen</tt></b></dt>
+<dd> 
+An audio file is open but no playing or recording operation is in progress.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-340' xml:id='l2h-340'>EPlaying</tt></b></dt>
+<dd> 
+An audio file is playing.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-341' xml:id='l2h-341'>ERecording</tt></b></dt>
+<dd>
+An audio file is being recorded.
+</dd></dl>
+
+<p>
+The following data item is provided for continuous playback of an audio file:
+
+<p>
+<dl><dt><b><tt id='l2h-342' xml:id='l2h-342'>KMdaRepeatForever</tt></b></dt>
+<dd>
+Possible value for <var>times</var> parameter in <tt class="function">open</tt>.
+</dd></dl>
+
+<p>
+The following method is available in the <tt class="module">audio</tt> module:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-343' xml:id='l2h-343' class="function">say</tt></b>(</nobr></td>
+  <td><var>text, prefix=audio.TTS_PREFIX</var>)</td></tr></table></dt>
+<dd>
+Passes the <code>text</code> to the device text-to-speech engine. The default 
+<code>prefix</code> is the text-to-speech prefix <code>"(tts)"</code>. 
+
+<p>
+<code>text</code> should be either Unicode or a UTF-8 encoded plain
+string. The speech synthesizer pronounces the text according to the
+current device language.
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4249">...
+Audio</a><A
+ href="module-audio.html#tex2html16"><sup>4.1</sup></a></dt>
+<dd>The dynamically loaded audio codec for the sound file is based on 
+the MIME-type information inside the audio file and file extension.
+
+</dd>
+</dl>
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="node57.html">4.1.1 Sound Objects</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.1.1 sound Objects"
+  href="node57.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node57.html">4.1.1 Sound Objects</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

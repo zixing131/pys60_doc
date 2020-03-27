@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="module-audio.html" />
+<link rel="parent" href="module-audio.html" />
+<link rel="next" href="module-telephone.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.1.1 Sound Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.1 audio  "
+  href="module-audio.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4.1 audio  "
+  href="module-audio.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.2 telephone  "
+  href="module-telephone.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-audio.html">4.1 audio  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-audio.html">4.1 audio  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-telephone.html">4.2 telephone  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION006110000000000000000"></a>
+<a name="subsec:sound"></a>
+<br>
+4.1.1 Sound Objects
+</h2>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+The method <code>current_volume</code> is not available for S60 1st 
+Edition.
+</div>
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-344' xml:id='l2h-344' class="class">Sound</tt></b>
+<dd>
+
+<p>
+<tt class="class">Sound</tt> objects have the following functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-345' xml:id='l2h-345' class="method">play</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>times=1, interval=0, callback=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Starts playback of an audio file from the beginning. Without the parameters 
+<var>times</var> and <var>interval</var> it plays the audio file one time. 
+<var>times</var> defines the number of times the audio file is played, the 
+default being <var>1</var>. If the audio file is played several times, 
+<var>interval</var> gives the time interval between the subsequent plays in 
+microseconds. 
+
+<p>
+The optional callback is called when the playing starts and when the end of the 
+sound file is reached. The callback should take three parameters: the previous 
+state, the current state and the possible error code. The possible states given 
+as parameters to the callback are data items in the module <code>audio</code>.
+
+<p>
+Other issues: 
+
+<p>
+
+<ul>
+<li>Calling <code>play(audio.KMdaRepeatForever)</code> will repeat the file forever. 
+</li>
+<li>If an audio file is played but not stopped before exiting, the Python script will leave audio playing on; therefore <code>stop</code> needs to be called explicitly prior to exit.
+</li>
+<li>Currently the module does not support playing simultaneous audio files, calling <code>play</code> to a second <tt class="class">Sound</tt> instance while another audio file is playing, stops the earlier audio file and starts to play the second <tt class="class">Sound</tt> instance.
+</li>
+<li>Calling <code>play</code> while a telephone call is ongoing plays the sound file to uplink. In some devices the sound file is also played to the device speaker.
+</li>
+<li>Calling <code>play</code> when already playing or recording results in <code>RuntimeError</code>. Calling <code>stop</code> prior to <code>play</code> will prevent this from happening.
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-346' xml:id='l2h-346' class="method">stop</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Stops playback or recording of an audio file.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-347' xml:id='l2h-347' class="method">record</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Starts recording audio data to a file. If the file already exists, the 
+operation appends to the file. For Nokia devices, WAV is typically supported 
+for recording. For more information on the audio types supported by 
+different devices, see the <i>Forum Nokia</i> Web site 
+[<A
+ HREF="node96.html#S60AudioVideo">5</a>] and <i>S60 Platform</i> Web site 
+[<A
+ HREF="node96.html#S60Developers">6</a>]. Other issues:
+
+<p>
+
+<ul>
+<li>Calling <code>record</code> while a telephone call is ongoing starts the recording of the telephone call. 
+</li>
+<li>Calling <code>record</code> when already playing or recording results in <code>RuntimeError</code>. Calling <code>stop</code> prior to <code>record</code> will prevent this from happening.
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-348' xml:id='l2h-348' class="method">close</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Closes an opened audio file.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-349' xml:id='l2h-349' class="method">state</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current state of the <tt class="class">Sound</tt> type instance. The different 
+states (constants) are defined in the <tt class="module">audio</tt> module. The possible 
+states<a name="tex2html17"
+  href="#foot4387"><sup>4.2</sup></a> are:
+
+<p>
+
+<ul>
+<li><code>ENotReady</code> <br>
+The <span  class="textsf">Sound</span> object has been constructed but no audio file is open.
+</li>
+<li><code>EOpen</code> <br>
+An audio file is open but no playing or recording operation is in progress.
+</li>
+<li><code>EPlaying</code> <br>
+An audio file is playing.
+</li>
+<li><code>ERecording</code> <br>
+An audio file is being recorded.
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-350' xml:id='l2h-350' class="method">max_volume</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the maximum volume of the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-351' xml:id='l2h-351' class="method">set_volume</tt></b>(</nobr></td>
+  <td><var>volume</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Sets the volume. If the given volume is negative, then the volume is set to 
+zero which mutes the device. If the volume is greater than <code>max_volume</code>, 
+then <code>max_volume</code> is used.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-352' xml:id='l2h-352' class="method">current_volume</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current volume set.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-353' xml:id='l2h-353' class="method">duration</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the duration of the file in microseconds.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-354' xml:id='l2h-354' class="method">set_position</tt></b>(</nobr></td>
+  <td><var>microseconds</var>)</td></tr></table></dt>
+<dd>
+Set the position for the playhead.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-355' xml:id='l2h-355' class="method">current_position</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current playhead position in microseconds.
+</dl>
+
+<p>
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4387">...
+states</a><A
+ HREF="node57.html#tex2html17"><sup>4.2</sup></a></dt>
+<dd>Descriptions for these options are based on information 
+found in S60 SDK documentation [<A
+ HREF="node96.html#S60Doc">4</a>].
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.1 audio  "
+  href="module-audio.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4.1 audio  "
+  href="module-audio.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.2 telephone  "
+  href="module-telephone.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-audio.html">4.1 audio  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-audio.html">4.1 audio  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-telephone.html">4.2 telephone  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

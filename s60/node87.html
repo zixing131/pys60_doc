@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node88.html" />
+<link rel="prev" href="node86.html" />
+<link rel="parent" href="module-e32db.html" />
+<link rel="next" href="node88.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.3.2 DB_view Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.3.1 dbms Objects"
+  href="node86.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3.3 mapping Between SQL"
+  href="node88.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node86.html">5.3.1 Dbms Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32db.html">5.3 e32db  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node88.html">5.3.3 Mapping Between SQL</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007320000000000000000"></a>
+<a name="subsec:mylabel14"></a>
+<br>
+5.3.2 DB_view Objects
+</h2>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-518' xml:id='l2h-518' class="class">Db_view</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Creates a <tt class="class">Db_view</tt> object. <tt class="class">DB_view</tt> objects generate 
+rowsets from a SQL query. They provide functions to parse and evaluate the 
+rowsets.
+</dl>
+
+<p>
+Db_view objects have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-519' xml:id='l2h-519' class="method">col</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Returns the value in <var>column</var>. The first column of the rowset has the index 
+<code>1</code>. If the type of the column is not supported, a <tt class="exception">TypeError</tt> is 
+raised. See Table <a href="node88.html#tab:sqltypes">5.1</a> for a list of supported data types.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-520' xml:id='l2h-520' class="method">col_count</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the number of columns defined in the rowset.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-521' xml:id='l2h-521' class="method">col_length</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Gets the length of the value in <var>column</var>. Empty columns have 
+a length of zero; non-empty numerical and date/time columns have a length of 
+1. For text columns, the length is the character count, and for binary 
+columns, the length is the byte count.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-522' xml:id='l2h-522' class="method">col_raw</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Extracts the value of <var>column</var> as raw binary data, and 
+returns it as a Python string. The first column of the rowset has the index 
+1. See Table <a href="node88.html#tab:sqltypes">5.1</a> for a list of supported data types.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-523' xml:id='l2h-523' class="method">col_rawtime</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Extracts the value of a date/time column at index <var>column</var> as a
+long integer, which represents the raw Symbian time value. The first
+column of the rowset has the index 1.  See Table <a href="node88.html#tab:sqltypes">5.1</a> for a list of the
+supported data types.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-524' xml:id='l2h-524' class="method">col_type</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Returns the numeric type of the given column as an integer from a 
+Symbian-specific list of types. This function is used in the implementation 
+of method <tt class="method">col</tt>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-525' xml:id='l2h-525' class="method">count_line</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the number of rows available in the rowset.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-526' xml:id='l2h-526' class="method">first_line</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Positions the cursor on the first row in the rowset.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-527' xml:id='l2h-527' class="method">get_line</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Gets the current row data for access.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-528' xml:id='l2h-528' class="method">is_col_null</tt></b>(</nobr></td>
+  <td><var>column</var>)</td></tr></table></dt>
+<dd>
+Tests whether <var>column</var> is empty. Empty columns can be 
+accessed like normal columns. Empty numerical columns return a <code>0</code> or 
+an equivalent value, and text and binary columns have a zero length.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-529' xml:id='l2h-529' class="method">next_line</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Moves the cursor to the next row in the rowset.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-530' xml:id='l2h-530' class="method">prepare</tt></b>(</nobr></td>
+  <td><var>db, query</var>)</td></tr></table></dt>
+<dd>
+Prepares the view object for evaluating an SQL select statement. 
+<var>db</var> is a <tt class="class">Dbms</tt> object and <var>query</var>
+the SQL query to be executed.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.3.1 dbms Objects"
+  href="node86.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3.3 mapping Between SQL"
+  href="node88.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node86.html">5.3.1 Dbms Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32db.html">5.3 e32db  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node88.html">5.3.3 Mapping Between SQL</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

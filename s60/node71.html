@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node72.html" />
+<link rel="prev" href="node70.html" />
+<link rel="parent" href="module-contacts.html" />
+<link rel="next" href="node72.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.1.3 Contact Object</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.1.2 contactdb Object"
+  href="node70.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.1 contacts  "
+  href="module-contacts.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.1.4 contactfield Object"
+  href="node72.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node70.html">5.1.2 ContactDb Object</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-contacts.html">5.1 contacts  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node72.html">5.1.4 ContactField Object</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007130000000000000000"></a>
+<a name="subsec:contact"></a>
+<br>
+5.1.3 Contact Object
+</h2>
+
+<p>
+A <tt class="class">Contact</tt> object represents a live view into the state of a single 
+contact in the database. You can access the fields either with a contact's 
+numeric field ID as <code>contact[fieldid]</code>, or using the <code>find</code> 
+method. Attempting to modify a contact while it has been locked for editing 
+in another application will raise the exception <code>ContactBusy</code>.
+
+<p>
+<dl><dt><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-444' xml:id='l2h-444' class="class">Contact</tt></b>
+<dd>
+<tt class="class">Contact</tt> objects have the following attributes:
+
+<p>
+<dl><dt><b><tt id='l2h-445' xml:id='l2h-445' class="member">id</tt></b></dt>
+<dd>
+
+<p>
+The unique ID of this <tt class="class">Contact</tt>. Read-only.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-446' xml:id='l2h-446' class="member">title</tt></b></dt>
+<dd>
+
+<p>
+The title of this <tt class="class">Contact</tt>. Read-only.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-447' xml:id='l2h-447' class="member">last_modified</tt></b></dt>
+<dd>
+
+<p>
+The date/time when this <tt class="class">Contact</tt> object was last modified. Read-only.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-448' xml:id='l2h-448' class="member">is_group</tt></b></dt>
+<dd>
+
+<p>
+Returns 1 if this contact is a contact group. Returns 0 if normal contact entry. Read-only.
+
+<p>
+</dl>
+
+<p>
+<tt class="class">Contact</tt> objects have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-449' xml:id='l2h-449' class="method">begin</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Locks the contact for editing. This prevents other applications from 
+modifying the contact for as long as the lock is held. This method will 
+raise the exception <code>ContactBusy</code> if the contact has already been 
+locked.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-450' xml:id='l2h-450' class="method">commit</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Releases the lock and commits the changes made into the database.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-451' xml:id='l2h-451' class="method">rollback</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Releases the lock and discards all changes that were made. The contact 
+remains in the state it was before <code>begin</code>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-452' xml:id='l2h-452' class="method">as_vcard</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns the contact as a string in vCard format.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-453' xml:id='l2h-453' class="method">add_field</tt></b>(</nobr></td>
+  <td><var>type </var><big>[</big><var>, value </var><big>[</big><var>, 
+label=field_label</var><big>]</big><var></var><big>[</big><var>, location=location_spec</var><big>]</big><var></var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Adds a new field into this <tt class="class">Contact</tt>. This method raises 
+<code>ContactBusy</code> if the contact has been locked by some other 
+application. <var>type</var> can be one of the supported field types as a 
+string. 
+
+<p>
+In Series 60 editions older than the 3rd one the following field types can 
+be added:
+
+<p>
+
+<ul>
+<li><code>city</code>
+</li>
+<li><code>company_name</code>
+</li>
+<li><code>country</code>
+</li>
+<li><code>date</code>
+</li>
+<li><code>dtmf_string</code>
+</li>
+<li><code>email_address</code>
+</li>
+<li><code>extended_address</code>
+</li>
+<li><code>fax_number</code>
+</li>
+<li><code>first_name</code>
+</li>
+<li><code>job_title</code>
+</li>
+<li><code>last_name</code>
+</li>
+<li><code>mobile_number</code>
+</li>
+<li><code>note</code>
+</li>
+<li><code>pager_number</code>
+</li>
+<li><code>phone_number</code>
+</li>
+<li><code>po_box</code>
+</li>
+<li><code>postal_address</code>
+</li>
+<li><code>postal_code</code>
+</li>
+<li><code>state</code>
+</li>
+<li><code>street_address</code>
+</li>
+<li><code>url</code>
+</li>
+<li><code>video_number</code>
+</li>
+<li><code>wvid</code>
+</li>
+</ul>
+
+<p>
+The following field types are recognized but cannot be created:
+
+<p>
+
+<ul>
+<li><code>first_name_reading</code>
+</li>
+<li><code>last_name_reading</code>
+</li>
+<li><code>picture</code>
+</li>
+<li><code>speed_dial</code>
+</li>
+<li><code>thumbnail_image</code>
+</li>
+<li><code>voicetag</code>
+</li>
+</ul>
+
+<p>
+If 3rd edition of Series 60 is used the following field types can be added:
+
+<p>
+
+<ul>
+<li><code>city</code>
+</li>
+<li><code>company_name</code>
+</li>
+<li><code>country</code>
+</li>
+<li><code>date</code>
+</li>
+<li><code>dtmf_string</code>
+</li>
+<li><code>email_address</code>
+</li>
+<li><code>extended_address</code>
+</li>
+<li><code>fax_number</code>
+</li>
+<li><code>first_name</code>
+</li>
+<li><code>job_title</code>
+</li>
+<li><code>last_name</code>
+</li>
+<li><code>mobile_number</code>
+</li>
+<li><code>note</code>
+</li>
+<li><code>pager_number</code>
+</li>
+<li><code>phone_number</code>
+</li>
+<li><code>po_box</code>
+</li>
+<li><code>postal_address</code>
+</li>
+<li><code>postal_code</code>
+</li>
+<li><code>state</code>
+</li>
+<li><code>street_address</code>
+</li>
+<li><code>url</code>
+</li>
+<li><code>video_number</code>
+</li>
+<li><code>picture</code>
+</li>
+<li><code>second_name</code>
+</li>
+<li><code>voip</code>
+</li>
+<li><code>sip_id</code>
+</li>
+<li><code>personal_ringtone</code>
+</li>
+<li><code>share_view</code>
+</li>
+<li><code>prefix</code>
+</li>
+<li><code>suffix</code>
+</li>
+<li><code>push_to_talk</code>
+</li>
+<li><code>locationid_indication</code>
+
+<p>
+</li>
+</ul>
+
+<p>
+The following field types are recognized but cannot be created at present:
+
+<p>
+
+<ul>
+<li><code>first_name_reading</code>
+</li>
+<li><code>last_name_reading</code>
+</li>
+<li><code>speed_dial</code>
+</li>
+<li><code>thumbnail_image</code>
+</li>
+<li><code>voice_tag</code>
+</li>
+<li><code>wvid</code>
+</li>
+</ul>
+
+<p>
+All supported field types are passed as strings or Unicode strings, except for 
+<code>'date</code>' which is a float that represents Unix time. For more information 
+on Unix time, see Section <a href="#subsec:datetime"><tex2html_cross_ref_visible_mark></a>, Date and Time.
+
+<p>
+<var>field_label</var> is the name of the field shown to the user. If you 
+do not pass a label, the default label for the field type is used.
+
+<p>
+<var>location_spec</var>, if given, must be <code>'home'</code> or 
+<code>'work'</code>. Note that not all combinations of type and location are 
+valid. The settings of the current contacts database in use determine which 
+ones are valid. 
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-454' xml:id='l2h-454' class="method">find</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>type=field_type</var><big>]</big><var></var><big>[</big><var>, 
+location=field_location</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Finds the fields of this contact that match the given search specifications. 
+If no parameters are given, all fields are returned.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-455' xml:id='l2h-455' class="method">__delitem__</tt></b>(</nobr></td>
+  <td><var>fieldindex</var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Deletes the given field from this contact. Note that since this will change 
+the indices of all fields that appear after this field in the contact, and 
+since the <tt class="class">ContactField</tt> objects refer to the fields by index, old 
+<tt class="class">ContactField </tt>objects that refer to fields after the deleted field 
+will refer to different fields after this operation.
+
+<p>
+</dl>
+
+<p>
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.1.2 contactdb Object"
+  href="node70.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.1 contacts  "
+  href="module-contacts.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.1.4 contactfield Object"
+  href="node72.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node70.html">5.1.2 ContactDb Object</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-contacts.html">5.1 contacts  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node72.html">5.1.4 ContactField Object</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

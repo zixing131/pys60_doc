@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="module-inbox.html" />
+<link rel="parent" href="module-inbox.html" />
+<link rel="next" href="module-location.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.4.1 Inbox Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.5 location  "
+  href="module-location.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-inbox.html">4.4 inbox  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-inbox.html">4.4 inbox  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-location.html">4.5 location  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION006410000000000000000"></a>
+<a name="subsec:inbox"></a>
+<br>
+4.4.1 Inbox Objects
+</h2>
+
+<p>
+<tt class="class">Inbox</tt> objects have the following functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-392' xml:id='l2h-392' class="method">sms_messages</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns a list of SMS message IDs in device inbox.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-393' xml:id='l2h-393' class="method">content</tt></b>(</nobr></td>
+  <td><var>sms_id</var>)</td></tr></table></dt>
+<dd>
+Retrieve the SMS message content in Unicode. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-394' xml:id='l2h-394' class="method">time</tt></b>(</nobr></td>
+  <td><var>sms_id</var>)</td></tr></table></dt>
+<dd>
+Retrieve the SMS message time of arrival in seconds since epoch. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-395' xml:id='l2h-395' class="method">address</tt></b>(</nobr></td>
+  <td><var>sms_id</var>)</td></tr></table></dt>
+<dd>
+Retrieve the SMS message sender address in Unicode. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-396' xml:id='l2h-396' class="method">delete</tt></b>(</nobr></td>
+  <td><var>sms_id</var>)</td></tr></table></dt>
+<dd>
+Delete the SMS message from inbox.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-397' xml:id='l2h-397' class="method">unread</tt></b>(</nobr></td>
+  <td><var>(</var>)</td></tr></table></dt>
+<dd>sms_id)
+Returns the status (1=unread, 0=read) of the SMS with id.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-398' xml:id='l2h-398' class="method">set_unread</tt></b>(</nobr></td>
+  <td><var>sms_id, status</var>)</td></tr></table></dt>
+<dd>
+Set the status (1=unread, 0=read) of the SMS with id.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-399' xml:id='l2h-399' class="method">bind</tt></b>(</nobr></td>
+  <td><var>callable</var>)</td></tr></table></dt>
+<dd>
+Bind a callback to receive new message events in device inbox. When a new 
+message arrives to the device inbox the <code>callback</code> gets 
+called with the received message ID. The received message can be other than 
+an SMS message.
+
+<p>
+If the message received is deleted immediately after e.g. checking the message 
+content, the "new message" sound and dialog are not activated. This 
+functionality might be useful in notification type of applications. 
+</dl>
+
+<p>
+Examples:
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import inbox
+&gt;&gt;&gt; i=inbox.Inbox() # Give inbox.ESent as parameter for sent SMSes
+&gt;&gt;&gt; m=i.sms_messages()
+&gt;&gt;&gt; i.content(m[0])
+u'foobar'
+&gt;&gt;&gt; i.time(m[0])
+1130267365.03125
+&gt;&gt;&gt; i.address(m[0])
+u'John Doe'
+&gt;&gt;&gt; i.delete(m[0])
+&gt;&gt;&gt;
+
+&gt;&gt;&gt; import inbox 
+&gt;&gt;&gt; id=0 
+&gt;&gt;&gt; def cb(id_cb): 
+... global id 
+... id=id_cb
+... 
+&gt;&gt;&gt; i=inbox.Inbox()
+&gt;&gt;&gt; i.bind(cb)
+&gt;&gt;&gt; # Send an SMS to your inbox here. The "id" gets updated
+&gt;&gt;&gt; i.address(id)
+u'John Doe'
+&gt;&gt;&gt; i.content(id)
+u'print 1'
+&gt;&gt;&gt;
+</pre></div>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.5 location  "
+  href="module-location.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-inbox.html">4.4 inbox  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-inbox.html">4.4 inbox  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-location.html">4.5 location  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

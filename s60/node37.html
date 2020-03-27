@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node36.html" />
+<link rel="parent" href="node32.html" />
+<link rel="next" href="module-camera.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.3.4.5 Common Methods of Drawable Objects</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.4 font specifications"
+  href="node36.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.4 camera  "
+  href="module-camera.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node36.html">3.3.4.4 Font specifications</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-camera.html">3.4 camera  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h3><a name="SECTION005345000000000000000"></a>
+<a name="subsubsec:common"></a>
+<br>
+3.3.4.5 Common Methods of Drawable Objects
+</h3>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-160' xml:id='l2h-160' class="method">line</tt></b>(</nobr></td>
+  <td><var>coordseq</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws a line connecting the points in the given coordinate sequence. For 
+more information about the choices available for <var>options</var>, 
+see Section <a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-161' xml:id='l2h-161' class="method">polygon</tt></b>(</nobr></td>
+  <td><var>coordseq</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws a line connecting the points in the given coordinate sequence, and 
+additionally draws an extra line connecting the first and the last point in 
+the sequence. If a fill color or pattern is specified, the polygon is filled 
+with that color or pattern. For more information about the choices available 
+for <var>options</var>, see Section <a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-162' xml:id='l2h-162' class="method">rectangle</tt></b>(</nobr></td>
+  <td><var>coordseq</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws rectangles between pairs of coordinates in the given sequence. The 
+coordinates specify the top-left and the bottom- right corners of the 
+rectangle. The sequence must have an even number of coordinates. For more 
+information about the choices available for <var>options</var>, see 
+Section <a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-163' xml:id='l2h-163' class="method">ellipse</tt></b>(</nobr></td>
+  <td><var>coordseq</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws ellipses between pairs of coordinates in the given sequence. The
+coordinates specify the top-left and bottom-right corners of the
+rectangle inside which the ellipse is contained.  The sequence must
+have an even number of coordinates. 
+For more information about the choices available for <var>options</var>, see 
+Section <a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-164' xml:id='l2h-164' class="method">pieslice</tt></b>(</nobr></td>
+  <td><var>coordseq, start, end</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws pie slices contained in ellipses between pairs of coordinates in
+the given sequence. The start and end parameters are floats that
+specify the start and end points of pie slice as the starting and
+ending angle in radians. The angle <code>0</code> is to the right, the angle
+<code>pi/2</code> is straight up, <code>pi</code> is to the left and<code>-pi/2</code>
+is straight down. <var>coordseq</var> is interpreted the same way as for
+the <tt class="method">ellipse</tt> method.
+For more 
+information about the choices available for <var>options</var>, see 
+Section <a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-165' xml:id='l2h-165' class="method">arc</tt></b>(</nobr></td>
+  <td><var>coordseq, start, end</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws arcs contained in ellipses between pairs of coordinates in
+the given sequence. The start and end parameters are floats that
+specify the start and end points of pie slice as the starting and
+ending angle in radians. The angle <code>0</code> is to the right, the angle
+<code>pi/2</code> is straight up, <code>pi</code> is to the left and<code>-pi/2</code>
+is straight down. <var>coordseq</var> is interpreted the same way as for
+the <tt class="method">ellipse</tt> method.  For more information about the choices
+available for <var>options</var>, see Section
+<a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-166' xml:id='l2h-166' class="method">point</tt></b>(</nobr></td>
+  <td><var>coordseq</var><big>[</big><var>, tex2html_wrap_inline$&lt;$optionstex2html_wrap_inline$&gt;$</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws points in each coordinate in the given coordinate sequence. If the 
+<var>width</var> option is set to greater than 1, draws a crude approximation 
+of a circle filled with the outline color in the locations. Note that
+the approximation is not very accurate for large widths; use the
+<tt class="method">ellipse</tt> method if you need a precisely formed circle. 
+For more information about the choices
+available for <var>options</var>, see Section
+<a href="node33.html#subsubsec:options">3.3.4</a>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-167' xml:id='l2h-167' class="method">clear</tt></b>(</nobr></td>
+  <td><var></var><big>[</big><var>color=0xffffff</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Sets the entire surface of the drawable to the given color, white by 
+default.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-168' xml:id='l2h-168' class="method">text</tt></b>(</nobr></td>
+  <td><var>coordseq, text</var><big>[</big><var>fill=0, font=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Draws the given text in the points in the given coordinate sequence
+with the given color (default value is black) and the given font. The
+font specification format is described above.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-169' xml:id='l2h-169' class="method">measure_text</tt></b>(</nobr></td>
+  <td><var>text</var><big>[</big><var>font=None, maxwidth=-1, maxadvance=-1</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Measures the size of the given text when drawn using the given
+font. Optionally you can specify the maximum width of the text or the
+maximum amount the graphics cursor is allowed to move (both in pixels).
+
+<p>
+Returns a tuple of three values:
+
+<ul>
+<li>the bounding box for the text as a 4-tuple: (topleft-x, topleft-y, bottomright-x, bottomright-y)
+</li>
+<li>the number of pixels the graphics cursor would move to the right
+</li>
+<li>the number of characters of the text that fits into the given maximum width and advance
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-170' xml:id='l2h-170' class="method">blit</tt></b>(</nobr></td>
+  <td><var>image</var><big>[</big><var>,target=(0,0), source=((0,0),image.size), mask=None, scale=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Copies the source area from the given <var>image</var> to the target area
+in this drawable. The source area is copied in its entirety if
+<var>mask</var> is not given or is set to <code>None</code>. If the mask is
+given, the source area is copied where the mask is white. <var>mask</var>
+can be either <code>None</code>, a 1-bit (black and white) <tt class="class">Image</tt> or
+(on S60 2nd edition FP2 and later) a grayscale <tt class="class">Image</tt>, and
+must be of the same size as the source image. A grayscale mask acts
+as an alpha channel, i.e. partial transparency.
+
+<p>
+<var>target</var> and <var>source</var> specify the target area in this image 
+and the source area in the given source. They are coordinate sequences of 
+one or two coordinates. If they specify one coordinate, it is interpreted as 
+the upper-left corner for the area; if they specify two coordinates, they 
+are interpreted as the top-left and bottom-right corners of the area.
+
+<p>
+If <var>scale</var> is other than zero, scaling is performed on the fly while 
+copying the source area to the target area. If <var>scale</var> is zero, no 
+scaling is performed, and the size of the copied area is clipped to the 
+smaller of source and target areas.
+
+<p>
+Note that a <tt class="method">blit</tt> operation with scaling is slower than one without 
+scaling. If you need to blit the same <tt class="class">Image</tt> many times in a scaled 
+form, consider making a temporary <tt class="class">Image</tt> of the scaling result and 
+blitting it without scaling. Note also that the scaling performed by the 
+<tt class="method">blit</tt> operation is much faster but of worse quality than the one 
+done by the <tt class="method">resize</tt> method, since the <tt class="method">blit</tt> method does not 
+perform any antialiasing.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.3.4.4 font specifications"
+  href="node36.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.3.4 common Features of"
+  href="node32.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.4 camera  "
+  href="module-camera.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node36.html">3.3.4.4 Font specifications</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node32.html">3.3.4 Common Features of</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-camera.html">3.4 camera  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

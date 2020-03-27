@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-inbox.html" />
+<link rel="prev" href="module-telephone.html" />
+<link rel="parent" href="s60ac.html" />
+<link rel="next" href="module-inbox.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>4.3 messaging -- A messaging services package</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.2 telephone  "
+  href="module-telephone.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-telephone.html">4.2 telephone  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-inbox.html">4.4 inbox  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION006300000000000000000"></a>
+<a name="sec:messaging"></a>
+<br>
+4.3 <tt class="module">messaging</tt> -- 
+    A messaging services package
+</h1>
+
+<p>
+<a name="module-messaging"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">messaging</tt> module offers APIs to messaging services. Currently, 
+the <tt class="module">messaging</tt> module has functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-375' xml:id='l2h-375' class="function">sms_send</tt></b>(</nobr></td>
+  <td><var>number, msg, </var><big>[</big><var>encoding='7bit', callback=None, name=""</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Sends an SMS message with body text <var>msg</var><a name="tex2html19"
+  href="#foot4638"><sup>4.4</sup></a> (Unicode)to telephone number <var>number</var> (string). 
+
+<p>
+The optional parameter <var>encoding</var> is used to define encoding in the message. 
+The parameter values can be <code>'7bit'</code>, <code>'8bit'</code> or <code>'UCS2'</code>.
+
+<p>
+The optional parameter <var>callback</var> is invoked with the current status of the 
+send operation as parameter. The possible states are data items in the module 
+<code>messaging</code>. Invoking another send while a previous send request is ongoing 
+will result in <code>RuntimeError</code> being raised.
+
+<p>
+If the callback is not given, the <code>sms_send</code> function will block until the 
+message in the queue is either deleted or the sending has failed<a name="tex2html20"
+  href="#foot4648"><sup>4.5</sup></a>.
+
+<p>
+The optional parameter <var>name</var> will be shown in the sent item message entry as 
+recipient's name after successfully sending message to <var>number</var>. If this parameter 
+is not specified, then the recipient's phone number will be shown in the sent item 
+message entry<a name="tex2html21"
+  href="#foot4651"><sup>4.6</sup></a>.
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-376' xml:id='l2h-376' class="function">mms_send</tt></b>(</nobr></td>
+  <td><var>number, msg, </var><big>[</big><var>attachment=None</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+Available from S60 3.0 onwards (inclusive).
+</div>
+
+<p>
+Sends an MMS message with body text <var>msg</var> (Unicode) to telephone number 
+<var>number</var> (string). The optional parameter <var>attachment</var> is full path 
+to e.g. image file attached to the message.
+
+<p>
+</dl>
+
+<p>
+The following data items for SMS sending state information are available in 
+the module <code>messaging</code>:
+
+<p>
+<dl><dt><b><tt id='l2h-377' xml:id='l2h-377'>ECreated</tt></b></dt>
+<dd>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-378' xml:id='l2h-378'>EMovedToOutBox</tt></b></dt>
+<dd>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-379' xml:id='l2h-379'>EScheduledForSend</tt></b></dt>
+<dd>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-380' xml:id='l2h-380'>ESent</tt></b></dt>
+<dd>
+The SMS message has been sent.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-381' xml:id='l2h-381'>EDeleted</tt></b></dt>
+<dd>
+The SMS message has been deleted from device's outbox queue. The 
+<code>sms_send</code> operation has finalized and subsequent SMS sending is possible.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-382' xml:id='l2h-382'>EScheduleFailed</tt></b></dt>
+<dd>
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-383' xml:id='l2h-383'>ESendFailed</tt></b></dt>
+<dd>
+This state information is returned when the SMS subsystem has tried to send the message 
+several times in vain. The <code>sms_send</code> operation has finalized and 
+subsequent SMS sending is possible.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-384' xml:id='l2h-384'>ENoServiceCentre</tt></b></dt>
+<dd>
+This state information is returned by the SMS subsystem in S60 3.x emulator. In 
+emulator this indicates that the <code>sms_send</code> operation has finalized and 
+subsequent SMS sending is possible.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-385' xml:id='l2h-385'>EFatalServerError</tt></b></dt>
+<dd>
+</dd></dl>
+
+<p>
+The underlying messaging subsystem in S60 devices might give error messages to 
+the user if the device is not connected to a network while trying to send a 
+message - An "SMS send failed!" note is a common error message.
+
+<p>
+When sending messages in offline-mode or with no network connection these 
+messages are actually added to an outgoing message queue and they might be sent 
+if the device is later on connected to a suitable network<a name="tex2html22"
+  href="#foot4693"><sup>4.7</sup></a>. This occurs despite the 
+possibly misleading error messages. The current network conditions can be 
+checked e.g. with <code>sysinfo.active_profile()</code> and 
+<code>sysinfo.signal_bars()</code> invocations.
+
+<p>
+The following is example code for state information processing with 
+<code>sms_send</code> operation:
+
+<p>
+<div class="verbatim"><pre>
+&gt;&gt;&gt; import messaging
+&gt;&gt;&gt;
+&gt;&gt;&gt; def cb(state):
+...   if state==messaging.ESent:
+...     print "**Message was sent**"
+...   if state==messaging.ESendFailed:
+...     print "**Something went wrong - Truly sorry for this**"
+...
+&gt;&gt;&gt; messaging.sms_send("1234567", "Hello from PyS60!", '7bit', cb, "Mary")
+&gt;&gt;&gt; **Message was sent** # This is printed from the callback
+</pre></div>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot4638">...msg</a><A
+ href="module-messaging.html#tex2html19"><sup>4.4</sup></a></dt>
+<dd>The maximum length of a 
+message that can be sent using sms_send function is either 39015 characters or Max network 
+capacity whichever is lower.
+
+</dd>
+<dt><a name="foot4648">... failed</a><A
+ href="module-messaging.html#tex2html20"><sup>4.5</sup></a></dt>
+<dd>Please 
+note that this blocking might last for several minutes and hence supplying the 
+callback might be more suitable in many cases.
+
+</dd>
+<dt><a name="foot4651">... entry</a><A
+ href="module-messaging.html#tex2html21"><sup>4.6</sup></a></dt>
+<dd>The name can be of maximum 60 characters and 
+will be shown in the sent item message entry as specified by sender without 
+making any check in the contact database.
+
+</dd>
+<dt><a name="foot4693">... network</a><A
+ href="module-messaging.html#tex2html22"><sup>4.7</sup></a></dt>
+<dd>Note also 
+that prior this the user of the device can explicitly delete the messages from 
+the native messaging application. The amount of resending is approx. 4 times -
+After this the sending operation is cancelled and the user of the device will 
+see a visual cue of the failure in the status pane.
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="4.2 telephone  "
+  href="module-telephone.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="4. audio and Communication"
+  href="s60ac.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="4.4 inbox  "
+  href="module-inbox.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="module-telephone.html">4.2 telephone  </a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60ac.html">4. Audio and Communication</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-inbox.html">4.4 inbox  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

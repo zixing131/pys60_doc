@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node78.html" />
+<link rel="parent" href="module-e32calendar.html" />
+<link rel="next" href="module-e32db.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.2.4 Repeat Rules</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.2.3.5 TodoEntry"
+  href="node83.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.2 e32calendar  "
+  href="module-e32calendar.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node83.html">5.2.3.5 TodoEntry</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32calendar.html">5.2 e32calendar  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-e32db.html">5.3 e32db  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007240000000000000000"></a>
+<a name="subsec:repeat"></a>
+<br>
+5.2.4 Repeat Rules
+</h2>
+
+<p>
+Repeat rules specify an entry's repeat status, that is, the recurrence of 
+the entry. There are six repeat types: 
+
+<p>
+
+<ul>
+<li><code>daily</code>: repeated daily
+</li>
+<li><code>weekly</code>: repeat on the specified days of the week, such as Monday and Wednesday, etc.
+</li>
+<li><code>monthly_by_dates</code>: repeat monthly on the specified dates, such as the 15th and 17th day of the month
+</li>
+<li><code>monthly_by_days</code>: repeat monthly on the specified days, such as the fourth Wednesday of the month, or the last Monday of the month
+</li>
+<li><code>yearly_by_date</code>: repeat yearly on the specified date, such as December 24
+</li>
+<li><code>yearly_by_day</code>: repeat yearly on the specified day, such as every third Tuesday of May
+</li>
+</ul>
+
+<p>
+There are exceptions to repeat rules. For example, you can specify the 
+datetime value (float) in such a way that the entry is not repeated on a 
+specific day even if the repeat rule would specify otherwise.
+
+<p>
+You must set the start and end dates (floats) of the repeat. The end date 
+can also be set to <code>None</code> to indicate that the repeating continues 
+forever. You can set <code>interval</code> defining how often the repeat occurs, 
+for example in a daily repeat: <code>1</code> means every day, <code>2</code> means 
+every second day, etc. You can also set the <code>days</code> specifier which 
+lets you explicitly specify the repeat days; for example in a weekly repeat 
+you can set <code>"days":[0,2]</code> which sets the repeat to occur on Mondays 
+and Wednesdays. If you do not set the <code>days</code> specifier, the repeat 
+days are calculated automatically based on the start date.
+
+<p>
+You can modify repeat data by calling <code>rep_data = 
+entry.get_repeat()</code>, then making changes to <code>rep_data</code> 
+dictionary, and then calling <code>entry.set_repeat(rep_data)</code>.
+
+<p>
+Repeating can be cancelled by calling <code>entry.set_repeat</code> with a 
+parameter that is interpreted to be false, such as 
+<code>entry.set_repeat(None)</code>.
+
+<p>
+Repeat definition examples:
+
+<p>
+<div class="verbatim"><pre>
+
+repeat = {"type":"daily", #repeat type
+          "exceptions":[exception_day, exception_day+2*24*60*60],  
+          #no appointment on those days
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+30*24*60*60, #end of the repeat
+          "interval":1} #interval (1=every day, 2=every second day etc.)
+
+repeat = {"type":"weekly", #repeat type
+          "days":[0,1], #which days in a week (Monday, Tuesday)
+          "exceptions":[exception_day], #no appointment on that day
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+30*24*60*60, #end of the repeat
+          "interval":1}  
+          #interval (1=every week, 2=every second week etc.) 
+
+repeat = {"type":"monthly_by_days", #repeat type
+          # appointments on second Tuesday and last Monday of the month
+          "days":[{"week":1, "day":1},{"week":4, "day":0}],
+          "exceptions":[exception_day], #no appointment on that day 
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+30*24*60*60, #end of the repeat
+          "interval":1}  
+          #interval (1=every month, 2=every second month etc.)
+
+repeat = {"type":"monthly_by_dates", #repeat type
+          "days":[0,15],  
+          # appointments on the 1st and 16th day of the month.
+          "exceptions":[exception_day], #no appointment on that day
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+30*24*60*60, #end of the repeat
+          "interval":1}  
+          #interval (1=every month, 2=every second month etc.)
+
+repeat = {"type":"yearly_by_date", #repeat type
+          "exceptions":[exception_day], #no appointment on that day 
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+3*365*24*60*60, #end of the repeat
+          "interval":1}  
+          #interval (1=every year, 2=every second year etc.)
+
+repeat = {"type":"yearly_by_day", #repeat type
+          # appointments on the second Tuesday of February
+          "days":{"day":1, "week":1, "month":1},
+          "exceptions":[exception_day], #no appointment on that day 
+          "start":appt_start_date, #start of the repeat
+          "end":appt_start_date+3*365*24*60*60, #end of the repeat
+          "interval":1}  
+          #interval (1=every year, 2=every second year etc.)
+</pre></div>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.2.3.5 TodoEntry"
+  href="node83.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.2 e32calendar  "
+  href="module-e32calendar.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node83.html">5.2.3.5 TodoEntry</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32calendar.html">5.2 e32calendar  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-e32db.html">5.3 e32db  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

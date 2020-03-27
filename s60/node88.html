@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node89.html" />
+<link rel="prev" href="node87.html" />
+<link rel="parent" href="module-e32db.html" />
+<link rel="next" href="node89.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.3.3 Mapping Between SQL and Python Data Types </title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.3.2 db_view Objects"
+  href="node87.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3.4 date and Time"
+  href="node89.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node87.html">5.3.2 DB_view Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32db.html">5.3 e32db  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node89.html">5.3.4 Date and Time</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION007330000000000000000"></a>
+<a name="subsec:mapping"></a>
+<br>
+5.3.3 Mapping Between SQL and Python Data Types 
+</h2>
+See Table <a href="#tab:sqltypes">5.1</a> for a summary of mapping between SQL and 
+Python data types. The <tt class="method">col</tt> function can extract any value except 
+<code>LONG VARBINARY</code> and return it as the proper Python value. In 
+addition, the <tt class="method">col_raw</tt> function can extract any column type 
+except <code>LONG VARCHAR</code> and <code>LONG VARBINARY</code> as raw binary data 
+and return it as a Python string.
+
+<p>
+Inserting, updating, or searching for <code>BINARY</code>, <code>VARBINARY</code>, 
+or <code>LONG VARBINARY</code> values is not supported. <code>BINARY</code> and 
+<code>VARBINARY</code> values can be read with <tt class="method">col</tt> or 
+<tt class="method">col_raw</tt>.
+
+<p>
+<br><p></p>
+<div align="CENTER"><a name="6728"></a>
+<table>
+<caption><strong>Table 5.1:</strong>
+Mapping between SQL and Python types</caption>
+<tr><td>
+<div align="CENTER">
+<table cellpadding=3 border="1" align="CENTER">
+<tr><td align="LEFT" valign="TOP" width=117>SQL type</td>
+<td align="LEFT" valign="TOP" width=145>Symbian column type (in the DBMS C++ API)</td>
+<td align="LEFT" valign="TOP" width=99>Python type</td>
+<td align="LEFT" valign="TOP" width=63>Supported</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">BIT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColBit</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">TINYINT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColInt8</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">UNSIGNED TINYINT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColUint8</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">SMALLINT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColInt16</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">UNSIGNED SMALLINT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColUint16</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">INTEGER</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColInt32</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">UNSIGNED INTEGER</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColUint32</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">COUNTER</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColUint32 (</span>with the<span  class="textsf"> TDbCol::EAutoIncrement </span>attribute<span  class="textsf">)</span></td>
+<td align="LEFT" valign="TOP" width=99>int</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">BIGINT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColInt64</span></td>
+<td align="LEFT" valign="TOP" width=99>long</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">REAL</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColReal32</span></td>
+<td align="LEFT" valign="TOP" width=99>float</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">FLOAT</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColReal64</span></td>
+<td align="LEFT" valign="TOP" width=99>float</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">DOUBLE</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColReal64</span></td>
+<td align="LEFT" valign="TOP" width=99>float</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">DOUBLE PRECISION</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColReal64</span></td>
+<td align="LEFT" valign="TOP" width=99>float</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">DATE</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColDateTime</span></td>
+<td align="LEFT" valign="TOP" width=99>float 
+<p>
+(or long, with <span  class="textsf">col_rawtime()</span></td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">TIME</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColDateTime</span></td>
+<td align="LEFT" valign="TOP" width=99>float 
+<p>
+(or long, with <span  class="textsf">col_rawtime()</span></td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">TIMESTAMP</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColDateTime</span></td>
+<td align="LEFT" valign="TOP" width=99>float 
+<p>
+(or long, with <span  class="textsf">col_rawtime()</span></td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">CHAR(n)</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColText</span></td>
+<td align="LEFT" valign="TOP" width=99>Unicode</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">VARCHAR(n)</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColText</span></td>
+<td align="LEFT" valign="TOP" width=99>Unicode</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">LONG VARCHAR</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColLongText</span></td>
+<td align="LEFT" valign="TOP" width=99>Unicode</td>
+<td align="LEFT" valign="TOP" width=63>yes</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">BINARY(n)</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColBinary</span></td>
+<td align="LEFT" valign="TOP" width=99>str</td>
+<td align="LEFT" valign="TOP" width=63>read only</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">VARBINARY(n)</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColBinary</span></td>
+<td align="LEFT" valign="TOP" width=99>str</td>
+<td align="LEFT" valign="TOP" width=63>read only</td>
+</tr>
+<tr><th align="LEFT" valign="TOP" width=117><span  class="textsf">LONG VARBINARY</span></th>
+<td align="LEFT" valign="TOP" width=145><span  class="textsf">EDbColLongBinary</span></td>
+<td align="LEFT" valign="TOP" width=99>n/a</td>
+<td align="LEFT" valign="TOP" width=63>no</td>
+</tr>
+</table>
+
+<a name="tab:sqltypes"></a>
+
+</div></td></tr>
+</table>
+</div><p></p>
+<br>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5.3.2 db_view Objects"
+  href="node87.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5.3 e32db  "
+  href="module-e32db.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.3.4 date and Time"
+  href="node89.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node87.html">5.3.2 DB_view Objects</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-e32db.html">5.3 e32db  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node89.html">5.3.4 Date and Time</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

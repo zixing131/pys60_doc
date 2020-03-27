@@ -1,0 +1,1086 @@
+<a href="node4.html#l2h-1">environment variables!prefix@<tt>prefix</tt>###0000013897
+<a href="node4.html#l2h-1">prefix (environment variable)###0000013898
+<a href="node4.html#l2h-2">environment variables!exec_prefix@<tt>exec_prefix</tt>###0000013899
+<a href="node4.html#l2h-2">exec_prefix (environment variable)###0000013900
+<a href="node4.html#l2h-3">environment variables!prefix@<tt>prefix</tt>###0000013901
+<a href="node4.html#l2h-3">prefix (environment variable)###0000013902
+<a href="node4.html#l2h-4">environment variables!prefix@<tt>prefix</tt>###0000013903
+<a href="node4.html#l2h-4">prefix (environment variable)###0000013904
+<a href="node4.html#l2h-5">environment variables!exec_prefix@<tt>exec_prefix</tt>###0000013905
+<a href="node4.html#l2h-5">exec_prefix (environment variable)###0000013906
+<a href="node4.html#l2h-6">environment variables!prefix@<tt>prefix</tt>###0000013907
+<a href="node4.html#l2h-6">prefix (environment variable)###0000013908
+<a href="node4.html#l2h-7">environment variables!prefix@<tt>prefix</tt>###0000013909
+<a href="node4.html#l2h-7">prefix (environment variable)###0000013910
+<a href="node4.html#l2h-8">environment variables!exec_prefix@<tt>exec_prefix</tt>###0000013911
+<a href="node4.html#l2h-8">exec_prefix (environment variable)###0000013912
+<a href="node5.html#l2h-9">type object###0000013914
+<a href="node5.html#l2h-9">object!type###0000013915
+<a href="node6.html#l2h-10">Py_INCREF()###0000013917
+<a href="node6.html#l2h-11">Py_DECREF()###0000013918
+<a href="node7.html#l2h-12">PyList_SetItem()###0000013920
+<a href="node7.html#l2h-13">PyTuple_SetItem()###0000013921
+<a href="node7.html#l2h-14">set_all()###0000013922
+<a href="node7.html#l2h-15">PyList_GetItem()###0000013923
+<a href="node7.html#l2h-16">PySequence_GetItem()###0000013924
+<a href="node7.html#l2h-17">sum_list()###0000013925
+<a href="node7.html#l2h-18">sum_sequence()###0000013926
+<a href="node9.html#l2h-20">exc_type (in module sys)###0000013929
+<a href="node9.html#l2h-20">exc_value (in module sys)###0000013930
+<a href="node9.html#l2h-20">exc_traceback (in module sys)###0000013931
+<a href="node9.html#l2h-22">exc_info() (in module sys)###0000013932
+<a href="node9.html#l2h-23">PyErr_Occurred()###0000013933
+<a href="node9.html#l2h-24">PyErr_SetString()###0000013934
+<a href="node9.html#l2h-25">PyErr_Clear()###0000013935
+<a href="node9.html#l2h-26">sum_sequence()###0000013936
+<a href="node9.html#l2h-27">incr_item()###0000013937
+<a href="node9.html#l2h-28">incr_item()###0000013938
+<a href="node9.html#l2h-29">PyErr_ExceptionMatches()###0000013939
+<a href="node9.html#l2h-30">PyErr_Clear()###0000013940
+<a href="node9.html#l2h-31">Py_XDECREF()###0000013941
+<a href="node10.html#l2h-32">module!search path###0000013943
+<a href="node10.html#l2h-32">search!path, module###0000013944
+<a href="node10.html#l2h-32">path!module search###0000013945
+<a href="node10.html#l2h-34">path (in module sys)###0000013946
+<a href="node10.html#l2h-35">Py_Initialize()###0000013947
+<a href="node10.html#l2h-36"><tt class="module">__builtin__</tt> (built-in module)###REF0000013948
+<a href="node10.html#l2h-37"><tt class="module">__main__</tt> (built-in module)###REF0000013949
+<a href="node10.html#l2h-38"><tt class="module">sys</tt> (built-in module)###REF0000013950
+<a href="node10.html#l2h-39"><tt class="module">exceptions</tt> (built-in module)###REF0000013951
+<a href="node10.html#l2h-40">PySys_SetArgv()###0000013952
+<a href="node10.html#l2h-41">environment variables!PATH@<tt>PATH</tt>###0000013953
+<a href="node10.html#l2h-41">PATH (environment variable)###0000013954
+<a href="node10.html#l2h-42">environment variables!PATH@<tt>PATH</tt>###0000013955
+<a href="node10.html#l2h-42">PATH (environment variable)###0000013956
+<a href="node10.html#l2h-43">environment variables!PYTHONHOME@<tt>PYTHONHOME</tt>###0000013957
+<a href="node10.html#l2h-43">PYTHONHOME (environment variable)###0000013958
+<a href="node10.html#l2h-44">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000013959
+<a href="node10.html#l2h-44">PYTHONPATH (environment variable)###0000013960
+<a href="node10.html#l2h-45">Py_SetProgramName()###0000013961
+<a href="node10.html#l2h-46">environment variables!PYTHONHOME@<tt>PYTHONHOME</tt>###0000013962
+<a href="node10.html#l2h-46">PYTHONHOME (environment variable)###0000013963
+<a href="node10.html#l2h-47">environment variables!PYTHONPATH@<tt>PYTHONPATH</tt>###0000013964
+<a href="node10.html#l2h-47">PYTHONPATH (environment variable)###0000013965
+<a href="node10.html#l2h-48">Py_GetPath()###0000013966
+<a href="node10.html#l2h-49">Py_GetPrefix()###0000013967
+<a href="node10.html#l2h-50">Py_GetExecPrefix()###0000013968
+<a href="node10.html#l2h-51">Py_GetProgramFullPath()###0000013969
+<a href="node10.html#l2h-52">Py_IsInitialized()###0000013970
+<a href="node12.html#l2h-53"><tt class="cfunction">Py_Main()</tt>###0000013973
+<a href="node12.html#l2h-54"><tt class="cfunction">PyRun_AnyFile()</tt>###0000013974
+<a href="node12.html#l2h-55"><tt class="cfunction">PyRun_AnyFileFlags()</tt>###0000013975
+<a href="node12.html#l2h-56"><tt class="cfunction">PyRun_AnyFileEx()</tt>###0000013976
+<a href="node12.html#l2h-57"><tt class="cfunction">PyRun_AnyFileExFlags()</tt>###0000013977
+<a href="node12.html#l2h-58"><tt class="cfunction">PyRun_SimpleString()</tt>###0000013978
+<a href="node12.html#l2h-59"><tt class="cfunction">PyRun_SimpleStringFlags()</tt>###0000013979
+<a href="node12.html#l2h-60"><tt class="cfunction">PyRun_SimpleFile()</tt>###0000013980
+<a href="node12.html#l2h-61"><tt class="cfunction">PyRun_SimpleFileFlags()</tt>###0000013981
+<a href="node12.html#l2h-62"><tt class="cfunction">PyRun_SimpleFileEx()</tt>###0000013982
+<a href="node12.html#l2h-63"><tt class="cfunction">PyRun_SimpleFileExFlags()</tt>###0000013983
+<a href="node12.html#l2h-64"><tt class="cfunction">PyRun_InteractiveOne()</tt>###0000013984
+<a href="node12.html#l2h-65"><tt class="cfunction">PyRun_InteractiveOneFlags()</tt>###0000013985
+<a href="node12.html#l2h-66"><tt class="cfunction">PyRun_InteractiveLoop()</tt>###0000013986
+<a href="node12.html#l2h-67"><tt class="cfunction">PyRun_InteractiveLoopFlags()</tt>###0000013987
+<a href="node12.html#l2h-68"><tt class="cfunction">PyParser_SimpleParseString()</tt>###0000013988
+<a href="node12.html#l2h-69"><tt class="cfunction">PyParser_SimpleParseStringFlags()</tt>###0000013989
+<a href="node12.html#l2h-70"><tt class="cfunction">PyParser_SimpleParseStringFlagsFilename()</tt>###0000013990
+<a href="node12.html#l2h-71"><tt class="cfunction">PyParser_SimpleParseFile()</tt>###0000013991
+<a href="node12.html#l2h-72"><tt class="cfunction">PyParser_SimpleParseFileFlags()</tt>###0000013992
+<a href="node12.html#l2h-73"><tt class="cfunction">PyRun_String()</tt>###0000013993
+<a href="node12.html#l2h-74"><tt class="cfunction">PyRun_StringFlags()</tt>###0000013994
+<a href="node12.html#l2h-75"><tt class="cfunction">PyRun_File()</tt>###0000013995
+<a href="node12.html#l2h-76"><tt class="cfunction">PyRun_FileEx()</tt>###0000013996
+<a href="node12.html#l2h-77"><tt class="cfunction">PyRun_FileFlags()</tt>###0000013997
+<a href="node12.html#l2h-78"><tt class="cfunction">PyRun_FileExFlags()</tt>###0000013998
+<a href="node12.html#l2h-79"><tt class="cfunction">Py_CompileString()</tt>###0000013999
+<a href="node12.html#l2h-80"><tt class="cfunction">Py_CompileStringFlags()</tt>###0000014000
+<a href="node12.html#l2h-81"><tt class="cdata">Py_eval_input</tt>###0000014001
+<a href="node12.html#l2h-82"><tt class="cdata">Py_file_input</tt>###0000014002
+<a href="node12.html#l2h-83"><tt class="cdata">Py_single_input</tt>###0000014003
+<a href="node12.html#l2h-84"><tt class="ctype">PyCompilerFlags</tt> (C type)###0000014004
+<a href="node12.html#l2h-85"><tt class="cdata">CO_FUTURE_DIVISION</tt>###0000014005
+<a href="node12.html#l2h-86">Py_CompileString()###0000014006
+<a href="node12.html#l2h-87">Py_CompileString()###0000014007
+<a href="node12.html#l2h-88">Py_CompileString()###0000014008
+<a href="node13.html#l2h-89"><tt class="cfunction">Py_INCREF()</tt>###0000014012
+<a href="node13.html#l2h-90"><tt class="cfunction">Py_XINCREF()</tt>###0000014013
+<a href="node13.html#l2h-91"><tt class="cfunction">Py_DECREF()</tt>###0000014014
+<a href="node13.html#l2h-92"><tt class="cfunction">Py_XDECREF()</tt>###0000014015
+<a href="node13.html#l2h-93"><tt class="cfunction">Py_CLEAR()</tt>###0000014016
+<a href="node14.html#l2h-95">exc_type (in module sys)###0000014018
+<a href="node14.html#l2h-95">exc_value (in module sys)###0000014019
+<a href="node14.html#l2h-95">exc_traceback (in module sys)###0000014020
+<a href="node14.html#l2h-96"><tt class="cfunction">PyErr_Print()</tt>###0000014021
+<a href="node14.html#l2h-97"><tt class="cfunction">PyErr_Occurred()</tt>###0000014022
+<a href="node14.html#l2h-98"><tt class="cfunction">PyErr_ExceptionMatches()</tt>###0000014023
+<a href="node14.html#l2h-99"><tt class="cfunction">PyErr_GivenExceptionMatches()</tt>###0000014024
+<a href="node14.html#l2h-100"><tt class="cfunction">PyErr_NormalizeException()</tt>###0000014025
+<a href="node14.html#l2h-101"><tt class="cfunction">PyErr_Clear()</tt>###0000014026
+<a href="node14.html#l2h-102"><tt class="cfunction">PyErr_Fetch()</tt>###0000014027
+<a href="node14.html#l2h-103"><tt class="cfunction">PyErr_Restore()</tt>###0000014028
+<a href="node14.html#l2h-104"><tt class="cfunction">PyErr_SetString()</tt>###0000014029
+<a href="node14.html#l2h-105"><tt class="cfunction">PyErr_SetObject()</tt>###0000014030
+<a href="node14.html#l2h-106"><tt class="cfunction">PyErr_Format()</tt>###0000014031
+<a href="node14.html#l2h-107"><tt class="cfunction">PyErr_SetNone()</tt>###0000014032
+<a href="node14.html#l2h-108"><tt class="cfunction">PyErr_BadArgument()</tt>###0000014033
+<a href="node14.html#l2h-109"><tt class="cfunction">PyErr_NoMemory()</tt>###0000014034
+<a href="node14.html#l2h-110"><tt class="cfunction">PyErr_SetFromErrno()</tt>###0000014035
+<a href="node14.html#l2h-111"><tt class="cfunction">PyErr_SetFromErrnoWithFilename()</tt>###0000014036
+<a href="node14.html#l2h-112"><tt class="cfunction">PyErr_SetFromWindowsErr()</tt>###0000014037
+<a href="node14.html#l2h-113"><tt class="cfunction">PyErr_SetExcFromWindowsErr()</tt>###0000014038
+<a href="node14.html#l2h-114"><tt class="cfunction">PyErr_SetFromWindowsErrWithFilename()</tt>###0000014039
+<a href="node14.html#l2h-115"><tt class="cfunction">PyErr_SetExcFromWindowsErrWithFilename()</tt>###0000014040
+<a href="node14.html#l2h-116"><tt class="cfunction">PyErr_BadInternalCall()</tt>###0000014041
+<a href="node14.html#l2h-117"><tt class="cfunction">PyErr_WarnEx()</tt>###0000014042
+<a href="node14.html#l2h-118"><tt class="cfunction">PyErr_Warn()</tt>###0000014043
+<a href="node14.html#l2h-119"><tt class="cfunction">PyErr_WarnExplicit()</tt>###0000014044
+<a href="node14.html#l2h-120"><tt class="cfunction">PyErr_CheckSignals()</tt>###0000014045
+<a href="node14.html#l2h-122">KeyboardInterrupt (built-in exception)###0000014046
+<a href="node14.html#l2h-123"><tt class="cfunction">PyErr_SetInterrupt()</tt>###0000014047
+<a href="node14.html#l2h-125">KeyboardInterrupt (built-in exception)###0000014048
+<a href="node14.html#l2h-126"><tt class="cfunction">PyErr_NewException()</tt>###0000014049
+<a href="node14.html#l2h-127"><tt class="cfunction">PyErr_WriteUnraisable()</tt>###0000014050
+<a href="node14.html#l2h-128">strerror()###0000014051
+<a href="node14.html#l2h-129"><tt class="module">signal</tt> (built-in module)###REF0000014052
+<a href="node14.html#l2h-130">SIGINT###0000014053
+<a href="node14.html#l2h-131">SIGINT###0000014054
+<a href="node15.html#l2h-132">PyExc_BaseException###0000014056
+<a href="node15.html#l2h-133">PyExc_Exception###0000014057
+<a href="node15.html#l2h-134">PyExc_StandardError###0000014058
+<a href="node15.html#l2h-135">PyExc_ArithmeticError###0000014059
+<a href="node15.html#l2h-136">PyExc_LookupError###0000014060
+<a href="node15.html#l2h-137">PyExc_AssertionError###0000014061
+<a href="node15.html#l2h-138">PyExc_AttributeError###0000014062
+<a href="node15.html#l2h-139">PyExc_EOFError###0000014063
+<a href="node15.html#l2h-140">PyExc_EnvironmentError###0000014064
+<a href="node15.html#l2h-141">PyExc_FloatingPointError###0000014065
+<a href="node15.html#l2h-142">PyExc_IOError###0000014066
+<a href="node15.html#l2h-143">PyExc_ImportError###0000014067
+<a href="node15.html#l2h-144">PyExc_IndexError###0000014068
+<a href="node15.html#l2h-145">PyExc_KeyError###0000014069
+<a href="node15.html#l2h-146">PyExc_KeyboardInterrupt###0000014070
+<a href="node15.html#l2h-147">PyExc_MemoryError###0000014071
+<a href="node15.html#l2h-148">PyExc_NameError###0000014072
+<a href="node15.html#l2h-149">PyExc_NotImplementedError###0000014073
+<a href="node15.html#l2h-150">PyExc_OSError###0000014074
+<a href="node15.html#l2h-151">PyExc_OverflowError###0000014075
+<a href="node15.html#l2h-152">PyExc_ReferenceError###0000014076
+<a href="node15.html#l2h-153">PyExc_RuntimeError###0000014077
+<a href="node15.html#l2h-154">PyExc_SyntaxError###0000014078
+<a href="node15.html#l2h-155">PyExc_SystemError###0000014079
+<a href="node15.html#l2h-156">PyExc_SystemExit###0000014080
+<a href="node15.html#l2h-157">PyExc_TypeError###0000014081
+<a href="node15.html#l2h-158">PyExc_ValueError###0000014082
+<a href="node15.html#l2h-159">PyExc_WindowsError###0000014083
+<a href="node15.html#l2h-160">PyExc_ZeroDivisionError###0000014084
+<a href="node16.html#l2h-162">BaseException (built-in exception)###0000014090
+<a href="node18.html#l2h-163"><tt class="cfunction">Py_FdIsInteractive()</tt>###0000014093
+<a href="node18.html#l2h-164"><tt class="cfunction">PyOS_GetLastModificationTime()</tt>###0000014094
+<a href="node18.html#l2h-165"><tt class="cfunction">PyOS_AfterFork()</tt>###0000014095
+<a href="node18.html#l2h-166"><tt class="cfunction">PyOS_CheckStack()</tt>###0000014096
+<a href="node18.html#l2h-167"><tt class="cfunction">PyOS_getsig()</tt>###0000014097
+<a href="node18.html#l2h-168"><tt class="cfunction">PyOS_setsig()</tt>###0000014098
+<a href="node19.html#l2h-169"><tt class="cfunction">Py_FatalError()</tt>###0000014100
+<a href="node19.html#l2h-170"><tt class="cfunction">Py_Exit()</tt>###0000014101
+<a href="node19.html#l2h-171"><tt class="cfunction">Py_AtExit()</tt>###0000014102
+<a href="node19.html#l2h-172">abort()###0000014103
+<a href="node19.html#l2h-173">Py_Finalize()###0000014104
+<a href="node19.html#l2h-174">exit()###0000014105
+<a href="node19.html#l2h-175">Py_Finalize()###0000014106
+<a href="node19.html#l2h-176">cleanup functions###0000014107
+<a href="node20.html#l2h-177"><tt class="cfunction">PyImport_ImportModule()</tt>###0000014109
+<a href="node20.html#l2h-179">__all__ (package variable)###0000014110
+<a href="node20.html#l2h-181">modules (in module sys)###0000014111
+<a href="node20.html#l2h-182"><tt class="cfunction">PyImport_ImportModuleEx()</tt>###0000014112
+<a href="node20.html#l2h-183"><tt class="function">__import__()</tt> (built-in function)###0000014113
+<a href="node20.html#l2h-184"><tt class="cfunction">PyImport_Import()</tt>###0000014114
+<a href="node20.html#l2h-185"><tt class="cfunction">PyImport_ReloadModule()</tt>###0000014115
+<a href="node20.html#l2h-186"><tt class="function">reload()</tt> (built-in function)###0000014116
+<a href="node20.html#l2h-187"><tt class="cfunction">PyImport_AddModule()</tt>###0000014117
+<a href="node20.html#l2h-188"><tt class="cfunction">PyImport_ExecCodeModule()</tt>###0000014118
+<a href="node20.html#l2h-189"><tt class="function">compile()</tt> (built-in function)###0000014119
+<a href="node20.html#l2h-190"><tt class="cfunction">PyImport_GetMagicNumber()</tt>###0000014120
+<a href="node20.html#l2h-191"><tt class="cfunction">PyImport_GetModuleDict()</tt>###0000014121
+<a href="node20.html#l2h-192"><tt class="cfunction">_PyImport_Init()</tt>###0000014122
+<a href="node20.html#l2h-193"><tt class="cfunction">PyImport_Cleanup()</tt>###0000014123
+<a href="node20.html#l2h-194"><tt class="cfunction">_PyImport_Fini()</tt>###0000014124
+<a href="node20.html#l2h-195"><tt class="cfunction">_PyImport_FindExtension()</tt>###0000014125
+<a href="node20.html#l2h-196"><tt class="cfunction">_PyImport_FixupExtension()</tt>###0000014126
+<a href="node20.html#l2h-197"><tt class="cfunction">PyImport_ImportFrozenModule()</tt>###0000014127
+<a href="node20.html#l2h-198"><tt class="ctype">_frozen</tt> (C type)###0000014128
+<a href="node20.html#l2h-199"><tt class="cdata">PyImport_FrozenModules</tt>###0000014129
+<a href="node20.html#l2h-200"><tt class="cfunction">PyImport_AppendInittab()</tt>###0000014130
+<a href="node20.html#l2h-201"><tt class="ctype">_inittab</tt> (C type)###0000014131
+<a href="node20.html#l2h-202"><tt class="cfunction">PyImport_ExtendInittab()</tt>###0000014132
+<a href="node20.html#l2h-203">package variable!<code>__all__</code>###0000014133
+<a href="node20.html#l2h-204"><tt class="module">rexec</tt> (standard module)###REF0000014134
+<a href="node20.html#l2h-205"><tt class="module">ihooks</tt> (standard module)###REF0000014135
+<a href="node20.html#l2h-206">freeze utility###0000014136
+<a href="node21.html#l2h-207"><tt class="cfunction">PyMarshal_WriteLongToFile()</tt>###0000014138
+<a href="node21.html#l2h-208"><tt class="cfunction">PyMarshal_WriteObjectToFile()</tt>###0000014139
+<a href="node21.html#l2h-209"><tt class="cfunction">PyMarshal_WriteObjectToString()</tt>###0000014140
+<a href="node21.html#l2h-210"><tt class="cfunction">PyMarshal_ReadLongFromFile()</tt>###0000014141
+<a href="node21.html#l2h-211"><tt class="cfunction">PyMarshal_ReadShortFromFile()</tt>###0000014142
+<a href="node21.html#l2h-212"><tt class="cfunction">PyMarshal_ReadObjectFromFile()</tt>###0000014143
+<a href="node21.html#l2h-213"><tt class="cfunction">PyMarshal_ReadLastObjectFromFile()</tt>###0000014144
+<a href="node21.html#l2h-214"><tt class="cfunction">PyMarshal_ReadObjectFromString()</tt>###0000014145
+<a href="node22.html#l2h-215"><tt class="cfunction">PyArg_ParseTuple()</tt>###0000014184
+<a href="node22.html#l2h-216"><tt class="cfunction">PyArg_VaParse()</tt>###0000014185
+<a href="node22.html#l2h-217"><tt class="cfunction">PyArg_ParseTupleAndKeywords()</tt>###0000014186
+<a href="node22.html#l2h-218"><tt class="cfunction">PyArg_VaParseTupleAndKeywords()</tt>###0000014187
+<a href="node22.html#l2h-219"><tt class="cfunction">PyArg_Parse()</tt>###0000014188
+<a href="node22.html#l2h-220"><tt class="cfunction">PyArg_UnpackTuple()</tt>###0000014189
+<a href="node22.html#l2h-221"><tt class="cfunction">Py_BuildValue()</tt>###0000014190
+<a href="node23.html#l2h-222"><tt class="cfunction">PyOS_snprintf()</tt>###0000014220
+<a href="node23.html#l2h-223"><tt class="cfunction">PyOS_vsnprintf()</tt>###0000014221
+<a href="node23.html#l2h-224"><tt class="cfunction">PyOS_ascii_strtod()</tt>###0000014222
+<a href="node23.html#l2h-225"><tt class="cfunction">PyOS_ascii_formatd()</tt>###0000014223
+<a href="node23.html#l2h-226"><tt class="cfunction">PyOS_ascii_atof()</tt>###0000014224
+<a href="node25.html#l2h-227"><tt class="cfunction">PyObject_Print()</tt>###0000014227
+<a href="node25.html#l2h-228"><tt class="cfunction">PyObject_HasAttrString()</tt>###0000014228
+<a href="node25.html#l2h-229"><tt class="cfunction">PyObject_GetAttrString()</tt>###0000014229
+<a href="node25.html#l2h-230"><tt class="cfunction">PyObject_HasAttr()</tt>###0000014230
+<a href="node25.html#l2h-231"><tt class="cfunction">PyObject_GetAttr()</tt>###0000014231
+<a href="node25.html#l2h-232"><tt class="cfunction">PyObject_SetAttrString()</tt>###0000014232
+<a href="node25.html#l2h-233"><tt class="cfunction">PyObject_SetAttr()</tt>###0000014233
+<a href="node25.html#l2h-234"><tt class="cfunction">PyObject_DelAttrString()</tt>###0000014234
+<a href="node25.html#l2h-235"><tt class="cfunction">PyObject_DelAttr()</tt>###0000014235
+<a href="node25.html#l2h-236"><tt class="cfunction">PyObject_RichCompare()</tt>###0000014236
+<a href="node25.html#l2h-237"><tt class="cfunction">PyObject_RichCompareBool()</tt>###0000014237
+<a href="node25.html#l2h-238"><tt class="cfunction">PyObject_Cmp()</tt>###0000014238
+<a href="node25.html#l2h-239"><tt class="function">cmp()</tt> (built-in function)###0000014239
+<a href="node25.html#l2h-240"><tt class="cfunction">PyObject_Compare()</tt>###0000014240
+<a href="node25.html#l2h-241"><tt class="function">cmp()</tt> (built-in function)###0000014241
+<a href="node25.html#l2h-242"><tt class="cfunction">PyObject_Repr()</tt>###0000014242
+<a href="node25.html#l2h-243"><tt class="function">repr()</tt> (built-in function)###0000014243
+<a href="node25.html#l2h-244"><tt class="cfunction">PyObject_Str()</tt>###0000014244
+<a href="node25.html#l2h-245"><tt class="function">str()</tt> (built-in function)###0000014245
+<a href="node25.html#l2h-246"><tt class="cfunction">PyObject_Unicode()</tt>###0000014246
+<a href="node25.html#l2h-247"><tt class="function">unicode()</tt> (built-in function)###0000014247
+<a href="node25.html#l2h-248"><tt class="cfunction">PyObject_IsInstance()</tt>###0000014248
+<a href="node25.html#l2h-249"><tt class="cfunction">PyObject_IsSubclass()</tt>###0000014249
+<a href="node25.html#l2h-250"><tt class="cfunction">PyCallable_Check()</tt>###0000014250
+<a href="node25.html#l2h-251"><tt class="cfunction">PyObject_Call()</tt>###0000014251
+<a href="node25.html#l2h-252"><tt class="function">apply()</tt> (built-in function)###0000014252
+<a href="node25.html#l2h-253"><tt class="cfunction">PyObject_CallObject()</tt>###0000014253
+<a href="node25.html#l2h-254"><tt class="function">apply()</tt> (built-in function)###0000014254
+<a href="node25.html#l2h-255"><tt class="cfunction">PyObject_CallFunction()</tt>###0000014255
+<a href="node25.html#l2h-256"><tt class="function">apply()</tt> (built-in function)###0000014256
+<a href="node25.html#l2h-257"><tt class="cfunction">PyObject_CallMethod()</tt>###0000014257
+<a href="node25.html#l2h-258"><tt class="cfunction">PyObject_CallFunctionObjArgs()</tt>###0000014258
+<a href="node25.html#l2h-259"><tt class="cfunction">PyObject_CallMethodObjArgs()</tt>###0000014259
+<a href="node25.html#l2h-260"><tt class="cfunction">PyObject_Hash()</tt>###0000014260
+<a href="node25.html#l2h-261"><tt class="function">hash()</tt> (built-in function)###0000014261
+<a href="node25.html#l2h-262"><tt class="cfunction">PyObject_IsTrue()</tt>###0000014262
+<a href="node25.html#l2h-263"><tt class="cfunction">PyObject_Not()</tt>###0000014263
+<a href="node25.html#l2h-264"><tt class="cfunction">PyObject_Type()</tt>###0000014264
+<a href="node25.html#l2h-265"><tt class="function">type()</tt> (built-in function)###0000014265
+<a href="node25.html#l2h-266"><tt class="cfunction">PyObject_TypeCheck()</tt>###0000014266
+<a href="node25.html#l2h-267"><tt class="cfunction">PyObject_Length()</tt>###0000014267
+<a href="node25.html#l2h-268"><tt class="function">len()</tt> (built-in function)###0000014268
+<a href="node25.html#l2h-269"><tt class="cfunction">PyObject_GetItem()</tt>###0000014269
+<a href="node25.html#l2h-270"><tt class="cfunction">PyObject_SetItem()</tt>###0000014270
+<a href="node25.html#l2h-271"><tt class="cfunction">PyObject_DelItem()</tt>###0000014271
+<a href="node25.html#l2h-272"><tt class="cfunction">PyObject_AsFileDescriptor()</tt>###0000014272
+<a href="node25.html#l2h-273"><tt class="cfunction">PyObject_Dir()</tt>###0000014273
+<a href="node25.html#l2h-274"><tt class="cfunction">PyObject_GetIter()</tt>###0000014274
+<a href="node25.html#l2h-275"><tt class="cfunction">PyObject_Size()</tt>###0000014275
+<a href="node26.html#l2h-276"><tt class="cfunction">PyNumber_Check()</tt>###0000014277
+<a href="node26.html#l2h-277"><tt class="cfunction">PyNumber_Add()</tt>###0000014278
+<a href="node26.html#l2h-278"><tt class="cfunction">PyNumber_Subtract()</tt>###0000014279
+<a href="node26.html#l2h-279"><tt class="cfunction">PyNumber_Multiply()</tt>###0000014280
+<a href="node26.html#l2h-280"><tt class="cfunction">PyNumber_Divide()</tt>###0000014281
+<a href="node26.html#l2h-281"><tt class="cfunction">PyNumber_FloorDivide()</tt>###0000014282
+<a href="node26.html#l2h-282"><tt class="cfunction">PyNumber_TrueDivide()</tt>###0000014283
+<a href="node26.html#l2h-283"><tt class="cfunction">PyNumber_Remainder()</tt>###0000014284
+<a href="node26.html#l2h-284"><tt class="cfunction">PyNumber_Divmod()</tt>###0000014285
+<a href="node26.html#l2h-285"><tt class="function">divmod()</tt> (built-in function)###0000014286
+<a href="node26.html#l2h-286"><tt class="cfunction">PyNumber_Power()</tt>###0000014287
+<a href="node26.html#l2h-287"><tt class="function">pow()</tt> (built-in function)###0000014288
+<a href="node26.html#l2h-288"><tt class="cfunction">PyNumber_Negative()</tt>###0000014289
+<a href="node26.html#l2h-289"><tt class="cfunction">PyNumber_Positive()</tt>###0000014290
+<a href="node26.html#l2h-290"><tt class="cfunction">PyNumber_Absolute()</tt>###0000014291
+<a href="node26.html#l2h-291"><tt class="function">abs()</tt> (built-in function)###0000014292
+<a href="node26.html#l2h-292"><tt class="cfunction">PyNumber_Invert()</tt>###0000014293
+<a href="node26.html#l2h-293"><tt class="cfunction">PyNumber_Lshift()</tt>###0000014294
+<a href="node26.html#l2h-294"><tt class="cfunction">PyNumber_Rshift()</tt>###0000014295
+<a href="node26.html#l2h-295"><tt class="cfunction">PyNumber_And()</tt>###0000014296
+<a href="node26.html#l2h-296"><tt class="cfunction">PyNumber_Xor()</tt>###0000014297
+<a href="node26.html#l2h-297"><tt class="cfunction">PyNumber_Or()</tt>###0000014298
+<a href="node26.html#l2h-298"><tt class="cfunction">PyNumber_InPlaceAdd()</tt>###0000014299
+<a href="node26.html#l2h-299"><tt class="cfunction">PyNumber_InPlaceSubtract()</tt>###0000014300
+<a href="node26.html#l2h-300"><tt class="cfunction">PyNumber_InPlaceMultiply()</tt>###0000014301
+<a href="node26.html#l2h-301"><tt class="cfunction">PyNumber_InPlaceDivide()</tt>###0000014302
+<a href="node26.html#l2h-302"><tt class="cfunction">PyNumber_InPlaceFloorDivide()</tt>###0000014303
+<a href="node26.html#l2h-303"><tt class="cfunction">PyNumber_InPlaceTrueDivide()</tt>###0000014304
+<a href="node26.html#l2h-304"><tt class="cfunction">PyNumber_InPlaceRemainder()</tt>###0000014305
+<a href="node26.html#l2h-305"><tt class="cfunction">PyNumber_InPlacePower()</tt>###0000014306
+<a href="node26.html#l2h-306"><tt class="function">pow()</tt> (built-in function)###0000014307
+<a href="node26.html#l2h-307"><tt class="cfunction">PyNumber_InPlaceLshift()</tt>###0000014308
+<a href="node26.html#l2h-308"><tt class="cfunction">PyNumber_InPlaceRshift()</tt>###0000014309
+<a href="node26.html#l2h-309"><tt class="cfunction">PyNumber_InPlaceAnd()</tt>###0000014310
+<a href="node26.html#l2h-310"><tt class="cfunction">PyNumber_InPlaceXor()</tt>###0000014311
+<a href="node26.html#l2h-311"><tt class="cfunction">PyNumber_InPlaceOr()</tt>###0000014312
+<a href="node26.html#l2h-312"><tt class="cfunction">PyNumber_Coerce()</tt>###0000014313
+<a href="node26.html#l2h-313"><tt class="function">coerce()</tt> (built-in function)###0000014314
+<a href="node26.html#l2h-314"><tt class="cfunction">PyNumber_Int()</tt>###0000014315
+<a href="node26.html#l2h-315"><tt class="function">int()</tt> (built-in function)###0000014316
+<a href="node26.html#l2h-316"><tt class="cfunction">PyNumber_Long()</tt>###0000014317
+<a href="node26.html#l2h-317"><tt class="function">long()</tt> (built-in function)###0000014318
+<a href="node26.html#l2h-318"><tt class="cfunction">PyNumber_Float()</tt>###0000014319
+<a href="node26.html#l2h-319"><tt class="function">float()</tt> (built-in function)###0000014320
+<a href="node26.html#l2h-320"><tt class="cfunction">PyNumber_Index()</tt>###0000014321
+<a href="node26.html#l2h-321"><tt class="cfunction">PyNumber_AsSsize_t()</tt>###0000014322
+<a href="node26.html#l2h-322"><tt class="cfunction">PyIndex_Check()</tt>###0000014323
+<a href="node27.html#l2h-323"><tt class="cfunction">PySequence_Check()</tt>###0000014325
+<a href="node27.html#l2h-324"><tt class="cfunction">PySequence_Size()</tt>###0000014326
+<a href="node27.html#l2h-325"><tt class="function">len()</tt> (built-in function)###0000014327
+<a href="node27.html#l2h-326"><tt class="cfunction">PySequence_Length()</tt>###0000014328
+<a href="node27.html#l2h-327"><tt class="cfunction">PySequence_Concat()</tt>###0000014329
+<a href="node27.html#l2h-328"><tt class="cfunction">PySequence_Repeat()</tt>###0000014330
+<a href="node27.html#l2h-329"><tt class="cfunction">PySequence_InPlaceConcat()</tt>###0000014331
+<a href="node27.html#l2h-330"><tt class="cfunction">PySequence_InPlaceRepeat()</tt>###0000014332
+<a href="node27.html#l2h-331"><tt class="cfunction">PySequence_GetItem()</tt>###0000014333
+<a href="node27.html#l2h-332"><tt class="cfunction">PySequence_GetSlice()</tt>###0000014334
+<a href="node27.html#l2h-333"><tt class="cfunction">PySequence_SetItem()</tt>###0000014335
+<a href="node27.html#l2h-334"><tt class="cfunction">PySequence_DelItem()</tt>###0000014336
+<a href="node27.html#l2h-335"><tt class="cfunction">PySequence_SetSlice()</tt>###0000014337
+<a href="node27.html#l2h-336"><tt class="cfunction">PySequence_DelSlice()</tt>###0000014338
+<a href="node27.html#l2h-337"><tt class="cfunction">PySequence_Count()</tt>###0000014339
+<a href="node27.html#l2h-338"><tt class="cfunction">PySequence_Contains()</tt>###0000014340
+<a href="node27.html#l2h-339"><tt class="cfunction">PySequence_Index()</tt>###0000014341
+<a href="node27.html#l2h-340"><tt class="cfunction">PySequence_List()</tt>###0000014342
+<a href="node27.html#l2h-341"><tt class="cfunction">PySequence_Tuple()</tt>###0000014343
+<a href="node27.html#l2h-342"><tt class="function">tuple()</tt> (built-in function)###0000014344
+<a href="node27.html#l2h-343"><tt class="cfunction">PySequence_Fast()</tt>###0000014345
+<a href="node27.html#l2h-344"><tt class="cfunction">PySequence_Fast_GET_ITEM()</tt>###0000014346
+<a href="node27.html#l2h-345"><tt class="cfunction">PySequence_Fast_ITEMS()</tt>###0000014347
+<a href="node27.html#l2h-346"><tt class="cfunction">PySequence_ITEM()</tt>###0000014348
+<a href="node27.html#l2h-347"><tt class="cfunction">PySequence_Fast_GET_SIZE()</tt>###0000014349
+<a href="node28.html#l2h-348"><tt class="cfunction">PyMapping_Check()</tt>###0000014351
+<a href="node28.html#l2h-349"><tt class="cfunction">PyMapping_Length()</tt>###0000014352
+<a href="node28.html#l2h-350"><tt class="function">len()</tt> (built-in function)###0000014353
+<a href="node28.html#l2h-351"><tt class="cfunction">PyMapping_DelItemString()</tt>###0000014354
+<a href="node28.html#l2h-352"><tt class="cfunction">PyMapping_DelItem()</tt>###0000014355
+<a href="node28.html#l2h-353"><tt class="cfunction">PyMapping_HasKeyString()</tt>###0000014356
+<a href="node28.html#l2h-354"><tt class="cfunction">PyMapping_HasKey()</tt>###0000014357
+<a href="node28.html#l2h-355"><tt class="cfunction">PyMapping_Keys()</tt>###0000014358
+<a href="node28.html#l2h-356"><tt class="cfunction">PyMapping_Values()</tt>###0000014359
+<a href="node28.html#l2h-357"><tt class="cfunction">PyMapping_Items()</tt>###0000014360
+<a href="node28.html#l2h-358"><tt class="cfunction">PyMapping_GetItemString()</tt>###0000014361
+<a href="node28.html#l2h-359"><tt class="cfunction">PyMapping_SetItemString()</tt>###0000014362
+<a href="node29.html#l2h-360"><tt class="cfunction">PyIter_Check()</tt>###0000014364
+<a href="node29.html#l2h-361"><tt class="cfunction">PyIter_Next()</tt>###0000014365
+<a href="node30.html#l2h-362"><tt class="cfunction">PyObject_AsCharBuffer()</tt>###0000014367
+<a href="node30.html#l2h-363"><tt class="cfunction">PyObject_AsReadBuffer()</tt>###0000014368
+<a href="node30.html#l2h-364"><tt class="cfunction">PyObject_CheckReadBuffer()</tt>###0000014369
+<a href="node30.html#l2h-365"><tt class="cfunction">PyObject_AsWriteBuffer()</tt>###0000014370
+<a href="node33.html#l2h-366">type object###0000014374
+<a href="node33.html#l2h-366">object!type###0000014375
+<a href="node33.html#l2h-367"><tt class="ctype">PyTypeObject</tt> (C type)###0000014376
+<a href="node33.html#l2h-368"><tt class="cdata">PyType_Type</tt>###0000014377
+<a href="node33.html#l2h-370">TypeType (in module types)###0000014378
+<a href="node33.html#l2h-371"><tt class="cfunction">PyType_Check()</tt>###0000014379
+<a href="node33.html#l2h-372"><tt class="cfunction">PyType_CheckExact()</tt>###0000014380
+<a href="node33.html#l2h-373"><tt class="cfunction">PyType_HasFeature()</tt>###0000014381
+<a href="node33.html#l2h-374"><tt class="cfunction">PyType_IS_GC()</tt>###0000014382
+<a href="node33.html#l2h-375"><tt class="cfunction">PyType_IsSubtype()</tt>###0000014383
+<a href="node33.html#l2h-376"><tt class="cfunction">PyType_GenericAlloc()</tt>###0000014384
+<a href="node33.html#l2h-377"><tt class="cfunction">PyType_GenericNew()</tt>###0000014385
+<a href="node33.html#l2h-378"><tt class="cfunction">PyType_Ready()</tt>###0000014386
+<a href="node34.html#l2h-379">None object###0000014388
+<a href="node34.html#l2h-379">object!None###0000014389
+<a href="node34.html#l2h-380"><tt class="cdata">Py_None</tt>###0000014390
+<a href="node34.html#l2h-381"><tt class="macro">Py_RETURN_NONE</tt>###0000014391
+<a href="node35.html#l2h-382">numeric object###0000014393
+<a href="node35.html#l2h-382">object!numeric###0000014394
+<a href="node36.html#l2h-383">integer object###0000014396
+<a href="node36.html#l2h-383">object!integer###0000014397
+<a href="node36.html#l2h-384"><tt class="ctype">PyIntObject</tt> (C type)###0000014398
+<a href="node36.html#l2h-385"><tt class="cdata">PyInt_Type</tt>###0000014399
+<a href="node36.html#l2h-387">IntType (in modules types)###0000014400
+<a href="node36.html#l2h-388"><tt class="cfunction">PyInt_Check()</tt>###0000014401
+<a href="node36.html#l2h-389"><tt class="cfunction">PyInt_CheckExact()</tt>###0000014402
+<a href="node36.html#l2h-390"><tt class="cfunction">PyInt_FromString()</tt>###0000014403
+<a href="node36.html#l2h-391"><tt class="cfunction">PyInt_FromLong()</tt>###0000014404
+<a href="node36.html#l2h-392"><tt class="cfunction">PyInt_FromSsize_t()</tt>###0000014405
+<a href="node36.html#l2h-393"><tt class="cfunction">PyInt_AsLong()</tt>###0000014406
+<a href="node36.html#l2h-394"><tt class="cfunction">PyInt_AS_LONG()</tt>###0000014407
+<a href="node36.html#l2h-395"><tt class="cfunction">PyInt_AsUnsignedLongMask()</tt>###0000014408
+<a href="node36.html#l2h-396"><tt class="cfunction">PyInt_AsUnsignedLongLongMask()</tt>###0000014409
+<a href="node36.html#l2h-397"><tt class="cfunction">PyInt_AsSsize_t()</tt>###0000014410
+<a href="node36.html#l2h-398"><tt class="cfunction">PyInt_GetMax()</tt>###0000014411
+<a href="node36.html#l2h-399">LONG_MAX###0000014412
+<a href="node37.html#l2h-400"><tt class="cfunction">PyBool_Check()</tt>###0000014414
+<a href="node37.html#l2h-401"><tt class="cdata">Py_False</tt>###0000014415
+<a href="node37.html#l2h-402"><tt class="cdata">Py_True</tt>###0000014416
+<a href="node37.html#l2h-403"><tt class="macro">Py_RETURN_FALSE</tt>###0000014417
+<a href="node37.html#l2h-404"><tt class="macro">Py_RETURN_TRUE</tt>###0000014418
+<a href="node37.html#l2h-405"><tt class="cfunction">PyBool_FromLong()</tt>###0000014419
+<a href="node38.html#l2h-406">long integer object###0000014421
+<a href="node38.html#l2h-406">object!long integer###0000014422
+<a href="node38.html#l2h-407"><tt class="ctype">PyLongObject</tt> (C type)###0000014423
+<a href="node38.html#l2h-408"><tt class="cdata">PyLong_Type</tt>###0000014424
+<a href="node38.html#l2h-410">LongType (in modules types)###0000014425
+<a href="node38.html#l2h-411"><tt class="cfunction">PyLong_Check()</tt>###0000014426
+<a href="node38.html#l2h-412"><tt class="cfunction">PyLong_CheckExact()</tt>###0000014427
+<a href="node38.html#l2h-413"><tt class="cfunction">PyLong_FromLong()</tt>###0000014428
+<a href="node38.html#l2h-414"><tt class="cfunction">PyLong_FromUnsignedLong()</tt>###0000014429
+<a href="node38.html#l2h-415"><tt class="cfunction">PyLong_FromLongLong()</tt>###0000014430
+<a href="node38.html#l2h-416"><tt class="cfunction">PyLong_FromUnsignedLongLong()</tt>###0000014431
+<a href="node38.html#l2h-417"><tt class="cfunction">PyLong_FromDouble()</tt>###0000014432
+<a href="node38.html#l2h-418"><tt class="cfunction">PyLong_FromString()</tt>###0000014433
+<a href="node38.html#l2h-419"><tt class="cfunction">PyLong_FromUnicode()</tt>###0000014434
+<a href="node38.html#l2h-420"><tt class="cfunction">PyLong_FromVoidPtr()</tt>###0000014435
+<a href="node38.html#l2h-421"><tt class="cfunction">PyLong_AsLong()</tt>###0000014436
+<a href="node38.html#l2h-423">OverflowError (built-in exception)###0000014437
+<a href="node38.html#l2h-424"><tt class="cfunction">PyLong_AsUnsignedLong()</tt>###0000014438
+<a href="node38.html#l2h-426">OverflowError (built-in exception)###0000014439
+<a href="node38.html#l2h-427"><tt class="cfunction">PyLong_AsLongLong()</tt>###0000014440
+<a href="node38.html#l2h-428"><tt class="cfunction">PyLong_AsUnsignedLongLong()</tt>###0000014441
+<a href="node38.html#l2h-429"><tt class="cfunction">PyLong_AsUnsignedLongMask()</tt>###0000014442
+<a href="node38.html#l2h-430"><tt class="cfunction">PyLong_AsUnsignedLongLongMask()</tt>###0000014443
+<a href="node38.html#l2h-431"><tt class="cfunction">PyLong_AsDouble()</tt>###0000014444
+<a href="node38.html#l2h-432"><tt class="cfunction">PyLong_AsVoidPtr()</tt>###0000014445
+<a href="node38.html#l2h-433">LONG_MAX###0000014446
+<a href="node38.html#l2h-434">ULONG_MAX###0000014447
+<a href="node39.html#l2h-435">floating point object###0000014449
+<a href="node39.html#l2h-435">object!floating point###0000014450
+<a href="node39.html#l2h-436"><tt class="ctype">PyFloatObject</tt> (C type)###0000014451
+<a href="node39.html#l2h-437"><tt class="cdata">PyFloat_Type</tt>###0000014452
+<a href="node39.html#l2h-439">FloatType (in modules types)###0000014453
+<a href="node39.html#l2h-440"><tt class="cfunction">PyFloat_Check()</tt>###0000014454
+<a href="node39.html#l2h-441"><tt class="cfunction">PyFloat_CheckExact()</tt>###0000014455
+<a href="node39.html#l2h-442"><tt class="cfunction">PyFloat_FromString()</tt>###0000014456
+<a href="node39.html#l2h-443"><tt class="cfunction">PyFloat_FromDouble()</tt>###0000014457
+<a href="node39.html#l2h-444"><tt class="cfunction">PyFloat_AsDouble()</tt>###0000014458
+<a href="node39.html#l2h-445"><tt class="cfunction">PyFloat_AS_DOUBLE()</tt>###0000014459
+<a href="node40.html#l2h-446">complex number object###0000014461
+<a href="node40.html#l2h-446">object!complex number###0000014462
+<a href="node41.html#l2h-447"><tt class="ctype">Py_complex</tt> (C type)###0000014464
+<a href="node41.html#l2h-448"><tt class="cfunction">_Py_c_sum()</tt>###0000014465
+<a href="node41.html#l2h-449"><tt class="cfunction">_Py_c_diff()</tt>###0000014466
+<a href="node41.html#l2h-450"><tt class="cfunction">_Py_c_neg()</tt>###0000014467
+<a href="node41.html#l2h-451"><tt class="cfunction">_Py_c_prod()</tt>###0000014468
+<a href="node41.html#l2h-452"><tt class="cfunction">_Py_c_quot()</tt>###0000014469
+<a href="node41.html#l2h-453"><tt class="cfunction">_Py_c_pow()</tt>###0000014470
+<a href="node42.html#l2h-454"><tt class="ctype">PyComplexObject</tt> (C type)###0000014472
+<a href="node42.html#l2h-455"><tt class="cdata">PyComplex_Type</tt>###0000014473
+<a href="node42.html#l2h-456"><tt class="cfunction">PyComplex_Check()</tt>###0000014474
+<a href="node42.html#l2h-457"><tt class="cfunction">PyComplex_CheckExact()</tt>###0000014475
+<a href="node42.html#l2h-458"><tt class="cfunction">PyComplex_FromCComplex()</tt>###0000014476
+<a href="node42.html#l2h-459"><tt class="cfunction">PyComplex_FromDoubles()</tt>###0000014477
+<a href="node42.html#l2h-460"><tt class="cfunction">PyComplex_RealAsDouble()</tt>###0000014478
+<a href="node42.html#l2h-461"><tt class="cfunction">PyComplex_ImagAsDouble()</tt>###0000014479
+<a href="node42.html#l2h-462"><tt class="cfunction">PyComplex_AsCComplex()</tt>###0000014480
+<a href="node43.html#l2h-463">sequence object###0000014482
+<a href="node43.html#l2h-463">object!sequence###0000014483
+<a href="node44.html#l2h-464">string object###0000014485
+<a href="node44.html#l2h-464">object!string###0000014486
+<a href="node44.html#l2h-465"><tt class="ctype">PyStringObject</tt> (C type)###0000014487
+<a href="node44.html#l2h-466"><tt class="cdata">PyString_Type</tt>###0000014488
+<a href="node44.html#l2h-468">StringType (in module types)###0000014489
+<a href="node44.html#l2h-469"><tt class="cfunction">PyString_Check()</tt>###0000014490
+<a href="node44.html#l2h-470"><tt class="cfunction">PyString_CheckExact()</tt>###0000014491
+<a href="node44.html#l2h-471"><tt class="cfunction">PyString_FromString()</tt>###0000014492
+<a href="node44.html#l2h-472"><tt class="cfunction">PyString_FromStringAndSize()</tt>###0000014493
+<a href="node44.html#l2h-473"><tt class="cfunction">PyString_FromFormat()</tt>###0000014494
+<a href="node44.html#l2h-474"><tt class="cfunction">PyString_FromFormatV()</tt>###0000014495
+<a href="node44.html#l2h-475"><tt class="cfunction">PyString_Size()</tt>###0000014496
+<a href="node44.html#l2h-476"><tt class="cfunction">PyString_GET_SIZE()</tt>###0000014497
+<a href="node44.html#l2h-477"><tt class="cfunction">PyString_AsString()</tt>###0000014498
+<a href="node44.html#l2h-478"><tt class="cfunction">PyString_AS_STRING()</tt>###0000014499
+<a href="node44.html#l2h-479"><tt class="cfunction">PyString_AsStringAndSize()</tt>###0000014500
+<a href="node44.html#l2h-480"><tt class="cfunction">PyString_Concat()</tt>###0000014501
+<a href="node44.html#l2h-481"><tt class="cfunction">PyString_ConcatAndDel()</tt>###0000014502
+<a href="node44.html#l2h-482"><tt class="cfunction">_PyString_Resize()</tt>###0000014503
+<a href="node44.html#l2h-483"><tt class="cfunction">PyString_Format()</tt>###0000014504
+<a href="node44.html#l2h-484"><tt class="cfunction">PyString_InternInPlace()</tt>###0000014505
+<a href="node44.html#l2h-485"><tt class="cfunction">PyString_InternFromString()</tt>###0000014506
+<a href="node44.html#l2h-486"><tt class="cfunction">PyString_Decode()</tt>###0000014507
+<a href="node44.html#l2h-487"><tt class="cfunction">PyString_AsDecodedObject()</tt>###0000014508
+<a href="node44.html#l2h-488"><tt class="cfunction">PyString_Encode()</tt>###0000014509
+<a href="node44.html#l2h-489"><tt class="cfunction">PyString_AsEncodedObject()</tt>###0000014510
+<a href="node45.html#l2h-490"><tt class="ctype">Py_UNICODE</tt> (C type)###0000014512
+<a href="node45.html#l2h-491"><tt class="ctype">PyUnicodeObject</tt> (C type)###0000014513
+<a href="node45.html#l2h-492"><tt class="cdata">PyUnicode_Type</tt>###0000014514
+<a href="node45.html#l2h-493"><tt class="cfunction">PyUnicode_Check()</tt>###0000014515
+<a href="node45.html#l2h-494"><tt class="cfunction">PyUnicode_CheckExact()</tt>###0000014516
+<a href="node45.html#l2h-495"><tt class="cfunction">PyUnicode_GET_SIZE()</tt>###0000014517
+<a href="node45.html#l2h-496"><tt class="cfunction">PyUnicode_GET_DATA_SIZE()</tt>###0000014518
+<a href="node45.html#l2h-497"><tt class="cfunction">PyUnicode_AS_UNICODE()</tt>###0000014519
+<a href="node45.html#l2h-498"><tt class="cfunction">PyUnicode_AS_DATA()</tt>###0000014520
+<a href="node45.html#l2h-499"><tt class="cfunction">Py_UNICODE_ISSPACE()</tt>###0000014521
+<a href="node45.html#l2h-500"><tt class="cfunction">Py_UNICODE_ISLOWER()</tt>###0000014522
+<a href="node45.html#l2h-501"><tt class="cfunction">Py_UNICODE_ISUPPER()</tt>###0000014523
+<a href="node45.html#l2h-502"><tt class="cfunction">Py_UNICODE_ISTITLE()</tt>###0000014524
+<a href="node45.html#l2h-503"><tt class="cfunction">Py_UNICODE_ISLINEBREAK()</tt>###0000014525
+<a href="node45.html#l2h-504"><tt class="cfunction">Py_UNICODE_ISDECIMAL()</tt>###0000014526
+<a href="node45.html#l2h-505"><tt class="cfunction">Py_UNICODE_ISDIGIT()</tt>###0000014527
+<a href="node45.html#l2h-506"><tt class="cfunction">Py_UNICODE_ISNUMERIC()</tt>###0000014528
+<a href="node45.html#l2h-507"><tt class="cfunction">Py_UNICODE_ISALPHA()</tt>###0000014529
+<a href="node45.html#l2h-508"><tt class="cfunction">Py_UNICODE_ISALNUM()</tt>###0000014530
+<a href="node45.html#l2h-509"><tt class="cfunction">Py_UNICODE_TOLOWER()</tt>###0000014531
+<a href="node45.html#l2h-510"><tt class="cfunction">Py_UNICODE_TOUPPER()</tt>###0000014532
+<a href="node45.html#l2h-511"><tt class="cfunction">Py_UNICODE_TOTITLE()</tt>###0000014533
+<a href="node45.html#l2h-512"><tt class="cfunction">Py_UNICODE_TODECIMAL()</tt>###0000014534
+<a href="node45.html#l2h-513"><tt class="cfunction">Py_UNICODE_TODIGIT()</tt>###0000014535
+<a href="node45.html#l2h-514"><tt class="cfunction">Py_UNICODE_TONUMERIC()</tt>###0000014536
+<a href="node45.html#l2h-515"><tt class="cfunction">PyUnicode_FromUnicode()</tt>###0000014537
+<a href="node45.html#l2h-516"><tt class="cfunction">PyUnicode_AsUnicode()</tt>###0000014538
+<a href="node45.html#l2h-517"><tt class="cfunction">PyUnicode_GetSize()</tt>###0000014539
+<a href="node45.html#l2h-518"><tt class="cfunction">PyUnicode_FromEncodedObject()</tt>###0000014540
+<a href="node45.html#l2h-519"><tt class="cfunction">PyUnicode_FromObject()</tt>###0000014541
+<a href="node45.html#l2h-520"><tt class="cfunction">PyUnicode_FromWideChar()</tt>###0000014542
+<a href="node45.html#l2h-521"><tt class="cfunction">PyUnicode_AsWideChar()</tt>###0000014543
+<a href="node46.html#l2h-522"><tt class="cfunction">PyUnicode_Decode()</tt>###0000014545
+<a href="node46.html#l2h-523"><tt class="cfunction">PyUnicode_Encode()</tt>###0000014546
+<a href="node46.html#l2h-524"><tt class="cfunction">PyUnicode_AsEncodedString()</tt>###0000014547
+<a href="node46.html#l2h-525"><tt class="cfunction">PyUnicode_DecodeUTF8()</tt>###0000014548
+<a href="node46.html#l2h-526"><tt class="cfunction">PyUnicode_DecodeUTF8Stateful()</tt>###0000014549
+<a href="node46.html#l2h-527"><tt class="cfunction">PyUnicode_EncodeUTF8()</tt>###0000014550
+<a href="node46.html#l2h-528"><tt class="cfunction">PyUnicode_AsUTF8String()</tt>###0000014551
+<a href="node46.html#l2h-529"><tt class="cfunction">PyUnicode_DecodeUTF16()</tt>###0000014552
+<a href="node46.html#l2h-530"><tt class="cfunction">PyUnicode_DecodeUTF16Stateful()</tt>###0000014553
+<a href="node46.html#l2h-531"><tt class="cfunction">PyUnicode_EncodeUTF16()</tt>###0000014554
+<a href="node46.html#l2h-532"><tt class="cfunction">PyUnicode_AsUTF16String()</tt>###0000014555
+<a href="node46.html#l2h-533"><tt class="cfunction">PyUnicode_DecodeUnicodeEscape()</tt>###0000014556
+<a href="node46.html#l2h-534"><tt class="cfunction">PyUnicode_EncodeUnicodeEscape()</tt>###0000014557
+<a href="node46.html#l2h-535"><tt class="cfunction">PyUnicode_AsUnicodeEscapeString()</tt>###0000014558
+<a href="node46.html#l2h-536"><tt class="cfunction">PyUnicode_DecodeRawUnicodeEscape()</tt>###0000014559
+<a href="node46.html#l2h-537"><tt class="cfunction">PyUnicode_EncodeRawUnicodeEscape()</tt>###0000014560
+<a href="node46.html#l2h-538"><tt class="cfunction">PyUnicode_AsRawUnicodeEscapeString()</tt>###0000014561
+<a href="node46.html#l2h-539"><tt class="cfunction">PyUnicode_DecodeLatin1()</tt>###0000014562
+<a href="node46.html#l2h-540"><tt class="cfunction">PyUnicode_EncodeLatin1()</tt>###0000014563
+<a href="node46.html#l2h-541"><tt class="cfunction">PyUnicode_AsLatin1String()</tt>###0000014564
+<a href="node46.html#l2h-542"><tt class="cfunction">PyUnicode_DecodeASCII()</tt>###0000014565
+<a href="node46.html#l2h-543"><tt class="cfunction">PyUnicode_EncodeASCII()</tt>###0000014566
+<a href="node46.html#l2h-544"><tt class="cfunction">PyUnicode_AsASCIIString()</tt>###0000014567
+<a href="node46.html#l2h-545"><tt class="cfunction">PyUnicode_DecodeCharmap()</tt>###0000014568
+<a href="node46.html#l2h-546"><tt class="cfunction">PyUnicode_EncodeCharmap()</tt>###0000014569
+<a href="node46.html#l2h-547"><tt class="cfunction">PyUnicode_AsCharmapString()</tt>###0000014570
+<a href="node46.html#l2h-548"><tt class="cfunction">PyUnicode_TranslateCharmap()</tt>###0000014571
+<a href="node46.html#l2h-549"><tt class="cfunction">PyUnicode_DecodeMBCS()</tt>###0000014572
+<a href="node46.html#l2h-550"><tt class="cfunction">PyUnicode_DecodeMBCSStateful()</tt>###0000014573
+<a href="node46.html#l2h-551"><tt class="cfunction">PyUnicode_EncodeMBCS()</tt>###0000014574
+<a href="node46.html#l2h-552"><tt class="cfunction">PyUnicode_AsMBCSString()</tt>###0000014575
+<a href="node47.html#l2h-553"><tt class="cfunction">PyUnicode_Concat()</tt>###0000014577
+<a href="node47.html#l2h-554"><tt class="cfunction">PyUnicode_Split()</tt>###0000014578
+<a href="node47.html#l2h-555"><tt class="cfunction">PyUnicode_Splitlines()</tt>###0000014579
+<a href="node47.html#l2h-556"><tt class="cfunction">PyUnicode_Translate()</tt>###0000014580
+<a href="node47.html#l2h-557"><tt class="cfunction">PyUnicode_Join()</tt>###0000014581
+<a href="node47.html#l2h-558"><tt class="cfunction">PyUnicode_Tailmatch()</tt>###0000014582
+<a href="node47.html#l2h-559"><tt class="cfunction">PyUnicode_Find()</tt>###0000014583
+<a href="node47.html#l2h-560"><tt class="cfunction">PyUnicode_Count()</tt>###0000014584
+<a href="node47.html#l2h-561"><tt class="cfunction">PyUnicode_Replace()</tt>###0000014585
+<a href="node47.html#l2h-562"><tt class="cfunction">PyUnicode_Compare()</tt>###0000014586
+<a href="node47.html#l2h-563"><tt class="cfunction">PyUnicode_RichCompare()</tt>###0000014587
+<a href="node47.html#l2h-564"><tt class="cfunction">PyUnicode_Format()</tt>###0000014588
+<a href="node47.html#l2h-565"><tt class="cfunction">PyUnicode_Contains()</tt>###0000014589
+<a href="node48.html#l2h-566">buffer object###0000014591
+<a href="node48.html#l2h-566">object!buffer###0000014592
+<a href="node48.html#l2h-567"><tt class="ctype">PyBufferObject</tt> (C type)###0000014593
+<a href="node48.html#l2h-568"><tt class="cdata">PyBuffer_Type</tt>###0000014594
+<a href="node48.html#l2h-570">BufferType (in module types)###0000014595
+<a href="node48.html#l2h-571"><tt class="cdata">Py_END_OF_BUFFER</tt>###0000014596
+<a href="node48.html#l2h-572"><tt class="cfunction">PyBuffer_Check()</tt>###0000014597
+<a href="node48.html#l2h-573"><tt class="cfunction">PyBuffer_FromObject()</tt>###0000014598
+<a href="node48.html#l2h-574"><tt class="cfunction">PyBuffer_FromReadWriteObject()</tt>###0000014599
+<a href="node48.html#l2h-575"><tt class="cfunction">PyBuffer_FromMemory()</tt>###0000014600
+<a href="node48.html#l2h-576"><tt class="cfunction">PyBuffer_FromReadWriteMemory()</tt>###0000014601
+<a href="node48.html#l2h-577"><tt class="cfunction">PyBuffer_New()</tt>###0000014602
+<a href="node48.html#l2h-578">buffer interface###0000014603
+<a href="node48.html#l2h-579">PyBufferProcs###0000014604
+<a href="node49.html#l2h-580">tuple object###0000014606
+<a href="node49.html#l2h-580">object!tuple###0000014607
+<a href="node49.html#l2h-581"><tt class="ctype">PyTupleObject</tt> (C type)###0000014608
+<a href="node49.html#l2h-582"><tt class="cdata">PyTuple_Type</tt>###0000014609
+<a href="node49.html#l2h-584">TupleType (in module types)###0000014610
+<a href="node49.html#l2h-585"><tt class="cfunction">PyTuple_Check()</tt>###0000014611
+<a href="node49.html#l2h-586"><tt class="cfunction">PyTuple_CheckExact()</tt>###0000014612
+<a href="node49.html#l2h-587"><tt class="cfunction">PyTuple_New()</tt>###0000014613
+<a href="node49.html#l2h-588"><tt class="cfunction">PyTuple_Pack()</tt>###0000014614
+<a href="node49.html#l2h-589"><tt class="cfunction">PyTuple_Size()</tt>###0000014615
+<a href="node49.html#l2h-590"><tt class="cfunction">PyTuple_GET_SIZE()</tt>###0000014616
+<a href="node49.html#l2h-591"><tt class="cfunction">PyTuple_GetItem()</tt>###0000014617
+<a href="node49.html#l2h-592"><tt class="cfunction">PyTuple_GET_ITEM()</tt>###0000014618
+<a href="node49.html#l2h-593"><tt class="cfunction">PyTuple_GetSlice()</tt>###0000014619
+<a href="node49.html#l2h-594"><tt class="cfunction">PyTuple_SetItem()</tt>###0000014620
+<a href="node49.html#l2h-595"><tt class="cfunction">PyTuple_SET_ITEM()</tt>###0000014621
+<a href="node49.html#l2h-596"><tt class="cfunction">_PyTuple_Resize()</tt>###0000014622
+<a href="node50.html#l2h-597">list object###0000014624
+<a href="node50.html#l2h-597">object!list###0000014625
+<a href="node50.html#l2h-598"><tt class="ctype">PyListObject</tt> (C type)###0000014626
+<a href="node50.html#l2h-599"><tt class="cdata">PyList_Type</tt>###0000014627
+<a href="node50.html#l2h-601">ListType (in module types)###0000014628
+<a href="node50.html#l2h-602"><tt class="cfunction">PyList_Check()</tt>###0000014629
+<a href="node50.html#l2h-603"><tt class="cfunction">PyList_CheckExact()</tt>###0000014630
+<a href="node50.html#l2h-604"><tt class="cfunction">PyList_New()</tt>###0000014631
+<a href="node50.html#l2h-605"><tt class="cfunction">PyList_Size()</tt>###0000014632
+<a href="node50.html#l2h-606"><tt class="function">len()</tt> (built-in function)###0000014633
+<a href="node50.html#l2h-607"><tt class="cfunction">PyList_GET_SIZE()</tt>###0000014634
+<a href="node50.html#l2h-608"><tt class="cfunction">PyList_GetItem()</tt>###0000014635
+<a href="node50.html#l2h-609"><tt class="cfunction">PyList_GET_ITEM()</tt>###0000014636
+<a href="node50.html#l2h-610"><tt class="cfunction">PyList_SetItem()</tt>###0000014637
+<a href="node50.html#l2h-611"><tt class="cfunction">PyList_SET_ITEM()</tt>###0000014638
+<a href="node50.html#l2h-612"><tt class="cfunction">PyList_Insert()</tt>###0000014639
+<a href="node50.html#l2h-613"><tt class="cfunction">PyList_Append()</tt>###0000014640
+<a href="node50.html#l2h-614"><tt class="cfunction">PyList_GetSlice()</tt>###0000014641
+<a href="node50.html#l2h-615"><tt class="cfunction">PyList_SetSlice()</tt>###0000014642
+<a href="node50.html#l2h-616"><tt class="cfunction">PyList_Sort()</tt>###0000014643
+<a href="node50.html#l2h-617"><tt class="cfunction">PyList_Reverse()</tt>###0000014644
+<a href="node50.html#l2h-618"><tt class="cfunction">PyList_AsTuple()</tt>###0000014645
+<a href="node50.html#l2h-619"><tt class="function">tuple()</tt> (built-in function)###0000014646
+<a href="node51.html#l2h-620">mapping object###0000014648
+<a href="node51.html#l2h-620">object!mapping###0000014649
+<a href="node52.html#l2h-621">dictionary object###0000014651
+<a href="node52.html#l2h-621">object!dictionary###0000014652
+<a href="node52.html#l2h-622"><tt class="ctype">PyDictObject</tt> (C type)###0000014653
+<a href="node52.html#l2h-623"><tt class="cdata">PyDict_Type</tt>###0000014654
+<a href="node52.html#l2h-625">DictType (in module types)###0000014655
+<a href="node52.html#l2h-625">DictionaryType (in module types)###0000014656
+<a href="node52.html#l2h-626"><tt class="cfunction">PyDict_Check()</tt>###0000014657
+<a href="node52.html#l2h-627"><tt class="cfunction">PyDict_CheckExact()</tt>###0000014658
+<a href="node52.html#l2h-628"><tt class="cfunction">PyDict_New()</tt>###0000014659
+<a href="node52.html#l2h-629"><tt class="cfunction">PyDictProxy_New()</tt>###0000014660
+<a href="node52.html#l2h-630"><tt class="cfunction">PyDict_Clear()</tt>###0000014661
+<a href="node52.html#l2h-631"><tt class="cfunction">PyDict_Contains()</tt>###0000014662
+<a href="node52.html#l2h-632"><tt class="cfunction">PyDict_Copy()</tt>###0000014663
+<a href="node52.html#l2h-633"><tt class="cfunction">PyDict_SetItem()</tt>###0000014664
+<a href="node52.html#l2h-634"><tt class="cfunction">PyDict_SetItemString()</tt>###0000014665
+<a href="node52.html#l2h-635"><tt class="cfunction">PyDict_DelItem()</tt>###0000014666
+<a href="node52.html#l2h-636"><tt class="cfunction">PyDict_DelItemString()</tt>###0000014667
+<a href="node52.html#l2h-637"><tt class="cfunction">PyDict_GetItem()</tt>###0000014668
+<a href="node52.html#l2h-638"><tt class="cfunction">PyDict_GetItemString()</tt>###0000014669
+<a href="node52.html#l2h-639"><tt class="cfunction">PyDict_Items()</tt>###0000014670
+<a href="node52.html#l2h-640"><tt class="cfunction">PyDict_Keys()</tt>###0000014671
+<a href="node52.html#l2h-641"><tt class="cfunction">PyDict_Values()</tt>###0000014672
+<a href="node52.html#l2h-642"><tt class="cfunction">PyDict_Size()</tt>###0000014673
+<a href="node52.html#l2h-643"><tt class="function">len()</tt> (built-in function)###0000014674
+<a href="node52.html#l2h-644"><tt class="cfunction">PyDict_Next()</tt>###0000014675
+<a href="node52.html#l2h-645"><tt class="cfunction">PyDict_Merge()</tt>###0000014676
+<a href="node52.html#l2h-646"><tt class="cfunction">PyDict_Update()</tt>###0000014677
+<a href="node52.html#l2h-647"><tt class="cfunction">PyDict_MergeFromSeq2()</tt>###0000014678
+<a href="node52.html#l2h-648">PyString_FromString()###0000014679
+<a href="node54.html#l2h-649">file object###0000014682
+<a href="node54.html#l2h-649">object!file###0000014683
+<a href="node54.html#l2h-650"><tt class="ctype">PyFileObject</tt> (C type)###0000014684
+<a href="node54.html#l2h-651"><tt class="cdata">PyFile_Type</tt>###0000014685
+<a href="node54.html#l2h-653">FileType (in module types)###0000014686
+<a href="node54.html#l2h-654"><tt class="cfunction">PyFile_Check()</tt>###0000014687
+<a href="node54.html#l2h-655"><tt class="cfunction">PyFile_CheckExact()</tt>###0000014688
+<a href="node54.html#l2h-656"><tt class="cfunction">PyFile_FromString()</tt>###0000014689
+<a href="node54.html#l2h-657"><tt class="cfunction">PyFile_FromFile()</tt>###0000014690
+<a href="node54.html#l2h-658"><tt class="cfunction">PyFile_AsFile()</tt>###0000014691
+<a href="node54.html#l2h-659"><tt class="cfunction">PyFile_GetLine()</tt>###0000014692
+<a href="node54.html#l2h-661">EOFError (built-in exception)###0000014693
+<a href="node54.html#l2h-662"><tt class="cfunction">PyFile_Name()</tt>###0000014694
+<a href="node54.html#l2h-663"><tt class="cfunction">PyFile_SetBufSize()</tt>###0000014695
+<a href="node54.html#l2h-664"><tt class="cfunction">PyFile_Encoding()</tt>###0000014696
+<a href="node54.html#l2h-665"><tt class="cfunction">PyFile_SoftSpace()</tt>###0000014697
+<a href="node54.html#l2h-667">softspace (file attribute)###0000014698
+<a href="node54.html#l2h-668"><tt class="cfunction">PyFile_WriteObject()</tt>###0000014699
+<a href="node54.html#l2h-669"><tt class="cfunction">PyFile_WriteString()</tt>###0000014700
+<a href="node54.html#l2h-670">fopen()###0000014701
+<a href="node54.html#l2h-671">setvbuf()###0000014702
+<a href="node54.html#l2h-672">Py_PRINT_RAW###0000014703
+<a href="node55.html#l2h-673">instance object###0000014705
+<a href="node55.html#l2h-673">object!instance###0000014706
+<a href="node55.html#l2h-674"><tt class="cdata">PyInstance_Type</tt>###0000014707
+<a href="node55.html#l2h-675"><tt class="cfunction">PyInstance_Check()</tt>###0000014708
+<a href="node55.html#l2h-676"><tt class="cfunction">PyInstance_New()</tt>###0000014709
+<a href="node55.html#l2h-677"><tt class="cfunction">PyInstance_NewRaw()</tt>###0000014710
+<a href="node56.html#l2h-678">function object###0000014712
+<a href="node56.html#l2h-678">object!function###0000014713
+<a href="node56.html#l2h-679"><tt class="ctype">PyFunctionObject</tt> (C type)###0000014714
+<a href="node56.html#l2h-680"><tt class="cdata">PyFunction_Type</tt>###0000014715
+<a href="node56.html#l2h-682">MethodType (in module types)###0000014716
+<a href="node56.html#l2h-683"><tt class="cfunction">PyFunction_Check()</tt>###0000014717
+<a href="node56.html#l2h-684"><tt class="cfunction">PyFunction_New()</tt>###0000014718
+<a href="node56.html#l2h-685"><tt class="cfunction">PyFunction_GetCode()</tt>###0000014719
+<a href="node56.html#l2h-686"><tt class="cfunction">PyFunction_GetGlobals()</tt>###0000014720
+<a href="node56.html#l2h-687"><tt class="cfunction">PyFunction_GetModule()</tt>###0000014721
+<a href="node56.html#l2h-688"><tt class="cfunction">PyFunction_GetDefaults()</tt>###0000014722
+<a href="node56.html#l2h-689"><tt class="cfunction">PyFunction_SetDefaults()</tt>###0000014723
+<a href="node56.html#l2h-690"><tt class="cfunction">PyFunction_GetClosure()</tt>###0000014724
+<a href="node56.html#l2h-691"><tt class="cfunction">PyFunction_SetClosure()</tt>###0000014725
+<a href="node57.html#l2h-692">method object###0000014727
+<a href="node57.html#l2h-692">object!method###0000014728
+<a href="node57.html#l2h-693"><tt class="cdata">PyMethod_Type</tt>###0000014729
+<a href="node57.html#l2h-695">MethodType (in module types)###0000014730
+<a href="node57.html#l2h-696"><tt class="cfunction">PyMethod_Check()</tt>###0000014731
+<a href="node57.html#l2h-697"><tt class="cfunction">PyMethod_New()</tt>###0000014732
+<a href="node57.html#l2h-698"><tt class="cfunction">PyMethod_Class()</tt>###0000014733
+<a href="node57.html#l2h-699"><tt class="cfunction">PyMethod_GET_CLASS()</tt>###0000014734
+<a href="node57.html#l2h-700"><tt class="cfunction">PyMethod_Function()</tt>###0000014735
+<a href="node57.html#l2h-701"><tt class="cfunction">PyMethod_GET_FUNCTION()</tt>###0000014736
+<a href="node57.html#l2h-702"><tt class="cfunction">PyMethod_Self()</tt>###0000014737
+<a href="node57.html#l2h-703"><tt class="cfunction">PyMethod_GET_SELF()</tt>###0000014738
+<a href="node58.html#l2h-704">module object###0000014740
+<a href="node58.html#l2h-704">object!module###0000014741
+<a href="node58.html#l2h-705"><tt class="cdata">PyModule_Type</tt>###0000014742
+<a href="node58.html#l2h-707">ModuleType (in module types)###0000014743
+<a href="node58.html#l2h-708"><tt class="cfunction">PyModule_Check()</tt>###0000014744
+<a href="node58.html#l2h-709"><tt class="cfunction">PyModule_CheckExact()</tt>###0000014745
+<a href="node58.html#l2h-710"><tt class="cfunction">PyModule_New()</tt>###0000014746
+<a href="node58.html#l2h-712">__name__ (module attribute)###0000014747
+<a href="node58.html#l2h-712">__doc__ (module attribute)###0000014748
+<a href="node58.html#l2h-712">__file__ (module attribute)###0000014749
+<a href="node58.html#l2h-713"><tt class="cfunction">PyModule_GetDict()</tt>###0000014750
+<a href="node58.html#l2h-715">__dict__ (module attribute)###0000014751
+<a href="node58.html#l2h-716"><tt class="cfunction">PyModule_GetName()</tt>###0000014752
+<a href="node58.html#l2h-718">__name__ (module attribute)###0000014753
+<a href="node58.html#l2h-720">SystemError (built-in exception)###0000014754
+<a href="node58.html#l2h-721"><tt class="cfunction">PyModule_GetFilename()</tt>###0000014755
+<a href="node58.html#l2h-723">__file__ (module attribute)###0000014756
+<a href="node58.html#l2h-725">SystemError (built-in exception)###0000014757
+<a href="node58.html#l2h-726"><tt class="cfunction">PyModule_AddObject()</tt>###0000014758
+<a href="node58.html#l2h-727"><tt class="cfunction">PyModule_AddIntConstant()</tt>###0000014759
+<a href="node58.html#l2h-728"><tt class="cfunction">PyModule_AddStringConstant()</tt>###0000014760
+<a href="node59.html#l2h-729"><tt class="cdata">PySeqIter_Type</tt>###0000014762
+<a href="node59.html#l2h-730"><tt class="cfunction">PySeqIter_Check()</tt>###0000014763
+<a href="node59.html#l2h-731"><tt class="cfunction">PySeqIter_New()</tt>###0000014764
+<a href="node59.html#l2h-732"><tt class="cdata">PyCallIter_Type</tt>###0000014765
+<a href="node59.html#l2h-733"><tt class="cfunction">PyCallIter_Check()</tt>###0000014766
+<a href="node59.html#l2h-734"><tt class="cfunction">PyCallIter_New()</tt>###0000014767
+<a href="node60.html#l2h-735"><tt class="cdata">PyProperty_Type</tt>###0000014769
+<a href="node60.html#l2h-736"><tt class="cfunction">PyDescr_NewGetSet()</tt>###0000014770
+<a href="node60.html#l2h-737"><tt class="cfunction">PyDescr_NewMember()</tt>###0000014771
+<a href="node60.html#l2h-738"><tt class="cfunction">PyDescr_NewMethod()</tt>###0000014772
+<a href="node60.html#l2h-739"><tt class="cfunction">PyDescr_NewWrapper()</tt>###0000014773
+<a href="node60.html#l2h-740"><tt class="cfunction">PyDescr_NewClassMethod()</tt>###0000014774
+<a href="node60.html#l2h-741"><tt class="cfunction">PyDescr_IsData()</tt>###0000014775
+<a href="node60.html#l2h-742"><tt class="cfunction">PyWrapper_New()</tt>###0000014776
+<a href="node61.html#l2h-743"><tt class="cdata">PySlice_Type</tt>###0000014778
+<a href="node61.html#l2h-745">SliceType (in module types)###0000014779
+<a href="node61.html#l2h-746"><tt class="cfunction">PySlice_Check()</tt>###0000014780
+<a href="node61.html#l2h-747"><tt class="cfunction">PySlice_New()</tt>###0000014781
+<a href="node61.html#l2h-748"><tt class="cfunction">PySlice_GetIndices()</tt>###0000014782
+<a href="node61.html#l2h-749"><tt class="cfunction">PySlice_GetIndicesEx()</tt>###0000014783
+<a href="node62.html#l2h-750"><tt class="cfunction">PyWeakref_Check()</tt>###0000014785
+<a href="node62.html#l2h-751"><tt class="cfunction">PyWeakref_CheckRef()</tt>###0000014786
+<a href="node62.html#l2h-752"><tt class="cfunction">PyWeakref_CheckProxy()</tt>###0000014787
+<a href="node62.html#l2h-753"><tt class="cfunction">PyWeakref_NewRef()</tt>###0000014788
+<a href="node62.html#l2h-754"><tt class="cfunction">PyWeakref_NewProxy()</tt>###0000014789
+<a href="node62.html#l2h-755"><tt class="cfunction">PyWeakref_GetObject()</tt>###0000014790
+<a href="node62.html#l2h-756"><tt class="cfunction">PyWeakref_GET_OBJECT()</tt>###0000014791
+<a href="node63.html#l2h-757">CObject object###0000014793
+<a href="node63.html#l2h-757">object!CObject###0000014794
+<a href="node63.html#l2h-758"><tt class="ctype">PyCObject</tt> (C type)###0000014795
+<a href="node63.html#l2h-759"><tt class="cfunction">PyCObject_Check()</tt>###0000014796
+<a href="node63.html#l2h-760"><tt class="cfunction">PyCObject_FromVoidPtr()</tt>###0000014797
+<a href="node63.html#l2h-761"><tt class="cfunction">PyCObject_FromVoidPtrAndDesc()</tt>###0000014798
+<a href="node63.html#l2h-762"><tt class="cfunction">PyCObject_AsVoidPtr()</tt>###0000014799
+<a href="node63.html#l2h-763"><tt class="cfunction">PyCObject_GetDesc()</tt>###0000014800
+<a href="node63.html#l2h-764"><tt class="cfunction">PyCObject_SetVoidPtr()</tt>###0000014801
+<a href="node64.html#l2h-765"><tt class="ctype">PyCellObject</tt> (C type)###0000014803
+<a href="node64.html#l2h-766"><tt class="cdata">PyCell_Type</tt>###0000014804
+<a href="node64.html#l2h-767"><tt class="cfunction">PyCell_Check()</tt>###0000014805
+<a href="node64.html#l2h-768"><tt class="cfunction">PyCell_New()</tt>###0000014806
+<a href="node64.html#l2h-769"><tt class="cfunction">PyCell_Get()</tt>###0000014807
+<a href="node64.html#l2h-770"><tt class="cfunction">PyCell_GET()</tt>###0000014808
+<a href="node64.html#l2h-771"><tt class="cfunction">PyCell_Set()</tt>###0000014809
+<a href="node64.html#l2h-772"><tt class="cfunction">PyCell_SET()</tt>###0000014810
+<a href="node65.html#l2h-773"><tt class="ctype">PyGenObject</tt> (C type)###0000014812
+<a href="node65.html#l2h-774"><tt class="cdata">PyGen_Type</tt>###0000014813
+<a href="node65.html#l2h-775"><tt class="cfunction">PyGen_Check()</tt>###0000014814
+<a href="node65.html#l2h-776"><tt class="cfunction">PyGen_CheckExact()</tt>###0000014815
+<a href="node65.html#l2h-777"><tt class="cfunction">PyGen_New()</tt>###0000014816
+<a href="node66.html#l2h-778"><tt class="cfunction">PyDate_Check()</tt>###0000014818
+<a href="node66.html#l2h-779"><tt class="cfunction">PyDate_CheckExact()</tt>###0000014819
+<a href="node66.html#l2h-780"><tt class="cfunction">PyDateTime_Check()</tt>###0000014820
+<a href="node66.html#l2h-781"><tt class="cfunction">PyDateTime_CheckExact()</tt>###0000014821
+<a href="node66.html#l2h-782"><tt class="cfunction">PyTime_Check()</tt>###0000014822
+<a href="node66.html#l2h-783"><tt class="cfunction">PyTime_CheckExact()</tt>###0000014823
+<a href="node66.html#l2h-784"><tt class="cfunction">PyDelta_Check()</tt>###0000014824
+<a href="node66.html#l2h-785"><tt class="cfunction">PyDelta_CheckExact()</tt>###0000014825
+<a href="node66.html#l2h-786"><tt class="cfunction">PyTZInfo_Check()</tt>###0000014826
+<a href="node66.html#l2h-787"><tt class="cfunction">PyTZInfo_CheckExact()</tt>###0000014827
+<a href="node66.html#l2h-788"><tt class="cfunction">PyDate_FromDate()</tt>###0000014828
+<a href="node66.html#l2h-789"><tt class="cfunction">PyDateTime_FromDateAndTime()</tt>###0000014829
+<a href="node66.html#l2h-790"><tt class="cfunction">PyTime_FromTime()</tt>###0000014830
+<a href="node66.html#l2h-791"><tt class="cfunction">PyDelta_FromDSU()</tt>###0000014831
+<a href="node66.html#l2h-792"><tt class="cfunction">PyDateTime_GET_YEAR()</tt>###0000014832
+<a href="node66.html#l2h-793"><tt class="cfunction">PyDateTime_GET_MONTH()</tt>###0000014833
+<a href="node66.html#l2h-794"><tt class="cfunction">PyDateTime_GET_DAY()</tt>###0000014834
+<a href="node66.html#l2h-795"><tt class="cfunction">PyDateTime_DATE_GET_HOUR()</tt>###0000014835
+<a href="node66.html#l2h-796"><tt class="cfunction">PyDateTime_DATE_GET_MINUTE()</tt>###0000014836
+<a href="node66.html#l2h-797"><tt class="cfunction">PyDateTime_DATE_GET_SECOND()</tt>###0000014837
+<a href="node66.html#l2h-798"><tt class="cfunction">PyDateTime_DATE_GET_MICROSECOND()</tt>###0000014838
+<a href="node66.html#l2h-799"><tt class="cfunction">PyDateTime_TIME_GET_HOUR()</tt>###0000014839
+<a href="node66.html#l2h-800"><tt class="cfunction">PyDateTime_TIME_GET_MINUTE()</tt>###0000014840
+<a href="node66.html#l2h-801"><tt class="cfunction">PyDateTime_TIME_GET_SECOND()</tt>###0000014841
+<a href="node66.html#l2h-802"><tt class="cfunction">PyDateTime_TIME_GET_MICROSECOND()</tt>###0000014842
+<a href="node66.html#l2h-803"><tt class="cfunction">PyDateTime_FromTimestamp()</tt>###0000014843
+<a href="node66.html#l2h-804"><tt class="cfunction">PyDate_FromTimestamp()</tt>###0000014844
+<a href="node67.html#l2h-805">set object###0000014846
+<a href="node67.html#l2h-805">object!set###0000014847
+<a href="node67.html#l2h-806">frozenset object###0000014848
+<a href="node67.html#l2h-806">object!frozenset###0000014849
+<a href="node67.html#l2h-807"><tt class="ctype">PySetObject</tt> (C type)###0000014850
+<a href="node67.html#l2h-808"><tt class="cdata">PySet_Type</tt>###0000014851
+<a href="node67.html#l2h-809"><tt class="cdata">PyFrozenSet_Type</tt>###0000014852
+<a href="node67.html#l2h-810"><tt class="cfunction">PyAnySet_Check()</tt>###0000014853
+<a href="node67.html#l2h-811"><tt class="cfunction">PyAnySet_CheckExact()</tt>###0000014854
+<a href="node67.html#l2h-812"><tt class="cfunction">PyFrozenSet_CheckExact()</tt>###0000014855
+<a href="node67.html#l2h-813"><tt class="cfunction">PySet_New()</tt>###0000014856
+<a href="node67.html#l2h-814"><tt class="cfunction">PyFrozenSet_New()</tt>###0000014857
+<a href="node67.html#l2h-815"><tt class="cfunction">PySet_Size()</tt>###0000014858
+<a href="node67.html#l2h-816"><tt class="function">len()</tt> (built-in function)###0000014859
+<a href="node67.html#l2h-817"><tt class="cfunction">PySet_GET_SIZE()</tt>###0000014860
+<a href="node67.html#l2h-818"><tt class="cfunction">PySet_Contains()</tt>###0000014861
+<a href="node67.html#l2h-819"><tt class="cfunction">PySet_Add()</tt>###0000014862
+<a href="node67.html#l2h-820"><tt class="cfunction">PySet_Discard()</tt>###0000014863
+<a href="node67.html#l2h-821"><tt class="cfunction">PySet_Pop()</tt>###0000014864
+<a href="node67.html#l2h-822"><tt class="cfunction">PySet_Clear()</tt>###0000014865
+<a href="node68.html#l2h-823"><tt class="cfunction">Py_Initialize()</tt>###0000014867
+<a href="node68.html#l2h-825">modules (in module sys)###0000014868
+<a href="node68.html#l2h-825">path (in module sys)###0000014869
+<a href="node68.html#l2h-826">module!search path###0000014870
+<a href="node68.html#l2h-826">search!path, module###0000014871
+<a href="node68.html#l2h-826">path!module search###0000014872
+<a href="node68.html#l2h-827"><tt class="cfunction">Py_InitializeEx()</tt>###0000014873
+<a href="node68.html#l2h-828"><tt class="cfunction">Py_IsInitialized()</tt>###0000014874
+<a href="node68.html#l2h-829"><tt class="cfunction">Py_Finalize()</tt>###0000014875
+<a href="node68.html#l2h-830"><tt class="cfunction">Py_NewInterpreter()</tt>###0000014876
+<a href="node68.html#l2h-832">stdout (in module sys)###0000014877
+<a href="node68.html#l2h-832">stderr (in module sys)###0000014878
+<a href="node68.html#l2h-832">stdin (in module sys)###0000014879
+<a href="node68.html#l2h-834">close() (in module os)###0000014880
+<a href="node68.html#l2h-835"><tt class="cfunction">Py_EndInterpreter()</tt>###0000014881
+<a href="node68.html#l2h-836"><tt class="cfunction">Py_SetProgramName()</tt>###0000014882
+<a href="node68.html#l2h-837"><tt class="cfunction">Py_GetProgramName()</tt>###0000014883
+<a href="node68.html#l2h-838"><tt class="cfunction">Py_GetPrefix()</tt>###0000014884
+<a href="node68.html#l2h-839"><tt class="cfunction">Py_GetExecPrefix()</tt>###0000014885
+<a href="node68.html#l2h-840"><tt class="cfunction">Py_GetProgramFullPath()</tt>###0000014886
+<a href="node68.html#l2h-842">executable (in module sys)###0000014887
+<a href="node68.html#l2h-843"><tt class="cfunction">Py_GetPath()</tt>###0000014888
+<a href="node68.html#l2h-844">module!search path###0000014889
+<a href="node68.html#l2h-844">search!path, module###0000014890
+<a href="node68.html#l2h-844">path!module search###0000014891
+<a href="node68.html#l2h-846">path (in module sys)###0000014892
+<a href="node68.html#l2h-847"><tt class="cfunction">Py_GetVersion()</tt>###0000014893
+<a href="node68.html#l2h-849">version (in module sys)###0000014894
+<a href="node68.html#l2h-850"><tt class="cfunction">Py_GetBuildNumber()</tt>###0000014895
+<a href="node68.html#l2h-851"><tt class="cfunction">Py_GetPlatform()</tt>###0000014896
+<a href="node68.html#l2h-853">platform (in module sys)###0000014897
+<a href="node68.html#l2h-854"><tt class="cfunction">Py_GetCopyright()</tt>###0000014898
+<a href="node68.html#l2h-856">copyright (in module sys)###0000014899
+<a href="node68.html#l2h-857"><tt class="cfunction">Py_GetCompiler()</tt>###0000014900
+<a href="node68.html#l2h-859">version (in module sys)###0000014901
+<a href="node68.html#l2h-860"><tt class="cfunction">Py_GetBuildInfo()</tt>###0000014902
+<a href="node68.html#l2h-862">version (in module sys)###0000014903
+<a href="node68.html#l2h-863"><tt class="cfunction">PySys_SetArgv()</tt>###0000014904
+<a href="node68.html#l2h-865">argv (in module sys)###0000014905
+<a href="node68.html#l2h-866">Py_SetProgramName()###0000014906
+<a href="node68.html#l2h-867">PyEval_InitThreads()###0000014907
+<a href="node68.html#l2h-868">PyEval_ReleaseLock()###0000014908
+<a href="node68.html#l2h-869">PyEval_AcquireLock()###0000014909
+<a href="node68.html#l2h-870"><tt class="module">__builtin__</tt> (built-in module)###REF0000014910
+<a href="node68.html#l2h-871"><tt class="module">__main__</tt> (built-in module)###REF0000014911
+<a href="node68.html#l2h-872"><tt class="module">sys</tt> (built-in module)###REF0000014912
+<a href="node68.html#l2h-873">PySys_SetArgv()###0000014913
+<a href="node68.html#l2h-874">Py_Finalize()###0000014914
+<a href="node68.html#l2h-875"><tt class="module">__builtin__</tt> (built-in module)###REF0000014915
+<a href="node68.html#l2h-876"><tt class="module">__main__</tt> (built-in module)###REF0000014916
+<a href="node68.html#l2h-877"><tt class="module">sys</tt> (built-in module)###REF0000014917
+<a href="node68.html#l2h-878">Py_Finalize()###0000014918
+<a href="node68.html#l2h-879">Py_Initialize()###0000014919
+<a href="node68.html#l2h-880">Py_Finalize()###0000014920
+<a href="node68.html#l2h-881">Py_Initialize()###0000014921
+<a href="node68.html#l2h-882">main()###0000014922
+<a href="node68.html#l2h-883">Py_GetPath()###0000014923
+<a href="node68.html#l2h-884">Py_SetProgramName()###0000014924
+<a href="node68.html#l2h-885">Py_SetProgramName()###0000014925
+<a href="node68.html#l2h-886">main()###0000014926
+<a href="node68.html#l2h-887">Py_FatalError()###0000014927
+<a href="node69.html#l2h-889">setcheckinterval() (in module sys)###0000014929
+<a href="node69.html#l2h-890"><tt class="ctype">PyInterpreterState</tt> (C type)###0000014930
+<a href="node69.html#l2h-891"><tt class="ctype">PyThreadState</tt> (C type)###0000014931
+<a href="node69.html#l2h-892"><tt class="cfunction">PyEval_InitThreads()</tt>###0000014932
+<a href="node69.html#l2h-893"><tt class="cfunction">PyEval_ThreadsInitialized()</tt>###0000014933
+<a href="node69.html#l2h-894"><tt class="cfunction">PyEval_AcquireLock()</tt>###0000014934
+<a href="node69.html#l2h-895"><tt class="cfunction">PyEval_ReleaseLock()</tt>###0000014935
+<a href="node69.html#l2h-896"><tt class="cfunction">PyEval_AcquireThread()</tt>###0000014936
+<a href="node69.html#l2h-897"><tt class="cfunction">PyEval_ReleaseThread()</tt>###0000014937
+<a href="node69.html#l2h-898"><tt class="cfunction">PyEval_SaveThread()</tt>###0000014938
+<a href="node69.html#l2h-899"><tt class="cfunction">PyEval_RestoreThread()</tt>###0000014939
+<a href="node69.html#l2h-900"><tt class="macro">Py_BEGIN_ALLOW_THREADS</tt>###0000014940
+<a href="node69.html#l2h-901"><tt class="macro">Py_END_ALLOW_THREADS</tt>###0000014941
+<a href="node69.html#l2h-902"><tt class="macro">Py_BLOCK_THREADS</tt>###0000014942
+<a href="node69.html#l2h-903"><tt class="macro">Py_UNBLOCK_THREADS</tt>###0000014943
+<a href="node69.html#l2h-904"><tt class="cfunction">PyInterpreterState_New()</tt>###0000014944
+<a href="node69.html#l2h-905"><tt class="cfunction">PyInterpreterState_Clear()</tt>###0000014945
+<a href="node69.html#l2h-906"><tt class="cfunction">PyInterpreterState_Delete()</tt>###0000014946
+<a href="node69.html#l2h-907"><tt class="cfunction">PyThreadState_New()</tt>###0000014947
+<a href="node69.html#l2h-908"><tt class="cfunction">PyThreadState_Clear()</tt>###0000014948
+<a href="node69.html#l2h-909"><tt class="cfunction">PyThreadState_Delete()</tt>###0000014949
+<a href="node69.html#l2h-910"><tt class="cfunction">PyThreadState_Get()</tt>###0000014950
+<a href="node69.html#l2h-911"><tt class="cfunction">PyThreadState_Swap()</tt>###0000014951
+<a href="node69.html#l2h-912"><tt class="cfunction">PyThreadState_GetDict()</tt>###0000014952
+<a href="node69.html#l2h-913"><tt class="cfunction">PyThreadState_SetAsyncExc()</tt>###0000014953
+<a href="node69.html#l2h-914"><tt class="cfunction">PyGILState_Ensure()</tt>###0000014954
+<a href="node69.html#l2h-915"><tt class="cfunction">PyGILState_Release()</tt>###0000014955
+<a href="node69.html#l2h-916">global interpreter lock###0000014956
+<a href="node69.html#l2h-916">interpreter lock###0000014957
+<a href="node69.html#l2h-916">lock, interpreter###0000014958
+<a href="node69.html#l2h-917">PyThreadState###0000014959
+<a href="node69.html#l2h-918">PyThreadState###0000014960
+<a href="node69.html#l2h-919">Py_BEGIN_ALLOW_THREADS###0000014961
+<a href="node69.html#l2h-920">Py_END_ALLOW_THREADS###0000014962
+<a href="node69.html#l2h-921">PyEval_RestoreThread()###0000014963
+<a href="node69.html#l2h-922">errno###0000014964
+<a href="node69.html#l2h-923">PyEval_SaveThread()###0000014965
+<a href="node69.html#l2h-924">PyEval_ReleaseLock()###0000014966
+<a href="node69.html#l2h-925">PyEval_AcquireLock()###0000014967
+<a href="node69.html#l2h-926">PyEval_ReleaseLock()###0000014968
+<a href="node69.html#l2h-927">PyEval_ReleaseThread()###0000014969
+<a href="node69.html#l2h-928">PyEval_SaveThread()###0000014970
+<a href="node69.html#l2h-929">PyEval_RestoreThread()###0000014971
+<a href="node69.html#l2h-930">Py_Initialize()###0000014972
+<a href="node69.html#l2h-931"><tt class="module">thread</tt> (built-in module)###REF0000014973
+<a href="node70.html#l2h-932"><tt class="ctype">Py_tracefunc</tt> (C type)###0000014975
+<a href="node70.html#l2h-933"><tt class="cdata">PyTrace_CALL</tt>###0000014976
+<a href="node70.html#l2h-934"><tt class="cdata">PyTrace_EXCEPTION</tt>###0000014977
+<a href="node70.html#l2h-935"><tt class="cdata">PyTrace_LINE</tt>###0000014978
+<a href="node70.html#l2h-936"><tt class="cdata">PyTrace_RETURN</tt>###0000014979
+<a href="node70.html#l2h-937"><tt class="cdata">PyTrace_C_CALL</tt>###0000014980
+<a href="node70.html#l2h-938"><tt class="cdata">PyTrace_C_EXCEPTION</tt>###0000014981
+<a href="node70.html#l2h-939"><tt class="cdata">PyTrace_C_RETURN</tt>###0000014982
+<a href="node70.html#l2h-940"><tt class="cfunction">PyEval_SetProfile()</tt>###0000014983
+<a href="node70.html#l2h-941"><tt class="cfunction">PyEval_SetTrace()</tt>###0000014984
+<a href="node71.html#l2h-942"><tt class="cfunction">PyInterpreterState_Head()</tt>###0000014986
+<a href="node71.html#l2h-943"><tt class="cfunction">PyInterpreterState_Next()</tt>###0000014987
+<a href="node71.html#l2h-944"><tt class="cfunction">PyInterpreterState_ThreadHead()</tt>###0000014988
+<a href="node71.html#l2h-945"><tt class="cfunction">PyThreadState_Next()</tt>###0000014989
+<a href="node73.html#l2h-946">malloc()###0000014992
+<a href="node73.html#l2h-947">calloc()###0000014993
+<a href="node73.html#l2h-948">realloc()###0000014994
+<a href="node73.html#l2h-949">free()###0000014995
+<a href="node74.html#l2h-950"><tt class="cfunction">PyMem_Malloc()</tt>###0000014997
+<a href="node74.html#l2h-951"><tt class="cfunction">PyMem_Realloc()</tt>###0000014998
+<a href="node74.html#l2h-952"><tt class="cfunction">PyMem_Free()</tt>###0000014999
+<a href="node74.html#l2h-953"><tt class="cfunction">PyMem_New()</tt>###0000015000
+<a href="node74.html#l2h-954"><tt class="cfunction">PyMem_Resize()</tt>###0000015001
+<a href="node74.html#l2h-955"><tt class="cfunction">PyMem_Del()</tt>###0000015002
+<a href="node77.html#l2h-956"><tt class="cfunction">_PyObject_New()</tt>###0000015006
+<a href="node77.html#l2h-957"><tt class="cfunction">_PyObject_NewVar()</tt>###0000015007
+<a href="node77.html#l2h-958"><tt class="cfunction">_PyObject_Del()</tt>###0000015008
+<a href="node77.html#l2h-959"><tt class="cfunction">PyObject_Init()</tt>###0000015009
+<a href="node77.html#l2h-960"><tt class="cfunction">PyObject_InitVar()</tt>###0000015010
+<a href="node77.html#l2h-961"><tt class="cfunction">PyObject_New()</tt>###0000015011
+<a href="node77.html#l2h-962"><tt class="cfunction">PyObject_NewVar()</tt>###0000015012
+<a href="node77.html#l2h-963"><tt class="cfunction">PyObject_Del()</tt>###0000015013
+<a href="node77.html#l2h-964"><tt class="cfunction">Py_InitModule()</tt>###0000015014
+<a href="node77.html#l2h-965"><tt class="cfunction">Py_InitModule3()</tt>###0000015015
+<a href="node77.html#l2h-966"><tt class="cfunction">Py_InitModule4()</tt>###0000015016
+<a href="node77.html#l2h-967"><tt class="cdata">_Py_NoneStruct</tt>###0000015017
+<a href="node78.html#l2h-968"><tt class="ctype">PyObject</tt> (C type)###0000015019
+<a href="node78.html#l2h-969"><tt class="ctype">PyVarObject</tt> (C type)###0000015020
+<a href="node78.html#l2h-970"><tt class="macro">PyObject_HEAD</tt>###0000015021
+<a href="node78.html#l2h-971"><tt class="macro">PyObject_VAR_HEAD</tt>###0000015022
+<a href="node78.html#l2h-972"><tt class="ctype">PyCFunction</tt> (C type)###0000015023
+<a href="node78.html#l2h-973"><tt class="ctype">PyMethodDef</tt> (C type)###0000015024
+<a href="node78.html#l2h-974"><tt>METH_VARARGS</tt>###0000015025
+<a href="node78.html#l2h-975"><tt>METH_KEYWORDS</tt>###0000015026
+<a href="node78.html#l2h-976"><tt>METH_NOARGS</tt>###0000015027
+<a href="node78.html#l2h-977"><tt>METH_O</tt>###0000015028
+<a href="node78.html#l2h-978"><tt>METH_OLDARGS</tt>###0000015029
+<a href="node78.html#l2h-979"><tt>METH_CLASS</tt>###0000015030
+<a href="node78.html#l2h-980"><tt class="function">classmethod()</tt> (built-in function)###0000015031
+<a href="node78.html#l2h-981"><tt>METH_STATIC</tt>###0000015032
+<a href="node78.html#l2h-982"><tt class="function">staticmethod()</tt> (built-in function)###0000015033
+<a href="node78.html#l2h-983"><tt>METH_COEXIST</tt>###0000015034
+<a href="node78.html#l2h-984"><tt class="cfunction">Py_FindMethod()</tt>###0000015035
+<a href="node79.html#l2h-985"><tt class="cmember">_ob_next</tt> (PyObject member)###0000015037
+<a href="node79.html#l2h-986"><tt class="cmember">ob_refcnt</tt> (PyObject member)###0000015038
+<a href="node79.html#l2h-987"><tt class="cmember">ob_type</tt> (PyObject member)###0000015039
+<a href="node79.html#l2h-988"><tt class="cmember">ob_size</tt> (PyVarObject member)###0000015040
+<a href="node79.html#l2h-989"><tt class="cmember">tp_name</tt> (PyTypeObject member)###0000015041
+<a href="node79.html#l2h-990"><tt class="cmember">tp_basicsize</tt> (PyTypeObject member)###0000015042
+<a href="node79.html#l2h-991"><tt class="cmember">tp_dealloc</tt> (PyTypeObject member)###0000015043
+<a href="node79.html#l2h-992"><tt class="cmember">tp_print</tt> (PyTypeObject member)###0000015044
+<a href="node79.html#l2h-993"><tt class="cmember">tp_getattr</tt> (PyTypeObject member)###0000015045
+<a href="node79.html#l2h-994"><tt class="cmember">tp_setattr</tt> (PyTypeObject member)###0000015046
+<a href="node79.html#l2h-995"><tt class="cmember">tp_compare</tt> (PyTypeObject member)###0000015047
+<a href="node79.html#l2h-996"><tt class="cmember">tp_repr</tt> (PyTypeObject member)###0000015048
+<a href="node79.html#l2h-997"><tt class="function">repr()</tt> (built-in function)###0000015049
+<a href="node79.html#l2h-998"><tt class="cmember">tp_hash</tt> (PyTypeObject member)###0000015050
+<a href="node79.html#l2h-999"><tt class="function">hash()</tt> (built-in function)###0000015051
+<a href="node79.html#l2h-1000"><tt class="cmember">tp_call</tt> (PyTypeObject member)###0000015052
+<a href="node79.html#l2h-1001"><tt class="cmember">tp_str</tt> (PyTypeObject member)###0000015053
+<a href="node79.html#l2h-1002"><tt class="cmember">tp_getattro</tt> (PyTypeObject member)###0000015054
+<a href="node79.html#l2h-1003"><tt class="cmember">tp_setattro</tt> (PyTypeObject member)###0000015055
+<a href="node79.html#l2h-1004"><tt class="cmember">tp_as_buffer</tt> (PyTypeObject member)###0000015056
+<a href="node79.html#l2h-1005"><tt class="cmember">tp_flags</tt> (PyTypeObject member)###0000015057
+<a href="node79.html#l2h-1006"><tt>Py_TPFLAGS_HAVE_GETCHARBUFFER</tt>###0000015058
+<a href="node79.html#l2h-1007"><tt>Py_TPFLAGS_HAVE_SEQUENCE_IN</tt>###0000015059
+<a href="node79.html#l2h-1008"><tt>Py_TPFLAGS_GC</tt>###0000015060
+<a href="node79.html#l2h-1009"><tt>Py_TPFLAGS_HAVE_INPLACEOPS</tt>###0000015061
+<a href="node79.html#l2h-1010"><tt>Py_TPFLAGS_CHECKTYPES</tt>###0000015062
+<a href="node79.html#l2h-1011"><tt>Py_TPFLAGS_HAVE_RICHCOMPARE</tt>###0000015063
+<a href="node79.html#l2h-1012"><tt>Py_TPFLAGS_HAVE_WEAKREFS</tt>###0000015064
+<a href="node79.html#l2h-1013"><tt>Py_TPFLAGS_HAVE_ITER</tt>###0000015065
+<a href="node79.html#l2h-1014"><tt>Py_TPFLAGS_HAVE_CLASS</tt>###0000015066
+<a href="node79.html#l2h-1015"><tt>Py_TPFLAGS_HEAPTYPE</tt>###0000015067
+<a href="node79.html#l2h-1016"><tt>Py_TPFLAGS_BASETYPE</tt>###0000015068
+<a href="node79.html#l2h-1017"><tt>Py_TPFLAGS_READY</tt>###0000015069
+<a href="node79.html#l2h-1018"><tt>Py_TPFLAGS_READYING</tt>###0000015070
+<a href="node79.html#l2h-1019"><tt>Py_TPFLAGS_HAVE_GC</tt>###0000015071
+<a href="node79.html#l2h-1020"><tt>Py_TPFLAGS_DEFAULT</tt>###0000015072
+<a href="node79.html#l2h-1021"><tt class="cmember">tp_doc</tt> (PyTypeObject member)###0000015073
+<a href="node79.html#l2h-1022"><tt class="cmember">tp_traverse</tt> (PyTypeObject member)###0000015074
+<a href="node79.html#l2h-1023"><tt class="cmember">tp_clear</tt> (PyTypeObject member)###0000015075
+<a href="node79.html#l2h-1024"><tt class="cmember">tp_richcompare</tt> (PyTypeObject member)###0000015076
+<a href="node79.html#l2h-1025"><tt class="cmember">tp_weaklistoffset</tt> (PyTypeObject member)###0000015077
+<a href="node79.html#l2h-1026"><tt class="cmember">tp_iter</tt> (PyTypeObject member)###0000015078
+<a href="node79.html#l2h-1027"><tt class="cmember">tp_iternext</tt> (PyTypeObject member)###0000015079
+<a href="node79.html#l2h-1028"><tt class="cmember">tp_methods</tt> (PyTypeObject member)###0000015080
+<a href="node79.html#l2h-1029"><tt class="cmember">tp_members</tt> (PyTypeObject member)###0000015081
+<a href="node79.html#l2h-1030"><tt class="cmember">tp_getset</tt> (PyTypeObject member)###0000015082
+<a href="node79.html#l2h-1031"><tt class="cmember">tp_base</tt> (PyTypeObject member)###0000015083
+<a href="node79.html#l2h-1032"><tt class="cmember">tp_dict</tt> (PyTypeObject member)###0000015084
+<a href="node79.html#l2h-1033"><tt class="cmember">tp_descr_get</tt> (PyTypeObject member)###0000015085
+<a href="node79.html#l2h-1034"><tt class="cmember">tp_descr_set</tt> (PyTypeObject member)###0000015086
+<a href="node79.html#l2h-1035"><tt class="cmember">tp_dictoffset</tt> (PyTypeObject member)###0000015087
+<a href="node79.html#l2h-1036"><tt class="cmember">tp_init</tt> (PyTypeObject member)###0000015088
+<a href="node79.html#l2h-1037"><tt class="cmember">tp_alloc</tt> (PyTypeObject member)###0000015089
+<a href="node79.html#l2h-1038"><tt class="cmember">tp_new</tt> (PyTypeObject member)###0000015090
+<a href="node79.html#l2h-1039"><tt class="cmember">tp_free</tt> (PyTypeObject member)###0000015091
+<a href="node79.html#l2h-1040"><tt class="cmember">tp_is_gc</tt> (PyTypeObject member)###0000015092
+<a href="node79.html#l2h-1041"><tt class="cmember">tp_bases</tt> (PyTypeObject member)###0000015093
+<a href="node79.html#l2h-1042"><tt class="cmember">tp_mro</tt> (PyTypeObject member)###0000015094
+<a href="node79.html#l2h-1043"><tt class="cmember">tp_cache</tt> (PyTypeObject member)###0000015095
+<a href="node79.html#l2h-1044"><tt class="cmember">tp_subclasses</tt> (PyTypeObject member)###0000015096
+<a href="node79.html#l2h-1045"><tt class="cmember">tp_weaklist</tt> (PyTypeObject member)###0000015097
+<a href="node79.html#l2h-1046"><tt class="cmember">tp_allocs</tt> (PyTypeObject member)###0000015098
+<a href="node79.html#l2h-1047"><tt class="cmember">tp_frees</tt> (PyTypeObject member)###0000015099
+<a href="node79.html#l2h-1048"><tt class="cmember">tp_maxalloc</tt> (PyTypeObject member)###0000015100
+<a href="node79.html#l2h-1049"><tt class="cmember">tp_next</tt> (PyTypeObject member)###0000015101
+<a href="node79.html#l2h-1050"><tt class="cmember">_ob_prev</tt> (PyObject member)###0000015102
+<a href="node79.html#l2h-1051">environment variables!PYTHONDUMPREFS@<tt>PYTHONDUMPREFS</tt>###0000015103
+<a href="node79.html#l2h-1051">PYTHONDUMPREFS (environment variable)###0000015104
+<a href="node79.html#l2h-1052"><tt class="cmember">tp_itemsize</tt> (PyTypeObject member)###0000015105
+<a href="node80.html#l2h-1053"><tt class="ctype">PyMappingMethods</tt> (C type)###0000015107
+<a href="node81.html#l2h-1054"><tt class="ctype">PyNumberMethods</tt> (C type)###0000015109
+<a href="node82.html#l2h-1055"><tt class="ctype">PySequenceMethods</tt> (C type)###0000015111
+<a href="node83.html#l2h-1056"><tt class="ctype">PyBufferProcs</tt> (C type)###0000015113
+<a href="node83.html#l2h-1057"><tt>Py_TPFLAGS_HAVE_GETCHARBUFFER</tt>###0000015114
+<a href="node83.html#l2h-1058"><tt class="ctype">getreadbufferproc</tt> (C type)###0000015115
+<a href="node83.html#l2h-1059"><tt class="ctype">getwritebufferproc</tt> (C type)###0000015116
+<a href="node83.html#l2h-1060"><tt class="ctype">getsegcountproc</tt> (C type)###0000015117
+<a href="node83.html#l2h-1061"><tt class="ctype">getcharbufferproc</tt> (C type)###0000015118
+<a href="node83.html#l2h-1062">PyType_HasFeature()###0000015119
+<a href="node85.html#l2h-1063"><tt>Py_TPFLAGS_HAVE_GC</tt>###0000015122
+<a href="node85.html#l2h-1064"><tt class="cfunction">PyObject_GC_New()</tt>###0000015123
+<a href="node85.html#l2h-1065"><tt class="cfunction">PyObject_GC_NewVar()</tt>###0000015124
+<a href="node85.html#l2h-1066"><tt class="cfunction">PyObject_GC_Resize()</tt>###0000015125
+<a href="node85.html#l2h-1067"><tt class="cfunction">PyObject_GC_Track()</tt>###0000015126
+<a href="node85.html#l2h-1068"><tt class="cfunction">_PyObject_GC_TRACK()</tt>###0000015127
+<a href="node85.html#l2h-1069"><tt class="cfunction">PyObject_GC_Del()</tt>###0000015128
+<a href="node85.html#l2h-1070"><tt class="cfunction">PyObject_GC_UnTrack()</tt>###0000015129
+<a href="node85.html#l2h-1071"><tt class="cfunction">_PyObject_GC_UNTRACK()</tt>###0000015130
+<a href="node85.html#l2h-1072"><tt class="ctype">visitproc</tt> (C type)###0000015131
+<a href="node85.html#l2h-1073"><tt class="ctype">traverseproc</tt> (C type)###0000015132
+<a href="node85.html#l2h-1074"><tt class="cfunction">Py_VISIT()</tt>###0000015133
+<a href="node85.html#l2h-1075"><tt class="ctype">inquiry</tt> (C type)###0000015134

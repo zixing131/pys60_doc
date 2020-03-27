@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="module-e32.html" />
+<link rel="parent" href="s60os.html" />
+<link rel="next" href="s60graph.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>2.2 sysinfo -- Access to system information</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="2.1.3 ao_timer Type"
+  href="node12.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="2. operating System Services"
+  href="s60os.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node12.html">2.1.3 Ao_timer Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60os.html">2. Operating System Services</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60graph.html">3. User Interface and</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION004200000000000000000"></a>
+<a name="sec:sysinfo"></a>
+<br>
+2.2 <tt class="module">sysinfo</tt> --
+    Access to system information
+</h1>
+<a name="module-sysinfo"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+The <span  class="textsf">sysinfo</span> module offers an API for checking the system 
+information of a S60 mobile device. 
+
+<p>
+<div class="note"><b class="label">Note:</b>
+
+The method <code>ring_type</code> is not available for S60 1st Edition.
+</div>
+
+<p>
+The <tt class="module">sysinfo</tt> module has the following functions:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-24' xml:id='l2h-24' class="function">active_profile</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current active profile as a string, which can be one of the 
+following: <code>'general'</code>, <code>'silent'</code>, <code>'meeting'</code>, 
+<code> 'outdoor'</code>, <code>'pager'</code>,<code> 'offline'</code>, ,<code> 'drive'</code>, 
+or <code>'user &lt;profile value&gt;'</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-25' xml:id='l2h-25' class="function">battery</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current battery level. On devices based on S60 2nd Edition
+Feature Pack 1 (S60 2.1) or earlier the value ranges from 0 (empty) to
+7 (full). On newer devices the value ranges from 0 (empty) to 100
+(full). On the emulator the value is always 0. 
+<div class="note"><b class="label">Note:</b>
+ 
+The returned value may be incorrect while the device is being charged.
+</div>
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-26' xml:id='l2h-26' class="function">display_twips</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns the width and height of the display in twips. For a definition of a 
+twip, see Chapter <a href="node95.html#sec:terms">6</a>, Terms and Abbreviations. 
+
+<p>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-27' xml:id='l2h-27' class="function">display_pixels</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the width and height of the display in pixels.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-28' xml:id='l2h-28' class="function">free_drivespace</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the amount of free space left on the drives in bytes, for example 
+<code>{u'C:' 100}.</code> The keys in the dictionary are the drive letters 
+followed by a colon (:). 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-29' xml:id='l2h-29' class="function">imei</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the IMEI code of the device as a Unicode string or, if running
+on the emulator, the hardcoded string <code>u'000000000000000'</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-30' xml:id='l2h-30' class="function">max_ramdrive_size</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the maximum size of the RAM drive on the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-31' xml:id='l2h-31' class="function">total_ram</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the amount of RAM memory on the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-32' xml:id='l2h-32' class="function">free_ram</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the amount of free RAM memory available on the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-33' xml:id='l2h-33' class="function">total_rom</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the amount of read-only ROM memory on the device.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-34' xml:id='l2h-34' class="function">ring_type</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd><b>Not supported in 1st Edition!</b>
+Returns the current ringing type as a string, which can be one of the 
+following: <code>'normal'</code>, <code>'ascending'</code>, 
+<code>'ring_once'</code>,<code> 'beep'</code>, or <code>'silent'</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-35' xml:id='l2h-35' class="function">os_version</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+
+<p>
+Returns the operating system version number of the device as a three element tuple (major version, minor version, build number). The 
+elements are as follows<a name="tex2html1"
+  href="#foot476"><sup>2.1</sup></a>:
+
+<p>
+
+<ul>
+<li>The major version number, ranging from 0 to 127 inclusive
+</li>
+<li>The minor version number, ranging from 0 to 99 inclusive
+</li>
+<li>The build number, ranging from 0 to 32767 inclusive.
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-36' xml:id='l2h-36' class="function">signal_bars</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current network signal strength ranging from 0 to 7, with 0 
+meaning no signal and 7 meaning a strong signal. If using an emulator, value 
+0 is always returned. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-37' xml:id='l2h-37' class="function">signal_dbm</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the current network signal strength in dBm. This is available SDK 2.8
+onwards. If using an emulator value 0 is always returned. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-38' xml:id='l2h-38' class="function">sw_version</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Returns the software version as a Unicode string. On the emulator,
+returns the hardcoded string <span  class="textsf">u'emulator'</span>. For example, a
+software version can be returned as <code>u'V 4.09.1 26-02-04 NHL-10 (c) NMP'</code>.
+</dl>
+
+<p>
+<br><hr><h4>Footnotes</h4>
+<dl>
+<dt><a name="foot476">... follows</a><A
+ href="module-sysinfo.html#tex2html1"><sup>2.1</sup></a></dt>
+<dd> 
+Descriptions for these values are based on information found in S60 SDK 
+documentation [<A
+ HREF="node96.html#S60Doc">4</a>].
+
+</dd>
+</dl>
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="2.1.3 ao_timer Type"
+  href="node12.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="2. operating System Services"
+  href="s60os.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3. user Interface and"
+  href="s60graph.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node12.html">2.1.3 Ao_timer Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60os.html">2. Operating System Services</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="s60graph.html">3. User Interface and</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

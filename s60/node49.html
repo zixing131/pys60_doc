@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="prev" href="node48.html" />
+<link rel="parent" href="node47.html" />
+<link rel="next" href="module-glcanvas.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.7.3.2 OpenGL ES 1.1</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.7.3.1 opengl ES 1.0"
+  href="node48.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.7.3 differences to OpenGL"
+  href="node47.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.8 glcanvas  "
+  href="module-glcanvas.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node48.html">3.7.3.1 OpenGL ES 1.0</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node47.html">3.7.3 Differences to OpenGL</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-glcanvas.html">3.8 glcanvas  </a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h3><a name="SECTION005732000000000000000">
+3.7.3.2 OpenGL ES 1.1</a>
+</h3>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-259' xml:id='l2h-259' class="function">glBufferData</tt></b>(</nobr></td>
+  <td><var>target, size, data, usage</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>data</var> must be a <tt class="class">gles.array</tt> object. If <var>size</var> is -1,
+the in-memory size of <var>data</var> is used in its place.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-260' xml:id='l2h-260' class="function">glBufferDatab</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that accepts either a
+<tt class="class">gles.array</tt> object or some other Python sequence object for <var>data</var>.
+If <tt class="class">gles.array</tt> object is used, its in-memory size in bytes is used as
+<var>size</var>. Other sequences are first converted to flat lists of
+<code>GL_BYTE</code> data by casting. The length of the resulting sequence in bytes
+is used as <var>size</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-261' xml:id='l2h-261' class="function">glBufferDataub</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that works exactly like
+<code>glBufferDatab</code> except <code>GL_UNSIGNED_BYTE</code> is used instead of
+<code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-262' xml:id='l2h-262' class="function">glBufferDatas</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that works exactly like
+<code>glBufferDatab</code> except <code>GL_SHORT</code> is used instead of <code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-263' xml:id='l2h-263' class="function">glBufferDataus</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that works exactly like
+<code>glBufferDatab</code> except <code>GL_UNSIGNED_SHORT</code> is used instead of
+<code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-264' xml:id='l2h-264' class="function">glBufferDataf</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that works exactly like
+<code>glBufferDatab</code> except <code>GL_FLOAT</code> is used instead of <code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-265' xml:id='l2h-265' class="function">glBufferDatax</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferData</code> that works exactly like
+<code>glBufferDatab</code> except <code>GL_FIXED</code> is used instead of <code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-266' xml:id='l2h-266' class="function">glBufferSubData</tt></b>(</nobr></td>
+  <td><var>target, size, data, usage</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>data</var> must be a <tt class="class">gles.array</tt> object. If <var>size</var> is -1,
+the in-memory size of <var>data</var> is used in its place.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-267' xml:id='l2h-267' class="function">glBufferSubDatab</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that accepts either a
+<tt class="class">gles.array</tt> object or some other Python sequence object for <var>data</var>.
+If <tt class="class">gles.array</tt> object is used, its in-memory size (in bytes) is used as
+<var>size</var>. Other sequences are first converted to flat lists of
+<code>GL_BYTE</code> data by casting. The length of the resulting sequence is used as
+<var>size</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-268' xml:id='l2h-268' class="function">glBufferSubDataub</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that works exactly like
+<code>glBufferSubDatab</code> except <code>GL_UNSIGNED_BYTE</code> is used instead of
+<code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-269' xml:id='l2h-269' class="function">glBufferSubDatas</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that works exactly like
+<code>glBufferSubDatab</code> except <code>GL_SHORT</code> is used instead of <code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-270' xml:id='l2h-270' class="function">glBufferSubDataus</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that works exactly like
+<code>glBufferSubDatab</code> except <code>GL_UNSIGNED_SHORT</code> is used instead of
+<code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-271' xml:id='l2h-271' class="function">glBufferSubDataf</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that works exactly like
+<code>glBufferSubDatab</code> except <code>GL_FLOAT</code> is used instead of <code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-272' xml:id='l2h-272' class="function">glBufferSubDatax</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glBufferSubData</code> that works exactly like
+<code>glBufferSubDatab</code> except <code>GL_FIXED</code> is used instead of
+<code>GL_BYTE</code>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-273' xml:id='l2h-273' class="function">glClipPlanef</tt></b>(</nobr></td>
+  <td><var>plane, equation</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>equation</var> must be a Python sequence that contains four float
+values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-274' xml:id='l2h-274' class="function">glClipPlanex</tt></b>(</nobr></td>
+  <td><var>plane, equation</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>equation</var> must be a Python sequence that contains four integer
+values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-275' xml:id='l2h-275' class="function">glDeleteBuffers</tt></b>(</nobr></td>
+  <td><var>buffers</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>buffers</var> must be a Python sequence that contains integer values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-276' xml:id='l2h-276' class="function">glDrawTexsvOES</tt></b>(</nobr></td>
+  <td><var>coords</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>coords</var> must be a Python sequence that contains integer
+values. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-277' xml:id='l2h-277' class="function">glDrawTexivOES</tt></b>(</nobr></td>
+  <td><var>coords</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>coords</var> must be a Python sequence that contains integer
+values. 
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-278' xml:id='l2h-278' class="function">glDrawTexfvOES</tt></b>(</nobr></td>
+  <td><var>coords</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>coords</var> must be a Python sequence that contains float values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-279' xml:id='l2h-279' class="function">glDrawTexfvOES</tt></b>(</nobr></td>
+  <td><var>coords</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>coords</var> must be a Python sequence that contains integer values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-280' xml:id='l2h-280' class="function">glGenBuffers</tt></b>(</nobr></td>
+  <td><var>n</var>)</td></tr></table></dt>
+<dd>
+The generated buffer names are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-281' xml:id='l2h-281' class="function">glGetBooleanv</tt></b>(</nobr></td>
+  <td><var>pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-282' xml:id='l2h-282' class="function">glGetBufferParameteriv</tt></b>(</nobr></td>
+  <td><var>target, pname</var>)</td></tr></table></dt>
+<dd>
+The value is returned as an integer.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-283' xml:id='l2h-283' class="function">glGetClipPlanef</tt></b>(</nobr></td>
+  <td><var>plane</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-284' xml:id='l2h-284' class="function">glGetClipPlanef</tt></b>(</nobr></td>
+  <td><var>plane</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-285' xml:id='l2h-285' class="function">glGetFixedv</tt></b>(</nobr></td>
+  <td><var>pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-286' xml:id='l2h-286' class="function">glGetFloatv</tt></b>(</nobr></td>
+  <td><var>pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-287' xml:id='l2h-287' class="function">glGetLightfv</tt></b>(</nobr></td>
+  <td><var>light, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-288' xml:id='l2h-288' class="function">glGetLightxv</tt></b>(</nobr></td>
+  <td><var>light, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-289' xml:id='l2h-289' class="function">glGetMaterialfv</tt></b>(</nobr></td>
+  <td><var>face, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-290' xml:id='l2h-290' class="function">glGetMaterialxv</tt></b>(</nobr></td>
+  <td><var>face, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-291' xml:id='l2h-291' class="function">glGetTexEnvf</tt></b>(</nobr></td>
+  <td><var>face, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-292' xml:id='l2h-292' class="function">glGetTexEnvx</tt></b>(</nobr></td>
+  <td><var>face, pname</var>)</td></tr></table></dt>
+<dd>
+The values are returned in a Python tuple.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-293' xml:id='l2h-293' class="function">glGetTexParameterf</tt></b>(</nobr></td>
+  <td><var>target, pname</var>)</td></tr></table></dt>
+<dd>
+The value is returned as a float.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-294' xml:id='l2h-294' class="function">glGetTexParameterx</tt></b>(</nobr></td>
+  <td><var>target, pname</var>)</td></tr></table></dt>
+<dd>
+The value is returned as an integer.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-295' xml:id='l2h-295' class="function">glMatrixIndexPointerOES</tt></b>(</nobr></td>
+  <td><var>size, type, stride, sequence</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>sequence</var> must be either a <tt class="class">gles.array</tt> object or some other
+Python sequence object. <tt class="class">gles.array</tt> objects require less processing and
+can be therefore slightly faster. If <tt class="class">gles.array</tt> object is used, the
+dimension and type of its data are ignored and <var>size</var> and <var>type</var> are
+used instead.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-296' xml:id='l2h-296' class="function">glMatrixIndexPointerOESub</tt></b>(</nobr></td>
+  <td><var>sequence</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glMatrixIndexPointerOES</code> that accepts either a
+<tt class="class">gles.array</tt> object or some other Python sequence object.
+Other parameters of <code>glMatrixIndexPointerOES</code> will be determined as follows:
+
+<ul>
+<li><var>size</var> If <var>sequence</var> is an instance of <tt class="class">gles.array</tt>, its dimension is used; otherwise the length of <var>sequence</var> is used.
+</li>
+<li><var>type</var> <code>GL_UNSIGNED_BYTE</code>
+</li>
+<li><var>stride</var> 0
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-297' xml:id='l2h-297' class="function">glPointParameterfv</tt></b>(</nobr></td>
+  <td><var>pname, params</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>params</var> must be a Python sequence containing float values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-298' xml:id='l2h-298' class="function">glPointParameterxv</tt></b>(</nobr></td>
+  <td><var>pname, params</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>params</var> must be a Python sequence containing integer values.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-299' xml:id='l2h-299' class="function">glPointSizePointerOES</tt></b>(</nobr></td>
+  <td><var>type, stride, sequence</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>sequence</var> must be either a <tt class="class">gles.array</tt> object or some other
+Python sequence object. <tt class="class">gles.array</tt> objects require less processing and
+can be therefore slightly faster. If <tt class="class">gles.array</tt> object is used, the type
+of its data is ignored and <var>type</var> is used instead.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-300' xml:id='l2h-300' class="function">glPointSizePointerOESf</tt></b>(</nobr></td>
+  <td><var>sequence</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glPointSizePointerOES</code> uses <code>GL_FLOAT</code> as
+<var>type</var> and 0 as <var>stride</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-301' xml:id='l2h-301' class="function">glPointSizePointerOESx</tt></b>(</nobr></td>
+  <td><var>target, data, usage</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glPointSizePointerOES</code> uses <code>GL_FIXED</code> as
+<var>type</var> and 0 as <var>stride</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-302' xml:id='l2h-302' class="function">glWeightPointerOES</tt></b>(</nobr></td>
+  <td><var>size, type, stride, sequence</var>)</td></tr></table></dt>
+<dd>
+Parameter <var>sequence</var> must be either a <tt class="class">gles.array</tt> object or some other
+Python sequence object. <tt class="class">gles.array</tt> objects require less processing and
+can be therefore slightly faster. If <tt class="class">gles.array</tt> object is used, the
+dimension and type of its data are ignored and <var>size</var> and <var>type</var> are
+used instead.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-303' xml:id='l2h-303' class="function">glWeightPointerOESf</tt></b>(</nobr></td>
+  <td><var>sequence</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glWeightPointerOES</code> that accepts either a
+<tt class="class">gles.array</tt> object or some other Python sequence object.
+Other parameters of <code>glWeightPointerOES</code> will be determined as follows:
+
+<ul>
+<li><var>size</var> If <var>sequence</var> is an instance of <tt class="class">gles.array</tt>, its dimension is used; otherwise the length of <var>sequence</var> is used.
+</li>
+<li><var>type</var> <code>GL_FLOAT</code>
+</li>
+<li><var>stride</var> 0
+</li>
+</ul>
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-304' xml:id='l2h-304' class="function">glWeightPointerOESx</tt></b>(</nobr></td>
+  <td><var>sequence</var>)</td></tr></table></dt>
+<dd>
+Special Python version of <code>glWeightPointerOES</code> that behaves exactly as
+<code>glWeightPointerOESf</code> except <code>GL_FIXED</code> is used as <var>type</var>.
+</dl>
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.7.3.1 opengl ES 1.0"
+  href="node48.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.7.3 differences to OpenGL"
+  href="node47.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.8 glcanvas  "
+  href="module-glcanvas.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node48.html">3.7.3.1 OpenGL ES 1.0</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="node47.html">3.7.3 Differences to OpenGL</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="module-glcanvas.html">3.8 glcanvas  </a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

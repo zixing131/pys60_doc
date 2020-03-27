@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="module-e32calendar.html" />
+<link rel="prev" href="s60data.html" />
+<link rel="parent" href="s60data.html" />
+<link rel="next" href="node69.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>5.1 contacts -- A contacts related services package</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5. data Management"
+  href="s60data.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.1.1 module Level Functions"
+  href="node69.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node69.html">5.1.1 Module Level Functions</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION007100000000000000000"></a>
+<a name="sec:contacts"></a>
+<br>
+5.1 <tt class="module">contacts</tt> --
+  A contacts related services package
+</h1>
+
+<p>
+<a name="module-contacts"></a>
+
+<p class="availability">Availability: <span
+ class="platform">S60</span>.</p>
+
+<p>
+The <tt class="module">contacts</tt> module offers an API to address book services allowing the 
+creation of contact information databases. The <tt class="module">contacts</tt> module 
+represents a Symbian contact database as a dictionary-like <tt class="class">ContactDb</tt> 
+object, which contains <tt class="class">Contact</tt> objects and which is indexed using the 
+unique IDs of those objects. A <tt class="class">Contact</tt> object is itself a list-like 
+object, which  contains <tt class="class">ContactField</tt> objects and which is indexed using 
+the field indices. Unique IDs and field indices are integers. The 
+<tt class="class">ContactDb</tt> object supports a limited subset of dictionary functionality. 
+Therefore, only <code>__iter__</code>, <code>__getitem__</code>, 
+<code>__delitem__</code>,<code>__len__</code>, <code>keys</code>, <code>values</code>, and <code>items</code> 
+are included.
+
+<p>
+<tt class="class">ContactDb</tt> objects represent a live view into the database. If a 
+contact is changed outside your Python application, the changes are visible 
+immediately, and conversely any changes you commit into the database are 
+visible immediately to other applications. It is possible to lock a contact 
+for editing, which will prevent other applications from modifying the 
+contact for as long as the lock is held. This can be done in, for example, a 
+contacts editor application when a contact is opened for editing, very much 
+like with the Contacts application in your Nokia device. If you try to 
+modify a contact without locking it for editing, the contact is 
+automatically locked before the modification and released immediately 
+afterwards.
+
+<p>
+
+<p><br /></p><hr class='online-navigation' />
+<div class='online-navigation'>
+<!--Table of Child-Links-->
+<a name="CHILD_LINKS"><strong>Subsections</strong></a>
+
+<ul class="ChildLinks">
+<li><a href="node69.html">5.1.1 Module Level Functions</a>
+<li><a href="node70.html">5.1.2 ContactDb Object</a>
+<li><a href="node71.html">5.1.3 Contact Object</a>
+<li><a href="node72.html">5.1.4 ContactField Object</a>
+<li><a href="node73.html">5.1.5 Groups Object</a>
+<li><a href="node74.html">5.1.6 Group Object</a>
+</ul>
+<!--End of Table of Child-Links-->
+</div>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="5. data Management"
+  href="s60data.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="5. data Management"
+  href="s60data.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="5.1.1 module Level Functions"
+  href="node69.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60data.html">5. Data Management</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node69.html">5.1.1 Module Level Functions</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

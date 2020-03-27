@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="reporting-bugs.html" />
+<link rel="prev" href="node96.html" />
+<link rel="parent" href="s60.html" />
+<link rel="next" href="reporting-bugs.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>A. Known Issues</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="Bibliography"
+  href="node96.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="S60 module Reference"
+  href="s60.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="B. reporting Bugs"
+  href="reporting-bugs.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node96.html">Bibliography</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60.html">S60 Module Reference</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="reporting-bugs.html">B. Reporting Bugs</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h1><a name="SECTION0010000000000000000000">
+A. Known Issues</a>
+</h1>
+
+<p>
+<a name="known-issues"></a>
+<p>
+<b>Limitations:</b>
+
+<p>
+1. On this platform, the stack size is significantly less compared to other platforms and 
+hence deep recursions and high memory consuming operations may cause stack overflow.
+
+<p>
+2. Calling setsockopt() on UDP sockets requires that the application is signed with NETWORKCONTROL capability.
+
+<p>
+3. The file access time and modification time are same on Symbian and the same behavior is reflected in the utime module.
+
+<p>
+4. Support for touch enabled devices is limited. Touch events other than LSK and RSK are not handled. 
+Hence the UI handling in modules like graphics, glcanvas and appuifw will not function as expected on touch enabled devices.
+
+<p>
+<br>
+<b>Bugs:</b>
+
+<p>
+1. Floating point formatting/parsing routines on this platform are imprecise and 
+as a result you can't round-trip floating point numbers reliably or rely on 
+floating point constants in Python source code to be precisely parsed into
+their corresponding double values.
+
+<p>
+2. The strftime() API in the OpenC library returns output parameters with junk characters when the 'Z' format 
+specifier is used with the timezone as NULL and hence few test-cases for time and strptime modules fail.
+
+<p>
+3. The connect() API in the OpenC library raises EEXISTS instead of EISCONN, when it is called on an already connected 
+non-blocking TCP socket.
+
+<p>
+4. Problem with decimal separator when the phone's locale uses a decimal separator other than dot ('.')
+
+<p>
+5. time.clock() does not work as expected.
+
+<p>
+6. APIs in extension modules which use callbacks does not work if invoked from a thread.
+
+<p>
+7. sensor module is not supported on S60 3rd edition FP2 and 5th edition devices.
+
+<p>
+8. For applications packaged with s60ui profile, 'Exit' key does not work as expected when raw_input is pending.
+
+<p>
+9. The document of the extension modules are not fully in line with the new code base.
+
+<p>
+10. Importing modules under application's private directory fails. 
+    A work around for this problem is packaging the modules to a directory under 
+    \data\python and include this directory path into sys.path before
+   importing the modules. Ensymlbe's -extrasdir option can be used to place the modules under the required directory. 
+<br>
+For example : <br>
+a)Place default.py in the directory "root\default.py" <br>
+b)Place dependent modules in "root\extras\data\python\ <br>
+c)In default.py update the sys path <br>
+import sys <br>
+sys.path.append("c:\\data\\python") <br>
+d)ensymble py2sis root -extrasdir=extras <br>
+where "root" is the directory which contains default.py and "extras" 
+      directory. "extras" directory contains the required modules under the 
+      required directory tree.
+
+<p>
+<br>
+<b>Failing test cases:</b>
+
+<p>
+Below is the summary of the standard regrtest Python module executed on this platform.
+
+<p>
+<br><p></p>
+<div align="CENTER"><a name="7299"></a>
+<table>
+<caption><strong>Table A.1:</strong>
+Failing test cases</caption>
+<tr><td>
+<div align="CENTER">
+<table cellpadding=3 border="1" align="CENTER">
+<tr><td align="LEFT">Tests</td>
+<td align="LEFT">Comments</td>
+</tr>
+<tr><td align="LEFT">test_asynchat</td>
+<td align="LEFT">This test failed when tested on a 5th edition device and is under investigation. It works fine on 3rd edition and 3rd edition FP2 devices.</td>
+</tr>
+<tr><td align="LEFT">test_builtin</td>
+<td align="LEFT">test_cmp fails because of Stack Overflow</td>
+</tr>
+<tr><td align="LEFT">test_compiler</td>
+<td align="LEFT">testCompileLibrary, testLineNo fail because of Stack Overflow. Another reason for this fail is related to the zipping of all the standard Python files.</td>
+</tr>
+<tr><td align="LEFT">test_copy</td>
+<td align="LEFT">test_deepcopy_reflexive_dict, test_deepcopy_reflexive_list and test_deepcopy_reflexive_tuple fail because of Stack overflow</td>
+</tr>
+<tr><td align="LEFT">test_doctest</td>
+<td align="LEFT">Python bug (<a class="url" href="http://bugs.python.org/issue1540">http://bugs.python.org/issue1540</a>)</td>
+</tr>
+<tr><td align="LEFT">test_exceptions</td>
+<td align="LEFT">testInfiniteRecursions fail because of Stack Overflow</td>
+</tr>
+<tr><td align="LEFT">test_format</td>
+<td align="LEFT">This test crashes and this is related to bug # 1, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_logging</td>
+<td align="LEFT">This test hanged when tested on a 5th edition device and is under investigation. It works fine on 3rd edition and 3rd edition FP2 devices.</td>
+</tr>
+<tr><td align="LEFT">test_mailbox</td>
+<td align="LEFT">test_pack, test_set_item, test_update in TestMH and test_clean in TestMaildir fail. One of the reasons for these failures is the limitation # 3, as mentioned above. Further investigation is in progress.</td>
+</tr>
+<tr><td align="LEFT">test_marshal</td>
+<td align="LEFT">This fail relates to bug # 1, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_normalization</td>
+<td align="LEFT">testURLread fails and this relates to bug # 3, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_richcmp</td>
+<td align="LEFT">This fail is because of Stack overflow</td>
+</tr>
+<tr><td align="LEFT">test_socket</td>
+<td align="LEFT">testConnect fails and this relates to bug # 3, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_strptime</td>
+<td align="LEFT">This fail relates to bug # 2, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_time</td>
+<td align="LEFT">This fail relates to bug # 2, as mentioned above.</td>
+</tr>
+<tr><td align="LEFT">test_zipfile</td>
+<td align="LEFT">One of the reasons for this fail is related to the zipping of all the standard Python files and is under investigation.</td>
+</tr>
+<tr><td align="LEFT">test_importhooks</td>
+<td align="LEFT">This fails because distutils module not supported.</td>
+</tr>
+<tr><td align="LEFT">test_pyclbr</td>
+<td align="LEFT">This fail is related to the zipping of all the standard Python files.</td>
+</tr>
+<tr><td align="LEFT">test_repr</td>
+<td align="LEFT">This fail is related to the zipping of all the standard Python files.</td>
+</tr>
+<tr><td align="LEFT">test_urllib2</td>
+<td align="LEFT">This fail is related to the zipping of all the standard Python files.</td>
+</tr>
+</table>
+
+<a name="tab:image2d"></a>
+</div></td></tr>
+</table>
+</div><p></p>
+<br>
+
+<p>
+<b>Skipped test cases:</b> 
+
+<p>
+These tests are skipped as one or more modules needed by them are not supported on this platform.
+
+<p>
+<br><p></p>
+<div align="CENTER"><a name="7309"></a>
+<table>
+<caption><strong>Table A.2:</strong>
+Skipped test cases</caption>
+<tr><td>
+<div align="CENTER">
+<table cellpadding=3 border="1" align="CENTER">
+<tr><td align="LEFT">test_aepack</td>
+<td align="LEFT">test_al</td>
+<td align="LEFT">test_applesingle</td>
+<td align="LEFT">test_audioop</td>
+<td align="LEFT">test_bsddb</td>
+<td align="LEFT">test_bsddb185</td>
+<td align="LEFT">test_bsddb3</td>
+</tr>
+<tr><td align="LEFT">test_bz2</td>
+<td align="LEFT">test_cd</td>
+<td align="LEFT">test_cl</td>
+<td align="LEFT">test_cmd_line</td>
+<td align="LEFT">test_commands</td>
+<td align="LEFT">test_crypt</td>
+<td align="LEFT">test_ctypes</td>
+</tr>
+<tr><td align="LEFT">test_curses</td>
+<td align="LEFT">test_dbm</td>
+<td align="LEFT">test_distutils</td>
+<td align="LEFT">test_dl</td>
+<td align="LEFT">test_fork1</td>
+<td align="LEFT">test_gdbm</td>
+<td align="LEFT">test_gl</td>
+</tr>
+<tr><td align="LEFT">test_grp</td>
+<td align="LEFT">test_hotshot</td>
+<td align="LEFT">test_imageop</td>
+<td align="LEFT">test_imgfile</td>
+<td align="LEFT">test_ioctl</td>
+<td align="LEFT">test_largefile</td>
+<td align="LEFT">test_linuxaudiodev</td>
+</tr>
+<tr><td align="LEFT">test_macfs</td>
+<td align="LEFT">test_macostools</td>
+<td align="LEFT">test_macpath</td>
+<td align="LEFT">test_mhlib</td>
+<td align="LEFT">test_mmap</td>
+<td align="LEFT">test_nis</td>
+<td align="LEFT">test_openpty</td>
+</tr>
+<tr><td align="LEFT">test_ossaudiodev</td>
+<td align="LEFT">test_pep277</td>
+<td align="LEFT">test_plistlib</td>
+<td align="LEFT">test_poll</td>
+<td align="LEFT">test_popen</td>
+<td align="LEFT">test_popen2</td>
+<td align="LEFT">test_pty</td>
+</tr>
+<tr><td align="LEFT">test_pwd</td>
+<td align="LEFT">test_resource</td>
+<td align="LEFT">test_rgbimg</td>
+<td align="LEFT">test_scriptpackages</td>
+<td align="LEFT">test_signal</td>
+<td align="LEFT">test_sqlite</td>
+<td align="LEFT">test_startfile</td>
+</tr>
+<tr><td align="LEFT">test_subprocess</td>
+<td align="LEFT">test_sunaudiodev</td>
+<td align="LEFT">test_sundry</td>
+<td align="LEFT">test_tcl</td>
+<td align="LEFT">test_threadsignals</td>
+<td align="LEFT">test_wait3</td>
+<td align="LEFT">test_wait4</td>
+</tr>
+<tr><td align="LEFT">test_winreg</td>
+<td align="LEFT">test_winsound</td>
+<td align="LEFT">test_zipfile64</td>
+<td align="LEFT">&nbsp;</td>
+<td align="LEFT">&nbsp;</td>
+<td align="LEFT">&nbsp;</td>
+<td align="LEFT">&nbsp;</td>
+</tr>
+</table>
+
+<a name="tab:image2d"></a>
+</div></td></tr>
+</table>
+</div><p></p>
+<br>
+
+<p>
+These tests are also skipped, but are related to the zipping of all the standard Python files.
+
+<p>
+<br><p></p>
+<div align="CENTER"><a name="7318"></a>
+<table>
+<caption><strong>Table A.3:</strong>
+Skipped test cases related to zipping of standard Python files</caption>
+<tr><td>
+<div align="CENTER">
+<table cellpadding=3 border="1" align="CENTER">
+<tr><td align="LEFT">test_email</td>
+<td align="LEFT">test_email_codecs</td>
+<td align="LEFT">test_email_renamed</td>
+<td align="LEFT">test_import</td>
+</tr>
+</table>
+
+</div></td></tr>
+</table>
+</div><p></p>
+<br>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="Bibliography"
+  href="node96.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="S60 module Reference"
+  href="s60.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="B. reporting Bugs"
+  href="reporting-bugs.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node96.html">Bibliography</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="s60.html">S60 Module Reference</a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="reporting-bugs.html">B. Reporting Bugs</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>

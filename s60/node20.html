@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<link rel="STYLESHEET" href="s60.css" type='text/css' />
+<link rel="SHORTCUT ICON" href="../icons/pyfav.png" type="image/png" />
+<link rel='start' href='../index.html' title='Python documentation Index' />
+<link rel="first" href="s60.html" title='S60 module Reference' />
+<link rel='contents' href='contents.html' title="Contents" />
+<link rel='index' href='genindex.html' title='Index' />
+<link rel='last' href='about.html' title='About this document...' />
+<link rel='help' href='about.html' title='About this document...' />
+<link rel="next" href="node21.html" />
+<link rel="prev" href="node19.html" />
+<link rel="parent" href="module-appuifw.html" />
+<link rel="next" href="node21.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='aesop' content='information' />
+<title>3.1.5 Form Type</title>
+</head>
+<body>
+<div class="navigation">
+<div id='top-navigation-panel' xml:id='top-navigation-panel'>
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.4 application Type"
+  href="node19.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.6 text Type"
+  href="node21.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node19.html">3.1.4 Application Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node21.html">3.1.6 Text Type</a>
+</div>
+<hr /></div>
+</div>
+<!--End of Navigation Panel-->
+
+<h2><a name="SECTION005150000000000000000"></a>
+<a name="subsec:form"></a>
+<br>
+3.1.5 Form Type
+</h2>
+<tt class="class">Form</tt> implements a dynamically configurable, editable multi-field 
+dialog. <tt class="class">Form</tt> caters for advanced dialog use cases with requirements 
+such as free selectability of the combination of fields, possibility of 
+validating the user input, and automatically producing the contents of some 
+dialog fields before allowing the closing of the dialog. 
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><span class="typelabel">class</span>&nbsp;<tt id='l2h-85' xml:id='l2h-85' class="class">Form</tt></b>(</nobr></td>
+  <td><var>fields</var><big>[</big><var>, flags=0</var><big>]</big><var></var>)</td></tr></table></dt>
+<dd>
+Creates a <tt class="class">Form</tt> instance.
+<var>fields</var> is a list of <em>field descriptors</em>: <code>(label, type<big>[</big>, value<big>]</big>)</code> where
+
+<p>
+<var>label</var> is a Unicode string
+
+<p>
+<var>type</var> is one of the following strings: 
+<code>'text'</code>, <code>'number'</code>, <code>'date'</code>, <code>'time'</code>, <code>'combo'</code>
+or <code>'float'</code>
+
+<p>
+<var>value</var>, depending on <var>type</var>: Unicode string, numeric, float (seconds 
+since Unix epoch rounded down to the nearest local midnight), float (seconds 
+since local midnight), <code>([choice_label ...], index)</code> of float. For 
+<code>'float'</code> <var>type</var> the initial value setting might not be shown in the 
+UI.
+</dl>
+
+<p>
+<tt class="class">Form</tt> can also be configured and populated after construction. The 
+configuration flags are visible as an attribute. <tt class="class">Form</tt> implements 
+the list protocol that can be used for setting the form fields, as well as 
+obtaining their values after the dialog has been executed.
+
+<p>
+Instances of <tt class="class">Form</tt> type have the following attributes:
+
+<p>
+<dl><dt><b><tt id='l2h-86' xml:id='l2h-86' class="member">flags</tt></b></dt>
+<dd>
+This attribute holds the values of the various configuration flags. 
+Currently supported flags are:
+
+<p>
+<dl><dt><b><tt id='l2h-87' xml:id='l2h-87'>FFormEditModeOnly</tt></b></dt>
+<dd>
+When this flag is set, the form remains in edit mode while <tt class="method">execute</tt> 
+runs.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-88' xml:id='l2h-88'>FFormViewModeOnly</tt></b></dt>
+<dd>
+When this flag is set, the form cannot be edited at all.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-89' xml:id='l2h-89'>FFormAutoLabelEdit</tt></b></dt>
+<dd>
+This flag enables support for allowing the end-users to edit the labels of 
+the form fields.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-90' xml:id='l2h-90'>FFormAutoFormEdit</tt></b></dt>
+<dd>
+This flag enables automatic support for allowing the end-users to add and 
+delete the form fields. Note that this is an experimental feature and is not 
+guaranteed to work with all SDK versions.
+</dd></dl>
+
+<p>
+<dl><dt><b><tt id='l2h-91' xml:id='l2h-91'>FFormDoubleSpaced</tt></b></dt>
+<dd>
+When this flag is set, double-spaced layout is applied when the form is 
+executed: one field takes two lines, as the label and the value field are on 
+different lines.
+</dd></dl>
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-92' xml:id='l2h-92' class="member">menu</tt></b></dt>
+<dd>
+A list of <code>(title, callback)</code> pairs, where 
+each pair describes an item in the form's menu bar that is active while the 
+dialog is being executed. <var>title</var> (Unicode) is the name of 
+the item and <var>callback</var> the associated callable object.
+</dl>
+
+<p>
+<dl><dt><b><tt id='l2h-93' xml:id='l2h-93' class="member">save_hook</tt></b></dt>
+<dd>
+This attribute can be set to a callable object that receives one argument 
+and returns a Boolean value. It gets called every time the users want to 
+save the contents of an executing <tt class="class">Form</tt> dialog. A candidate list for 
+new form content - a list representing the currently visible state of the 
+UI - is given as an argument. The list can be modified by 
+<tt class="member">save_hook</tt>. If <tt class="member">save_hook</tt> returns <code>True</code>, the 
+candidate list is set as the new contents of the form. Otherwise, the form 
+UI is reset to reflect the field list contained in <tt class="class">Form</tt> object.
+</dl>
+
+<p>
+Instances of <tt class="class">Form</tt> type have the following methods:
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-94' xml:id='l2h-94' class="method">execute</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Executes the dialog by making it visible on the UI.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-95' xml:id='l2h-95' class="method">insert</tt></b>(</nobr></td>
+  <td><var>index, field_descriptor</var>)</td></tr></table></dt>
+<dd>
+Inserts the field descriptor into the <tt class="class">Form</tt> before the given <var>index</var>.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-96' xml:id='l2h-96' class="method">pop</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>
+Removes the last field descriptor from the <tt class="class">Form</tt> and returns it.
+</dl>
+
+<p>
+<dl><dt><table cellpadding="0" cellspacing="0"><tr valign="baseline">
+  <td><nobr><b><tt id='l2h-97' xml:id='l2h-97' class="method">length</tt></b>(</nobr></td>
+  <td><var></var>)</td></tr></table></dt>
+<dd>the number of field descriptors in the form.
+</dl>
+
+<p>
+The subscript notation <code>f[i]</code> can be used to access or modify the
+i-th element of the form <code>f</code>. Same limitations as discussed above
+in the context of the flag <tt class="constant">FFormAutoFormEdit</tt> apply to
+modifying a form while it is executing. The ability to change the
+schema of a form while it is executing is an experimental feature.
+
+<p>
+
+<div class="navigation">
+<div class='online-navigation'>
+<p></p><hr />
+<table align="center" width="100%" cellpadding="0" cellspacing="2">
+<tr>
+<td class='online-navigation'><a rel="prev" title="3.1.4 application Type"
+  href="node19.html"><img src='../icons/previous.png'
+  border='0' height='32'  alt='Previous Page' width='32' /></a></td>
+<td class='online-navigation'><a rel="parent" title="3.1 appuifw  "
+  href="module-appuifw.html"><img src='../icons/up.png'
+  border='0' height='32'  alt='Up one Level' width='32' /></a></td>
+<td class='online-navigation'><a rel="next" title="3.1.6 text Type"
+  href="node21.html"><img src='../icons/next.png'
+  border='0' height='32'  alt='Next Page' width='32' /></a></td>
+<td align="center" width="100%">S60 Module Reference</td>
+<td class='online-navigation'><a rel="contents" title="Table of Contents"
+  href="contents.html"><img src='../icons/contents.png'
+  border='0' height='32'  alt='Contents' width='32' /></a></td>
+<td class='online-navigation'><a href="modindex.html" title="Module Index"><img src='../icons/modules.png'
+  border='0' height='32'  alt='Module Index' width='32' /></a></td>
+<td class='online-navigation'><a rel="index" title="Index"
+  href="genindex.html"><img src='../icons/index.png'
+  border='0' height='32'  alt='Index' width='32' /></a></td>
+</tr></table>
+<div class='online-navigation'>
+<b class="navlabel">Previous:</b>
+<a class="sectref" rel="prev" href="node19.html">3.1.4 Application Type</a>
+<b class="navlabel">Up:</b>
+<a class="sectref" rel="parent" href="module-appuifw.html">3.1 appuifw  </a>
+<b class="navlabel">Next:</b>
+<a class="sectref" rel="next" href="node21.html">3.1.6 Text Type</a>
+</div>
+</div>
+<hr />
+<span class="release-info">Release 1.9.1 final  , documentation updated on 24 Jan 2009.</span>
+</div>
+<!--End of Navigation Panel-->
+<address>
+See <i><a href="about.html">About this document...</a></i> for information on suggesting changes.
+</address>
+</body>
+</html>
